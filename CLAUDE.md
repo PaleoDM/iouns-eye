@@ -29,9 +29,10 @@ Phase 7
 | 4 | Website build — full wiki with search, browsing, cross-links | Complete |
 | 5 | Interactive calendar component | Complete |
 | 6 | Map integration with clickable regions | Complete |
-| 7 | `/codex` Claude Code skill | Not Started |
-| 8 | `/write-recap` and `/prep-session` skill upgrades | Not Started |
-| 9 | Repo cleanup and file migration | Not Started |
+| 7 | `/grimoire` Claude Code skill | Not Started |
+| 8 | UX Rework — campaign-first navigation & homepage | Not Started |
+| 9 | `/write-recap` and `/prep-session` skill upgrades | Not Started |
+| 10 | Repo cleanup and file migration | Not Started |
 
 ## Rules for Agents
 - Follow `ROADMAP.md` phases exactly — do not skip ahead or improvise architecture

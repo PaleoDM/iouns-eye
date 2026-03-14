@@ -83,7 +83,7 @@ Ioun's Eye is the living encyclopedia of Astoria — a D&D homebrew world spanni
 │  Skills          │              │  Build & Deploy     │
 │  /prep-session   │              └────────┬───────────┘
 │  /write-recap    │                       │
-│  /codex          │                       ▼
+│  /grimoire       │                       ▼
 └──────────────────┘              ┌────────────────────┐
                                   │  GitHub Pages       │
                                   │  peredocm.com       │
@@ -982,14 +982,14 @@ interface DeityRecord {
 
 ---
 
-### Phase 7: `/codex` Claude Code Skill
+### Phase 7: `/grimoire` Claude Code Skill
 
 **Objective**: Build a Claude Code skill for creating, updating, querying, and browsing codex entries via natural language.
 
 **Prerequisites**: Phase 4 (entries must exist and site must be live so we can verify)
 
 **Steps**:
-1. Create skill file at `../.claude/skills/codex/SKILL.md` (in the parent TTRPG repo's skills directory)
+1. Create skill file at `../.claude/skills/grimoire/SKILL.md` (in the parent TTRPG repo's skills directory)
 2. Define skill capabilities:
    - **Create**: "Add an NPC named X who is Y in campaign Z" → creates entry file with proper frontmatter
    - **Update**: "Update Brenna Tolvane — she betrayed the party" → reads existing entry, adds information
@@ -1002,13 +1002,13 @@ interface DeityRecord {
 6. Document the path configuration so the skill knows where the iouns-eye repo lives
 
 **Files Created/Modified**:
-- `../.claude/skills/codex/SKILL.md` — The skill definition
+- `../.claude/skills/grimoire/SKILL.md` — The skill definition
 
 **Success Criteria**:
-- [ ] `/codex Add NPC: Dalla Voss, cursed curio merchant in Emberspost` creates a valid entry
-- [ ] `/codex Update brenna-tolvane: she betrayed the party in Session 28` modifies the existing entry
-- [ ] `/codex What is Potter's Field?` returns the location entry content
-- [ ] `/codex List alive NPCs in rifthaven-online` returns filtered results
+- [ ] `/grimoire Add NPC: Dalla Voss, cursed curio merchant in Emberspost` creates a valid entry
+- [ ] `/grimoire Update brenna-tolvane: she betrayed the party in Session 28` modifies the existing entry
+- [ ] `/grimoire What is Potter's Field?` returns the location entry content
+- [ ] `/grimoire List alive NPCs in rifthaven-online` returns filtered results
 - [ ] Created/modified entries pass Astro build validation
 - [ ] INDEX.md stays current after modifications
 
@@ -1019,11 +1019,103 @@ interface DeityRecord {
 
 ---
 
-### Phase 8: Skill Upgrades — `/write-recap` and `/prep-session`
+### Phase 8: UX Rework — Campaign-First Navigation & Homepage
+
+**Objective**: Reimagine the Ioun's Eye frontend around campaign-first browsing, a new homepage hub, and filtered visibility that hides defunct campaign content.
+
+**Prerequisites**: Phase 7 (grimoire skill working, all content populated)
+
+**Steps**:
+
+1. **Filter defunct campaigns from frontend**:
+   - Add a `status` field to campaign content schema: `active` | `completed` | `defunct`
+   - Mark `rifthaven-irl` and `head-hunters` as `defunct`
+   - Mark `ishetar-2` and `rifthaven-online` as `active`
+   - Mark `ishetar-og`, `kalari`, `skt` as `completed`
+   - Exclude defunct campaigns from all navigation, listing pages, and search indexing
+   - Entries tagged **only** to defunct campaigns are excluded from search and browsing
+   - Entries that appear in both defunct and non-defunct campaigns remain visible (without defunct campaign context)
+
+2. **New homepage — project hub**:
+   - Replace current homepage with a 2×3 thumbnail grid:
+     - **Row 1**: Rifthaven Online | Ishetar 2.0 | Completed Campaigns
+     - **Row 2**: Game 1 | Game 2 | VTT Product
+   - Active campaign tiles link to campaign hub pages (step 3)
+   - "Completed Campaigns" tile links to an archive listing page showing Ishetar OG, Kalari, and SKT
+   - Game and VTT tiles are external links (thumbnails + URLs to their GitHub Pages deployments)
+   - Clean, visual design — each tile gets a thumbnail image, title, and short tagline
+
+3. **Campaign hub pages**:
+   - Each active/completed campaign gets a hub page as its primary entry point
+   - Hub shows campaign-scoped content: NPCs, locations, factions, events, items filtered to that campaign
+   - Organized by content type with counts (e.g., "NPCs (23)" / "Locations (12)")
+   - Campaign timeline or summary at the top
+   - Links out to individual entry pages (which remain global/shared across campaigns)
+
+4. **Navigation restructure**:
+   - Primary nav shifts from content-type-first to campaign-first
+   - Sidebar or top nav: Home | Rifthaven | Ishetar | Archive | Library
+   - "Library" section preserves the current global browsing (all NPCs, all locations, etc.)
+   - Campaign context carries through — when browsing within a campaign, related entries and cross-links prioritize same-campaign content
+   - Breadcrumbs reflect campaign context: Home → Rifthaven Online → NPCs → Brenna Tolvane
+
+5. **Entry page updates**:
+   - Entry pages remain globally accessible (not duplicated per campaign)
+   - Add campaign badge/tag showing which campaigns an entry appears in
+   - When navigated to from a campaign hub, highlight that campaign's context (appearance details, status in that campaign)
+   - Related entries section: if in campaign context, show same-campaign relations first
+
+6. **Calendar and map integration**:
+   - Calendar: when accessed from a campaign hub, default to that campaign's time period
+   - Map: when accessed from a campaign hub, highlight locations relevant to that campaign
+
+7. **Search updates**:
+   - Pagefind index excludes defunct campaign content
+   - Search results show campaign badges so users know which campaign an entry belongs to
+   - Optional: campaign-scoped search when browsing within a campaign context
+
+**Files Created/Modified**:
+- `src/content.config.ts` — Campaign status field added
+- `src/content/campaigns/*.md` — Status field added to all campaign entries
+- `src/pages/index.astro` — New homepage hub layout
+- `src/pages/campaigns/[slug].astro` — Campaign hub pages (new or reworked)
+- `src/pages/archive.astro` — Completed campaigns listing (new)
+- `src/components/ui/CampaignGrid.astro` — Homepage thumbnail grid (new)
+- `src/components/ui/CampaignHub.astro` — Campaign hub layout (new)
+- `src/components/ui/Sidebar.astro` — Restructured navigation
+- `src/layouts/BaseLayout.astro` — Updated nav structure
+- Various entry listing pages — Updated to support campaign filtering
+
+**Success Criteria**:
+- [ ] Homepage displays 2×3 thumbnail grid with correct links
+- [ ] Clicking an active campaign leads to a campaign hub showing scoped content
+- [ ] "Completed Campaigns" tile leads to archive page listing Ishetar OG, Kalari, SKT
+- [ ] Game and VTT tiles link to correct external URLs
+- [ ] Defunct campaign content (`rifthaven-irl`, `head-hunters`) does not appear anywhere in the frontend
+- [ ] Entries shared between defunct and non-defunct campaigns still appear (without defunct context)
+- [ ] Global library browsing (all NPCs, all locations) still works via "Library" nav
+- [ ] Pagefind search excludes defunct content
+- [ ] Campaign badges appear on entry pages
+- [ ] Breadcrumbs reflect campaign context when navigating from a campaign hub
+- [ ] Calendar defaults to campaign time period when accessed from a campaign hub
+- [ ] Map highlights campaign-relevant locations when accessed from a campaign hub
+- [ ] Mobile-responsive — campaign grid and hub pages work on small screens
+- [ ] `npm run build` succeeds with no errors
+
+**Known Risks**:
+- Campaign-scoped filtering requires reliable `campaign_appearances` data on all entries — may need a data audit pass
+- Thumbnail images for homepage tiles need to be sourced/created (Carlos may need to provide these)
+- The "campaign context" breadcrumb/navigation state adds complexity — keep implementation simple (URL-based, not client-side state)
+- Entry pages serving dual purpose (global + campaign-scoped) needs careful UX — avoid confusing users about what's filtered vs. what's global
+- External links for games/VTT need URLs from Carlos
+
+---
+
+### Phase 9: Skill Upgrades — `/write-recap` and `/prep-session`
 
 **Objective**: Upgrade existing Claude Code skills to automatically interact with the codex.
 
-**Prerequisites**: Phase 7 (codex skill establishes the patterns)
+**Prerequisites**: Phase 7 (grimoire skill establishes the patterns)
 
 **Steps**:
 1. **Upgrade `/write-recap`**:
@@ -1074,11 +1166,11 @@ interface DeityRecord {
 
 ---
 
-### Phase 9: Repo Cleanup & File Migration
+### Phase 10: Repo Cleanup & File Migration
 
 **Objective**: Clean up the parent TTRPG repo, remove redundant files, and migrate campaign documents to take advantage of the codex.
 
-**Prerequisites**: Phase 8 (all skills working, codex populated)
+**Prerequisites**: Phase 9 (all skills working, codex populated, UX rework complete)
 
 **Steps**:
 1. **Repo reorganization** (parent TTRPG repo):
