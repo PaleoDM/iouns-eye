@@ -1,0 +1,56 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "The living encyclopedia of Astoria" } = Astro.props;
+const baseUrl = import.meta.env.BASE_URL;
+---
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href={`${baseUrl}favicon.svg`} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title} | Ioun's Eye</title>
+  </head>
+  <body class="bg-bg text-text-primary min-h-screen">
+    <header class="fixed top-0 left-0 right-0 h-16 bg-surface border-b border-border z-50 flex items-center px-6">
+      <a href={baseUrl} class="text-xl font-serif text-accent hover:text-accent-hover transition-colors">
+        Ioun's Eye
+      </a>
+      <span class="ml-3 text-text-secondary text-sm hidden sm:inline">World Codex of Astoria</span>
+    </header>
+
+    <nav class="fixed top-16 left-0 w-64 bottom-0 bg-surface border-r border-border p-4 overflow-y-auto hidden lg:block">
+      <ul class="space-y-1">
+        <li><a href={baseUrl} class="block px-3 py-2 rounded hover:bg-surface-hover text-text-secondary hover:text-text-primary transition-colors">Home</a></li>
+        <li class="pt-3 pb-1 px-3 text-xs uppercase tracking-wider text-text-secondary font-semibold">World</li>
+        <li><a href={`${baseUrl}npcs/`} class="block px-3 py-2 rounded hover:bg-surface-hover text-text-secondary hover:text-text-primary transition-colors">NPCs</a></li>
+        <li><a href={`${baseUrl}locations/`} class="block px-3 py-2 rounded hover:bg-surface-hover text-text-secondary hover:text-text-primary transition-colors">Locations</a></li>
+        <li><a href={`${baseUrl}factions/`} class="block px-3 py-2 rounded hover:bg-surface-hover text-text-secondary hover:text-text-primary transition-colors">Factions</a></li>
+        <li><a href={`${baseUrl}events/`} class="block px-3 py-2 rounded hover:bg-surface-hover text-text-secondary hover:text-text-primary transition-colors">Events</a></li>
+        <li><a href={`${baseUrl}items/`} class="block px-3 py-2 rounded hover:bg-surface-hover text-text-secondary hover:text-text-primary transition-colors">Items</a></li>
+        <li><a href={`${baseUrl}deities/`} class="block px-3 py-2 rounded hover:bg-surface-hover text-text-secondary hover:text-text-primary transition-colors">Deities</a></li>
+        <li><a href={`${baseUrl}lore/`} class="block px-3 py-2 rounded hover:bg-surface-hover text-text-secondary hover:text-text-primary transition-colors">Lore</a></li>
+        <li class="pt-3 pb-1 px-3 text-xs uppercase tracking-wider text-text-secondary font-semibold">Campaigns</li>
+        <li><a href={`${baseUrl}campaigns/`} class="block px-3 py-2 rounded hover:bg-surface-hover text-text-secondary hover:text-text-primary transition-colors">All Campaigns</a></li>
+        <li><a href={`${baseUrl}pcs/`} class="block px-3 py-2 rounded hover:bg-surface-hover text-text-secondary hover:text-text-primary transition-colors">Player Characters</a></li>
+        <li class="pt-3 pb-1 px-3 text-xs uppercase tracking-wider text-text-secondary font-semibold">Tools</li>
+        <li><a href={`${baseUrl}calendar/`} class="block px-3 py-2 rounded hover:bg-surface-hover text-text-secondary hover:text-text-primary transition-colors">Calendar</a></li>
+        <li><a href={`${baseUrl}map/`} class="block px-3 py-2 rounded hover:bg-surface-hover text-text-secondary hover:text-text-primary transition-colors">World Map</a></li>
+      </ul>
+    </nav>
+
+    <main class="pt-16 lg:pl-64">
+      <div class="max-w-4xl mx-auto p-6 lg:p-10">
+        <slot />
+      </div>
+    </main>
+  </body>
+</html>

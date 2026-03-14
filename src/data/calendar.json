@@ -1,0 +1,39 @@
+{
+  "year_length": 392,
+  "months_per_year": 14,
+  "days_per_month": 28,
+  "days_per_week": 7,
+  "day_names": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+  "day_abbreviations": ["S", "M", "T", "W", "R", "F", "S"],
+  "seasons": [
+    { "name": "Spring", "months": [1, 2, 3], "color": "#4a9e68" },
+    { "name": "Summer", "months": [4, 5, 6, 7], "color": "#c4a035" },
+    { "name": "Autumn", "months": [8, 9, 10], "color": "#c46a35" },
+    { "name": "Winter", "months": [11, 12, 13, 14], "color": "#3568a8" }
+  ],
+  "months": [
+    { "number": 1, "name": "Avandra", "deity_slug": "avandra", "season": "Spring", "holy_day": { "name": "New Year's Day", "day": 1, "description": "Feasts at dusk, discussing hopes for the new year until sunrise." } },
+    { "number": 2, "name": "Melora", "deity_slug": "melora", "season": "Spring", "holy_day": { "name": "Wild's Grandeur", "day": 14, "description": "Sailing and venturing into wild places to honor the Wildmother." } },
+    { "number": 3, "name": "Yondalla", "deity_slug": "yondalla", "season": "Spring", "holy_day": { "name": "Luck's Favor", "day": 21, "description": "Carousing, merry-making, and good deeds for Halfling luck." } },
+    { "number": 4, "name": "Corellon", "deity_slug": "corellon", "season": "Summer", "holy_day": { "name": "Elvendawn", "day": 21, "description": "Elaborate music, fine wine, and dancing commemorating elves emerging from the Feywild." } },
+    { "number": 5, "name": "Ioun", "deity_slug": "ioun", "season": "Summer", "holy_day": { "name": "The Knowing", "day": 14, "description": "Meditation and reflection on learned knowledge." } },
+    { "number": 6, "name": "Pelor", "deity_slug": "pelor", "season": "Summer", "holy_day": { "name": "Highsun", "day": 21, "description": "Feasting and large bonfires kept burning all night." } },
+    { "number": 7, "name": "Glittergold", "deity_slug": "glittergold", "season": "Summer", "holy_day": { "name": "Fizzleboom", "day": 14, "description": "Celebrating failures and lessons learned; explosive displays and pipe smoke illusions." } },
+    { "number": 8, "name": "Moradin", "deity_slug": "moradin", "season": "Autumn", "holy_day": { "name": "Deep Solace", "day": 18, "description": "Isolation and meditation on family; exchange gifts of craftsmanship." } },
+    { "number": 9, "name": "Erathis", "deity_slug": "erathis", "season": "Autumn", "holy_day": { "name": "Harvest Throne", "day": 22, "description": "Elaborate harvest feasts; one empty seat left for the Lawbearer." } },
+    { "number": 10, "name": "Obitris", "deity_slug": "obitris", "season": "Autumn", "holy_day": { "name": "Gatekeeper's Remembrance", "day": 5, "description": "Day of remembrance, solemnity, and respect for the fallen." } },
+    { "number": 11, "name": "Sehanine", "deity_slug": "sehanine", "season": "Winter", "holy_day": { "name": "Moonweaver's Masquerade", "day": 21, "description": "Song, dance, drink, pranks, tricks, and masquerades; young lovers seek her blessing." } },
+    { "number": 12, "name": "Kord", "deity_slug": "kord", "season": "Winter", "holy_day": { "name": "Day of Challenging", "day": 7, "description": "Raucous festivals with jousting, wrestling, and martial combats." } },
+    { "number": 13, "name": "Bahamut", "deity_slug": "bahamut", "season": "Winter", "holy_day": { "name": "Embertide", "day": 5, "description": "Day of remembrance and respect for fallen defenders of justice." } },
+    { "number": 14, "name": "Raei", "deity_slug": "raei", "season": "Winter", "holy_day": { "name": "Day of Forgiveness", "day": 14, "description": "Forgiving slights and grudges; gift exchange before New Year's Day." } }
+  ],
+  "moons": {
+    "warp": { "description": "The central, fixed moon. Remains in relatively the same position in the sky.", "behavior": "Exerts predictable, daily tide cycles. Visible every night across all of Astoria." },
+    "weft": { "description": "One of the twin ancillary moons.", "behavior": "Traces a spiraling path around Warp over the monthly cycle. Varies in apparent size and visibility by region." },
+    "cross": { "description": "One of the twin ancillary moons.", "behavior": "Traces a spiraling path around Warp over the monthly cycle. Varies in apparent size and visibility by region." }
+  },
+  "tides": {
+    "king_tides": { "days": [19, 20, 21, 22, 23], "peak": 21, "description": "All three moons aligned. Exceptionally high and low tides, turbulent currents. Sailors remain dockside or in open sea. Coastal wetlands prone to flooding." },
+    "fool_tides": { "days": [5, 6, 7, 8, 9], "peak": 7, "description": "Weft and Cross at furthest from Warp, working against its pull. Weakest tidal fluctuations, calm currents, stable shoreline. Ship captains time dangerous passages for these days." }
+  }
+}

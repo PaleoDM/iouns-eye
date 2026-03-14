@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Home">
+  <div class="space-y-8">
+    <div class="text-center py-12">
+      <h1 class="text-4xl font-serif text-accent mb-4">Ioun's Eye</h1>
+      <p class="text-text-secondary text-lg max-w-2xl mx-auto">
+        The living encyclopedia of Astoria — a world spanning continents, centuries, and countless stories.
+        Named for Ioun, the Knowing Mistress, goddess of all knowledge.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <a href={`${import.meta.env.BASE_URL}npcs/`} class="bg-surface border border-border rounded-lg p-6 hover:bg-surface-hover hover:border-accent transition-colors text-center">
+        <h2 class="text-lg font-serif text-text-primary">NPCs</h2>
+        <p class="text-text-secondary text-sm mt-1">Characters of the world</p>
+      </a>
+      <a href={`${import.meta.env.BASE_URL}locations/`} class="bg-surface border border-border rounded-lg p-6 hover:bg-surface-hover hover:border-accent transition-colors text-center">
+        <h2 class="text-lg font-serif text-text-primary">Locations</h2>
+        <p class="text-text-secondary text-sm mt-1">Places across Astoria</p>
+      </a>
+      <a href={`${import.meta.env.BASE_URL}factions/`} class="bg-surface border border-border rounded-lg p-6 hover:bg-surface-hover hover:border-accent transition-colors text-center">
+        <h2 class="text-lg font-serif text-text-primary">Factions</h2>
+        <p class="text-text-secondary text-sm mt-1">Powers and organizations</p>
+      </a>
+      <a href={`${import.meta.env.BASE_URL}events/`} class="bg-surface border border-border rounded-lg p-6 hover:bg-surface-hover hover:border-accent transition-colors text-center">
+        <h2 class="text-lg font-serif text-text-primary">Events</h2>
+        <p class="text-text-secondary text-sm mt-1">History unfolding</p>
+      </a>
+      <a href={`${import.meta.env.BASE_URL}deities/`} class="bg-surface border border-border rounded-lg p-6 hover:bg-surface-hover hover:border-accent transition-colors text-center">
+        <h2 class="text-lg font-serif text-text-primary">Deities</h2>
+        <p class="text-text-secondary text-sm mt-1">The divine pantheon</p>
+      </a>
+      <a href={`${import.meta.env.BASE_URL}campaigns/`} class="bg-surface border border-border rounded-lg p-6 hover:bg-surface-hover hover:border-accent transition-colors text-center">
+        <h2 class="text-lg font-serif text-text-primary">Campaigns</h2>
+        <p class="text-text-secondary text-sm mt-1">Adventures in Astoria</p>
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <a href={`${import.meta.env.BASE_URL}calendar/`} class="bg-surface border border-border rounded-lg p-6 hover:bg-surface-hover hover:border-accent transition-colors">
+        <h2 class="text-lg font-serif text-text-primary">Calendar</h2>
+        <p class="text-text-secondary text-sm mt-1">The Astorian calendar — 14 months guided by the Celestial Braid</p>
+      </a>
+      <a href={`${import.meta.env.BASE_URL}map/`} class="bg-surface border border-border rounded-lg p-6 hover:bg-surface-hover hover:border-accent transition-colors">
+        <h2 class="text-lg font-serif text-text-primary">World Map</h2>
+        <p class="text-text-secondary text-sm mt-1">Navigate the continents of Wanun and Khanae</p>
+      </a>
+    </div>
+  </div>
+</BaseLayout>
