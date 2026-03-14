@@ -5,7 +5,7 @@ continent: Glennox
 parent_location: glennox
 campaigns: [kalari]
 tags: [region]
-related: [glennox, the-crucible]
+related: [glennox, the-crucible, new-perile-falls, old-perile-falls, harwich, emerald-crescent]
 ---
 
 ## Description

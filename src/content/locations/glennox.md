@@ -2,7 +2,8 @@
 name: Glennox
 location_type: continent
 tags: [continent]
-related: [wanun, khanae, kalari, the-crucible]
+campaigns: [kalari, skt]
+related: [wanun, khanae, kalari, the-crucible, cradle-of-conflict]
 ---
 
 ## Description

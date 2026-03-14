@@ -132,6 +132,22 @@ const campaigns = defineCollection({
   }),
 });
 
+const chronicles = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/chronicles' }),
+  schema: z.object({
+    name: z.string(),
+    author_player: z.string(),
+    campaign: z.string(),
+    chronicle_type: z.enum(['narrative', 'recap', 'journal', 'letter', 'other']),
+    author_character: z.string().optional(),
+    perspective: z.enum(['in-character', 'out-of-character']).default('in-character'),
+    sessions_covered: z.array(z.number()).default([]),
+    pdf_file: z.string().optional(),
+    tags: z.array(z.string()).default([]),
+    related: z.array(z.string()).default([]),
+  }),
+});
+
 const pcs = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/pcs' }),
   schema: z.object({
@@ -159,5 +175,6 @@ export const collections = {
   deities,
   lore,
   campaigns,
+  chronicles,
   pcs,
 };

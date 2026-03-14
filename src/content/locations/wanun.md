@@ -2,7 +2,8 @@
 name: Wanun
 location_type: continent
 tags: [continent]
-related: [ekkorai, khanae, glennox]
+campaigns: [ishetar-og, head-hunters, ishetar-2]
+related: [ekkorai, khanae, glennox, ishetar]
 ---
 
 ## Description

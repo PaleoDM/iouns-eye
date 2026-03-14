@@ -2,7 +2,8 @@
 name: Khanae
 location_type: continent
 tags: [continent]
-related: [wanun, glennox]
+campaigns: [rifthaven-irl, rifthaven-online]
+related: [wanun, glennox, rifthaven]
 ---
 
 ## Description

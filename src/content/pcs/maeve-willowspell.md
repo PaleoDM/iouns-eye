@@ -1,0 +1,10 @@
+---
+name: Maeve Willowspell
+race: Half-Elf
+class: Rogue
+campaign: skt
+tags: [author]
+related: [one-last-job]
+---
+
+Author of the in-character narrative "One Last Job," chronicling the party's adventures during the SKT campaign.
