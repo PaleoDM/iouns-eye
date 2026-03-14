@@ -1,0 +1,164 @@
+{
+  "regions": [
+    {
+      "id": "wanun-ekkorai",
+      "mapId": "wanun",
+      "locationSlug": "ekkorai",
+      "label": "Ekkorai",
+      "labelPos": [74, 18],
+      "polygon": [[62, 5], [82, 3], [90, 10], [92, 30], [85, 42], [70, 40], [62, 28], [58, 15]]
+    },
+    {
+      "id": "wanun-arolin",
+      "mapId": "wanun",
+      "locationSlug": "wanun",
+      "label": "Arolin Empire",
+      "labelPos": [42, 28],
+      "polygon": [[32, 12], [58, 10], [62, 28], [70, 40], [58, 50], [42, 48], [30, 38], [28, 22]]
+    },
+    {
+      "id": "wanun-fractured",
+      "mapId": "wanun",
+      "locationSlug": "fractured-expanse",
+      "label": "The Fractured Expanse",
+      "labelPos": [85, 35],
+      "polygon": [[82, 22], [95, 18], [98, 38], [95, 50], [85, 48], [82, 35]]
+    },
+    {
+      "id": "wanun-tusketaan",
+      "mapId": "wanun",
+      "locationSlug": "wanun",
+      "label": "Tusketaan",
+      "labelPos": [38, 5],
+      "polygon": [[28, 1], [55, 1], [55, 13], [28, 13]]
+    },
+    {
+      "id": "wanun-mosiek",
+      "mapId": "wanun",
+      "locationSlug": "wanun",
+      "label": "Mosiek Isles",
+      "labelPos": [16, 28],
+      "polygon": [[10, 20], [24, 20], [24, 36], [10, 36]]
+    },
+    {
+      "id": "wanun-bestial",
+      "mapId": "wanun",
+      "locationSlug": "wanun",
+      "label": "The Bestial Wildlands",
+      "labelPos": [64, 50],
+      "polygon": [[55, 42], [75, 38], [82, 52], [78, 62], [60, 65], [52, 55]]
+    },
+    {
+      "id": "wanun-samarii",
+      "mapId": "wanun",
+      "locationSlug": "wanun",
+      "label": "Samarii",
+      "labelPos": [72, 68],
+      "polygon": [[62, 60], [80, 58], [84, 72], [78, 80], [62, 78]]
+    },
+    {
+      "id": "ekkorai-ekkorai",
+      "mapId": "ekkorai",
+      "locationSlug": "ekkorai",
+      "label": "Ekkorai / Ec'Kor'Al",
+      "labelPos": [65, 18],
+      "polygon": [[55, 8], [78, 5], [82, 15], [78, 28], [65, 32], [55, 25]]
+    },
+    {
+      "id": "ekkorai-ahanabai",
+      "mapId": "ekkorai",
+      "locationSlug": "ahanabai",
+      "label": "Ahanabai",
+      "labelPos": [68, 6],
+      "polygon": [[60, 2], [78, 1], [80, 10], [65, 12]]
+    },
+    {
+      "id": "ekkorai-fractured",
+      "mapId": "ekkorai",
+      "locationSlug": "fractured-expanse",
+      "label": "The Fractured Expanse",
+      "labelPos": [82, 32],
+      "polygon": [[75, 20], [95, 16], [98, 40], [92, 48], [78, 42]]
+    },
+    {
+      "id": "ekkorai-arolin",
+      "mapId": "ekkorai",
+      "locationSlug": "wanun",
+      "label": "Arolin Empire",
+      "labelPos": [35, 28],
+      "polygon": [[22, 18], [48, 15], [52, 32], [48, 42], [28, 45], [20, 35]]
+    },
+    {
+      "id": "ekkorai-bestial",
+      "mapId": "ekkorai",
+      "locationSlug": "wanun",
+      "label": "The Bestial Wildlands",
+      "labelPos": [58, 48],
+      "polygon": [[48, 38], [72, 32], [78, 48], [72, 60], [50, 62], [45, 50]]
+    },
+    {
+      "id": "ekkorai-samarii",
+      "mapId": "ekkorai",
+      "locationSlug": "wanun",
+      "label": "Samarii",
+      "labelPos": [62, 70],
+      "polygon": [[52, 60], [75, 58], [78, 75], [72, 82], [55, 82]]
+    },
+    {
+      "id": "khanae-rifthaven",
+      "mapId": "khanae",
+      "locationSlug": "rifthaven",
+      "label": "Rifthaven",
+      "labelPos": [48, 34],
+      "polygon": [[38, 26], [58, 24], [62, 38], [55, 44], [38, 44]]
+    },
+    {
+      "id": "khanae-dolorosa",
+      "mapId": "khanae",
+      "locationSlug": "khanae",
+      "label": "Dolorosa Mangroves",
+      "labelPos": [22, 12],
+      "polygon": [[10, 5], [35, 4], [38, 18], [12, 20]]
+    },
+    {
+      "id": "khanae-pearl-bay",
+      "mapId": "khanae",
+      "locationSlug": "khanae",
+      "label": "Pearl Bay",
+      "labelPos": [40, 20],
+      "polygon": [[32, 16], [52, 14], [55, 26], [35, 28]]
+    },
+    {
+      "id": "khanae-governance",
+      "mapId": "khanae",
+      "locationSlug": "khanae",
+      "label": "Governance Harbour",
+      "labelPos": [62, 10],
+      "polygon": [[52, 5], [75, 3], [78, 15], [55, 18]]
+    },
+    {
+      "id": "khanae-drakensuund",
+      "mapId": "khanae",
+      "locationSlug": "khanae",
+      "label": "Drakensuund",
+      "labelPos": [14, 52],
+      "polygon": [[4, 44], [22, 42], [25, 58], [8, 60]]
+    },
+    {
+      "id": "khanae-amayaltiik",
+      "mapId": "khanae",
+      "locationSlug": "khanae",
+      "label": "Amayaltiik",
+      "labelPos": [30, 58],
+      "polygon": [[20, 52], [42, 50], [45, 65], [25, 68]]
+    },
+    {
+      "id": "khanae-valors-throat",
+      "mapId": "khanae",
+      "locationSlug": "khanae",
+      "label": "Valor's Throat",
+      "labelPos": [55, 58],
+      "polygon": [[45, 52], [65, 50], [68, 62], [48, 65]]
+    }
+  ]
+}
