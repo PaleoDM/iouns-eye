@@ -1,24 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import WorldMap from '../components/map/WorldMap';
-import { getCollection } from 'astro:content';
-import { entryUrl } from '../lib/collections';
-import mapRegionsData from '../data/map-regions.json';
-import type { LocationInfo } from '../components/map/map-types';
-
-const allLocations = await getCollection('locations');
-
-const locations: Record<string, LocationInfo> = {};
-for (const loc of allLocations) {
-  locations[loc.id] = {
-    slug: loc.id,
-    name: loc.data.name,
-    locationType: loc.data.location_type,
-    continent: loc.data.continent,
-    region: loc.data.region,
-    href: entryUrl('locations', loc.id),
-  };
-}
 
 const baseUrl = import.meta.env.BASE_URL;
 ---
@@ -27,13 +9,11 @@ const baseUrl = import.meta.env.BASE_URL;
   <div data-pagefind-ignore>
     <h1 class="text-3xl font-serif text-accent mb-2">World Map</h1>
     <p class="text-text-secondary mb-6 max-w-2xl">
-      Explore the continents of Astoria. Hover over highlighted regions to see their names, click to view details, and navigate to codex entries. Scroll to zoom, drag to pan.
+      Explore the continents of Astoria. Scroll to zoom, drag to pan.
     </p>
 
     <WorldMap
       client:load
-      regions={mapRegionsData.regions}
-      locations={locations}
       baseUrl={baseUrl}
     />
   </div>
