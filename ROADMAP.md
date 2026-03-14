@@ -351,6 +351,30 @@ interface PCEntry {
 }
 ```
 
+### Content Entry: Chronicle (Player-Created Content)
+```typescript
+interface ChronicleEntry {
+  // Required
+  name: string;                    // "Hearth to Home"
+  author_player: string;           // Real player name: "Sam"
+  campaign: string;                // Campaign slug: "kalari"
+  chronicle_type: string;          // "narrative" | "recap" | "journal" | "letter" | "other"
+
+  // Optional
+  author_character?: string;       // PC slug if written in-character: "kip-vogels"
+  perspective: string;             // "in-character" | "out-of-character"
+  sessions_covered?: number[];     // [1, 2, 3] — session numbers this covers
+  pdf_file?: string;               // "hearth-to-home.pdf" — original document hosted in public/chronicles/
+  tags?: string[];
+  related?: string[];
+
+  // Body
+  // ## Summary (DM-written summary of the content for codex context)
+  // ## Notable Details (lore, NPCs, events referenced that may not appear in DM notes)
+  // Full text can be included in body or linked via pdf_file
+}
+```
+
 ### Structured Data: Calendar (JSON)
 ```typescript
 interface CalendarData {
@@ -608,7 +632,7 @@ interface DeityRecord {
    - Running NPC List
    - List of Wintar Sacrifices
    - Memories Recovered from Old Perile Falls Arch
-   - Hearth to Home player narrative
+   - **Player Content**: *Hearth to Home* by Kip Vogels (player narrative — see Chronicle extraction below)
    - Ice Boat Jousting Rules
    - Create campaign entry: `src/content/campaigns/kalari.md`
 
@@ -616,7 +640,7 @@ interface DeityRecord {
    - Campaign Recaps
    - Session Zero Topics
    - Factions of the North
-   - One Last Job player narrative
+   - **Player Content**: *One Last Job* by Maeve Willowspell (player narrative — see Chronicle extraction below)
    - Create campaign entry: `src/content/campaigns/skt.md`
 
 3. **DEFUNCT CAMPAIGNS** (failed to launch — minimal content, but worth preserving as timeline entries):
@@ -634,9 +658,20 @@ interface DeityRecord {
    - Major events (plot-critical moments)
    - Notable items
    - PCs (player characters)
-5. For **defunct** campaigns: create entries only for elements that were established and carry into the world canon
-6. Ensure cross-references between entries from different campaigns (e.g., a location from Ishetar OG that reappears in Ishetar 2.0)
-7. Run `npm run index` and verify build
+5. **Player-Created Content (Chronicles)**: Player-written documents require a different extraction approach:
+   - Create a `chronicle` entry for each player-written document (narrative, recap, journal, etc.)
+   - Extract entities from the player content just like DM content — NPCs, locations, events they reference
+   - **But**: player narratives are a primary source, not just metadata. Preserve the original document:
+     - Copy/convert the original to PDF if not already, place in `public/chronicles/`
+     - The chronicle entry links to the PDF and contains a DM-written summary + notable details
+   - Player content may contain details not in the DM's notes — these are canon and should become codex entries
+   - Known player documents:
+     - *Hearth to Home* by Kip Vogels (Kalari campaign — in-character narrative)
+     - *One Last Job* by Maeve Willowspell (SKT campaign — in-character narrative)
+     - Any additional player recaps or journals found during extraction
+6. For **defunct** campaigns: create entries only for elements that were established and carry into the world canon
+7. Ensure cross-references between entries from different campaigns (e.g., a location from Ishetar OG that reappears in Ishetar 2.0)
+8. Run `npm run index` and verify build
 
 **Files Created/Modified**:
 - `src/content/campaigns/*.md` — 5 campaign entries
@@ -646,6 +681,8 @@ interface DeityRecord {
 - `src/content/events/*.md` — Estimated 20-40 event entries
 - `src/content/items/*.md` — Estimated 15-25 item entries
 - `src/content/pcs/*.md` — Estimated 15-25 PC entries
+- `src/content/chronicles/*.md` — Chronicle entries for player-written content (at least 2: Hearth to Home, One Last Job)
+- `public/chronicles/*.pdf` — Original player documents preserved as PDFs
 - `INDEX.md` — Updated
 
 **Success Criteria**:
@@ -653,6 +690,8 @@ interface DeityRecord {
 - [ ] Every named NPC from completed campaign source material has a codex entry
 - [ ] Every significant location has an entry with correct parent/region hierarchy
 - [ ] Cross-campaign entities (locations, NPCs that appear in multiple campaigns) have unified entries with campaign_appearances noted
+- [ ] Player-written documents have chronicle entries with summaries and PDF links
+- [ ] Entities referenced in player content (but not in DM notes) have codex entries
 - [ ] All entries have valid frontmatter and build successfully
 - [ ] INDEX.md is current
 - [ ] `npm run build` succeeds

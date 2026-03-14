@@ -1,0 +1,10 @@
+---
+name: Khanae
+location_type: continent
+tags: [continent]
+related: [wanun, glennox]
+---
+
+## Description
+
+Khanae is one of the three known continents of Astoria. It is the setting for the Rifthaven campaigns.

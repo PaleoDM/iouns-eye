@@ -17,13 +17,13 @@ Ioun's Eye is a wiki-style website and knowledge management system for the D&D h
 | CI/CD | GitHub Actions | Auto-build and deploy on push to main |
 
 ## Current Phase
-Phase 0
+Phase 2
 
 ## Development Phases
 | Phase | Description | Status |
 |-------|-------------|--------|
-| 0 | Project scaffolding & configuration | Not Started |
-| 1 | Foundational lore extraction | Not Started |
+| 0 | Project scaffolding & configuration | Complete |
+| 1 | Foundational lore extraction | Complete |
 | 2 | Completed campaign extraction | Not Started |
 | 3 | Active campaign extraction | Not Started |
 | 4 | Website build — full wiki with search, browsing, cross-links | Not Started |
@@ -65,6 +65,7 @@ iouns-eye/
 │   │   ├── lore/
 │   │   ├── deities/
 │   │   ├── campaigns/
+│   │   ├── chronicles/       # Player-created content (narratives, journals, recaps)
 │   │   └── pcs/
 │   ├── content.config.ts     # Content collection schemas
 │   ├── components/           # Astro + React components
@@ -80,6 +81,7 @@ iouns-eye/
 │       └── deities.json
 ├── public/
 │   ├── maps/                 # World map images (exported from Illustrator)
+│   ├── chronicles/           # Player-written original documents (PDFs)
 │   ├── deity-symbols/        # Deity symbol PNGs
 │   └── deity-tokens/         # Deity token PNGs
 ├── INDEX.md                  # Master index for Claude Code lookups
@@ -121,7 +123,7 @@ iouns-eye/
 ## Data Patterns
 
 ### Entry Type Slugs
-`npc` | `location` | `faction` | `event` | `item` | `lore` | `deity` | `campaign` | `pc`
+`npc` | `location` | `faction` | `event` | `item` | `lore` | `deity` | `campaign` | `pc` | `chronicle`
 
 ### Campaign Identifiers
 `ishetar-og` | `head-hunters` | `kalari` | `skt` | `rifthaven-irl` | `ishetar-2` | `rifthaven-online`

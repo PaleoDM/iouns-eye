@@ -19,7 +19,7 @@
     { "name": "Bane", "title": "The Strife Emperor", "slug": "bane", "domains": ["Conquest", "Tyranny"], "symbol_file": "strife-emperor.png", "token_file": "strife-emperor.png" },
     { "name": "Gruumsh", "title": "The Ruiner", "slug": "gruumsh", "domains": ["Slaughter", "Warfare"], "symbol_file": "ruiner.png", "token_file": "ruiner.png", "progenitor_of": "Orcs" },
     { "name": "Kurtulmak", "title": "The Hoarder", "slug": "kurtulmak", "domains": ["Greed", "Hoards", "Treasure"], "progenitor_of": "Kobolds" },
-    { "name": "Lolth", "title": "The Spider Queen", "slug": "lolth", "domains": ["Deceit", "Spiders"], "symbol_file": "spider-queen.png", "token_file": "spider-queen.png" },
+    { "name": "Lolth", "title": "The Spider Queen", "slug": "lolth", "domains": ["Deceit", "Spiders"], "symbol_file": "spider-queen.png", "token_file": "spider-queen.png", "progenitor_of": "Drow" },
     { "name": "Maglubiyet", "title": "The Conqueror", "slug": "maglubiyet", "domains": ["Union Against Enemies"], "progenitor_of": "Goblinoids" },
     { "name": "Tharizdun", "title": "The Chained Oblivion", "slug": "tharizdun", "domains": ["Darkness", "Destruction"], "symbol_file": "chained-oblivion.png", "token_file": "chained-oblivion.png" },
     { "name": "Tiamat", "title": "The Scaled Tyrant", "slug": "tiamat", "domains": ["Power", "Subjugation"], "symbol_file": "scaled-tyrant.png", "token_file": "scaled-tyrant.png", "progenitor_of": "Chromatic Dragons" },
@@ -27,16 +27,16 @@
     { "name": "Vecna", "title": "The Whispered One", "slug": "vecna", "domains": ["Necromancy", "Dark Arcane Arts"], "symbol_file": "whispered-one.png", "token_file": "whispered-one.png" },
     { "name": "Zehir", "title": "The Cloaked Serpent", "slug": "zehir", "domains": ["Assassins", "Poisons", "Snakes"], "symbol_file": "cloaked-serpent.png", "token_file": "cloaked-serpent.png" },
     { "name": "Nixaris", "title": "The Dismantler", "slug": "nixaris", "domains": ["Chaos", "Confusion"] },
-    { "name": "Pelferion", "title": "The Gilded Overlord", "slug": "pelferion", "domains": ["Wealth", "Oppression"] }
+    { "name": "Pelferion", "title": "The Gilded Overlord", "slug": "pelferion", "domains": ["Wealth", "Oppression of the Masses"] }
   ],
   "devil_lords": [
     { "name": "Asmodeus", "title": "Lord of the Nine Hells", "slug": "asmodeus", "domains": ["Strategy", "Charisma", "Pure Evil"], "symbol_file": "lord-of-hells.png", "token_file": "lord-of-hells.png", "hell_layer": 9, "hell_name": "Nessus" },
-    { "name": "Mephistopheles", "title": "Keeper of Souls", "slug": "mephistopheles", "domains": ["Souls", "Lore"], "hell_layer": 8, "hell_name": "Cania" },
-    { "name": "Baalzebul", "title": "Lord of Lies", "slug": "baalzebul", "domains": ["Bureaucracy", "Record Keeping"], "hell_layer": 7, "hell_name": "Maladomini" },
+    { "name": "Mephistopheles", "title": "Keeper of Souls", "slug": "mephistopheles", "domains": ["Souls", "Glacial Palace", "Lore"], "hell_layer": 8, "hell_name": "Cania" },
+    { "name": "Baalzebul", "title": "Lord of Lies", "slug": "baalzebul", "domains": ["Bureaucracy", "Record Keeping", "Maze of Information"], "hell_layer": 7, "hell_name": "Maladomini" },
     { "name": "Glasya", "title": "Princess of the Hells", "slug": "glasya", "domains": ["Imprisonment", "Torture"], "hell_layer": 6, "hell_name": "Malbolge" },
     { "name": "Levistus", "title": "The Frozen Prince", "slug": "levistus", "domains": ["Frigid Waste"], "hell_layer": 5, "hell_name": "Stygia" },
-    { "name": "Fierna", "title": "Lady of Phlegethos", "slug": "fierna", "domains": ["Manipulation", "Cunning", "Justice"], "hell_layer": 4, "hell_name": "Phlegethos" },
-    { "name": "Mammon", "title": "Lord of Avarice", "slug": "mammon", "domains": ["Greed", "Commerce"], "hell_layer": 3, "hell_name": "Minauros" },
+    { "name": "Fierna & Belial", "title": "Lady of Phlegethos", "slug": "fierna", "domains": ["Manipulation", "Cunning Trickery", "Justice"], "hell_layer": 4, "hell_name": "Phlegethos" },
+    { "name": "Mammon", "title": "Lord of Avarice", "slug": "mammon", "domains": ["Greed", "Commerce", "Financer of Ruin"], "hell_layer": 3, "hell_name": "Minauros" },
     { "name": "Dispater", "title": "Lord of Dis", "slug": "dispater", "domains": ["Arms", "Engineering", "Creation"], "hell_layer": 2, "hell_name": "Dis" },
     { "name": "Zariel", "title": "Archduke of Avernus", "slug": "zariel", "domains": ["Cruelty", "Combat", "Ruin"], "hell_layer": 1, "hell_name": "Avernus" }
   ],
