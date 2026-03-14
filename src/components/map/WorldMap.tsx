@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useRef } from 'react';
-import type { MapRegion, MapDef, LocationInfo } from './map-types';
+import type { MapRegion, LocationInfo } from './map-types';
 import { MAPS } from './map-types';
 import { MapOverlay } from './MapOverlay';
 import { MapTooltip } from './MapTooltip';
@@ -171,11 +171,11 @@ export default function WorldMap({ regions, locations, baseUrl }: WorldMapProps)
     : null;
 
   return (
-    <div className="flex flex-col gap-4 lg:flex-row lg:gap-6">
-      {/* Map Viewer */}
-      <div className="flex-1 min-w-0">
+    <div className="relative">
+      {/* Controls Bar */}
+      <div className="mb-3 flex flex-wrap items-center gap-4">
         {/* Map Selector Tabs */}
-        <div className="mb-3 flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2">
           {MAPS.map((m) => (
             <button
               key={m.id}
@@ -199,7 +199,7 @@ export default function WorldMap({ regions, locations, baseUrl }: WorldMapProps)
         </div>
 
         {/* Zoom Controls */}
-        <div className="mb-2 flex items-center gap-2 text-sm text-text-secondary">
+        <div className="flex items-center gap-2 text-sm text-text-secondary">
           <button
             onClick={() => {
               const z = Math.max(MIN_ZOOM, zoom - ZOOM_STEP);
@@ -233,33 +233,46 @@ export default function WorldMap({ regions, locations, baseUrl }: WorldMapProps)
             Scroll to zoom, drag to pan
           </span>
         </div>
+      </div>
 
-        {/* Map Container */}
+      {/* Map Container — fills most of the viewport */}
+      <div
+        ref={containerRef}
+        className="relative overflow-hidden rounded-lg border border-border bg-black"
+        style={{
+          height: '80vh',
+          cursor: isPanning ? 'grabbing' : zoom > 1 ? 'grab' : 'default',
+        }}
+        onWheel={handleWheel}
+        onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+        onMouseLeave={handleMouseUp}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
         <div
-          ref={containerRef}
-          className="relative overflow-hidden rounded-lg border border-border bg-surface"
-          style={{ cursor: isPanning ? 'grabbing' : zoom > 1 ? 'grab' : 'default' }}
-          onWheel={handleWheel}
-          onMouseDown={handleMouseDown}
-          onMouseMove={handleMouseMove}
-          onMouseUp={handleMouseUp}
-          onMouseLeave={handleMouseUp}
-          onTouchStart={handleTouchStart}
-          onTouchMove={handleTouchMove}
-          onTouchEnd={handleTouchEnd}
+          className="relative flex h-full w-full items-center justify-center"
+          style={{
+            transform: `scale(${zoom}) translate(${pan.x / zoom}%, ${pan.y / zoom}%)`,
+            transformOrigin: 'center center',
+            transition: isPanning ? 'none' : 'transform 0.15s ease-out',
+          }}
         >
+          {/* Image wrapper — maintains aspect ratio for overlay alignment */}
           <div
             className="relative"
             style={{
-              transform: `scale(${zoom}) translate(${pan.x / zoom}%, ${pan.y / zoom}%)`,
-              transformOrigin: 'center center',
-              transition: isPanning ? 'none' : 'transform 0.15s ease-out',
+              width: '100%',
+              maxHeight: '80vh',
+              aspectRatio: `${activeMap.width} / ${activeMap.height}`,
             }}
           >
             <img
               src={`${baseUrl}maps/${activeMap.imageFile}`}
               alt={`Map of ${activeMap.label}`}
-              className="block w-full select-none"
+              className="block h-full w-full select-none object-contain"
               draggable={false}
             />
             <MapOverlay
@@ -274,14 +287,17 @@ export default function WorldMap({ regions, locations, baseUrl }: WorldMapProps)
         </div>
       </div>
 
-      {/* Detail Sidebar */}
-      <div className="w-full shrink-0 lg:w-72">
-        <div className="rounded-lg border border-border bg-surface p-4">
-          <h2 className="mb-3 font-serif text-lg text-accent">
-            {activeMap.label}
-          </h2>
-
-          {selectedRegion && selectedLocation ? (
+      {/* Floating Detail Panel */}
+      {selectedRegion && (
+        <div className="absolute right-4 top-16 z-10 w-64 rounded-lg border border-border bg-surface/95 p-4 shadow-lg backdrop-blur-sm">
+          <button
+            onClick={() => setSelectedRegionId(null)}
+            className="absolute right-2 top-2 text-text-muted hover:text-text-primary"
+            aria-label="Close"
+          >
+            &times;
+          </button>
+          {selectedLocation ? (
             <div>
               <h3 className="font-serif text-base font-semibold text-text-primary">
                 {selectedRegion.label}
@@ -297,7 +313,7 @@ export default function WorldMap({ regions, locations, baseUrl }: WorldMapProps)
                 View Codex Entry
               </button>
             </div>
-          ) : selectedRegion ? (
+          ) : (
             <div>
               <h3 className="font-serif text-base font-semibold text-text-primary">
                 {selectedRegion.label}
@@ -306,31 +322,32 @@ export default function WorldMap({ regions, locations, baseUrl }: WorldMapProps)
                 No codex entry yet
               </p>
             </div>
-          ) : (
-            <div>
-              <p className="text-sm text-text-secondary">
-                Hover over a region to see its name. Click to select and view details.
-              </p>
-              <div className="mt-4">
-                <h4 className="mb-2 text-xs font-semibold uppercase tracking-wider text-text-muted">
-                  Regions
-                </h4>
-                <ul className="space-y-1">
-                  {activeRegions.map((r) => (
-                    <li key={r.id}>
-                      <button
-                        onClick={() => setSelectedRegionId(r.id)}
-                        className="text-left text-sm text-text-secondary hover:text-accent transition-colors"
-                      >
-                        {r.label}
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
           )}
         </div>
+      )}
+
+      {/* Region List (collapsed below map) */}
+      <div className="mt-3">
+        <details className="rounded-lg border border-border bg-surface">
+          <summary className="cursor-pointer px-4 py-2 text-sm font-medium text-text-secondary hover:text-text-primary">
+            {activeMap.label} Regions ({activeRegions.length})
+          </summary>
+          <div className="flex flex-wrap gap-2 px-4 pb-3 pt-1">
+            {activeRegions.map((r) => (
+              <button
+                key={r.id}
+                onClick={() => setSelectedRegionId(r.id === selectedRegionId ? null : r.id)}
+                className={`rounded px-3 py-1 text-sm transition-colors ${
+                  r.id === selectedRegionId
+                    ? 'bg-accent text-bg'
+                    : 'border border-border text-text-secondary hover:text-accent'
+                }`}
+              >
+                {r.label}
+              </button>
+            ))}
+          </div>
+        </details>
       </div>
 
       {/* Tooltip */}

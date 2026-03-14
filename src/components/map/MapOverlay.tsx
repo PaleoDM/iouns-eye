@@ -39,16 +39,16 @@ export function MapOverlay({
                 ? 'rgba(217, 175, 103, 0.35)'
                 : isHovered
                   ? 'rgba(217, 175, 103, 0.2)'
-                  : 'transparent'
+                  : 'rgba(217, 175, 103, 0.05)'
             }
             stroke={
               isSelected
                 ? 'rgba(217, 175, 103, 0.8)'
                 : isHovered
                   ? 'rgba(217, 175, 103, 0.5)'
-                  : 'transparent'
+                  : 'rgba(217, 175, 103, 0.15)'
             }
-            strokeWidth={isSelected ? 0.4 : 0.3}
+            strokeWidth={isSelected ? 0.4 : 0.2}
             style={{ pointerEvents: 'all', cursor: 'pointer' }}
             onMouseEnter={() => onRegionEnter(region.id)}
             onMouseLeave={onRegionLeave}
