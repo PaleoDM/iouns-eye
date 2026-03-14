@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://www.peredocm.com',
-  base: '/iouns-eye',
+  base: '/iouns-eye/',
   output: 'static',
   integrations: [react()],
   vite: {
