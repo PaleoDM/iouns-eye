@@ -1,0 +1,59 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AstorianCalendar from '../components/calendar/AstorianCalendar';
+import { getCollection } from 'astro:content';
+import { entryUrl } from '../lib/collections';
+import calendarData from '../data/calendar.json';
+import { parseAstoranDate } from '../components/calendar/calendar-utils';
+
+// Query all events and parse their dates
+const allEvents = await getCollection('events');
+
+const calendarEvents = allEvents.map((event) => {
+  let day: number | undefined;
+  let monthNumber: number | undefined;
+
+  if (event.data.date) {
+    const dateStr = typeof event.data.date === 'string' ? event.data.date : String(event.data.date);
+    const parsed = parseAstoranDate(dateStr);
+    if (parsed) {
+      day = parsed.day;
+      monthNumber = parsed.monthNumber;
+    }
+  }
+
+  return {
+    slug: event.id,
+    name: event.data.name,
+    day,
+    monthNumber,
+    year: event.data.year ?? 0,
+    significance: event.data.significance ?? 'minor',
+    url: entryUrl('events', event.id),
+  };
+}).filter((e) => e.year > 0);
+
+// Collect unique years that have events, sorted descending
+const availableYears = [...new Set(calendarEvents.map((e) => e.year))].sort((a, b) => b - a);
+const defaultYear = availableYears.includes(1136) ? 1136 : availableYears[0] ?? 1136;
+
+const baseUrl = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="Calendar" description="The Astorian calendar — 14 months, 392 days, tracked by the Celestial Braid">
+  <div data-pagefind-ignore>
+    <h1 class="text-3xl font-serif text-accent mb-2">The Astorian Calendar</h1>
+    <p class="text-text-secondary mb-6 max-w-2xl">
+      Astoria measures time in 14 months of 28 days each — 392 days per year. Each month is named for a deity of the Prime pantheon. Three moons — Warp, Weft, and Cross — form the Celestial Braid, driving the King Tides and Fool Tides that shape coastal life.
+    </p>
+
+    <AstorianCalendar
+      client:load
+      calendarData={calendarData}
+      events={calendarEvents}
+      availableYears={availableYears}
+      defaultYear={defaultYear}
+      baseUrl={baseUrl}
+    />
+  </div>
+</BaseLayout>
