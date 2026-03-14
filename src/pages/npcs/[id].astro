@@ -1,0 +1,45 @@
+---
+import { getCollection, render } from 'astro:content';
+import EntryLayout from '../../layouts/EntryLayout.astro';
+import MetadataSidebar from '../../components/ui/MetadataSidebar.astro';
+import { entryUrl } from '../../lib/collections';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('npcs');
+  const sorted = [...entries].sort((a, b) => a.data.name.localeCompare(b.data.name));
+  return sorted.map((entry, i) => ({
+    params: { id: entry.id },
+    props: {
+      entry,
+      prevEntry: i > 0 ? { name: sorted[i - 1].data.name, href: entryUrl('npcs', sorted[i - 1].id) } : null,
+      nextEntry: i < sorted.length - 1 ? { name: sorted[i + 1].data.name, href: entryUrl('npcs', sorted[i + 1].id) } : null,
+    },
+  }));
+}
+
+const { entry, prevEntry, nextEntry } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+---
+
+<EntryLayout
+  title={d.name}
+  collection="npcs"
+  related={d.related}
+  prevEntry={prevEntry}
+  nextEntry={nextEntry}
+>
+  <MetadataSidebar slot="sidebar" fields={[
+    { label: 'Status', value: d.status, type: 'status' },
+    { label: 'Title', value: d.title },
+    { label: 'Race', value: d.race },
+    { label: 'Class', value: d.class },
+    { label: 'Faction', value: d.faction, type: 'slug' },
+    { label: 'Location', value: d.location, type: 'slug' },
+    { label: 'First Appearance', value: d.first_appearance },
+    { label: 'Campaigns', value: d.campaigns, type: 'campaigns' },
+    { label: 'Tags', value: d.tags, type: 'tags' },
+  ]} />
+
+  <Content slot="content" />
+</EntryLayout>

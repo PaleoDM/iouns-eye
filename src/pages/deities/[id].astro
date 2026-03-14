@@ -1,0 +1,64 @@
+---
+import { getCollection, render } from 'astro:content';
+import EntryLayout from '../../layouts/EntryLayout.astro';
+import MetadataSidebar from '../../components/ui/MetadataSidebar.astro';
+import { entryUrl } from '../../lib/collections';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('deities');
+  const sorted = [...entries].sort((a, b) => a.data.name.localeCompare(b.data.name));
+  return sorted.map((entry, i) => ({
+    params: { id: entry.id },
+    props: {
+      entry,
+      prevEntry: i > 0 ? { name: sorted[i - 1].data.name, href: entryUrl('deities', sorted[i - 1].id) } : null,
+      nextEntry: i < sorted.length - 1 ? { name: sorted[i + 1].data.name, href: entryUrl('deities', sorted[i + 1].id) } : null,
+    },
+  }));
+}
+
+const { entry, prevEntry, nextEntry } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+
+const categoryLabels: Record<string, string> = {
+  prime: 'Prime Deity',
+  corrupted: 'Corrupted God',
+  devil_lord: 'Devil Lord',
+  demon_prince: 'Demon Prince',
+  yugoloth: 'Yugoloth',
+};
+
+const baseUrl = import.meta.env.BASE_URL;
+---
+
+<EntryLayout
+  title={d.name}
+  collection="deities"
+  related={d.related}
+  prevEntry={prevEntry}
+  nextEntry={nextEntry}
+>
+  <Fragment slot="sidebar">
+    {d.symbol_file && (
+      <div class="mb-4 flex justify-center">
+        <img src={`${baseUrl}deity-symbols/${d.symbol_file}`} alt={`Symbol of ${d.name}`} class="h-16 w-auto opacity-80" />
+      </div>
+    )}
+    <MetadataSidebar fields={[
+      { label: 'Title', value: d.title },
+      { label: 'Category', value: categoryLabels[d.category] ?? d.category, type: 'badge' },
+      { label: 'Domains', value: d.domains, type: 'tags' },
+      { label: 'Month', value: d.month ? `${d.month} of 14` : undefined },
+      { label: 'Holy Day', value: d.holy_day },
+      { label: 'Holy Day Date', value: d.holy_day_date },
+      { label: 'Alignment', value: d.alignment },
+      { label: 'Progenitor Of', value: d.progenitor_of },
+      { label: 'Hell Layer', value: d.hell_layer ? `${d.hell_layer}th` : undefined },
+      { label: 'Hell Name', value: d.hell_name },
+      { label: 'Tags', value: d.tags, type: 'tags' },
+    ]} />
+  </Fragment>
+
+  <Content slot="content" />
+</EntryLayout>

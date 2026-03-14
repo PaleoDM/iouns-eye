@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && npx pagefind --site dist",
     "preview": "astro preview",
     "index": "npx tsx scripts/generate-index.ts",
     "astro": "astro"
@@ -23,6 +23,7 @@
     "tailwindcss": "^4.2.1"
   },
   "devDependencies": {
+    "pagefind": "^1.4.0",
     "tsx": "^4.21.0"
   }
 }

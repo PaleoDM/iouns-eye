@@ -17,7 +17,7 @@ Ioun's Eye is a wiki-style website and knowledge management system for the D&D h
 | CI/CD | GitHub Actions | Auto-build and deploy on push to main |
 
 ## Current Phase
-Phase 4
+Phase 5
 
 ## Development Phases
 | Phase | Description | Status |
@@ -26,7 +26,7 @@ Phase 4
 | 1 | Foundational lore extraction | Complete |
 | 2 | Completed campaign extraction | Complete |
 | 3 | Active campaign extraction | Complete |
-| 4 | Website build — full wiki with search, browsing, cross-links | Not Started |
+| 4 | Website build — full wiki with search, browsing, cross-links | Complete |
 | 5 | Interactive calendar component | Not Started |
 | 6 | Map integration with clickable regions | Not Started |
 | 7 | `/codex` Claude Code skill | Not Started |

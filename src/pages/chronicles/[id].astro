@@ -1,0 +1,55 @@
+---
+import { getCollection, render } from 'astro:content';
+import EntryLayout from '../../layouts/EntryLayout.astro';
+import MetadataSidebar from '../../components/ui/MetadataSidebar.astro';
+import { entryUrl } from '../../lib/collections';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('chronicles');
+  const sorted = [...entries].sort((a, b) => a.data.name.localeCompare(b.data.name));
+  return sorted.map((entry, i) => ({
+    params: { id: entry.id },
+    props: {
+      entry,
+      prevEntry: i > 0 ? { name: sorted[i - 1].data.name, href: entryUrl('chronicles', sorted[i - 1].id) } : null,
+      nextEntry: i < sorted.length - 1 ? { name: sorted[i + 1].data.name, href: entryUrl('chronicles', sorted[i + 1].id) } : null,
+    },
+  }));
+}
+
+const { entry, prevEntry, nextEntry } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+const baseUrl = import.meta.env.BASE_URL;
+---
+
+<EntryLayout
+  title={d.name}
+  collection="chronicles"
+  related={d.related}
+  prevEntry={prevEntry}
+  nextEntry={nextEntry}
+>
+  <Fragment slot="sidebar">
+    <MetadataSidebar fields={[
+      { label: 'Type', value: d.chronicle_type, type: 'badge' },
+      { label: 'Author', value: d.author_player },
+      { label: 'Character', value: d.author_character },
+      { label: 'Perspective', value: d.perspective, type: 'badge' },
+      { label: 'Campaign', value: [d.campaign], type: 'campaigns' },
+      { label: 'Tags', value: d.tags, type: 'tags' },
+    ]} />
+    {d.pdf_file && (
+      <a
+        href={`${baseUrl}chronicles/${d.pdf_file}`}
+        class="mt-4 block text-center text-sm px-4 py-2 bg-accent/20 text-accent rounded-lg hover:bg-accent/30 transition-colors"
+        target="_blank"
+        rel="noopener"
+      >
+        Download PDF
+      </a>
+    )}
+  </Fragment>
+
+  <Content slot="content" />
+</EntryLayout>

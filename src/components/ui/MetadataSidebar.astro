@@ -1,0 +1,77 @@
+---
+import { resolveSlug, CAMPAIGN_LABELS, entryUrl } from '../../lib/collections';
+import StatusBadge from './StatusBadge.astro';
+
+interface MetaField {
+  label: string;
+  value: string | string[] | number | boolean | undefined;
+  type?: 'text' | 'status' | 'slug' | 'campaigns' | 'tags' | 'badge';
+}
+
+interface Props {
+  fields: MetaField[];
+}
+
+const { fields } = Astro.props;
+
+// Pre-resolve all slug fields
+interface ResolvedField {
+  label: string;
+  type: string;
+  value: any;
+  resolvedSlug?: { name: string; href: string } | null;
+}
+
+const resolvedFields: ResolvedField[] = [];
+for (const field of fields) {
+  if (!field.value && field.value !== 0 && field.value !== false) continue;
+
+  const rf: ResolvedField = { label: field.label, type: field.type ?? 'text', value: field.value };
+
+  if (field.type === 'slug' && typeof field.value === 'string') {
+    const r = await resolveSlug(field.value);
+    rf.resolvedSlug = r ? { name: r.name, href: r.href } : null;
+  }
+
+  resolvedFields.push(rf);
+}
+---
+
+<dl class="space-y-3">
+  {resolvedFields.map((field) => (
+    <div>
+      <dt class="text-xs text-text-secondary uppercase tracking-wider">{field.label}</dt>
+      <dd class="mt-0.5">
+        {field.type === 'status' ? (
+          <StatusBadge status={String(field.value)} />
+        ) : field.type === 'slug' ? (
+          field.resolvedSlug ? (
+            <a href={field.resolvedSlug.href} class="text-accent hover:text-accent-hover transition-colors">{field.resolvedSlug.name}</a>
+          ) : (
+            <span class="text-text-primary">{field.value}</span>
+          )
+        ) : field.type === 'campaigns' && Array.isArray(field.value) ? (
+          <div class="flex flex-wrap gap-1.5">
+            {(field.value as string[]).map((c: string) => (
+              <a href={entryUrl('campaigns', c)} class="text-xs px-2 py-0.5 rounded-full bg-accent/20 text-accent hover:bg-accent/30 transition-colors">
+                {CAMPAIGN_LABELS[c] ?? c}
+              </a>
+            ))}
+          </div>
+        ) : field.type === 'tags' && Array.isArray(field.value) ? (
+          <div class="flex flex-wrap gap-1.5">
+            {(field.value as string[]).map((tag: string) => (
+              <span class="text-xs px-2 py-0.5 rounded-full bg-border/50 text-text-secondary">{tag}</span>
+            ))}
+          </div>
+        ) : field.type === 'badge' ? (
+          <span class="text-xs px-2 py-0.5 rounded-full bg-border/50 text-text-secondary capitalize">{String(field.value)}</span>
+        ) : typeof field.value === 'boolean' ? (
+          <span class="text-text-primary">{field.value ? 'Yes' : 'No'}</span>
+        ) : (
+          <span class="text-text-primary">{String(field.value)}</span>
+        )}
+      </dd>
+    </div>
+  ))}
+</dl>

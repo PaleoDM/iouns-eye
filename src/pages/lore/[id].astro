@@ -1,0 +1,39 @@
+---
+import { getCollection, render } from 'astro:content';
+import EntryLayout from '../../layouts/EntryLayout.astro';
+import MetadataSidebar from '../../components/ui/MetadataSidebar.astro';
+import { entryUrl } from '../../lib/collections';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('lore');
+  const sorted = [...entries].sort((a, b) => a.data.name.localeCompare(b.data.name));
+  return sorted.map((entry, i) => ({
+    params: { id: entry.id },
+    props: {
+      entry,
+      prevEntry: i > 0 ? { name: sorted[i - 1].data.name, href: entryUrl('lore', sorted[i - 1].id) } : null,
+      nextEntry: i < sorted.length - 1 ? { name: sorted[i + 1].data.name, href: entryUrl('lore', sorted[i + 1].id) } : null,
+    },
+  }));
+}
+
+const { entry, prevEntry, nextEntry } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+---
+
+<EntryLayout
+  title={d.name}
+  collection="lore"
+  related={d.related}
+  prevEntry={prevEntry}
+  nextEntry={nextEntry}
+>
+  <MetadataSidebar slot="sidebar" fields={[
+    { label: 'Type', value: d.lore_type, type: 'badge' },
+    { label: 'Campaigns', value: d.campaigns, type: 'campaigns' },
+    { label: 'Tags', value: d.tags, type: 'tags' },
+  ]} />
+
+  <Content slot="content" />
+</EntryLayout>

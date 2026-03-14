@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/ui/Breadcrumbs.astro';
+import EntryCard from '../../components/ui/EntryCard.astro';
+import { getCollection } from 'astro:content';
+import { entryUrl } from '../../lib/collections';
+
+const entries = await getCollection('lore');
+const sorted = [...entries].sort((a, b) => a.data.name.localeCompare(b.data.name));
+const baseUrl = import.meta.env.BASE_URL;
+
+const allTypes = [...new Set(entries.map((e) => e.data.lore_type))].sort();
+---
+
+<BaseLayout title="Lore">
+  <Breadcrumbs items={[{ label: 'Home', href: baseUrl }, { label: 'Lore' }]} />
+
+  <div class="flex items-baseline justify-between mb-6">
+    <h1 class="text-3xl font-serif text-accent">Lore</h1>
+    <span class="text-text-secondary text-sm">{entries.length} entries</span>
+  </div>
+
+  <div class="flex flex-wrap gap-3 mb-6">
+    <select id="filter-type" class="bg-surface border border-border rounded-lg px-3 py-1.5 text-sm text-text-primary">
+      <option value="">All Types</option>
+      {allTypes.map((t) => <option value={t} class="capitalize">{t}</option>)}
+    </select>
+    <input id="filter-name" type="text" placeholder="Search by name..." class="bg-surface border border-border rounded-lg px-3 py-1.5 text-sm text-text-primary flex-1 min-w-[160px]" />
+  </div>
+
+  <div id="entries-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+    {sorted.map((entry) => (
+      <EntryCard
+        href={entryUrl('lore', entry.id)}
+        name={entry.data.name}
+        badges={[{ label: entry.data.lore_type }]}
+        data-type={entry.data.lore_type}
+        data-name={entry.data.name.toLowerCase()}
+      />
+    ))}
+  </div>
+
+  <p id="no-results" class="text-text-secondary text-center py-8 hidden">No matching entries found.</p>
+</BaseLayout>
+
+<script is:inline>
+  const grid = document.getElementById('entries-grid');
+  const noResults = document.getElementById('no-results');
+  const filterType = document.getElementById('filter-type');
+  const filterName = document.getElementById('filter-name');
+
+  function applyFilters() {
+    const type = filterType.value;
+    const name = filterName.value.toLowerCase();
+    let visible = 0;
+
+    grid.querySelectorAll('.entry-card').forEach((card) => {
+      const show =
+        (!type || card.getAttribute('data-type') === type) &&
+        (!name || (card.getAttribute('data-name') || '').includes(name));
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+
+    noResults.classList.toggle('hidden', visible > 0);
+  }
+
+  filterType.addEventListener('change', applyFilters);
+  filterName.addEventListener('input', applyFilters);
+</script>

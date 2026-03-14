@@ -1,0 +1,36 @@
+---
+interface Props {
+  href: string;
+  name: string;
+  subtitle?: string;
+  description?: string;
+  badges?: Array<{ label: string; color?: string }>;
+  'data-campaigns'?: string;
+  'data-status'?: string;
+  'data-type'?: string;
+  'data-name'?: string;
+}
+
+const { href, name, subtitle, description, badges = [], ...dataAttrs } = Astro.props;
+---
+
+<a
+  href={href}
+  class="entry-card block bg-surface border border-border rounded-lg p-4 hover:bg-surface-hover hover:border-accent/50 transition-colors"
+  {...dataAttrs}
+>
+  <h3 class="font-serif text-text-primary text-lg leading-tight">{name}</h3>
+  {subtitle && <p class="text-text-secondary text-sm mt-1">{subtitle}</p>}
+  {badges.length > 0 && (
+    <div class="flex flex-wrap gap-1.5 mt-2">
+      {badges.map((badge) => (
+        <span class={`text-xs px-2 py-0.5 rounded-full ${badge.color ?? 'bg-border/50 text-text-secondary'}`}>
+          {badge.label}
+        </span>
+      ))}
+    </div>
+  )}
+  {description && (
+    <p class="text-text-secondary text-sm mt-2 line-clamp-2">{description}</p>
+  )}
+</a>

@@ -18,16 +18,37 @@ const baseUrl = import.meta.env.BASE_URL;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <title>{title} | Ioun's Eye</title>
+    <link href={`${baseUrl}_pagefind/pagefind-ui.css`} rel="stylesheet" />
   </head>
   <body class="bg-bg text-text-primary min-h-screen">
-    <header class="fixed top-0 left-0 right-0 h-16 bg-surface border-b border-border z-50 flex items-center px-6">
-      <a href={baseUrl} class="text-xl font-serif text-accent hover:text-accent-hover transition-colors">
-        Ioun's Eye
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 h-16 bg-surface border-b border-border z-50 flex items-center px-4 lg:px-6 gap-3" data-pagefind-ignore>
+      <!-- Mobile hamburger -->
+      <button id="menu-toggle" class="lg:hidden p-2 text-text-secondary hover:text-text-primary transition-colors" aria-label="Toggle navigation">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <!-- Logo + Title -->
+      <a href={baseUrl} class="flex items-center gap-2 shrink-0">
+        <img src={`${baseUrl}logo.png`} alt="Ioun's Eye" class="h-8 w-auto" />
+        <span class="text-xl font-serif text-accent hover:text-accent-hover transition-colors hidden sm:inline">Ioun's Eye</span>
       </a>
-      <span class="ml-3 text-text-secondary text-sm hidden sm:inline">World Codex of Astoria</span>
+
+      <span class="text-text-secondary text-sm hidden md:inline">World Codex of Astoria</span>
+
+      <!-- Search -->
+      <div class="ml-auto w-64 lg:w-80">
+        <div id="search" class="pagefind-search"></div>
+      </div>
     </header>
 
-    <nav class="fixed top-16 left-0 w-64 bottom-0 bg-surface border-r border-border p-4 overflow-y-auto hidden lg:block">
+    <!-- Mobile overlay -->
+    <div id="sidebar-overlay" class="fixed inset-0 bg-black/50 z-40 hidden lg:hidden"></div>
+
+    <!-- Sidebar -->
+    <nav id="sidebar" class="fixed top-16 left-0 w-64 bottom-0 bg-surface border-r border-border p-4 overflow-y-auto z-40 -translate-x-full lg:translate-x-0 transition-transform duration-200" data-pagefind-ignore>
       <ul class="space-y-1">
         <li><a href={baseUrl} class="block px-3 py-2 rounded hover:bg-surface-hover text-text-secondary hover:text-text-primary transition-colors">Home</a></li>
         <li class="pt-3 pb-1 px-3 text-xs uppercase tracking-wider text-text-secondary font-semibold">World</li>
@@ -41,16 +62,62 @@ const baseUrl = import.meta.env.BASE_URL;
         <li class="pt-3 pb-1 px-3 text-xs uppercase tracking-wider text-text-secondary font-semibold">Campaigns</li>
         <li><a href={`${baseUrl}campaigns/`} class="block px-3 py-2 rounded hover:bg-surface-hover text-text-secondary hover:text-text-primary transition-colors">All Campaigns</a></li>
         <li><a href={`${baseUrl}pcs/`} class="block px-3 py-2 rounded hover:bg-surface-hover text-text-secondary hover:text-text-primary transition-colors">Player Characters</a></li>
-        <li class="pt-3 pb-1 px-3 text-xs uppercase tracking-wider text-text-secondary font-semibold">Tools</li>
-        <li><a href={`${baseUrl}calendar/`} class="block px-3 py-2 rounded hover:bg-surface-hover text-text-secondary hover:text-text-primary transition-colors">Calendar</a></li>
-        <li><a href={`${baseUrl}map/`} class="block px-3 py-2 rounded hover:bg-surface-hover text-text-secondary hover:text-text-primary transition-colors">World Map</a></li>
+        <li><a href={`${baseUrl}chronicles/`} class="block px-3 py-2 rounded hover:bg-surface-hover text-text-secondary hover:text-text-primary transition-colors">Chronicles</a></li>
       </ul>
     </nav>
 
-    <main class="pt-16 lg:pl-64">
-      <div class="max-w-4xl mx-auto p-6 lg:p-10">
+    <!-- Main content -->
+    <main class="pt-16 lg:pl-64" data-pagefind-body>
+      <div class="max-w-5xl mx-auto p-6 lg:p-10">
         <slot />
       </div>
     </main>
+
+    <!-- Mobile menu script -->
+    <script is:inline>
+      const toggle = document.getElementById('menu-toggle');
+      const sidebar = document.getElementById('sidebar');
+      const overlay = document.getElementById('sidebar-overlay');
+
+      function openMenu() {
+        sidebar.classList.remove('-translate-x-full');
+        overlay.classList.remove('hidden');
+      }
+
+      function closeMenu() {
+        sidebar.classList.add('-translate-x-full');
+        overlay.classList.add('hidden');
+      }
+
+      toggle.addEventListener('click', () => {
+        if (sidebar.classList.contains('-translate-x-full')) {
+          openMenu();
+        } else {
+          closeMenu();
+        }
+      });
+
+      overlay.addEventListener('click', closeMenu);
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeMenu();
+      });
+    </script>
+
+    <!-- Pagefind UI -->
+    <script is:inline>
+      window.addEventListener('DOMContentLoaded', () => {
+        const baseUrl = document.querySelector('meta[name="base-url"]')?.content || '/iouns-eye/';
+        if (window.PagefindUI) {
+          new window.PagefindUI({
+            element: '#search',
+            showSubResults: false,
+            showImages: false,
+            baseUrl: '/iouns-eye/',
+          });
+        }
+      });
+    </script>
+    <script src={`${baseUrl}_pagefind/pagefind-ui.js`} is:inline defer></script>
   </body>
 </html>

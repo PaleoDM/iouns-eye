@@ -1,0 +1,34 @@
+---
+interface Props {
+  status: string;
+  size?: 'sm' | 'md';
+}
+
+const { status, size = 'sm' } = Astro.props;
+
+const colors: Record<string, string> = {
+  alive: 'bg-status-alive/20 text-status-alive',
+  active: 'bg-status-alive/20 text-status-alive',
+  dead: 'bg-status-dead/20 text-status-dead',
+  disbanded: 'bg-status-dead/20 text-status-dead',
+  completed: 'bg-accent/20 text-accent',
+  unknown: 'bg-status-unknown/20 text-status-unknown',
+  missing: 'bg-summer/20 text-summer',
+  transformed: 'bg-autumn/20 text-autumn',
+  imprisoned: 'bg-status-dead/20 text-status-dead',
+  hidden: 'bg-status-unknown/20 text-status-unknown',
+  historical: 'bg-status-unknown/20 text-status-unknown',
+  defunct: 'bg-status-unknown/20 text-status-unknown',
+  hiatus: 'bg-summer/20 text-summer',
+  major: 'bg-accent/20 text-accent',
+  minor: 'bg-status-unknown/20 text-status-unknown',
+  background: 'bg-border/50 text-text-secondary',
+};
+
+const colorClass = colors[status] ?? 'bg-border/50 text-text-secondary';
+const sizeClass = size === 'sm' ? 'text-xs px-2 py-0.5' : 'text-sm px-2.5 py-1';
+---
+
+<span class={`inline-block rounded-full font-medium capitalize ${colorClass} ${sizeClass}`}>
+  {status}
+</span>

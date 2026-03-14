@@ -1,0 +1,103 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/ui/Breadcrumbs.astro';
+import EntryCard from '../../components/ui/EntryCard.astro';
+import { getCollection } from 'astro:content';
+import { entryUrl, CAMPAIGN_LABELS } from '../../lib/collections';
+
+const entries = await getCollection('npcs');
+const sorted = [...entries].sort((a, b) => a.data.name.localeCompare(b.data.name));
+const baseUrl = import.meta.env.BASE_URL;
+
+const allCampaigns = [...new Set(entries.flatMap((e) => e.data.campaigns))].sort();
+const allStatuses = [...new Set(entries.map((e) => e.data.status))].sort();
+---
+
+<BaseLayout title="NPCs">
+  <Breadcrumbs items={[{ label: 'Home', href: baseUrl }, { label: 'NPCs' }]} />
+
+  <div class="flex items-baseline justify-between mb-6">
+    <h1 class="text-3xl font-serif text-accent">NPCs</h1>
+    <span class="text-text-secondary text-sm">{entries.length} entries</span>
+  </div>
+
+  <!-- Filters -->
+  <div class="flex flex-wrap gap-3 mb-6">
+    <select id="filter-campaign" class="bg-surface border border-border rounded-lg px-3 py-1.5 text-sm text-text-primary">
+      <option value="">All Campaigns</option>
+      {allCampaigns.map((c) => <option value={c}>{CAMPAIGN_LABELS[c] ?? c}</option>)}
+    </select>
+    <select id="filter-status" class="bg-surface border border-border rounded-lg px-3 py-1.5 text-sm text-text-primary">
+      <option value="">All Statuses</option>
+      {allStatuses.map((s) => <option value={s} class="capitalize">{s}</option>)}
+    </select>
+    <input id="filter-name" type="text" placeholder="Search by name..." class="bg-surface border border-border rounded-lg px-3 py-1.5 text-sm text-text-primary flex-1 min-w-[160px]" />
+  </div>
+
+  <div id="entries-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+    {sorted.map((entry) => {
+      const statusColors = {
+        alive: 'bg-status-alive/20 text-status-alive',
+        dead: 'bg-status-dead/20 text-status-dead',
+        unknown: 'bg-status-unknown/20 text-status-unknown',
+        missing: 'bg-summer/20 text-summer',
+        transformed: 'bg-autumn/20 text-autumn',
+        imprisoned: 'bg-status-dead/20 text-status-dead',
+      };
+      const badges = [];
+      badges.push({ label: entry.data.status, color: (statusColors as any)[entry.data.status] ?? '' });
+      if (entry.data.race) badges.push({ label: entry.data.race });
+
+      const subtitle = [entry.data.title, entry.data.class].filter(Boolean).join(' · ');
+
+      return (
+        <EntryCard
+          href={entryUrl('npcs', entry.id)}
+          name={entry.data.name}
+          subtitle={subtitle || undefined}
+          badges={badges}
+          data-campaigns={entry.data.campaigns.join(',')}
+          data-status={entry.data.status}
+          data-name={entry.data.name.toLowerCase()}
+        />
+      );
+    })}
+  </div>
+
+  <p id="no-results" class="text-text-secondary text-center py-8 hidden">No matching entries found.</p>
+</BaseLayout>
+
+<script is:inline>
+  const grid = document.getElementById('entries-grid');
+  const noResults = document.getElementById('no-results');
+  const filterCampaign = document.getElementById('filter-campaign');
+  const filterStatus = document.getElementById('filter-status');
+  const filterName = document.getElementById('filter-name');
+
+  function applyFilters() {
+    const campaign = filterCampaign.value;
+    const status = filterStatus.value;
+    const name = filterName.value.toLowerCase();
+    let visible = 0;
+
+    grid.querySelectorAll('.entry-card').forEach((card) => {
+      const campaigns = card.getAttribute('data-campaigns') || '';
+      const cardStatus = card.getAttribute('data-status') || '';
+      const cardName = card.getAttribute('data-name') || '';
+
+      const matchCampaign = !campaign || campaigns.split(',').includes(campaign);
+      const matchStatus = !status || cardStatus === status;
+      const matchName = !name || cardName.includes(name);
+
+      const show = matchCampaign && matchStatus && matchName;
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+
+    noResults.classList.toggle('hidden', visible > 0);
+  }
+
+  filterCampaign.addEventListener('change', applyFilters);
+  filterStatus.addEventListener('change', applyFilters);
+  filterName.addEventListener('input', applyFilters);
+</script>

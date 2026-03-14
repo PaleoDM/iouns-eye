@@ -1,0 +1,98 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/ui/Breadcrumbs.astro';
+import EntryCard from '../../components/ui/EntryCard.astro';
+import { getCollection } from 'astro:content';
+import { entryUrl, CAMPAIGN_LABELS } from '../../lib/collections';
+
+const entries = await getCollection('items');
+const sorted = [...entries].sort((a, b) => a.data.name.localeCompare(b.data.name));
+const baseUrl = import.meta.env.BASE_URL;
+
+const allTypes = [...new Set(entries.map((e) => e.data.item_type))].sort();
+const allRarities = ['common', 'uncommon', 'rare', 'very-rare', 'legendary', 'artifact'];
+const usedRarities = allRarities.filter((r) => entries.some((e) => e.data.rarity === r));
+---
+
+<BaseLayout title="Items">
+  <Breadcrumbs items={[{ label: 'Home', href: baseUrl }, { label: 'Items' }]} />
+
+  <div class="flex items-baseline justify-between mb-6">
+    <h1 class="text-3xl font-serif text-accent">Items</h1>
+    <span class="text-text-secondary text-sm">{entries.length} entries</span>
+  </div>
+
+  <div class="flex flex-wrap gap-3 mb-6">
+    <select id="filter-type" class="bg-surface border border-border rounded-lg px-3 py-1.5 text-sm text-text-primary">
+      <option value="">All Types</option>
+      {allTypes.map((t) => <option value={t} class="capitalize">{t}</option>)}
+    </select>
+    <select id="filter-rarity" class="bg-surface border border-border rounded-lg px-3 py-1.5 text-sm text-text-primary">
+      <option value="">All Rarities</option>
+      {usedRarities.map((r) => <option value={r} class="capitalize">{r.replace('-', ' ')}</option>)}
+    </select>
+    <input id="filter-name" type="text" placeholder="Search by name..." class="bg-surface border border-border rounded-lg px-3 py-1.5 text-sm text-text-primary flex-1 min-w-[160px]" />
+  </div>
+
+  <div id="entries-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+    {sorted.map((entry) => {
+      const rarityColors = {
+        common: 'bg-border/50 text-text-secondary',
+        uncommon: 'bg-status-alive/20 text-status-alive',
+        rare: 'bg-accent/20 text-accent',
+        'very-rare': 'bg-summer/20 text-summer',
+        legendary: 'bg-autumn/20 text-autumn',
+        artifact: 'bg-status-dead/20 text-status-dead',
+      };
+      const badges = [
+        { label: entry.data.item_type },
+        ...(entry.data.rarity ? [{ label: entry.data.rarity.replace('-', ' '), color: (rarityColors as any)[entry.data.rarity] ?? '' }] : []),
+        ...(entry.data.attunement ? [{ label: 'attunement', color: 'bg-winter/20 text-winter' }] : []),
+      ];
+      return (
+        <EntryCard
+          href={entryUrl('items', entry.id)}
+          name={entry.data.name}
+          subtitle={entry.data.current_holder ? `Held by ${entry.data.current_holder}` : undefined}
+          badges={badges}
+          data-type={entry.data.item_type}
+          data-rarity={entry.data.rarity ?? ''}
+          data-name={entry.data.name.toLowerCase()}
+        />
+      );
+    })}
+  </div>
+
+  <p id="no-results" class="text-text-secondary text-center py-8 hidden">No matching entries found.</p>
+</BaseLayout>
+
+<script is:inline>
+  const grid = document.getElementById('entries-grid');
+  const noResults = document.getElementById('no-results');
+  const filterType = document.getElementById('filter-type');
+  const filterRarity = document.getElementById('filter-rarity');
+  const filterName = document.getElementById('filter-name');
+
+  function applyFilters() {
+    const type = filterType.value;
+    const rarity = filterRarity.value;
+    const name = filterName.value.toLowerCase();
+    let visible = 0;
+
+    grid.querySelectorAll('.entry-card').forEach((card) => {
+      const show =
+        (!type || card.getAttribute('data-type') === type) &&
+        (!rarity || card.getAttribute('data-rarity') === rarity) &&
+        (!name || (card.getAttribute('data-name') || '').includes(name));
+
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+
+    noResults.classList.toggle('hidden', visible > 0);
+  }
+
+  filterType.addEventListener('change', applyFilters);
+  filterRarity.addEventListener('change', applyFilters);
+  filterName.addEventListener('input', applyFilters);
+</script>

@@ -1,0 +1,28 @@
+---
+import { resolveSlugs, COLLECTIONS } from '../../lib/collections';
+
+interface Props {
+  slugs: string[];
+}
+
+const { slugs } = Astro.props;
+const resolved = await resolveSlugs(slugs);
+---
+
+{resolved.some(Boolean) && (
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+    {resolved.map((entry, i) => (
+      entry ? (
+        <a href={entry.href} class="block bg-surface border border-border rounded-lg p-3 hover:bg-surface-hover hover:border-accent/50 transition-colors">
+          <span class="text-xs text-text-secondary uppercase tracking-wider">{COLLECTIONS[entry.collection].singular}</span>
+          <p class="text-text-primary font-serif mt-0.5">{entry.name}</p>
+        </a>
+      ) : (
+        <span class="block bg-surface border border-border rounded-lg p-3 text-text-secondary opacity-50">
+          <span class="text-xs uppercase tracking-wider">Unknown</span>
+          <p class="mt-0.5">{slugs[i]}</p>
+        </span>
+      )
+    ))}
+  </div>
+)}

@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/ui/Breadcrumbs.astro';
+import EntryCard from '../../components/ui/EntryCard.astro';
+import { getCollection } from 'astro:content';
+import { entryUrl, CAMPAIGN_LABELS } from '../../lib/collections';
+
+const entries = await getCollection('chronicles');
+const sorted = [...entries].sort((a, b) => a.data.name.localeCompare(b.data.name));
+const baseUrl = import.meta.env.BASE_URL;
+
+const allCampaigns = [...new Set(entries.map((e) => e.data.campaign))].sort();
+const allTypes = [...new Set(entries.map((e) => e.data.chronicle_type))].sort();
+---
+
+<BaseLayout title="Chronicles">
+  <Breadcrumbs items={[{ label: 'Home', href: baseUrl }, { label: 'Chronicles' }]} />
+
+  <div class="flex items-baseline justify-between mb-6">
+    <h1 class="text-3xl font-serif text-accent">Chronicles</h1>
+    <span class="text-text-secondary text-sm">{entries.length} entries</span>
+  </div>
+
+  <div class="flex flex-wrap gap-3 mb-6">
+    <select id="filter-campaign" class="bg-surface border border-border rounded-lg px-3 py-1.5 text-sm text-text-primary">
+      <option value="">All Campaigns</option>
+      {allCampaigns.map((c) => <option value={c}>{CAMPAIGN_LABELS[c] ?? c}</option>)}
+    </select>
+    <select id="filter-type" class="bg-surface border border-border rounded-lg px-3 py-1.5 text-sm text-text-primary">
+      <option value="">All Types</option>
+      {allTypes.map((t) => <option value={t} class="capitalize">{t}</option>)}
+    </select>
+  </div>
+
+  <div id="entries-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+    {sorted.map((entry) => {
+      const subtitle = `By ${entry.data.author_player}${entry.data.author_character ? ` (as ${entry.data.author_character})` : ''}`;
+      const badges = [
+        { label: entry.data.chronicle_type },
+        { label: CAMPAIGN_LABELS[entry.data.campaign] ?? entry.data.campaign, color: 'bg-accent/20 text-accent' },
+        ...(entry.data.pdf_file ? [{ label: 'PDF available', color: 'bg-status-alive/20 text-status-alive' }] : []),
+      ];
+      return (
+        <EntryCard
+          href={entryUrl('chronicles', entry.id)}
+          name={entry.data.name}
+          subtitle={subtitle}
+          badges={badges}
+          data-campaigns={entry.data.campaign}
+          data-type={entry.data.chronicle_type}
+          data-name={entry.data.name.toLowerCase()}
+        />
+      );
+    })}
+  </div>
+
+  <p id="no-results" class="text-text-secondary text-center py-8 hidden">No matching entries found.</p>
+</BaseLayout>
+
+<script is:inline>
+  const grid = document.getElementById('entries-grid');
+  const noResults = document.getElementById('no-results');
+  const filterCampaign = document.getElementById('filter-campaign');
+  const filterType = document.getElementById('filter-type');
+
+  function applyFilters() {
+    const campaign = filterCampaign.value;
+    const type = filterType.value;
+    let visible = 0;
+
+    grid.querySelectorAll('.entry-card').forEach((card) => {
+      const show =
+        (!campaign || (card.getAttribute('data-campaigns') || '').split(',').includes(campaign)) &&
+        (!type || card.getAttribute('data-type') === type);
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+
+    noResults.classList.toggle('hidden', visible > 0);
+  }
+
+  filterCampaign.addEventListener('change', applyFilters);
+  filterType.addEventListener('change', applyFilters);
+</script>

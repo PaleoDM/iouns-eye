@@ -1,0 +1,44 @@
+---
+import { getCollection, render } from 'astro:content';
+import EntryLayout from '../../layouts/EntryLayout.astro';
+import MetadataSidebar from '../../components/ui/MetadataSidebar.astro';
+import { entryUrl } from '../../lib/collections';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('events');
+  const sorted = [...entries].sort((a, b) => a.data.name.localeCompare(b.data.name));
+  return sorted.map((entry, i) => ({
+    params: { id: entry.id },
+    props: {
+      entry,
+      prevEntry: i > 0 ? { name: sorted[i - 1].data.name, href: entryUrl('events', sorted[i - 1].id) } : null,
+      nextEntry: i < sorted.length - 1 ? { name: sorted[i + 1].data.name, href: entryUrl('events', sorted[i + 1].id) } : null,
+    },
+  }));
+}
+
+const { entry, prevEntry, nextEntry } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+---
+
+<EntryLayout
+  title={d.name}
+  collection="events"
+  related={d.related}
+  prevEntry={prevEntry}
+  nextEntry={nextEntry}
+>
+  <MetadataSidebar slot="sidebar" fields={[
+    { label: 'Date', value: d.date },
+    { label: 'Year', value: d.year ? `${d.year} TA` : undefined },
+    { label: 'Significance', value: d.significance, type: 'status' },
+    { label: 'Campaign', value: d.campaign ? [d.campaign] : undefined, type: 'campaigns' },
+    { label: 'Session', value: d.session ? `Session ${d.session}` : undefined },
+    { label: 'Location', value: d.location, type: 'slug' },
+    { label: 'Participants', value: d.participants, type: 'tags' },
+    { label: 'Tags', value: d.tags, type: 'tags' },
+  ]} />
+
+  <Content slot="content" />
+</EntryLayout>

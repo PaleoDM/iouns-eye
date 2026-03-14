@@ -1,0 +1,66 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import RelatedEntries from '../components/ui/RelatedEntries.astro';
+import { COLLECTIONS, type CollectionName, collectionUrl } from '../lib/collections';
+
+interface Props {
+  title: string;
+  collection: CollectionName;
+  related?: string[];
+  prevEntry?: { name: string; href: string };
+  nextEntry?: { name: string; href: string };
+}
+
+const { title, collection, related = [], prevEntry, nextEntry } = Astro.props;
+const baseUrl = import.meta.env.BASE_URL;
+const meta = COLLECTIONS[collection];
+---
+
+<BaseLayout title={title}>
+  <Breadcrumbs items={[
+    { label: 'Home', href: baseUrl },
+    { label: meta.label, href: collectionUrl(collection) },
+    { label: title },
+  ]} />
+
+  <div class="flex flex-col lg:flex-row gap-8">
+    <!-- Main content -->
+    <article class="flex-1 min-w-0">
+      <h1 class="text-3xl lg:text-4xl font-serif text-accent mb-6">{title}</h1>
+
+      <div class="entry-content">
+        <slot name="content" />
+      </div>
+
+      {related.length > 0 && (
+        <section class="mt-10 pt-6 border-t border-border">
+          <h2 class="text-xl font-serif text-text-primary mb-4">Related Entries</h2>
+          <RelatedEntries slugs={related} />
+        </section>
+      )}
+
+      {(prevEntry || nextEntry) && (
+        <nav class="mt-10 pt-6 border-t border-border flex justify-between text-sm">
+          {prevEntry ? (
+            <a href={prevEntry.href} class="text-accent hover:text-accent-hover transition-colors">
+              &larr; {prevEntry.name}
+            </a>
+          ) : <span />}
+          {nextEntry ? (
+            <a href={nextEntry.href} class="text-accent hover:text-accent-hover transition-colors">
+              {nextEntry.name} &rarr;
+            </a>
+          ) : <span />}
+        </nav>
+      )}
+    </article>
+
+    <!-- Metadata sidebar -->
+    <aside class="lg:w-72 shrink-0 order-first lg:order-last">
+      <div class="bg-surface border border-border rounded-lg p-5 lg:sticky lg:top-20">
+        <slot name="sidebar" />
+      </div>
+    </aside>
+  </div>
+</BaseLayout>

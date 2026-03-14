@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/ui/Breadcrumbs.astro';
+import StatusBadge from '../../components/ui/StatusBadge.astro';
+import { getCollection } from 'astro:content';
+import { entryUrl } from '../../lib/collections';
+
+const entries = await getCollection('campaigns');
+const sorted = [...entries].sort((a, b) => {
+  const statusOrder = { active: 0, hiatus: 1, completed: 2, defunct: 3 };
+  const aOrder = statusOrder[a.data.status as keyof typeof statusOrder] ?? 4;
+  const bOrder = statusOrder[b.data.status as keyof typeof statusOrder] ?? 4;
+  if (aOrder !== bOrder) return aOrder - bOrder;
+  return (b.data.start_year ?? 0) - (a.data.start_year ?? 0);
+});
+const baseUrl = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="Campaigns">
+  <Breadcrumbs items={[{ label: 'Home', href: baseUrl }, { label: 'Campaigns' }]} />
+
+  <div class="flex items-baseline justify-between mb-6">
+    <h1 class="text-3xl font-serif text-accent">Campaigns</h1>
+    <span class="text-text-secondary text-sm">{entries.length} campaigns</span>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    {sorted.map((entry) => (
+      <a href={entryUrl('campaigns', entry.id)} class="bg-surface border border-border rounded-lg p-5 hover:bg-surface-hover hover:border-accent/50 transition-colors">
+        <div class="flex items-start justify-between gap-2 mb-3">
+          <h3 class="font-serif text-xl text-text-primary">{entry.data.name}</h3>
+          <StatusBadge status={entry.data.status} />
+        </div>
+        <div class="space-y-2 text-sm text-text-secondary">
+          {entry.data.start_year && (
+            <p>
+              <span class="text-text-primary">{entry.data.start_year}{entry.data.end_year ? `–${entry.data.end_year}` : ''} TA</span>
+              {entry.data.continent && <span> · {entry.data.continent}</span>}
+            </p>
+          )}
+          {entry.data.session_count && <p>{entry.data.session_count} sessions</p>}
+          {entry.data.party.length > 0 && (
+            <div>
+              <p class="text-xs uppercase tracking-wider text-text-secondary mb-1">Party ({entry.data.party.length})</p>
+              <div class="flex flex-wrap gap-1.5">
+                {entry.data.party.map((member) => (
+                  <span class="text-xs px-2 py-0.5 rounded-full bg-border/50 text-text-secondary">
+                    {member.name}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      </a>
+    ))}
+  </div>
+</BaseLayout>

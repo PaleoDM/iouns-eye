@@ -1,0 +1,154 @@
+---
+import { getCollection, render } from 'astro:content';
+import EntryLayout from '../../layouts/EntryLayout.astro';
+import MetadataSidebar from '../../components/ui/MetadataSidebar.astro';
+import StatusBadge from '../../components/ui/StatusBadge.astro';
+import { entryUrl, COLLECTIONS, type CollectionName } from '../../lib/collections';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('campaigns');
+  const sorted = [...entries].sort((a, b) => a.data.name.localeCompare(b.data.name));
+  return sorted.map((entry, i) => ({
+    params: { id: entry.id },
+    props: {
+      entry,
+      prevEntry: i > 0 ? { name: sorted[i - 1].data.name, href: entryUrl('campaigns', sorted[i - 1].id) } : null,
+      nextEntry: i < sorted.length - 1 ? { name: sorted[i + 1].data.name, href: entryUrl('campaigns', sorted[i + 1].id) } : null,
+    },
+  }));
+}
+
+const { entry, prevEntry, nextEntry } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+const campaignId = entry.id;
+
+// Fetch entities related to this campaign
+const collectionsToQuery: CollectionName[] = ['npcs', 'locations', 'factions', 'events', 'items'];
+
+const entityGroups: Array<{ collection: CollectionName; label: string; entries: Array<{ id: string; name: string; href: string }> }> = [];
+
+for (const col of collectionsToQuery) {
+  const all = await getCollection(col);
+  const filtered = all.filter((e: any) => {
+    const data = e.data;
+    if (col === 'events') {
+      return data.campaign === campaignId;
+    }
+    return data.campaigns?.includes(campaignId);
+  });
+
+  if (filtered.length > 0) {
+    entityGroups.push({
+      collection: col,
+      label: COLLECTIONS[col].label,
+      entries: filtered
+        .sort((a: any, b: any) => a.data.name.localeCompare(b.data.name))
+        .map((e: any) => ({ id: e.id, name: e.data.name, href: entryUrl(col, e.id) })),
+    });
+  }
+}
+
+// Get events sorted by year for timeline
+const events = await getCollection('events');
+const campaignEvents = events
+  .filter((e) => e.data.campaign === campaignId)
+  .sort((a, b) => (a.data.year ?? 0) - (b.data.year ?? 0) || a.data.name.localeCompare(b.data.name));
+---
+
+<EntryLayout
+  title={d.name}
+  collection="campaigns"
+  related={d.related}
+  prevEntry={prevEntry}
+  nextEntry={nextEntry}
+>
+  <MetadataSidebar slot="sidebar" fields={[
+    { label: 'Status', value: d.status, type: 'status' },
+    { label: 'Era', value: d.start_year ? `${d.start_year}${d.end_year ? `–${d.end_year}` : ''} TA` : undefined },
+    { label: 'Continent', value: d.continent },
+    { label: 'Primary Location', value: d.primary_location, type: 'slug' },
+    { label: 'Sessions', value: d.session_count },
+    { label: 'Started', value: d.start_date_real },
+    { label: 'Tags', value: d.tags, type: 'tags' },
+  ]} />
+
+  <Fragment slot="content">
+    <div class="entry-content">
+      <Content />
+    </div>
+
+    <!-- Party Roster -->
+    {d.party.length > 0 && (
+      <section class="mt-8">
+        <h2 class="text-xl font-serif text-accent mb-4 pb-2 border-b border-border">Party Roster</h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="text-left text-text-secondary border-b border-border">
+                <th class="pb-2 pr-4">Name</th>
+                <th class="pb-2 pr-4">Race</th>
+                <th class="pb-2">Class</th>
+              </tr>
+            </thead>
+            <tbody>
+              {d.party.map((member) => (
+                <tr class="border-b border-border/50">
+                  <td class="py-2 pr-4">
+                    {member.slug ? (
+                      <a href={entryUrl('pcs', member.slug)} class="text-accent hover:text-accent-hover transition-colors">{member.name}</a>
+                    ) : (
+                      <span class="text-text-primary">{member.name}</span>
+                    )}
+                    {member.player && <span class="text-text-secondary text-xs ml-1">({member.player})</span>}
+                  </td>
+                  <td class="py-2 pr-4 text-text-secondary">{member.race}</td>
+                  <td class="py-2 text-text-secondary">{member.class}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )}
+
+    <!-- Campaign Events Timeline -->
+    {campaignEvents.length > 0 && (
+      <section class="mt-8">
+        <h2 class="text-xl font-serif text-accent mb-4 pb-2 border-b border-border">Events Timeline</h2>
+        <div class="space-y-2">
+          {campaignEvents.map((event) => (
+            <a href={entryUrl('events', event.id)} class="flex items-baseline gap-3 py-1.5 hover:bg-surface-hover rounded px-2 -mx-2 transition-colors">
+              <span class="text-text-secondary text-sm shrink-0 w-20">
+                {event.data.date ?? (event.data.year ? `${event.data.year} TA` : '')}
+              </span>
+              <span class="text-text-primary">{event.data.name}</span>
+              <StatusBadge status={event.data.significance} size="sm" />
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Entities in this Campaign -->
+    {entityGroups.length > 0 && (
+      <section class="mt-8">
+        <h2 class="text-xl font-serif text-accent mb-4 pb-2 border-b border-border">Entities in This Campaign</h2>
+        <div class="space-y-6">
+          {entityGroups.map((group) => (
+            <div>
+              <h3 class="text-sm font-semibold text-text-secondary uppercase tracking-wider mb-2">{group.label} ({group.entries.length})</h3>
+              <div class="flex flex-wrap gap-2">
+                {group.entries.map((e) => (
+                  <a href={e.href} class="text-sm px-3 py-1 rounded-full bg-surface border border-border hover:border-accent/50 hover:bg-surface-hover text-text-primary transition-colors">
+                    {e.name}
+                  </a>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+  </Fragment>
+</EntryLayout>

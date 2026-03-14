@@ -1,0 +1,89 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/ui/Breadcrumbs.astro';
+import EntryCard from '../../components/ui/EntryCard.astro';
+import { getCollection } from 'astro:content';
+import { entryUrl, CAMPAIGN_LABELS } from '../../lib/collections';
+
+const entries = await getCollection('locations');
+const sorted = [...entries].sort((a, b) => a.data.name.localeCompare(b.data.name));
+const baseUrl = import.meta.env.BASE_URL;
+
+const allTypes = [...new Set(entries.map((e) => e.data.location_type))].sort();
+const allCampaigns = [...new Set(entries.flatMap((e) => e.data.campaigns))].sort();
+---
+
+<BaseLayout title="Locations">
+  <Breadcrumbs items={[{ label: 'Home', href: baseUrl }, { label: 'Locations' }]} />
+
+  <div class="flex items-baseline justify-between mb-6">
+    <h1 class="text-3xl font-serif text-accent">Locations</h1>
+    <span class="text-text-secondary text-sm">{entries.length} entries</span>
+  </div>
+
+  <div class="flex flex-wrap gap-3 mb-6">
+    <select id="filter-type" class="bg-surface border border-border rounded-lg px-3 py-1.5 text-sm text-text-primary">
+      <option value="">All Types</option>
+      {allTypes.map((t) => <option value={t} class="capitalize">{t}</option>)}
+    </select>
+    <select id="filter-campaign" class="bg-surface border border-border rounded-lg px-3 py-1.5 text-sm text-text-primary">
+      <option value="">All Campaigns</option>
+      {allCampaigns.map((c) => <option value={c}>{CAMPAIGN_LABELS[c] ?? c}</option>)}
+    </select>
+    <input id="filter-name" type="text" placeholder="Search by name..." class="bg-surface border border-border rounded-lg px-3 py-1.5 text-sm text-text-primary flex-1 min-w-[160px]" />
+  </div>
+
+  <div id="entries-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+    {sorted.map((entry) => {
+      const subtitle = [entry.data.region, entry.data.continent].filter(Boolean).join(', ');
+      return (
+        <EntryCard
+          href={entryUrl('locations', entry.id)}
+          name={entry.data.name}
+          subtitle={subtitle || undefined}
+          badges={[{ label: entry.data.location_type }]}
+          data-type={entry.data.location_type}
+          data-campaigns={entry.data.campaigns.join(',')}
+          data-name={entry.data.name.toLowerCase()}
+        />
+      );
+    })}
+  </div>
+
+  <p id="no-results" class="text-text-secondary text-center py-8 hidden">No matching entries found.</p>
+</BaseLayout>
+
+<script is:inline>
+  const grid = document.getElementById('entries-grid');
+  const noResults = document.getElementById('no-results');
+  const filterType = document.getElementById('filter-type');
+  const filterCampaign = document.getElementById('filter-campaign');
+  const filterName = document.getElementById('filter-name');
+
+  function applyFilters() {
+    const type = filterType.value;
+    const campaign = filterCampaign.value;
+    const name = filterName.value.toLowerCase();
+    let visible = 0;
+
+    grid.querySelectorAll('.entry-card').forEach((card) => {
+      const cardType = card.getAttribute('data-type') || '';
+      const campaigns = card.getAttribute('data-campaigns') || '';
+      const cardName = card.getAttribute('data-name') || '';
+
+      const show =
+        (!type || cardType === type) &&
+        (!campaign || campaigns.split(',').includes(campaign)) &&
+        (!name || cardName.includes(name));
+
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+
+    noResults.classList.toggle('hidden', visible > 0);
+  }
+
+  filterType.addEventListener('change', applyFilters);
+  filterCampaign.addEventListener('change', applyFilters);
+  filterName.addEventListener('input', applyFilters);
+</script>
