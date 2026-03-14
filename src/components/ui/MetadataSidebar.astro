@@ -1,5 +1,5 @@
 ---
-import { resolveSlug, CAMPAIGN_LABELS, entryUrl } from '../../lib/collections';
+import { resolveSlug, CAMPAIGN_LABELS, DEFUNCT_CAMPAIGNS, entryUrl } from '../../lib/collections';
 import StatusBadge from './StatusBadge.astro';
 
 interface MetaField {
@@ -52,7 +52,7 @@ for (const field of fields) {
           )
         ) : field.type === 'campaigns' && Array.isArray(field.value) ? (
           <div class="flex flex-wrap gap-1.5">
-            {(field.value as string[]).map((c: string) => (
+            {(field.value as string[]).filter((c: string) => !DEFUNCT_CAMPAIGNS.has(c)).map((c: string) => (
               <a href={entryUrl('campaigns', c)} class="text-xs px-2 py-0.5 rounded-full bg-accent/20 text-accent hover:bg-accent/30 transition-colors">
                 {CAMPAIGN_LABELS[c] ?? c}
               </a>

@@ -3,14 +3,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/ui/Breadcrumbs.astro';
 import EntryCard from '../../components/ui/EntryCard.astro';
 import { getCollection } from 'astro:content';
-import { entryUrl, CAMPAIGN_LABELS } from '../../lib/collections';
+import { entryUrl, CAMPAIGN_LABELS, isDefunctOnly, DEFUNCT_CAMPAIGNS } from '../../lib/collections';
 
-const entries = await getCollection('locations');
+const allEntries = await getCollection('locations');
+const entries = allEntries.filter((e) => !isDefunctOnly(e.data));
 const sorted = [...entries].sort((a, b) => a.data.name.localeCompare(b.data.name));
 const baseUrl = import.meta.env.BASE_URL;
 
 const allTypes = [...new Set(entries.map((e) => e.data.location_type))].sort();
-const allCampaigns = [...new Set(entries.flatMap((e) => e.data.campaigns))].sort();
+const allCampaigns = [...new Set(entries.flatMap((e) => e.data.campaigns))].filter((c) => !DEFUNCT_CAMPAIGNS.has(c)).sort();
 ---
 
 <BaseLayout title="Locations">

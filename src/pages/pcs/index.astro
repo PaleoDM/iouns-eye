@@ -3,13 +3,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/ui/Breadcrumbs.astro';
 import EntryCard from '../../components/ui/EntryCard.astro';
 import { getCollection } from 'astro:content';
-import { entryUrl, CAMPAIGN_LABELS } from '../../lib/collections';
+import { entryUrl, CAMPAIGN_LABELS, isDefunctOnly, DEFUNCT_CAMPAIGNS } from '../../lib/collections';
 
-const entries = await getCollection('pcs');
+const allEntries = await getCollection('pcs');
+const entries = allEntries.filter((e) => !isDefunctOnly(e.data));
 const sorted = [...entries].sort((a, b) => a.data.name.localeCompare(b.data.name));
 const baseUrl = import.meta.env.BASE_URL;
 
-const allCampaigns = [...new Set(entries.map((e) => e.data.campaign))].sort();
+const allCampaigns = [...new Set(entries.map((e) => e.data.campaign))].filter((c) => !DEFUNCT_CAMPAIGNS.has(c)).sort();
 ---
 
 <BaseLayout title="Player Characters">

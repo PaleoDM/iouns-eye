@@ -117,9 +117,11 @@ const campaigns = defineCollection({
     start_year: z.number().optional(),
     end_year: z.number().optional(),
     start_date_real: z.string().optional(),
+    current_date: z.string().optional(),
     continent: z.string().optional(),
     primary_location: z.string().optional(),
     session_count: z.number().optional(),
+    thumbnail: z.string().optional(),
     party: z.array(z.object({
       name: z.string(),
       player: z.string().optional(),
@@ -131,6 +133,20 @@ const campaigns = defineCollection({
     related: z.array(z.string()).default([]),
   }),
 });
+
+// recaps collection — will be enabled in Phase 9 when recap content is populated
+// const recaps = defineCollection({
+//   loader: glob({ pattern: '**/*.md', base: './src/content/recaps' }),
+//   schema: z.object({
+//     title: z.string(),
+//     campaign: z.string(),
+//     session_number: z.number(),
+//     in_game_date: z.string().optional(),
+//     real_date: z.string().optional(),
+//     tags: z.array(z.string()).default([]),
+//     related: z.array(z.string()).default([]),
+//   }),
+// });
 
 const chronicles = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/chronicles' }),

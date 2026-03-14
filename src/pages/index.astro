@@ -1,119 +1,111 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import StatusBadge from '../components/ui/StatusBadge.astro';
-import { getCollection } from 'astro:content';
-import { COLLECTIONS, collectionUrl, type CollectionName } from '../lib/collections';
-
-const npcs = await getCollection('npcs');
-const locations = await getCollection('locations');
-const factions = await getCollection('factions');
-const events = await getCollection('events');
-const items = await getCollection('items');
-const deities = await getCollection('deities');
-const lore = await getCollection('lore');
-const campaignEntries = await getCollection('campaigns');
-const chronicles = await getCollection('chronicles');
-const pcs = await getCollection('pcs');
-
-const counts: Record<CollectionName, number> = {
-  npcs: npcs.length,
-  locations: locations.length,
-  factions: factions.length,
-  events: events.length,
-  items: items.length,
-  deities: deities.length,
-  lore: lore.length,
-  campaigns: campaignEntries.length,
-  chronicles: chronicles.length,
-  pcs: pcs.length,
-};
-
-const totalEntries = Object.values(counts).reduce((a, b) => a + b, 0);
-
-// Sort campaigns: active first, then by start_year desc
-const sortedCampaigns = [...campaignEntries].sort((a, b) => {
-  const statusOrder = { active: 0, hiatus: 1, completed: 2, defunct: 3 };
-  const aOrder = statusOrder[a.data.status as keyof typeof statusOrder] ?? 4;
-  const bOrder = statusOrder[b.data.status as keyof typeof statusOrder] ?? 4;
-  if (aOrder !== bOrder) return aOrder - bOrder;
-  return (b.data.start_year ?? 0) - (a.data.start_year ?? 0);
-});
 
 const baseUrl = import.meta.env.BASE_URL;
+
+interface Tile {
+  title: string;
+  tagline: string;
+  href: string;
+  thumbnail?: string;
+  external?: boolean;
+  gradient: string;
+}
+
+const tiles: Tile[] = [
+  {
+    title: 'Rifthaven: Root of Rebellion',
+    tagline: 'Revolution in the city of broken chains',
+    href: `${baseUrl}campaigns/rifthaven-online/`,
+    thumbnail: `${baseUrl}Rifthaven campaign thumbnail.png`,
+    gradient: 'from-emerald-900/80 to-slate-900/90',
+  },
+  {
+    title: 'Defenders of Ishetar',
+    tagline: 'A colony on the edge of independence',
+    href: `${baseUrl}campaigns/ishetar-2/`,
+    thumbnail: `${baseUrl}Ishetar campaign thumbnail.png`,
+    gradient: 'from-amber-900/80 to-slate-900/90',
+  },
+  {
+    title: 'Completed Campaigns',
+    tagline: 'Ishetar OG, Ruins of Kalari, SKT One Last Job',
+    href: `${baseUrl}archive/`,
+    thumbnail: `${baseUrl}Completed Campaigns Thumbnail.png`,
+    gradient: 'from-indigo-900/80 to-slate-900/90',
+  },
+  {
+    title: 'Rifthaven Game',
+    tagline: 'Standalone web game',
+    href: 'https://www.peredocm.com/rifthaven-game/',
+    thumbnail: `${baseUrl}Rifthaven Game Thumbnail.png`,
+    external: true,
+    gradient: 'from-teal-900/80 to-slate-900/90',
+  },
+  {
+    title: 'Defenders of Ishetar Game',
+    tagline: 'Standalone web game',
+    href: 'https://www.peredocm.com/ishetar-game/',
+    thumbnail: `${baseUrl}Ishetar Game Thumbnail.png`,
+    external: true,
+    gradient: 'from-orange-900/80 to-slate-900/90',
+  },
+  {
+    title: 'Tibbets & Tok Teahouse',
+    tagline: 'Virtual tabletop',
+    href: 'https://tibbets-tok-teahouse.vercel.app/',
+    thumbnail: `${baseUrl}tibbets and tok.png`,
+    external: true,
+    gradient: 'from-purple-900/80 to-slate-900/90',
+  },
+];
 ---
 
 <BaseLayout title="Home">
-  <!-- Hero -->
-  <div class="text-center py-10 lg:py-16">
-    <img src={`${baseUrl}logo.png`} alt="Ioun's Eye" class="mx-auto h-32 lg:h-40 mb-6" />
-    <h1 class="text-4xl lg:text-5xl font-serif text-accent mb-3">Ioun's Eye</h1>
-    <p class="text-text-secondary text-lg max-w-2xl mx-auto leading-relaxed">
-      The living encyclopedia of Astoria — a world spanning continents, centuries, and countless stories.
-      Named for Ioun, the Knowing Mistress, goddess of all knowledge.
-    </p>
-    <p class="text-text-secondary mt-3">
-      <span class="text-accent font-semibold">{totalEntries}</span> entries across {Object.keys(counts).length} collections
+  <!-- Compact Hero -->
+  <div class="text-center py-8 lg:py-12">
+    <img src={`${baseUrl}logo.png`} alt="Ioun's Eye" class="mx-auto h-40 lg:h-56 mb-4" />
+    <p class="text-text-secondary text-base max-w-xl mx-auto">
+      The living encyclopedia of Astoria
     </p>
   </div>
 
-  <!-- Stats grid -->
-  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 mb-12">
-    {(Object.entries(COLLECTIONS) as [CollectionName, typeof COLLECTIONS[CollectionName]][]).map(([key, meta]) => (
-      <a href={collectionUrl(key)} class="bg-surface border border-border rounded-lg p-4 text-center hover:bg-surface-hover hover:border-accent/50 transition-colors">
-        <span class="text-2xl">{meta.icon}</span>
-        <p class="text-2xl font-serif text-text-primary mt-1">{counts[key]}</p>
-        <p class="text-xs text-text-secondary uppercase tracking-wider mt-0.5">{meta.label}</p>
+  <!-- 2x3 Tile Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+    {tiles.map((tile) => (
+      <a
+        href={tile.href}
+        target={tile.external ? '_blank' : undefined}
+        rel={tile.external ? 'noopener noreferrer' : undefined}
+        class="group relative block overflow-hidden rounded-xl border border-border aspect-[16/10] hover:border-accent/50 transition-all duration-200 hover:shadow-lg hover:shadow-accent/10"
+      >
+        {/* Background: thumbnail image or gradient */}
+        {tile.thumbnail ? (
+          <img
+            src={tile.thumbnail}
+            alt={tile.title}
+            class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        ) : (
+          <div class={`absolute inset-0 bg-gradient-to-br ${tile.gradient}`} />
+        )}
+
+        {/* Overlay for text readability */}
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+
+        {/* Content */}
+        <div class="absolute bottom-0 left-0 right-0 p-4 lg:p-5">
+          <h2 class="font-serif text-lg lg:text-xl text-white mb-1 group-hover:text-accent-hover transition-colors">
+            {tile.title}
+            {tile.external && (
+              <svg class="inline-block w-3.5 h-3.5 ml-1.5 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            )}
+          </h2>
+          <p class="text-sm text-gray-300">{tile.tagline}</p>
+        </div>
       </a>
     ))}
   </div>
-
-  <!-- Campaigns -->
-  <section class="mb-12">
-    <h2 class="text-2xl font-serif text-text-primary mb-6">Campaigns</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      {sortedCampaigns.map((campaign) => (
-        <a href={`${baseUrl}campaigns/${campaign.id}/`} class="bg-surface border border-border rounded-lg p-5 hover:bg-surface-hover hover:border-accent/50 transition-colors">
-          <div class="flex items-start justify-between gap-2">
-            <h3 class="font-serif text-lg text-text-primary">{campaign.data.name}</h3>
-            <StatusBadge status={campaign.data.status} />
-          </div>
-          <div class="flex flex-wrap gap-x-4 gap-y-1 mt-2 text-sm text-text-secondary">
-            {campaign.data.start_year && (
-              <span>{campaign.data.start_year}{campaign.data.end_year ? `–${campaign.data.end_year}` : ''} TA</span>
-            )}
-            {campaign.data.continent && <span>{campaign.data.continent}</span>}
-            {campaign.data.session_count && <span>{campaign.data.session_count} sessions</span>}
-            {campaign.data.party.length > 0 && <span>{campaign.data.party.length} party members</span>}
-          </div>
-        </a>
-      ))}
-    </div>
-  </section>
-
-  <!-- Browse by category -->
-  <section>
-    <h2 class="text-2xl font-serif text-text-primary mb-6">Browse the Codex</h2>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-      {([
-        ['npcs', 'Characters of the world'],
-        ['locations', 'Places across Astoria'],
-        ['factions', 'Powers and organizations'],
-        ['events', 'History unfolding'],
-        ['items', 'Legendary artifacts and tools'],
-        ['deities', 'The divine pantheon'],
-        ['lore', 'World-building and cosmology'],
-        ['pcs', 'Player characters across campaigns'],
-        ['chronicles', 'Player-written narratives'],
-      ] as [CollectionName, string][]).map(([key, desc]) => (
-        <a href={collectionUrl(key)} class="bg-surface border border-border rounded-lg p-5 hover:bg-surface-hover hover:border-accent/50 transition-colors">
-          <div class="flex items-center gap-2">
-            <span class="text-lg">{COLLECTIONS[key].icon}</span>
-            <h3 class="font-serif text-text-primary">{COLLECTIONS[key].label}</h3>
-          </div>
-          <p class="text-text-secondary text-sm mt-1">{desc}</p>
-          <p class="text-accent text-sm mt-2">{counts[key]} entries</p>
-        </a>
-      ))}
-    </div>
-  </section>
 </BaseLayout>

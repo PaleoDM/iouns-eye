@@ -3,10 +3,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/ui/Breadcrumbs.astro';
 import StatusBadge from '../../components/ui/StatusBadge.astro';
 import { getCollection } from 'astro:content';
-import { entryUrl } from '../../lib/collections';
+import { entryUrl, DEFUNCT_CAMPAIGNS } from '../../lib/collections';
 
 const entries = await getCollection('campaigns');
-const sorted = [...entries].sort((a, b) => {
+const visible = entries.filter((c) => !DEFUNCT_CAMPAIGNS.has(c.id));
+const sorted = [...visible].sort((a, b) => {
   const statusOrder = { active: 0, hiatus: 1, completed: 2, defunct: 3 };
   const aOrder = statusOrder[a.data.status as keyof typeof statusOrder] ?? 4;
   const bOrder = statusOrder[b.data.status as keyof typeof statusOrder] ?? 4;
@@ -21,7 +22,7 @@ const baseUrl = import.meta.env.BASE_URL;
 
   <div class="flex items-baseline justify-between mb-6">
     <h1 class="text-3xl font-serif text-accent">Campaigns</h1>
-    <span class="text-text-secondary text-sm">{entries.length} campaigns</span>
+    <span class="text-text-secondary text-sm">{visible.length} campaigns</span>
   </div>
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">

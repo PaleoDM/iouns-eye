@@ -1,154 +1,338 @@
 ---
 import { getCollection, render } from 'astro:content';
-import EntryLayout from '../../layouts/EntryLayout.astro';
-import MetadataSidebar from '../../components/ui/MetadataSidebar.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/ui/Breadcrumbs.astro';
 import StatusBadge from '../../components/ui/StatusBadge.astro';
 import { entryUrl, COLLECTIONS, type CollectionName } from '../../lib/collections';
 
 export async function getStaticPaths() {
   const entries = await getCollection('campaigns');
-  const sorted = [...entries].sort((a, b) => a.data.name.localeCompare(b.data.name));
-  return sorted.map((entry, i) => ({
+  return entries.map((entry) => ({
     params: { id: entry.id },
-    props: {
-      entry,
-      prevEntry: i > 0 ? { name: sorted[i - 1].data.name, href: entryUrl('campaigns', sorted[i - 1].id) } : null,
-      nextEntry: i < sorted.length - 1 ? { name: sorted[i + 1].data.name, href: entryUrl('campaigns', sorted[i + 1].id) } : null,
-    },
+    props: { entry },
   }));
 }
 
-const { entry, prevEntry, nextEntry } = Astro.props;
+const { entry } = Astro.props;
 const { Content } = await render(entry);
 const d = entry.data;
+const baseUrl = import.meta.env.BASE_URL;
+
+// Portrait lookup
+const PORTRAITS: Record<string, string> = {
+  'tyrell': 'tyrell.jpg',
+  'veil': 'veil.jpg',
+  'thorn': 'thorn.png',
+  'arden': 'arden.jpg',
+  'quin': 'quin.png',
+  'leon': 'leon.png',
+  'freddie': 'freddie.png',
+  'azrael': 'azrael.png',
+  'vicas': 'vicas.jpg',
+  'lyra': 'lyra.jpg',
+  'rooker': 'rooker.jpg',
+  'thump': 'thump.png',
+};
+
+const partyWithPortraits = d.party.map((member) => ({
+  ...member,
+  portrait: member.slug && PORTRAITS[member.slug] ? `${baseUrl}portraits/${PORTRAITS[member.slug]}` : null,
+  initials: member.name.charAt(0).toUpperCase(),
+}));
+
+// Map continent to map image(s)
+const CONTINENT_MAPS: Record<string, Array<{ file: string; label: string }>> = {
+  'Wanun': [
+    { file: 'wanun.jpg', label: 'Wanun' },
+    { file: 'ekkorai.jpg', label: 'Ekkorai (Detail)' },
+  ],
+  'Khanae': [
+    { file: 'khanae.jpg', label: 'Khanae' },
+  ],
+  'Glennox': [],
+};
+const campaignMaps = d.continent ? (CONTINENT_MAPS[d.continent] ?? []) : [];
+
+// Breadcrumb
+const breadcrumbParent = d.status === 'completed'
+  ? { label: 'Archive', href: `${baseUrl}archive/` }
+  : null;
+
+// Placeholder arcs and recaps — will be replaced with real data in Phase 9
+const PLACEHOLDER_ARCS: Record<string, Array<{ name: string; sessions: string }>> = {
+  'rifthaven-online': [
+    { name: 'Sparkworks Tunnels', sessions: '1–12' },
+    { name: 'Personal Storylines', sessions: '13–14' },
+    { name: 'The Roc Run', sessions: '15–17' },
+    { name: 'Salvation & Boughshadow', sessions: '18–36' },
+    { name: 'Shadowfell — Odaire', sessions: '37–41' },
+    { name: 'Potter\'s Field', sessions: '42–43' },
+  ],
+  'ishetar-2': [
+    { name: 'Help the Caldrows', sessions: '1–4' },
+    { name: 'Deliver Meat to the Vegepygmies', sessions: '5–6' },
+    { name: 'The Price of Beauty', sessions: '9–12' },
+    { name: 'Emberspost', sessions: '13–22' },
+    { name: 'Firewatch Island', sessions: '23–25' },
+    { name: 'The Turquoise Timber Trust', sessions: '26–30' },
+  ],
+  'ishetar-og': [
+    { name: 'Colony Under Siege', sessions: '1–?' },
+  ],
+  'kalari': [
+    { name: 'Harwich Village Curse', sessions: '1–?' },
+    { name: 'The Cult of Grave Dirt', sessions: '?–?' },
+    { name: 'Kuo-Toa and the Power Plant', sessions: '?–?' },
+    { name: 'Sunken City Exploration', sessions: '?–?' },
+    { name: 'Vespa and the Fey Threat', sessions: '?–?' },
+    { name: 'Drelduin and the Desert War', sessions: '?–?' },
+    { name: 'Orbos and the Void Dragon', sessions: '?–?' },
+  ],
+  'skt': [
+    { name: 'The Ordning Shattered', sessions: '1–?' },
+    { name: 'Giant Lords Campaign', sessions: '?–?' },
+    { name: 'The Storm King\'s Court', sessions: '?–?' },
+    { name: 'Iymrith and Slarkrethel', sessions: '?–?' },
+  ],
+};
+
+const PLACEHOLDER_RECAPS: Record<string, Array<{ session: number; title: string; arc: string; date: string }>> = {
+  'rifthaven-online': [
+    { session: 43, title: 'The Pallbearer\'s Galleria', arc: 'Potter\'s Field', date: '22 Kord 1129' },
+    { session: 42, title: 'Welcome to Potter\'s Field', arc: 'Potter\'s Field', date: '21 Kord 1129' },
+    { session: 41, title: 'Escape from Odaire', arc: 'Shadowfell — Odaire', date: '18 Kord 1129' },
+    { session: 40, title: 'The Puppet King Falls', arc: 'Shadowfell — Odaire', date: '17 Kord 1129' },
+    { session: 39, title: 'Into the Toymaker\'s Workshop', arc: 'Shadowfell — Odaire', date: '16 Kord 1129' },
+  ],
+  'ishetar-2': [
+    { session: 30, title: 'Sallow Marches North', arc: 'The Turquoise Timber Trust', date: '14 Pelor 1136' },
+    { session: 29, title: 'Assault on the TTT Compound', arc: 'The Turquoise Timber Trust', date: '13 Pelor 1136' },
+    { session: 28, title: 'Veraine Unmasked', arc: 'The Turquoise Timber Trust', date: '12 Pelor 1136' },
+    { session: 27, title: 'Parley at the Restful Lily', arc: 'The Turquoise Timber Trust', date: '10 Pelor 1136' },
+    { session: 26, title: 'Return to a Changed Ishetar', arc: 'The Turquoise Timber Trust', date: '8 Pelor 1136' },
+  ],
+};
+
 const campaignId = entry.id;
+const arcs = PLACEHOLDER_ARCS[campaignId] ?? [];
+const recaps = PLACEHOLDER_RECAPS[campaignId] ?? [];
 
-// Fetch entities related to this campaign
-const collectionsToQuery: CollectionName[] = ['npcs', 'locations', 'factions', 'events', 'items'];
+// Fetch campaign-scoped entities for tabbed codex
+const ENTITY_COLS: CollectionName[] = ['npcs', 'locations', 'factions', 'events', 'items'];
+const entityColumns: Array<{ label: string; entries: Array<{ name: string; href: string }> }> = [];
 
-const entityGroups: Array<{ collection: CollectionName; label: string; entries: Array<{ id: string; name: string; href: string }> }> = [];
-
-for (const col of collectionsToQuery) {
+for (const col of ENTITY_COLS) {
   const all = await getCollection(col);
   const filtered = all.filter((e: any) => {
-    const data = e.data;
-    if (col === 'events') {
-      return data.campaign === campaignId;
-    }
-    return data.campaigns?.includes(campaignId);
+    if (col === 'events') return e.data.campaign === campaignId;
+    return e.data.campaigns?.includes(campaignId);
   });
-
-  if (filtered.length > 0) {
-    entityGroups.push({
-      collection: col,
-      label: COLLECTIONS[col].label,
-      entries: filtered
-        .sort((a: any, b: any) => a.data.name.localeCompare(b.data.name))
-        .map((e: any) => ({ id: e.id, name: e.data.name, href: entryUrl(col, e.id) })),
-    });
-  }
+  entityColumns.push({
+    label: COLLECTIONS[col].label,
+    entries: filtered
+      .sort((a: any, b: any) => a.data.name.localeCompare(b.data.name))
+      .map((e: any) => ({ name: e.data.name, href: entryUrl(col, e.id) })),
+  });
 }
-
-// Get events sorted by year for timeline
-const events = await getCollection('events');
-const campaignEvents = events
-  .filter((e) => e.data.campaign === campaignId)
-  .sort((a, b) => (a.data.year ?? 0) - (b.data.year ?? 0) || a.data.name.localeCompare(b.data.name));
 ---
 
-<EntryLayout
-  title={d.name}
-  collection="campaigns"
-  related={d.related}
-  prevEntry={prevEntry}
-  nextEntry={nextEntry}
->
-  <MetadataSidebar slot="sidebar" fields={[
-    { label: 'Status', value: d.status, type: 'status' },
-    { label: 'Era', value: d.start_year ? `${d.start_year}${d.end_year ? `–${d.end_year}` : ''} TA` : undefined },
-    { label: 'Continent', value: d.continent },
-    { label: 'Primary Location', value: d.primary_location, type: 'slug' },
-    { label: 'Sessions', value: d.session_count },
-    { label: 'Started', value: d.start_date_real },
-    { label: 'Tags', value: d.tags, type: 'tags' },
+<BaseLayout title={d.name}>
+  <Breadcrumbs items={[
+    { label: 'Home', href: baseUrl },
+    ...(breadcrumbParent ? [breadcrumbParent] : []),
+    { label: d.name },
   ]} />
 
-  <Fragment slot="content">
+  <!-- HEADER -->
+  <div class="mb-8">
+    <div class="flex items-start gap-3 mb-3">
+      <h1 class="text-3xl lg:text-4xl font-serif text-accent">{d.name}</h1>
+      <StatusBadge status={d.status} />
+    </div>
+    <div class="flex flex-wrap gap-x-6 gap-y-1 text-sm text-text-secondary">
+      {d.session_count && <span>{d.session_count} sessions</span>}
+      {d.start_date_real && <span>Started {d.start_date_real}</span>}
+      {d.start_year && (
+        <span>{d.start_year}{d.end_year ? `–${d.end_year}` : ''} TA</span>
+      )}
+      {d.continent && <span>{d.continent}</span>}
+    </div>
+    {d.current_date && (
+      <p class="mt-2 text-sm">
+        <span class="text-text-secondary">Current in-game date:</span>
+        <span class="text-accent font-medium ml-1">{d.current_date}</span>
+      </p>
+    )}
+  </div>
+
+  <!-- OVERVIEW -->
+  <section class="mb-10">
     <div class="entry-content">
       <Content />
     </div>
+  </section>
 
-    <!-- Party Roster -->
-    {d.party.length > 0 && (
-      <section class="mt-8">
-        <h2 class="text-xl font-serif text-accent mb-4 pb-2 border-b border-border">Party Roster</h2>
-        <div class="overflow-x-auto">
-          <table class="w-full text-sm">
-            <thead>
-              <tr class="text-left text-text-secondary border-b border-border">
-                <th class="pb-2 pr-4">Name</th>
-                <th class="pb-2 pr-4">Race</th>
-                <th class="pb-2">Class</th>
-              </tr>
-            </thead>
-            <tbody>
-              {d.party.map((member) => (
-                <tr class="border-b border-border/50">
-                  <td class="py-2 pr-4">
-                    {member.slug ? (
-                      <a href={entryUrl('pcs', member.slug)} class="text-accent hover:text-accent-hover transition-colors">{member.name}</a>
-                    ) : (
-                      <span class="text-text-primary">{member.name}</span>
-                    )}
-                    {member.player && <span class="text-text-secondary text-xs ml-1">({member.player})</span>}
-                  </td>
-                  <td class="py-2 pr-4 text-text-secondary">{member.race}</td>
-                  <td class="py-2 text-text-secondary">{member.class}</td>
-                </tr>
+  <!-- PARTY ROSTER -->
+  {partyWithPortraits.length > 0 && (
+    <section class="mb-10">
+      <h2 class="text-xl font-serif text-accent mb-4 pb-2 border-b border-border">Party Roster</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        {partyWithPortraits.map((member) => (
+          <div class="bg-surface border border-border rounded-lg p-4 text-center hover:border-accent/50 transition-colors">
+            {member.slug ? (
+              <a href={entryUrl('pcs', member.slug)} class="block">
+                {member.portrait ? (
+                  <img
+                    src={member.portrait}
+                    alt={member.name}
+                    class="w-20 h-20 rounded-full mx-auto mb-3 object-cover border-2 border-border"
+                  />
+                ) : (
+                  <div class="w-20 h-20 rounded-full mx-auto mb-3 bg-border/50 flex items-center justify-center text-2xl font-serif text-text-secondary">
+                    {member.initials}
+                  </div>
+                )}
+                <p class="font-serif text-accent hover:text-accent-hover transition-colors">{member.name}</p>
+              </a>
+            ) : (
+              <Fragment>
+                <div class="w-20 h-20 rounded-full mx-auto mb-3 bg-border/50 flex items-center justify-center text-2xl font-serif text-text-secondary">
+                  {member.initials}
+                </div>
+                <p class="font-serif text-text-primary">{member.name}</p>
+              </Fragment>
+            )}
+            {member.player && <p class="text-text-secondary text-xs mt-0.5">{member.player}</p>}
+            <p class="text-text-secondary text-xs mt-1">{member.race} {member.class}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- SESSION LOG -->
+  <section class="mb-10">
+    <h2 class="text-xl font-serif text-accent mb-4 pb-2 border-b border-border">Session Log</h2>
+
+    <div class="flex flex-col lg:flex-row gap-6">
+      <!-- Arc Sidebar -->
+      {arcs.length > 0 && (
+        <aside class="lg:w-56 shrink-0 order-last lg:order-first">
+          <div class="lg:sticky lg:top-20 bg-surface border border-border rounded-lg p-4">
+            <h3 class="text-xs uppercase tracking-wider text-accent font-semibold mb-3 pb-2 border-b border-border">Story Arcs</h3>
+            <nav class="space-y-2">
+              {arcs.map((arc) => (
+                <div>
+                  <p class="text-sm text-text-primary font-medium">{arc.name}</p>
+                  <p class="text-xs text-text-secondary">Sessions {arc.sessions}</p>
+                </div>
               ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
-    )}
+            </nav>
+          </div>
+        </aside>
+      )}
 
-    <!-- Campaign Events Timeline -->
-    {campaignEvents.length > 0 && (
-      <section class="mt-8">
-        <h2 class="text-xl font-serif text-accent mb-4 pb-2 border-b border-border">Events Timeline</h2>
-        <div class="space-y-2">
-          {campaignEvents.map((event) => (
-            <a href={entryUrl('events', event.id)} class="flex items-baseline gap-3 py-1.5 hover:bg-surface-hover rounded px-2 -mx-2 transition-colors">
-              <span class="text-text-secondary text-sm shrink-0 w-20">
-                {event.data.date ?? (event.data.year ? `${event.data.year} TA` : '')}
-              </span>
-              <span class="text-text-primary">{event.data.name}</span>
-              <StatusBadge status={event.data.significance} size="sm" />
-            </a>
-          ))}
-        </div>
-      </section>
-    )}
+      <!-- Recap Cards -->
+      <div class="flex-1">
+        {recaps.length > 0 ? (
+          <div class="space-y-2">
+            {recaps.map((recap) => (
+              <details class="group bg-surface border border-border rounded-lg overflow-hidden">
+                <summary class="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-surface-hover transition-colors [&::-webkit-details-marker]:hidden list-none">
+                  <span class="text-accent font-serif font-semibold shrink-0 w-8">#{recap.session}</span>
+                  <span class="text-text-primary font-medium truncate flex-1">{recap.title}</span>
+                  <span class="text-xs px-2 py-0.5 rounded-full bg-accent/10 text-accent hidden sm:inline shrink-0">{recap.arc}</span>
+                  <span class="text-text-secondary text-xs shrink-0 hidden md:inline">{recap.date}</span>
+                  <svg class="w-4 h-4 text-text-secondary shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <div class="px-4 pb-4 pt-2 border-t border-border/50">
+                  <p class="text-text-secondary text-sm italic">Recap content will be populated in Phase 9.</p>
+                </div>
+              </details>
+            ))}
+            <p class="text-text-secondary text-xs text-center mt-4 italic">Showing {recaps.length} of {d.session_count ?? '?'} sessions — full recaps coming soon</p>
+          </div>
+        ) : (
+          <p class="text-text-secondary text-sm italic">Session recaps coming soon.</p>
+        )}
+      </div>
+    </div>
+  </section>
 
-    <!-- Entities in this Campaign -->
-    {entityGroups.length > 0 && (
-      <section class="mt-8">
-        <h2 class="text-xl font-serif text-accent mb-4 pb-2 border-b border-border">Entities in This Campaign</h2>
-        <div class="space-y-6">
-          {entityGroups.map((group) => (
-            <div>
-              <h3 class="text-sm font-semibold text-text-secondary uppercase tracking-wider mb-2">{group.label} ({group.entries.length})</h3>
-              <div class="flex flex-wrap gap-2">
-                {group.entries.map((e) => (
-                  <a href={e.href} class="text-sm px-3 py-1 rounded-full bg-surface border border-border hover:border-accent/50 hover:bg-surface-hover text-text-primary transition-colors">
-                    {e.name}
-                  </a>
-                ))}
-              </div>
+  <!-- REGIONAL MAP -->
+  {campaignMaps.length > 0 && (
+    <section class="mb-10">
+      <h2 class="text-xl font-serif text-accent mb-4 pb-2 border-b border-border">Regional Map</h2>
+      <div class={`grid gap-4 ${campaignMaps.length > 1 ? 'grid-cols-1 lg:grid-cols-2' : 'grid-cols-1 max-w-2xl'}`}>
+        {campaignMaps.map((m) => (
+          <a href={`${baseUrl}map/`} class="block group">
+            <div class="overflow-hidden rounded-lg border border-border group-hover:border-accent/50 transition-colors">
+              <img
+                src={`${baseUrl}maps/${m.file}`}
+                alt={`Map of ${m.label}`}
+                class="w-full h-auto transition-transform duration-300 group-hover:scale-[1.02]"
+              />
             </div>
+            <p class="text-xs text-text-secondary mt-1 group-hover:text-accent transition-colors">{m.label}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- CAMPAIGN CODEX (Tabbed) -->
+  <section class="mb-10">
+    <h2 class="text-xl font-serif text-accent mb-4 pb-2 border-b border-border">Campaign Codex</h2>
+
+    <!-- Tabs -->
+    <div class="flex flex-wrap gap-2 mb-6" id="codex-tabs">
+      {entityColumns.map((col, i) => (
+        <button
+          data-tab={col.label}
+          class={`codex-tab px-4 py-1.5 text-sm rounded-full transition-colors ${i === 0 ? 'bg-accent text-bg font-medium' : 'border border-border text-text-secondary hover:border-accent/50 hover:text-text-primary'}`}
+        >
+          {col.label} ({col.entries.length})
+        </button>
+      ))}
+    </div>
+
+    <!-- Tab Panels -->
+    {entityColumns.map((col, i) => (
+      <div class={`codex-panel ${i === 0 ? '' : 'hidden'}`} data-panel={col.label}>
+        <ul class="columns-1 sm:columns-2 lg:columns-3 gap-x-8">
+          {col.entries.map((e) => (
+            <li class="mb-1 break-inside-avoid">
+              <a href={e.href} class="text-sm text-text-secondary hover:text-accent transition-colors">{e.name}</a>
+            </li>
           ))}
-        </div>
-      </section>
-    )}
-  </Fragment>
-</EntryLayout>
+        </ul>
+      </div>
+    ))}
+  </section>
+</BaseLayout>
+
+<script is:inline>
+  const tabs = document.getElementById('codex-tabs');
+  if (tabs) {
+    tabs.addEventListener('click', (e) => {
+      const btn = e.target.closest('.codex-tab');
+      if (!btn) return;
+      const target = btn.getAttribute('data-tab');
+
+      // Update tab styles
+      tabs.querySelectorAll('.codex-tab').forEach((t) => {
+        const isActive = t.getAttribute('data-tab') === target;
+        t.className = isActive
+          ? 'codex-tab px-4 py-1.5 text-sm rounded-full bg-accent text-bg font-medium transition-colors'
+          : 'codex-tab px-4 py-1.5 text-sm rounded-full border border-border text-text-secondary hover:border-accent/50 hover:text-text-primary transition-colors';
+      });
+
+      // Show/hide panels
+      document.querySelectorAll('.codex-panel').forEach((p) => {
+        p.classList.toggle('hidden', p.getAttribute('data-panel') !== target);
+      });
+    });
+  }
+</script>

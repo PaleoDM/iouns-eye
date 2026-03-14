@@ -38,18 +38,4 @@ party:
     slug: rai
 ---
 
-## Overview
-
 The original Ishetar campaign follows a group of adventurers arriving at the fledgling colony of Ishetar, established five years prior by the Aroan Empire across the Turquoise Bay in the region of Ekkorai. The party discovers the colony besieged by sahuagin and goblins, uncovers a Deep Scion spy (Fisherman Dyrk) within the settlement, and is tasked by Emissary Rowena to map the region and establish relations with neighboring settlements.
-
-## Major Arcs
-
-### Arc 1: Colony Under Siege
-The party arrives to find Ishetar threatened by coordinated sahuagin raids and goblin attacks. They rescue prisoners from goblin caves, discover the Deep Scion spy Fisherman Dyrk infiltrating the colony, and establish trade relations with a halfling fishing village on a nearby island. They encounter mysterious water elementals trapped in the material plane and receive their mandate from Emissary Rowena to explore and diplomatize across the frontier.
-
-## Themes
-
-- Frontier colonialism and the ethics of settlement in occupied lands
-- Discovery and exploration of an unknown wilderness
-- Building alliances across cultural divides
-- Hidden threats within trusted communities

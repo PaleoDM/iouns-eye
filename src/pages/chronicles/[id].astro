@@ -2,7 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import EntryLayout from '../../layouts/EntryLayout.astro';
 import MetadataSidebar from '../../components/ui/MetadataSidebar.astro';
-import { entryUrl } from '../../lib/collections';
+import { entryUrl, isDefunctOnly } from '../../lib/collections';
 
 export async function getStaticPaths() {
   const entries = await getCollection('chronicles');
@@ -29,6 +29,7 @@ const baseUrl = import.meta.env.BASE_URL;
   related={d.related}
   prevEntry={prevEntry}
   nextEntry={nextEntry}
+  pagefindIgnore={isDefunctOnly(d)}
 >
   <Fragment slot="sidebar">
     <MetadataSidebar fields={[

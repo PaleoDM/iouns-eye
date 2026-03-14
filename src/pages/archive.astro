@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import StatusBadge from '../components/ui/StatusBadge.astro';
+import { getCollection } from 'astro:content';
+import { entryUrl } from '../lib/collections';
+
+const campaigns = await getCollection('campaigns');
+const completed = campaigns
+  .filter((c) => c.data.status === 'completed')
+  .sort((a, b) => (b.data.start_year ?? 0) - (a.data.start_year ?? 0));
+
+const baseUrl = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="Completed Campaigns">
+  <Breadcrumbs items={[
+    { label: 'Home', href: baseUrl },
+    { label: 'Completed Campaigns' },
+  ]} />
+
+  <h1 class="text-3xl lg:text-4xl font-serif text-accent mb-2">Completed Campaigns</h1>
+  <p class="text-text-secondary mb-8">Adventures that have reached their conclusion in the world of Astoria.</p>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    {completed.map((campaign) => (
+      <a href={entryUrl('campaigns', campaign.id)} class="bg-surface border border-border rounded-lg p-5 hover:bg-surface-hover hover:border-accent/50 transition-colors">
+        <div class="flex items-start justify-between gap-2 mb-3">
+          <h2 class="font-serif text-lg text-text-primary">{campaign.data.name}</h2>
+          <StatusBadge status={campaign.data.status} />
+        </div>
+        <div class="space-y-1 text-sm text-text-secondary">
+          {campaign.data.start_year && (
+            <p>{campaign.data.start_year}{campaign.data.end_year ? `–${campaign.data.end_year}` : ''} TA</p>
+          )}
+          {campaign.data.continent && <p>{campaign.data.continent}</p>}
+          {campaign.data.session_count && <p>{campaign.data.session_count} sessions</p>}
+          {campaign.data.party.length > 0 && <p>{campaign.data.party.length} party members</p>}
+        </div>
+      </a>
+    ))}
+  </div>
+</BaseLayout>

@@ -10,7 +10,8 @@ export type CollectionName =
   | 'lore'
   | 'campaigns'
   | 'chronicles'
-  | 'pcs';
+  | 'pcs'
+;
 
 export interface CollectionMeta {
   label: string;
@@ -57,7 +58,12 @@ export async function buildSlugMap(): Promise<Map<string, ResolvedSlug>> {
   _slugMap = new Map();
 
   for (const collectionName of COLLECTION_NAMES) {
-    const entries = await getCollection(collectionName);
+    let entries: any[];
+    try {
+      entries = await getCollection(collectionName);
+    } catch {
+      continue;
+    }
     for (const entry of entries) {
       _slugMap.set(entry.id, {
         collection: collectionName,
@@ -85,9 +91,22 @@ export async function resolveSlugs(slugs: string[]): Promise<(ResolvedSlug | nul
 export const CAMPAIGN_LABELS: Record<string, string> = {
   'ishetar-og': 'Ishetar OG',
   'head-hunters': 'Head Hunters',
-  'kalari': 'Kalari',
-  'skt': 'Storm King\'s Thunder',
+  'kalari': 'Ruins of Kalari',
+  'skt': 'SKT One Last Job',
   'rifthaven-irl': 'Rifthaven IRL',
-  'ishetar-2': 'Ishetar 2.0',
-  'rifthaven-online': 'Rifthaven Online',
+  'ishetar-2': 'Defenders of Ishetar',
+  'rifthaven-online': 'Rifthaven: Root of Rebellion',
 };
+
+export const DEFUNCT_CAMPAIGNS = new Set(['rifthaven-irl', 'head-hunters']);
+
+/**
+ * Returns true if the entry belongs ONLY to defunct campaigns.
+ * Entries shared with non-defunct campaigns remain visible.
+ * Works for entries with `campaigns` array or single `campaign` string.
+ */
+export function isDefunctOnly(data: Record<string, any>): boolean {
+  const campaigns: string[] = data.campaigns ?? (data.campaign ? [data.campaign] : []);
+  if (campaigns.length === 0) return false;
+  return campaigns.every((c: string) => DEFUNCT_CAMPAIGNS.has(c));
+}

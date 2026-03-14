@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+import { COLLECTIONS, collectionUrl, type CollectionName, isDefunctOnly } from '../lib/collections';
+
+const baseUrl = import.meta.env.BASE_URL;
+
+// Collections to show in the library (exclude campaigns, chronicles, recaps — they have their own nav)
+const libraryCollections: Array<{ key: CollectionName; description: string }> = [
+  { key: 'npcs', description: 'Characters of the world' },
+  { key: 'locations', description: 'Places across Astoria' },
+  { key: 'factions', description: 'Powers and organizations' },
+  { key: 'events', description: 'History unfolding' },
+  { key: 'items', description: 'Legendary artifacts and tools' },
+  { key: 'deities', description: 'The divine pantheon' },
+  { key: 'lore', description: 'World-building and cosmology' },
+  { key: 'pcs', description: 'Player characters across campaigns' },
+];
+
+// Get counts (excluding defunct-only entries)
+const counts: Partial<Record<CollectionName, number>> = {};
+for (const { key } of libraryCollections) {
+  const all = await getCollection(key);
+  counts[key] = all.filter((e: any) => !isDefunctOnly(e.data)).length;
+}
+---
+
+<BaseLayout title="Library">
+  <Breadcrumbs items={[
+    { label: 'Home', href: baseUrl },
+    { label: 'Library' },
+  ]} />
+
+  <h1 class="text-3xl lg:text-4xl font-serif text-accent mb-2">Library</h1>
+  <p class="text-text-secondary mb-8">Browse the complete codex of Astoria by category.</p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    {libraryCollections.map(({ key, description }) => (
+      <a href={collectionUrl(key)} class="bg-surface border border-border rounded-lg p-5 hover:bg-surface-hover hover:border-accent/50 transition-colors">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="text-2xl">{COLLECTIONS[key].icon}</span>
+          <h2 class="font-serif text-lg text-text-primary">{COLLECTIONS[key].label}</h2>
+        </div>
+        <p class="text-text-secondary text-sm mb-3">{description}</p>
+        <p class="text-accent text-sm font-medium">{counts[key]} entries</p>
+      </a>
+    ))}
+  </div>
+</BaseLayout>

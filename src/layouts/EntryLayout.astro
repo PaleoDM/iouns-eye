@@ -10,14 +10,16 @@ interface Props {
   related?: string[];
   prevEntry?: { name: string; href: string };
   nextEntry?: { name: string; href: string };
+  pagefindIgnore?: boolean;
 }
 
-const { title, collection, related = [], prevEntry, nextEntry } = Astro.props;
+const { title, collection, related = [], prevEntry, nextEntry, pagefindIgnore = false } = Astro.props;
 const baseUrl = import.meta.env.BASE_URL;
 const meta = COLLECTIONS[collection];
 ---
 
 <BaseLayout title={title}>
+  <div {...(pagefindIgnore ? { 'data-pagefind-ignore': '' } : {})}>
   <Breadcrumbs items={[
     { label: 'Home', href: baseUrl },
     { label: meta.label, href: collectionUrl(collection) },
@@ -62,5 +64,6 @@ const meta = COLLECTIONS[collection];
         <slot name="sidebar" />
       </div>
     </aside>
+  </div>
   </div>
 </BaseLayout>
