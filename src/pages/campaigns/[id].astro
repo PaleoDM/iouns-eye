@@ -58,64 +58,35 @@ const breadcrumbParent = d.status === 'completed'
   ? { label: 'Archive', href: `${baseUrl}archive/` }
   : null;
 
-// Placeholder arcs and recaps — will be replaced with real data in Phase 9
-const PLACEHOLDER_ARCS: Record<string, Array<{ name: string; sessions: string }>> = {
-  'rifthaven-online': [
-    { name: 'Sparkworks Tunnels', sessions: '1–12' },
-    { name: 'Personal Storylines', sessions: '13–14' },
-    { name: 'The Roc Run', sessions: '15–17' },
-    { name: 'Salvation & Boughshadow', sessions: '18–36' },
-    { name: 'Shadowfell — Odaire', sessions: '37–41' },
-    { name: 'Potter\'s Field', sessions: '42–43' },
-  ],
-  'ishetar-2': [
-    { name: 'Help the Caldrows', sessions: '1–4' },
-    { name: 'Deliver Meat to the Vegepygmies', sessions: '5–6' },
-    { name: 'The Price of Beauty', sessions: '9–12' },
-    { name: 'Emberspost', sessions: '13–22' },
-    { name: 'Firewatch Island', sessions: '23–25' },
-    { name: 'The Turquoise Timber Trust', sessions: '26–30' },
-  ],
-  'ishetar-og': [
-    { name: 'Colony Under Siege', sessions: '1–?' },
-  ],
-  'kalari': [
-    { name: 'Harwich Village Curse', sessions: '1–?' },
-    { name: 'The Cult of Grave Dirt', sessions: '?–?' },
-    { name: 'Kuo-Toa and the Power Plant', sessions: '?–?' },
-    { name: 'Sunken City Exploration', sessions: '?–?' },
-    { name: 'Vespa and the Fey Threat', sessions: '?–?' },
-    { name: 'Drelduin and the Desert War', sessions: '?–?' },
-    { name: 'Orbos and the Void Dragon', sessions: '?–?' },
-  ],
-  'skt': [
-    { name: 'The Ordning Shattered', sessions: '1–?' },
-    { name: 'Giant Lords Campaign', sessions: '?–?' },
-    { name: 'The Storm King\'s Court', sessions: '?–?' },
-    { name: 'Iymrith and Slarkrethel', sessions: '?–?' },
-  ],
-};
-
-const PLACEHOLDER_RECAPS: Record<string, Array<{ session: number; title: string; arc: string; date: string }>> = {
-  'rifthaven-online': [
-    { session: 43, title: 'The Pallbearer\'s Galleria', arc: 'Potter\'s Field', date: '22 Kord 1129' },
-    { session: 42, title: 'Welcome to Potter\'s Field', arc: 'Potter\'s Field', date: '21 Kord 1129' },
-    { session: 41, title: 'Escape from Odaire', arc: 'Shadowfell — Odaire', date: '18 Kord 1129' },
-    { session: 40, title: 'The Puppet King Falls', arc: 'Shadowfell — Odaire', date: '17 Kord 1129' },
-    { session: 39, title: 'Into the Toymaker\'s Workshop', arc: 'Shadowfell — Odaire', date: '16 Kord 1129' },
-  ],
-  'ishetar-2': [
-    { session: 30, title: 'Sallow Marches North', arc: 'The Turquoise Timber Trust', date: '14 Pelor 1136' },
-    { session: 29, title: 'Assault on the TTT Compound', arc: 'The Turquoise Timber Trust', date: '13 Pelor 1136' },
-    { session: 28, title: 'Veraine Unmasked', arc: 'The Turquoise Timber Trust', date: '12 Pelor 1136' },
-    { session: 27, title: 'Parley at the Restful Lily', arc: 'The Turquoise Timber Trust', date: '10 Pelor 1136' },
-    { session: 26, title: 'Return to a Changed Ishetar', arc: 'The Turquoise Timber Trust', date: '8 Pelor 1136' },
-  ],
-};
-
 const campaignId = entry.id;
-const arcs = PLACEHOLDER_ARCS[campaignId] ?? [];
-const recaps = PLACEHOLDER_RECAPS[campaignId] ?? [];
+
+// Fetch real recaps for this campaign
+const allRecaps = await getCollection('recaps', ({ data }) => data.campaign === campaignId);
+
+// Sort ascending for arc computation, descending for display
+const recapsAsc = [...allRecaps].sort((a, b) => a.data.session_number - b.data.session_number);
+const recapsDesc = [...allRecaps].sort((a, b) => b.data.session_number - a.data.session_number);
+
+// Render all recap bodies (static generation — fine at build time)
+const recapsWithContent = await Promise.all(
+  recapsDesc.map(async (r) => ({ data: r.data, rendered: await render(r) }))
+);
+
+// Build arc sidebar: ordered unique arcs with session ranges
+const arcMap = new Map<string, { first: number; last: number }>();
+for (const r of recapsAsc) {
+  const arc = r.data.arc_name;
+  if (!arc) continue;
+  if (!arcMap.has(arc)) {
+    arcMap.set(arc, { first: r.data.session_number, last: r.data.session_number });
+  } else {
+    arcMap.get(arc)!.last = r.data.session_number;
+  }
+}
+const arcs = [...arcMap.entries()].map(([name, { first, last }]) => ({
+  name,
+  sessions: first === last ? `${first}` : `${first}–${last}`,
+}));
 
 // Fetch campaign-scoped entities for tabbed grimoire
 const ENTITY_COLS: CollectionName[] = ['npcs', 'locations', 'factions', 'events', 'items'];
@@ -234,25 +205,26 @@ for (const col of ENTITY_COLS) {
 
       <!-- Recap Cards -->
       <div class="flex-1">
-        {recaps.length > 0 ? (
+        {recapsWithContent.length > 0 ? (
           <div class="space-y-2">
-            {recaps.map((recap) => (
+            {recapsWithContent.map(({ data, rendered: { Content } }) => (
               <details class="group bg-surface border border-border rounded-lg overflow-hidden">
                 <summary class="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-surface-hover transition-colors [&::-webkit-details-marker]:hidden list-none">
-                  <span class="text-accent font-serif font-semibold shrink-0 w-8">#{recap.session}</span>
-                  <span class="text-text-primary font-medium truncate flex-1">{recap.title}</span>
-                  <span class="text-xs px-2 py-0.5 rounded-full bg-accent/10 text-accent hidden sm:inline shrink-0">{recap.arc}</span>
-                  <span class="text-text-secondary text-xs shrink-0 hidden md:inline">{recap.date}</span>
+                  <span class="text-accent font-serif font-semibold shrink-0 w-8">#{data.session_number}</span>
+                  <span class="text-text-primary font-medium truncate flex-1">{data.name}</span>
+                  {data.arc_name && (
+                    <span class="text-xs px-2 py-0.5 rounded-full bg-accent/10 text-accent hidden sm:inline shrink-0">{data.arc_name}</span>
+                  )}
+                  <span class="text-text-secondary text-xs shrink-0 hidden md:inline">{data.in_game_date ?? data.session_date}</span>
                   <svg class="w-4 h-4 text-text-secondary shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <div class="px-4 pb-4 pt-2 border-t border-border/50">
-                  <p class="text-text-secondary text-sm italic">Recap content will be populated in Phase 9.</p>
+                <div class="px-4 pb-4 pt-2 border-t border-border/50 entry-content">
+                  <Content />
                 </div>
               </details>
             ))}
-            <p class="text-text-secondary text-xs text-center mt-4 italic">Showing {recaps.length} of {d.session_count ?? '?'} sessions — full recaps coming soon</p>
           </div>
         ) : (
           <p class="text-text-secondary text-sm italic">Session recaps coming soon.</p>

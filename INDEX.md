@@ -1,6 +1,6 @@
-# Ioun's Eye — Grimoire Index
+# Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-03-14 -->
+<!-- Last updated: 2026-03-15 -->
 
 ## NPCs (118)
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
@@ -329,11 +329,11 @@
 - `the-third-age` The Third Age — history
 
 ## Campaigns (7)
+- `ishetar-2` Defenders of Ishetar — active | 1136
 - `head-hunters` Head Hunters Return to Wanun — defunct | 1094
-- `ishetar-2` Ishetar 2.0 — active | 1136
 - `ishetar-og` Ishetar OG — completed | 1082
 - `rifthaven-irl` Rifthaven IRL — defunct | 1127
-- `rifthaven-online` Rifthaven Online — active | 1128
+- `rifthaven-online` Rifthaven: Root of Rebellion — active | 1128
 - `kalari` Ruins of Kalari — completed | 1088
 - `skt` SKT One Last Job — completed | 1094
 
