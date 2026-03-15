@@ -17,7 +17,7 @@ Ioun's Eye is a wiki-style website and knowledge management system for the D&D h
 | CI/CD | GitHub Actions | Auto-build and deploy on push to main |
 
 ## Current Phase
-Phase 9
+Phase 10
 
 ## Development Phases
 | Phase | Description | Status |
@@ -31,7 +31,7 @@ Phase 9
 | 6 | Map integration with clickable regions | Complete |
 | 7 | `/grimoire` Claude Code skill | Complete |
 | 8 | UX Rework — campaign-first navigation & homepage | Complete |
-| 9 | `/write-recap` and `/prep-session` skill upgrades | Not Started |
+| 9 | `/write-recap` and `/prep-session` skill upgrades | Complete |
 | 10 | Repo cleanup and file migration | Not Started |
 
 ## Rules for Agents
@@ -39,7 +39,7 @@ Phase 9
 - Each phase has explicit success criteria — verify all of them before marking complete
 - Update the "Current Phase" and status table in this file when completing a phase
 - Commit after each phase completion with message format: `"Phase N: {Name} — {Summary}"`
-- The codex entry files in `src/content/` are the **single source of truth** for world knowledge
+- The grimoire entry files in `src/content/` are the **single source of truth** for world knowledge
 - Never fabricate lore — only extract what exists in source material or what Carlos explicitly provides
 - When extracting entities, preserve the DM's voice and intent — do not editorialize
 - Cross-references between entries use slugs, not display names (e.g., `related: [brenna-tolvane]` not `related: [Brenna Tolvane]`)
@@ -48,7 +48,7 @@ Phase 9
 
 ## Key Files
 - `ROADMAP.md` — Complete development roadmap (the source of truth for implementation)
-- `INDEX.md` — Auto-generated master index of all codex entries (Claude's quick-lookup file)
+- `INDEX.md` — Auto-generated master index of all grimoire entries (Claude's quick-lookup file)
 - `src/content.config.ts` — Astro content collection schemas (defines all entry types)
 - `src/data/calendar.json` — Calendar system data (months, holy days, moon phases, tides)
 - `src/data/deities.json` — Complete deity data (names, titles, domains, symbols)
@@ -107,7 +107,7 @@ iouns-eye/
 
 ### Styling
 - Tailwind CSS v4 for all styling — no CSS modules, no styled-components
-- Dark theme by default (this is a fantasy world codex, not a docs site)
+- Dark theme by default (this is a fantasy world grimoire, not a docs site)
 - Responsive: mobile-friendly but desktop-primary
 
 ### Interactive Components

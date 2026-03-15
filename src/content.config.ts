@@ -134,19 +134,23 @@ const campaigns = defineCollection({
   }),
 });
 
-// recaps collection — will be enabled in Phase 9 when recap content is populated
-// const recaps = defineCollection({
-//   loader: glob({ pattern: '**/*.md', base: './src/content/recaps' }),
-//   schema: z.object({
-//     title: z.string(),
-//     campaign: z.string(),
-//     session_number: z.number(),
-//     in_game_date: z.string().optional(),
-//     real_date: z.string().optional(),
-//     tags: z.array(z.string()).default([]),
-//     related: z.array(z.string()).default([]),
-//   }),
-// });
+const recaps = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/recaps' }),
+  schema: z.object({
+    name: z.string(),
+    campaign: z.enum(['ishetar-2', 'rifthaven-online']),
+    session_number: z.number(),
+    session_date: z.string(),
+    author: z.string().default('PaleoDM'),
+    recap_type: z.enum(['dm', 'player']).default('dm'),
+    in_game_date: z.string().optional(),
+    level_milestone: z.number().optional(),
+    arc_name: z.string().optional(),
+    vtt_campaign_id: z.string().optional(),
+    tags: z.array(z.string()).default([]),
+    related: z.array(z.string()).default([]),
+  }),
+});
 
 const chronicles = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/chronicles' }),
@@ -193,4 +197,5 @@ export const collections = {
   campaigns,
   chronicles,
   pcs,
+  recaps,
 };
