@@ -17,7 +17,7 @@ Ioun's Eye is a wiki-style website and knowledge management system for the D&D h
 | CI/CD | GitHub Actions | Auto-build and deploy on push to main |
 
 ## Current Phase
-Phase 11
+Phase 12
 
 ## Development Phases
 | Phase | Description | Status |
@@ -33,7 +33,7 @@ Phase 11
 | 8 | UX Rework — campaign-first navigation & homepage | Complete |
 | 9 | `/write-recap` and `/prep-session` skill upgrades | Complete |
 | 10 | QMD migration — populate recaps collection & campaign pages | Complete |
-| 11 | `/prep-session` upgrade + repo cleanup | Not Started |
+| 11 | `/prep-session` upgrade + repo cleanup | Complete |
 | 12 | Grimoire audit — manual DM review of all entries | Not Started |
 
 ## Rules for Agents
