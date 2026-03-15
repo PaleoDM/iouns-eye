@@ -1304,6 +1304,37 @@ interface DeityRecord {
 
 ---
 
+### Phase 12: Grimoire Audit
+
+**Objective**: Manual accuracy review of all grimoire entries with the DM. Every entry is checked, edited if needed, and signed off.
+
+**Prerequisites**: Phase 11 complete (grimoire fully populated, INDEX.md verified)
+
+**Steps**:
+1. **Generate master audit list** — read INDEX.md, enumerate every entry by type (NPCs, Locations, Factions, Events, Items, Lore, Deities, PCs), output a numbered checklist grouped by type with entry name and slug. Present the full list to the DM before starting.
+
+2. **Walk through entries one at a time** — display name, type, key frontmatter fields, and body. Ask: "Accurate? Any edits needed?" Apply edits immediately. Mark done when DM approves. Show running progress ("12 of 84 done").
+
+3. **Handle pausing** — if the DM wants to skip a type or stop, save a simple checklist to a temp file. Resume from there next session.
+
+4. **Final pass** — run `npm run build`, regenerate INDEX.md, commit all edits.
+
+**Files Created/Modified**:
+- Any grimoire entries in `src/content/` that need corrections
+- `INDEX.md` — regenerated after all edits
+
+**Success Criteria**:
+- [ ] Every grimoire entry reviewed by the DM
+- [ ] All inaccuracies corrected
+- [ ] `npm run build` succeeds with no errors
+- [ ] INDEX.md regenerated and committed
+
+**Known Risks**:
+- Conversation-length-limited — plan to spread across multiple sessions
+- Save a running checklist so progress is never lost between sessions
+
+---
+
 ## UI/UX Specification
 
 ### Layout

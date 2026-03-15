@@ -34,6 +34,7 @@ Phase 11
 | 9 | `/write-recap` and `/prep-session` skill upgrades | Complete |
 | 10 | QMD migration — populate recaps collection & campaign pages | Complete |
 | 11 | `/prep-session` upgrade + repo cleanup | Not Started |
+| 12 | Grimoire audit — manual DM review of all entries | Not Started |
 
 ## Rules for Agents
 - Follow `ROADMAP.md` phases exactly — do not skip ahead or improvise architecture
