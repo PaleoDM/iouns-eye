@@ -55,7 +55,7 @@ export function SeasonRing() {
               textAnchor="middle"
               dominantBaseline="central"
               fill="#e0e0e0"
-              fontSize={13}
+              fontSize={15}
               fontWeight={600}
               letterSpacing={1}
               transform={`rotate(${midAngle}, ${labelPos.x}, ${labelPos.y})`}
@@ -103,7 +103,7 @@ export function MonthLabelRing({ months }: { months: MonthData[] }) {
               textAnchor="middle"
               dominantBaseline="central"
               fill="#e0e0e0"
-              fontSize={11}
+              fontSize={13}
               fontWeight={600}
               fontFamily="serif"
               transform={`rotate(${textRotation}, ${labelPos.x}, ${labelPos.y})`}
@@ -231,7 +231,7 @@ export function DayGridRing({ months, selectedDay, hoveredDay }: DayGridProps) {
                   textAnchor="middle"
                   dominantBaseline="central"
                   fill={isHolyDay ? '#f0d060' : isSelected ? '#ffffff' : '#c0c0d0'}
-                  fontSize={isHolyDay ? 9 : 8}
+                  fontSize={isHolyDay ? 12 : 11}
                   fontWeight={isHolyDay ? 700 : 400}
                 >
                   {day}
@@ -241,11 +241,11 @@ export function DayGridRing({ months, selectedDay, hoveredDay }: DayGridProps) {
                 {isHolyDay && (
                   <text
                     x={pos.x}
-                    y={pos.y + 8}
+                    y={pos.y + 10}
                     textAnchor="middle"
                     dominantBaseline="central"
                     fill="#f0d060"
-                    fontSize={6}
+                    fontSize={7}
                   >
                     ◆
                   </text>
@@ -313,11 +313,35 @@ export function MoonPhaseRing() {
 
 // --- Center Display ---
 export function CenterDisplay({ year }: { year: number }) {
+  // Arc radius for era label text — close to center circle edge (r=95)
+  const arcR = 78;
+  const topArcPath = `M ${CX - arcR} ${CY} A ${arcR} ${arcR} 0 0 1 ${CX + arcR} ${CY}`;
+  const botArcPath = `M ${CX - arcR} ${CY} A ${arcR} ${arcR} 0 0 0 ${CX + arcR} ${CY}`;
+
   return (
     <g className="center-display">
+      <defs>
+        <path id="era-top-arc" d={topArcPath} />
+        <path id="era-bot-arc" d={botArcPath} />
+      </defs>
+
       <circle cx={CX} cy={CY} r={RINGS.centerOuter} fill="#1a1a2e" stroke="#2a2a4a" strokeWidth={1} />
+
+      {/* Era labels — curved along the top and bottom of the center circle */}
+      <text fill="#6a6a9a" fontSize={14} fontFamily="serif" fontStyle="italic">
+        <textPath href="#era-top-arc" startOffset="50%" textAnchor="middle" dy="18">
+          The Age of Harmony
+        </textPath>
+      </text>
+      <text fill="#6a6a9a" fontSize={14} fontFamily="serif" fontStyle="italic">
+        <textPath href="#era-bot-arc" startOffset="50%" textAnchor="middle">
+          The Age of Reason
+        </textPath>
+      </text>
+
+      {/* Year */}
       <text
-        x={CX} y={CY - 12}
+        x={CX} y={CY - 10}
         textAnchor="middle"
         dominantBaseline="central"
         fill="#e0e0e0"
@@ -328,7 +352,7 @@ export function CenterDisplay({ year }: { year: number }) {
         {year}
       </text>
       <text
-        x={CX} y={CY + 16}
+        x={CX} y={CY + 18}
         textAnchor="middle"
         dominantBaseline="central"
         fill="#8888aa"

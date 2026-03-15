@@ -117,7 +117,7 @@ const campaignId = entry.id;
 const arcs = PLACEHOLDER_ARCS[campaignId] ?? [];
 const recaps = PLACEHOLDER_RECAPS[campaignId] ?? [];
 
-// Fetch campaign-scoped entities for tabbed codex
+// Fetch campaign-scoped entities for tabbed grimoire
 const ENTITY_COLS: CollectionName[] = ['npcs', 'locations', 'factions', 'events', 'items'];
 const entityColumns: Array<{ label: string; entries: Array<{ name: string; href: string }> }> = [];
 
@@ -282,16 +282,16 @@ for (const col of ENTITY_COLS) {
     </section>
   )}
 
-  <!-- CAMPAIGN CODEX (Tabbed) -->
+  <!-- CAMPAIGN GRIMOIRE (Tabbed) -->
   <section class="mb-10">
-    <h2 class="text-xl font-serif text-accent mb-4 pb-2 border-b border-border">Campaign Codex</h2>
+    <h2 class="text-xl font-serif text-accent mb-4 pb-2 border-b border-border">Campaign Grimoire</h2>
 
     <!-- Tabs -->
-    <div class="flex flex-wrap gap-2 mb-6" id="codex-tabs">
+    <div class="flex flex-wrap gap-2 mb-6" id="grimoire-tabs">
       {entityColumns.map((col, i) => (
         <button
           data-tab={col.label}
-          class={`codex-tab px-4 py-1.5 text-sm rounded-full transition-colors ${i === 0 ? 'bg-accent text-bg font-medium' : 'border border-border text-text-secondary hover:border-accent/50 hover:text-text-primary'}`}
+          class={`grimoire-tab px-4 py-1.5 text-sm rounded-full transition-colors ${i === 0 ? 'bg-accent text-bg font-medium' : 'border border-border text-text-secondary hover:border-accent/50 hover:text-text-primary'}`}
         >
           {col.label} ({col.entries.length})
         </button>
@@ -300,7 +300,7 @@ for (const col of ENTITY_COLS) {
 
     <!-- Tab Panels -->
     {entityColumns.map((col, i) => (
-      <div class={`codex-panel ${i === 0 ? '' : 'hidden'}`} data-panel={col.label}>
+      <div class={`grimoire-panel ${i === 0 ? '' : 'hidden'}`} data-panel={col.label}>
         <ul class="columns-1 sm:columns-2 lg:columns-3 gap-x-8">
           {col.entries.map((e) => (
             <li class="mb-1 break-inside-avoid">
@@ -314,23 +314,23 @@ for (const col of ENTITY_COLS) {
 </BaseLayout>
 
 <script is:inline>
-  const tabs = document.getElementById('codex-tabs');
+  const tabs = document.getElementById('grimoire-tabs');
   if (tabs) {
     tabs.addEventListener('click', (e) => {
-      const btn = e.target.closest('.codex-tab');
+      const btn = e.target.closest('.grimoire-tab');
       if (!btn) return;
       const target = btn.getAttribute('data-tab');
 
       // Update tab styles
-      tabs.querySelectorAll('.codex-tab').forEach((t) => {
+      tabs.querySelectorAll('.grimoire-tab').forEach((t) => {
         const isActive = t.getAttribute('data-tab') === target;
         t.className = isActive
-          ? 'codex-tab px-4 py-1.5 text-sm rounded-full bg-accent text-bg font-medium transition-colors'
-          : 'codex-tab px-4 py-1.5 text-sm rounded-full border border-border text-text-secondary hover:border-accent/50 hover:text-text-primary transition-colors';
+          ? 'grimoire-tab px-4 py-1.5 text-sm rounded-full bg-accent text-bg font-medium transition-colors'
+          : 'grimoire-tab px-4 py-1.5 text-sm rounded-full border border-border text-text-secondary hover:border-accent/50 hover:text-text-primary transition-colors';
       });
 
       // Show/hide panels
-      document.querySelectorAll('.codex-panel').forEach((p) => {
+      document.querySelectorAll('.grimoire-panel').forEach((p) => {
         p.classList.toggle('hidden', p.getAttribute('data-panel') !== target);
       });
     });

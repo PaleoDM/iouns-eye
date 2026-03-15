@@ -8,7 +8,7 @@ holy_day: The Knowing
 holy_day_date: "14th"
 holy_day_description: Meditation and reflection on learned knowledge.
 symbol_file: knowing-mistress.png
-tags: [prime-deity, patron-of-codex]
+tags: [prime-deity, patron-of-grimoire]
 related: [corellon, pelor]
 ---
 
@@ -26,4 +26,4 @@ The Knowing falls on the 14th of Ioun's month — the height of summer. Follower
 
 ## Role in Campaigns
 
-This codex bears her name — Ioun's Eye — as a repository of all knowledge gathered across the campaigns of Astoria.
+This grimoire bears her name — Ioun's Eye — as a repository of all knowledge gathered across the campaigns of Astoria.

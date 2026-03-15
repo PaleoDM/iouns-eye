@@ -37,7 +37,7 @@ None required — this is a fully static site with no server-side dependencies.
 2. In repo Settings → Pages → Source: select "GitHub Actions"
 3. Push to main — the workflow in `.github/workflows/deploy.yml` handles the rest
 
-## Regenerate Codex Index
+## Regenerate Grimoire Index
 ```bash
 npm run index
 # Regenerates INDEX.md from all content collections

@@ -4,9 +4,10 @@ import {
   hitTestDay, hitTestMonth, getTideInfo, getMoonPhaseLabel, getDayOfWeekName,
 } from './calendar-utils';
 import { SeasonRing, MonthLabelRing, DayGridRing, MoonPhaseRing, CenterDisplay } from './CalendarRing';
-import type { MonthData, CalendarData } from './CalendarRing';
+import type { CalendarData } from './CalendarRing';
 import { CalendarTooltip } from './CalendarTooltip';
 import { CalendarLegend } from './CalendarLegend';
+import { CalendarTimeline } from './CalendarTimeline';
 
 export interface CalendarEvent {
   slug: string;
@@ -21,7 +22,6 @@ export interface CalendarEvent {
 interface AstorianCalendarProps {
   calendarData: CalendarData;
   events: CalendarEvent[];
-  availableYears: number[];
   defaultYear: number;
   baseUrl: string;
 }
@@ -29,11 +29,8 @@ interface AstorianCalendarProps {
 export default function AstorianCalendar({
   calendarData,
   events,
-  availableYears,
   defaultYear,
-  baseUrl,
 }: AstorianCalendarProps) {
-  const [selectedYear, setSelectedYear] = useState(defaultYear);
   const [hoveredDay, setHoveredDay] = useState<{ monthNumber: number; day: number } | null>(null);
   const [selectedDay, setSelectedDay] = useState<{ monthNumber: number; day: number } | null>(null);
   const [tooltipPos, setTooltipPos] = useState({ x: 0, y: 0 });
@@ -41,10 +38,10 @@ export default function AstorianCalendar({
 
   const months = calendarData.months;
 
-  // Filter events for selected year
+  // Filter events for the canonical year
   const yearEvents = useMemo(
-    () => events.filter((e) => e.year === selectedYear),
-    [events, selectedYear],
+    () => events.filter((e) => e.year === defaultYear),
+    [events, defaultYear],
   );
 
   // Events for the selected day
@@ -62,12 +59,6 @@ export default function AstorianCalendar({
       (e) => e.monthNumber === selectedDay.monthNumber && !e.day,
     );
   }, [yearEvents, selectedDay]);
-
-  // Events for the year (no specific month)
-  const yearOnlyEvents = useMemo(
-    () => yearEvents.filter((e) => !e.monthNumber),
-    [yearEvents],
-  );
 
   // Convert mouse event to SVG coordinates
   const toSvgCoords = useCallback((e: React.MouseEvent): { x: number; y: number } | null => {
@@ -120,169 +111,129 @@ export default function AstorianCalendar({
     : null;
 
   return (
-    <div className="flex flex-col xl:flex-row gap-6">
-      {/* Calendar Column */}
-      <div className="flex-1 min-w-0">
-        {/* Year selector */}
-        <div className="mb-4 flex items-center gap-3">
-          <label htmlFor="year-select" className="text-sm text-text-secondary">Year:</label>
-          <select
-            id="year-select"
-            value={selectedYear}
-            onChange={(e) => {
-              setSelectedYear(Number(e.target.value));
-              setSelectedDay(null);
-            }}
-            className="rounded border border-border bg-surface px-3 py-1.5 text-sm text-text-primary focus:border-accent focus:outline-none"
-          >
-            {availableYears.map((y) => (
-              <option key={y} value={y}>{y} TA</option>
-            ))}
-          </select>
-          <span className="text-xs text-text-secondary">
-            {yearEvents.length} event{yearEvents.length !== 1 ? 's' : ''} this year
-          </span>
-        </div>
+    <div className="flex flex-col gap-6">
+      {/* World history timeline — above the calendar */}
+      <CalendarTimeline />
 
-        {/* SVG Calendar */}
-        <div className="mx-auto" style={{ maxWidth: 700 }}>
-          <svg
-            ref={svgRef}
-            viewBox={`0 0 ${VIEWBOX} ${VIEWBOX}`}
-            className="w-full h-auto"
-            onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseLeave}
-            onClick={handleClick}
-            style={{ cursor: hoveredDay ? 'pointer' : 'default' }}
-          >
-            {/* Background */}
-            <circle cx={CX} cy={CY} r={RINGS.seasonOuter + 2} fill="#0f0f1a" />
-
-            {/* Rings from outside in */}
-            <SeasonRing />
-            <MonthLabelRing months={months} />
-            <DayGridRing months={months} selectedDay={selectedDay} hoveredDay={hoveredDay} />
-            <MoonPhaseRing />
-            <CenterDisplay year={selectedYear} />
-          </svg>
-        </div>
-
-        {/* Tooltip */}
-        {hoveredDay && (
-          <CalendarTooltip
-            monthNumber={hoveredDay.monthNumber}
-            day={hoveredDay.day}
-            months={months}
-            x={tooltipPos.x}
-            y={tooltipPos.y}
-          />
-        )}
+      {/* Calendar header */}
+      <div>
+        <h2 className="text-2xl font-serif text-accent mb-2">The Astorian Calendar</h2>
+        <p className="text-text-secondary mb-4 max-w-3xl text-sm leading-relaxed">
+          Astoria measures time in 14 months of 28 days each — 392 days per year. Each month is named
+          for a deity of the Prime pantheon. Three moons — Warp, Weft, and Cross — form the Celestial
+          Braid, driving the King Tides and Fool Tides that shape coastal life.
+        </p>
       </div>
 
-      {/* Detail Panel */}
-      <div className="xl:w-80 shrink-0 space-y-4">
-        {/* Selected day details */}
-        {selectedDay && selectedMonth && (
-          <div className="rounded-lg border border-border bg-surface p-4">
-            <h3 className="font-serif text-lg text-text-primary">
-              {selectedDay.day} {selectedMonth.name}, {selectedYear} TA
-            </h3>
-            <p className="text-sm text-text-secondary">{getDayOfWeekName(selectedDay.day)}</p>
+      {/* SVG Calendar — full width */}
+      <div className="mx-auto w-full" style={{ maxWidth: 1000 }}>
+        <svg
+          ref={svgRef}
+          viewBox={`0 0 ${VIEWBOX} ${VIEWBOX}`}
+          className="w-full h-auto"
+          onMouseMove={handleMouseMove}
+          onMouseLeave={handleMouseLeave}
+          onClick={handleClick}
+          style={{ cursor: hoveredDay ? 'pointer' : 'default' }}
+        >
+          {/* Background */}
+          <circle cx={CX} cy={CY} r={RINGS.seasonOuter + 2} fill="#0f0f1a" />
 
-            <div className="mt-2 space-y-1 text-sm text-text-secondary">
-              <p>{getMoonPhaseLabel(selectedDay.day)}</p>
-              {getTideInfo(selectedDay.day).type && (
-                <p className={getTideInfo(selectedDay.day).type === 'king' ? 'text-summer' : 'text-winter'}>
-                  {getTideInfo(selectedDay.day).description}
-                </p>
-              )}
+          {/* Rings from outside in */}
+          <SeasonRing />
+          <MonthLabelRing months={months} />
+          <DayGridRing months={months} selectedDay={selectedDay} hoveredDay={hoveredDay} />
+          <MoonPhaseRing />
+          <CenterDisplay year={defaultYear} />
+        </svg>
+      </div>
+
+      {/* Tooltip */}
+      {hoveredDay && (
+        <CalendarTooltip
+          monthNumber={hoveredDay.monthNumber}
+          day={hoveredDay.day}
+          months={months}
+          x={tooltipPos.x}
+          y={tooltipPos.y}
+        />
+      )}
+
+      {/* Selected day details */}
+      {selectedDay && selectedMonth && (
+        <div className="rounded-lg border border-border bg-surface p-4 max-w-2xl">
+          <h3 className="font-serif text-lg text-text-primary">
+            {selectedDay.day} {selectedMonth.name}, {defaultYear} TA
+          </h3>
+          <p className="text-sm text-text-secondary">{getDayOfWeekName(selectedDay.day)}</p>
+
+          <div className="mt-2 space-y-1 text-sm text-text-secondary">
+            <p>{getMoonPhaseLabel(selectedDay.day)}</p>
+            {getTideInfo(selectedDay.day).type && (
+              <p className={getTideInfo(selectedDay.day).type === 'king' ? 'text-summer' : 'text-winter'}>
+                {getTideInfo(selectedDay.day).description}
+              </p>
+            )}
+          </div>
+
+          {/* Holy day info */}
+          {selectedMonth.holy_day.day === selectedDay.day && (
+            <div className="mt-3 rounded border border-border bg-surface-hover p-3">
+              <p className="font-serif text-sm font-semibold text-accent">
+                {selectedMonth.holy_day.name}
+              </p>
+              <p className="mt-1 text-xs text-text-secondary leading-relaxed">
+                {selectedMonth.holy_day.description}
+              </p>
             </div>
+          )}
 
-            {/* Holy day info */}
-            {selectedMonth.holy_day.day === selectedDay.day && (
-              <div className="mt-3 rounded border border-border bg-surface-hover p-3">
-                <p className="font-serif text-sm font-semibold text-accent">
-                  {selectedMonth.holy_day.name}
-                </p>
-                <p className="mt-1 text-xs text-text-secondary leading-relaxed">
-                  {selectedMonth.holy_day.description}
-                </p>
-              </div>
-            )}
+          {/* Events on this day */}
+          {selectedDayEvents.length > 0 && (
+            <div className="mt-3">
+              <p className="text-xs font-semibold uppercase tracking-wider text-text-secondary mb-2">
+                Events on this day
+              </p>
+              {selectedDayEvents.map((ev) => (
+                <a
+                  key={ev.slug}
+                  href={ev.url}
+                  className="block rounded border border-border bg-surface-hover p-2 mb-1 text-sm text-accent hover:text-accent-hover hover:border-accent/50 transition-colors"
+                >
+                  {ev.name}
+                </a>
+              ))}
+            </div>
+          )}
 
-            {/* Events on this day */}
-            {selectedDayEvents.length > 0 && (
-              <div className="mt-3">
-                <p className="text-xs font-semibold uppercase tracking-wider text-text-secondary mb-2">
-                  Events on this day
-                </p>
-                {selectedDayEvents.map((ev) => (
-                  <a
-                    key={ev.slug}
-                    href={ev.url}
-                    className="block rounded border border-border bg-surface-hover p-2 mb-1 text-sm text-accent hover:text-accent-hover hover:border-accent/50 transition-colors"
-                  >
-                    {ev.name}
-                  </a>
-                ))}
-              </div>
-            )}
+          {/* Events this month (no specific day) */}
+          {selectedMonthEvents.length > 0 && (
+            <div className="mt-3">
+              <p className="text-xs font-semibold uppercase tracking-wider text-text-secondary mb-2">
+                Also in {selectedMonth.name}
+              </p>
+              {selectedMonthEvents.map((ev) => (
+                <a
+                  key={ev.slug}
+                  href={ev.url}
+                  className="block rounded border border-border bg-surface-hover p-2 mb-1 text-sm text-accent hover:text-accent-hover hover:border-accent/50 transition-colors"
+                >
+                  {ev.name}
+                </a>
+              ))}
+            </div>
+          )}
 
-            {/* Events this month (no specific day) */}
-            {selectedMonthEvents.length > 0 && (
-              <div className="mt-3">
-                <p className="text-xs font-semibold uppercase tracking-wider text-text-secondary mb-2">
-                  Also in {selectedMonth.name}
-                </p>
-                {selectedMonthEvents.map((ev) => (
-                  <a
-                    key={ev.slug}
-                    href={ev.url}
-                    className="block rounded border border-border bg-surface-hover p-2 mb-1 text-sm text-accent hover:text-accent-hover hover:border-accent/50 transition-colors"
-                  >
-                    {ev.name}
-                  </a>
-                ))}
-              </div>
-            )}
+          {/* No events */}
+          {selectedDayEvents.length === 0 && selectedMonthEvents.length === 0 && (
+            <p className="mt-3 text-xs text-text-secondary italic">No events recorded for this date.</p>
+          )}
+        </div>
+      )}
 
-            {/* No events */}
-            {selectedDayEvents.length === 0 && selectedMonthEvents.length === 0 && (
-              <p className="mt-3 text-xs text-text-secondary italic">No events recorded for this date.</p>
-            )}
-          </div>
-        )}
+      {/* Legend — horizontal */}
+      <CalendarLegend />
 
-        {/* Year events without specific dates */}
-        {yearOnlyEvents.length > 0 && (
-          <div className="rounded-lg border border-border bg-surface p-4">
-            <p className="text-xs font-semibold uppercase tracking-wider text-text-secondary mb-2">
-              Events in {selectedYear} TA (undated)
-            </p>
-            {yearOnlyEvents.map((ev) => (
-              <a
-                key={ev.slug}
-                href={ev.url}
-                className="block rounded border border-border bg-surface-hover p-2 mb-1 text-sm text-accent hover:text-accent-hover hover:border-accent/50 transition-colors"
-              >
-                {ev.name}
-              </a>
-            ))}
-          </div>
-        )}
-
-        {/* Prompt when nothing selected */}
-        {!selectedDay && yearOnlyEvents.length === 0 && (
-          <div className="rounded-lg border border-border bg-surface p-4">
-            <p className="text-sm text-text-secondary italic">
-              Click on a day to see details and events.
-            </p>
-          </div>
-        )}
-
-        {/* Legend */}
-        <CalendarLegend />
-      </div>
     </div>
   );
 }

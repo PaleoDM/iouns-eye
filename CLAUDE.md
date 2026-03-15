@@ -1,4 +1,4 @@
-# Ioun's Eye — World Codex for Astoria
+# Ioun's Eye — World Grimoire for Astoria
 
 ## Project Context
 Ioun's Eye is a wiki-style website and knowledge management system for the D&D homebrew world of Astoria. It serves two audiences simultaneously: the DM (Carlos) browses it as an interactive wiki with search, cross-links, and an interactive calendar; Claude Code reads the same source files as context for session prep, recap writing, and world-building. Named after Ioun, the Knowing Mistress — goddess of all knowledge in the Astorian pantheon.
@@ -32,7 +32,8 @@ Phase 10
 | 7 | `/grimoire` Claude Code skill | Complete |
 | 8 | UX Rework — campaign-first navigation & homepage | Complete |
 | 9 | `/write-recap` and `/prep-session` skill upgrades | Complete |
-| 10 | Repo cleanup and file migration | Not Started |
+| 10 | QMD migration — populate recaps collection & campaign pages | Not Started |
+| 11 | `/prep-session` upgrade + repo cleanup | Not Started |
 
 ## Rules for Agents
 - Follow `ROADMAP.md` phases exactly — do not skip ahead or improvise architecture
@@ -57,7 +58,7 @@ Phase 10
 ```
 iouns-eye/
 ├── src/
-│   ├── content/              # Codex entries (markdown + YAML frontmatter)
+│   ├── content/              # Grimoire entries (markdown + YAML frontmatter)
 │   │   ├── npcs/
 │   │   ├── locations/
 │   │   ├── factions/
@@ -98,7 +99,7 @@ iouns-eye/
 ## Key Architectural Rules
 
 ### Content & Data
-- Codex entries are markdown files with YAML frontmatter in `src/content/`
+- Grimoire entries are markdown files with YAML frontmatter in `src/content/`
 - Astro content collections validate frontmatter against Zod schemas in `content.config.ts`
 - Structured reference data (calendar, deities) lives in `src/data/` as JSON — not as content collections
 - Entry slugs are kebab-case derived from filenames (e.g., `brenna-tolvane.md` → slug `brenna-tolvane`)

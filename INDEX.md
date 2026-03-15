@@ -1,4 +1,4 @@
-# Ioun's Eye — Codex Index
+# Ioun's Eye — Grimoire Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
 <!-- Last updated: 2026-03-14 -->
 

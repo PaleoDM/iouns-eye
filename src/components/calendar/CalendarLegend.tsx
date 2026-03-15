@@ -3,13 +3,12 @@ import { SEASON_MONTHS, SEASON_COLORS } from './calendar-utils';
 
 export function CalendarLegend() {
   return (
-    <div className="rounded-lg border border-border bg-surface p-4 text-sm">
-      <h3 className="mb-3 font-serif text-base text-text-primary">Legend</h3>
+    <div className="rounded-lg border border-border bg-surface px-4 py-3 text-sm">
+      <div className="flex flex-wrap gap-x-8 gap-y-3 items-center">
 
-      {/* Seasons */}
-      <div className="mb-3">
-        <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-text-secondary">Seasons</p>
-        <div className="flex flex-wrap gap-3">
+        {/* Seasons */}
+        <div className="flex items-center gap-3">
+          <span className="text-xs font-semibold uppercase tracking-wider text-text-secondary">Seasons</span>
           {SEASON_MONTHS.map((s) => (
             <div key={s.name} className="flex items-center gap-1.5">
               <span
@@ -20,29 +19,25 @@ export function CalendarLegend() {
             </div>
           ))}
         </div>
-      </div>
 
-      {/* Tides */}
-      <div className="mb-3">
-        <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-text-secondary">Tides</p>
-        <div className="space-y-1">
+        {/* Tides */}
+        <div className="flex items-center gap-3">
+          <span className="text-xs font-semibold uppercase tracking-wider text-text-secondary">Tides</span>
           <div className="flex items-center gap-1.5">
             <span className="inline-block h-3 w-3 rounded-sm bg-summer opacity-40" />
             <span className="text-text-primary">King Tides</span>
-            <span className="text-text-secondary">(days 19–23, full moons)</span>
+            <span className="text-text-secondary text-xs">(days 19–23)</span>
           </div>
           <div className="flex items-center gap-1.5">
             <span className="inline-block h-3 w-3 rounded-sm bg-winter opacity-40" />
             <span className="text-text-primary">Fool Tides</span>
-            <span className="text-text-secondary">(days 5–9, new moons)</span>
+            <span className="text-text-secondary text-xs">(days 5–9)</span>
           </div>
         </div>
-      </div>
 
-      {/* Moon Phases */}
-      <div className="mb-3">
-        <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-text-secondary">Moon Phases</p>
-        <div className="flex flex-wrap gap-3">
+        {/* Moon Phases */}
+        <div className="flex items-center gap-3">
+          <span className="text-xs font-semibold uppercase tracking-wider text-text-secondary">Moons</span>
           <div className="flex items-center gap-1.5">
             <svg width="12" height="12" viewBox="0 0 12 12">
               <circle cx="6" cy="6" r="5" fill="none" stroke="#8888aa" strokeWidth="1" />
@@ -70,19 +65,20 @@ export function CalendarLegend() {
             <span className="text-text-primary">Last Qtr</span>
           </div>
         </div>
-      </div>
 
-      {/* Holy Days */}
-      <div>
-        <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-text-secondary">Markers</p>
-        <div className="flex items-center gap-1.5">
-          <span className="text-xs" style={{ color: '#f0d060' }}>◆</span>
-          <span className="text-text-primary">Holy Day</span>
+        {/* Markers */}
+        <div className="flex items-center gap-3">
+          <span className="text-xs font-semibold uppercase tracking-wider text-text-secondary">Markers</span>
+          <div className="flex items-center gap-1.5">
+            <span className="text-xs" style={{ color: '#f0d060' }}>◆</span>
+            <span className="text-text-primary">Holy Day</span>
+          </div>
+          <div className="flex items-center gap-1.5">
+            <span className="inline-block h-3 w-3 rounded-sm bg-accent opacity-50" />
+            <span className="text-text-primary">Selected Day</span>
+          </div>
         </div>
-        <div className="flex items-center gap-1.5 mt-1">
-          <span className="inline-block h-3 w-3 rounded-sm bg-accent opacity-50" />
-          <span className="text-text-primary">Selected Day</span>
-        </div>
+
       </div>
     </div>
   );
