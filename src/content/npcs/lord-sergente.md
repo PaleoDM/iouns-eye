@@ -1,6 +1,6 @@
 ---
-name: Lord Sergente
-status: alive
+name: Lord Maximillian Sergente
+status: dead
 race: Human
 title: Plantation Lord
 faction: house-of-coinwrights

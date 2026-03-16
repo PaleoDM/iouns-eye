@@ -7,6 +7,6 @@ tags: [goliath, divine]
 related: [biotite, jarl-storvald]
 ---
 
-Son of Biotite, a renowned monster hunter in the Amber Expanse. Zavek wielded an awakened flail blessed by the Allfather.
+Son of Biotite, a renowned monster hunter in the Amber Expanse. Zavek wielded an awakened flail blessed by the Stormlord.
 
 After the campaign, Zavek became an influencer peddling "Endure Energy Elixir" (E3).

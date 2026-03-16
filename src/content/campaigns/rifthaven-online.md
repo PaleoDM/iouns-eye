@@ -8,33 +8,31 @@ session_count: 43
 start_date_real: "2025-02-11"
 party:
   - name: Tyrell
-    player: Unknown
-    race: Half-Elf
+    race: Drow
     class: Warlock
     slug: tyrell
   - name: Veil
-    race: Unknown
+    race: Human
     class: Monk
     slug: veil
   - name: Thorn
-    race: Unknown
+    race: Goliath
     class: Barbarian
     slug: thorn
   - name: Arden
-    player: Paul
-    race: Unknown
+    race: Sea Elf
     class: Bard
     slug: arden
   - name: Quin
-    race: Unknown
+    race: Human
     class: Wizard
     slug: quin
   - name: Leon
-    race: Unknown
-    class: Justicar
+    race: Aasimar
+    class: Paladin
     slug: leon
   - name: Freddie
-    race: Aasimar
+    race: Sea Elf
     class: Cleric
     slug: freddie
 tags: [urban, revolution, underdark, shadowfell, soul-trade, airship]

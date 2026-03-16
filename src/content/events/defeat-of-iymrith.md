@@ -3,7 +3,7 @@ name: Defeat of Iymrith
 year: 1094
 campaign: skt
 significance: major
-participants: [iymrith, zavek, cam, maeve-willowspell, nix, rhogar]
+participants: [iymrith, zavek, cam, maeve-willowspell, major-tom, arlowe]
 tags: [combat, dragon]
 related: [iymrith, shattering-of-the-ordning]
 ---

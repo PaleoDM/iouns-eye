@@ -1,13 +1,10 @@
 ---
 name: Patrick
 race: Human
-class: Fighter
+class: Bard
 campaign: kalari
-background: Performer
-tags:
-  - storyteller
-  - ritualistic
+tags: []
 related: []
 ---
 
-Patrick is a human fighter with a performer and storyteller background. He takes a ritualistic approach to his actions, bringing ceremony and meaning to the party's endeavors.
+Patrick is a Human Bard from the Northern Kingdoms who joined the party during the events of the Kalari campaign.

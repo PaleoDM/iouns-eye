@@ -1,6 +1,6 @@
 ---
 name: Veil
-race: Unknown
+race: Human
 class: Monk
 campaign: rifthaven-online
 tags:

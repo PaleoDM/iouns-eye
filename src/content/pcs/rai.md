@@ -1,6 +1,6 @@
 ---
 name: Rai
-race: Human
+race: Tiefling
 class: Ranger
 campaign: ishetar-og
 tags: []

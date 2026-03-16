@@ -2,7 +2,7 @@
 name: Kess Vauthi
 status: alive
 race: Half-Orc
-title: Quartermaster
+title: Captain
 faction: turquoise-timber-trust
 campaigns: [ishetar-2]
 first_appearance: "Session 29"

@@ -1,6 +1,6 @@
 ---
 name: Poet's Point
-location_type: building
+location_type: city
 region: Kalari
 continent: Glennox
 parent_location: kalari
@@ -11,4 +11,4 @@ tags:
 related: []
 ---
 
-Poet's Point is the party's headquarters in the Kalari region, containing a tower. It serves as their base of operations throughout the campaign.
+Poet's Point is a city in the Kalari region that grew around a castle, serving as the party's base of operations throughout the campaign.

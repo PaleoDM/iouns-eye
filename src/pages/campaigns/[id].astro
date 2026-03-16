@@ -89,7 +89,7 @@ const arcs = [...arcMap.entries()].map(([name, { first, last }]) => ({
 }));
 
 // Fetch campaign-scoped entities for tabbed grimoire
-const ENTITY_COLS: CollectionName[] = ['npcs', 'locations', 'factions', 'events', 'items'];
+const ENTITY_COLS: CollectionName[] = ['npcs', 'locations', 'factions', 'events'];
 const entityColumns: Array<{ label: string; entries: Array<{ name: string; href: string }> }> = [];
 
 for (const col of ENTITY_COLS) {

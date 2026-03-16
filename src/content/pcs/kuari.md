@@ -1,7 +1,7 @@
 ---
 name: Kuari
-race: Half-Elf
-class: Ranger
+race: Tabaxi
+class: Warlock
 campaign: kalari
 tags:
   - observant

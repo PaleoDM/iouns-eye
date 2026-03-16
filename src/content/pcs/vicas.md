@@ -1,7 +1,7 @@
 ---
 name: Vicas
 race: Green Dragonborn
-class: Cleric
+class: Monk
 campaign: ishetar-2
 tags: [healer, medicine]
 related: [ishetar, old-hrothgar]

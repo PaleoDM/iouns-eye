@@ -3,7 +3,7 @@ name: Captain Alba Skylar
 status: alive
 title: Captain of the Shooting Star
 campaigns: [ishetar-2]
-first_appearance: "Session 23"
+first_appearance: "Session 20"
 tags: [maritime, veteran]
 related: [ishetar, emberspost, firewatch-island]
 ---

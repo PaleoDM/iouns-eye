@@ -1,6 +1,6 @@
 ---
 name: Freddie
-race: Aasimar
+race: Sea Elf
 class: Cleric
 campaign: rifthaven-online
 tags:

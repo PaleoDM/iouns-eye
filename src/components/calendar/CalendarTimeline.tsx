@@ -17,7 +17,7 @@ function yearToX(year: number): number {
 // above: true = label above baseline, false = below.
 // Staggered so close milestones (1077–1094 cluster) don't overlap.
 const MILESTONES = [
-  { id: 'fall-of-kalari',   label: 'Fall of Kalari',         year: 888,  above: true,  stem: 40 },
+  { id: 'fall-of-kalari',   label: 'Fall of Kalari',         year: 896,  above: true,  stem: 40 },
   { id: 'founding-ishetar', label: 'Founding of Ishetar',    year: 1077, above: false, stem: 70 },
   { id: 'ishetar-1',        label: 'Ishetar Campaign I',     year: 1082, above: true,  stem: 70 },
   { id: 'kalari',           label: 'Kalari Campaign',        year: 1088, above: false, stem: 30 },

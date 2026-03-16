@@ -1,7 +1,7 @@
 ---
 name: Leon Empyrean
-race: Unknown
-class: Justicar
+race: Aasimar
+class: Paladin
 campaign: rifthaven-online
 tags:
   - justice

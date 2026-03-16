@@ -1,6 +1,6 @@
 ---
 name: Griffelump
-race: Gnome
+race: Tabaxi
 class: Wizard
 campaign: ishetar-og
 tags: []
@@ -10,4 +10,4 @@ related:
 
 ## Background
 
-Griffelump is a Gnome Wizard who joined the party during the events of the Ishetar campaign.
+Griffelump is a Tabaxi Wizard who joined the party during the events of the Ishetar campaign.

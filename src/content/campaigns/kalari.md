@@ -9,38 +9,33 @@ tags: [ruins, ancient-magic, constructs, dragons]
 related: [kalari, glennox, the-crucible]
 party:
   - name: Kip
-    player: Sam
     race: Gnome
     class: Druid
     slug: kip-vogels
   - name: Gwenevere
-    player: Julian
     race: Eladrin
     class: Sorcerer
     slug: gwenevere
   - name: Kuari
-    race: Half-Elf
-    class: Ranger
+    race: Tabaxi
+    class: Warlock
     slug: kuari
   - name: Patrick
     race: Human
-    class: Fighter
+    class: Bard
     slug: patrick
   - name: Sorcha
-    player: Molly
-    race: Gnome
+    race: Halfling
     class: Artificer
     slug: sorcha
   - name: Ollithian
-    player: Julian
-    race: Half-Orc
-    class: Bard
+    race: High Elf
+    class: Wizard
     slug: ollithian
   - name: Elmnack
-    player: Marc
-    race: Construct
-    class: Rogue
+    race: Dwarf
+    class: Ranger
     slug: elmnack
 ---
 
-The Ruins of Kalari campaign takes place in the aftermath of Old Perile Falls' catastrophic collapse roughly 200 years prior. The party begins in the rebuilt settlement of New Perile Falls and gradually uncovers the truth behind the original city's destruction — a chain of events linking Project Anima (soul-binding construct research), divine punishment through dragon releases, and an imprisoned Void Dragon weapon hidden in the plane of Orbos.
+The Ruins of Kalari campaign takes place in the aftermath of Kalari's catastrophic collapse in 896 TA. The party begins in the small town of Harwich and gradually uncovers the truth behind the nation's destruction — a chain of events linking Project Anima (soul-binding construct research), divine punishment through dragon releases, and an imprisoned Void Dragon weapon hidden in the plane of Orbos.

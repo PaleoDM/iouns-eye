@@ -7,12 +7,15 @@ related: [astorian-calendar]
 
 ## The Ages of Astoria
 
-The current era of Astoria is known as the **Third Age** (abbreviated TA). Years are counted from the start of this age, with the current year being 1136 TA. The calendar images and historical records reference two preceding eras — the **Age of Harmony** and the **Age of Reason** — though detailed accounts of these earlier ages are scarce.
+The current era of Astoria is known as the **Third Age** (abbreviated TA). Years are counted from the start of this age, with the current year being 1136 TA. Among Arcanists it is called the **Age of Reason**; among the clergy it is called the **Age of Harmony**. Both names refer to the same era.
+
+The Third Age officially marks the end of the **Discordant Delta** — a period of fragmentation and discord that preceded it. It represents a revival of civic and industrious magics, and a renewed globalization of world cultures.
 
 ## Campaign Timeline
 
 The known events of the Third Age span over fifty years of adventuring history:
 
+- **896 TA** — Fall of Kalari
 - **1082 TA** — Original Ishetar Campaign
 - **1088–1089 TA** — Ruins of Kalari Campaign
 - **1094 TA** — One Last Job (Giants Campaign)

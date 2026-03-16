@@ -11,22 +11,22 @@ party:
     race: Goliath
     class: Cleric
     slug: zavek
-  - name: Cam
-    race: Goliath
-    class: Barbarian
+  - name: Cam Pembrook
+    race: Half-Orc
+    class: Fighter
     slug: cam
   - name: Maeve Willowspell
-    race: Half-Elf
-    class: Rogue
-    slug: maeve-willowspell
-  - name: Nix
     race: Firbolg
-    class: Ranger
-    slug: nix
-  - name: Rhogar
-    race: Dragonborn
-    class: Paladin
-    slug: rhogar
+    class: Bard
+    slug: maeve-willowspell
+  - name: Major Tom Ocelot
+    race: Tabaxi
+    class: Rogue
+    slug: major-tom
+  - name: Arlowe
+    race: Human
+    class: Artificer
+    slug: arlowe
 ---
 
 SKT One Last Job follows a party recruited by the Peregrine Society to investigate giant attacks across the Cradle of Conflict (the northern region of Glennox). The cosmic law known as the Ordning — which governed giant hierarchy — has shattered, allowing five giant lords to vie for supremacy. The party collects magical conches, confronts giant lords, and ultimately prevents the blue dragon Iymrith and the primordial kraken Slarkrethel from ascending to godhood.

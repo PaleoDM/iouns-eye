@@ -1,5 +1,6 @@
 ---
 name: Th0l
+alias: Bartholomew
 status: alive
 race: Elf
 class: Warrior
@@ -10,4 +11,4 @@ tags: [warrior, poet]
 related: [azrael, restful-lily]
 ---
 
-An elven warrior-poet who befriended Azrael at the Restful Lily. Trained in nobility. His companion Joy was restored to life through a combined ritual by Lyra and Cyrena (Session 12). He wishes to send a message to his commanding officer Nylis across the sea on the continent of Noon.
+An elven warrior-poet who befriended Azrael at the Restful Lily. Trained in nobility. His companion Joy was restored to life through a combined ritual by Lyra and Cyrena (Session 14). He wishes to send a message to his commanding officer Nylis across the sea on the continent of Noon.

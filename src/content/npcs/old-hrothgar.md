@@ -4,7 +4,7 @@ status: alive
 title: Founding Member of Ishetar
 location: ishetar
 campaigns: [ishetar-2, ishetar-og]
-first_appearance: "Session 26"
+first_appearance: "Session 9"
 tags: [founder, military, veteran]
 related: [gertrude-earthenstone, ishetar, vicas]
 ---

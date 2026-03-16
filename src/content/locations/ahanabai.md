@@ -1,7 +1,6 @@
 ---
 name: Ahanabai
-location_type: city
-region: Ekkorai
+location_type: region
 continent: Wanun
 campaigns: [ishetar-2]
 tags: [halfling, threatened]

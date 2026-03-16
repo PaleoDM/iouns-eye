@@ -1,7 +1,7 @@
 ---
 name: Tauvin
-race: Half-Elf
-class: Bard
+race: Firbolg
+class: Cleric
 campaign: ishetar-og
 tags: []
 related:
@@ -10,4 +10,4 @@ related:
 
 ## Background
 
-Tauvin is a Half-Elf Bard who joined the party during the events of the Ishetar campaign.
+Tauvin is a Firbolg Cleric who joined the party during the events of the Ishetar campaign.

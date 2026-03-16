@@ -1,9 +1,8 @@
 ---
 name: Arden
-race: Unknown
+race: Sea Elf
 class: Bard
 campaign: rifthaven-online
-player: Paul
 tags:
   - airship
   - charismatic
@@ -27,5 +26,4 @@ Arden is a charismatic bard who served as crew on an airship, wearing shiny armo
 
 ## Relationships
 - Brother to Freddie (Wilfredo), an Aasimar cleric
-- Romantic tension with Captain Lysa Vex
 - Romance with Jerusha (Session 35+)

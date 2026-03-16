@@ -6,12 +6,12 @@ headquarters: ttt-compound
 campaigns: [ishetar-2]
 status: active
 tags: [logging, exploitative, imperial]
-related: [brenna-tolvane, sallow, drev-harsk, aroan-empire, myreshade-forest, ekkorai]
+related: [brenna-tolvane, sallow, drev-harsk, aroiin-empire, myreshade-forest, ekkorai]
 ---
 
 ## Purpose & Goals
 
-A commercial logging operation contracted by the Aroan Empire (via the Guildsmen merchant class) to exploit the timber resources of Ekkorai. Chartered by Emperor Beluar Aroiin in 1080 TA.
+A commercial logging operation contracted by the Aroiin Empire (via the Guildsmen merchant class) to exploit the timber resources of Ekkorai. Chartered by Emperor Beluar Aroiin in 1080 TA.
 
 ## Structure
 

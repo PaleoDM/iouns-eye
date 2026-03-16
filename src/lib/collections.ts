@@ -5,7 +5,6 @@ export type CollectionName =
   | 'locations'
   | 'factions'
   | 'events'
-  | 'items'
   | 'deities'
   | 'lore'
   | 'campaigns'
@@ -24,7 +23,6 @@ export const COLLECTIONS: Record<CollectionName, CollectionMeta> = {
   locations: { label: 'Locations', singular: 'Location', icon: '📍' },
   factions: { label: 'Factions', singular: 'Faction', icon: '⚔️' },
   events: { label: 'Events', singular: 'Event', icon: '📜' },
-  items: { label: 'Items', singular: 'Item', icon: '🗡️' },
   deities: { label: 'Deities', singular: 'Deity', icon: '✨' },
   lore: { label: 'Lore', singular: 'Lore', icon: '📖' },
   campaigns: { label: 'Campaigns', singular: 'Campaign', icon: '🎲' },

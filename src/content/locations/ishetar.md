@@ -6,12 +6,12 @@ continent: Wanun
 parent_location: ekkorai
 campaigns: [ishetar-og, head-hunters, ishetar-2]
 tags: [colony, port-city, frontier]
-related: [ekkorai, aroan-empire, emissary-rowena]
+related: [ekkorai, aroiin-empire, emissary-rowena]
 ---
 
 ## Description
 
-Ishetar is a frontier colony established in 1077 TA by the Aroan Empire across the Turquoise Bay in the region of Ekkorai. By the time of the original campaign (1082 TA), the colony is five years old and still finding its footing — threatened by sahuagin raids and goblin attacks while trying to establish relations with neighboring settlements.
+Ishetar is a frontier colony established in 1077 TA by the Aroiin Empire across the Turquoise Bay in the region of Ekkorai. By the time of the original campaign (1082 TA), the colony is five years old and still finding its footing — threatened by sahuagin raids and goblin attacks while trying to establish relations with neighboring settlements.
 
 By 1094 TA (Head Hunters campaign), twelve years after its founding, Ishetar has grown into a modest but stable foothold in the Fractured Expanse, though it remains isolated despite its growth.
 

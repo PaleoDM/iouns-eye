@@ -1,10 +1,10 @@
 ---
 name: Azrael
 race: Aasimar
-class: Soul Knife Rogue
+class: Rogue
 campaign: ishetar-2
 tags: [celestial, melee]
-related: [ishetar, jora-caldrow, veraine-luthaire, ellie-caldrow]
+related: [ishetar, jora-caldrow, verlaine-luthaire, ellie-caldrow]
 ---
 
 ## Background
@@ -14,7 +14,7 @@ Azrael is a young Aasimar and one of Ishetar's defenders. His celestial nature m
 - Arrived at Vicas's house with a thigh wound (Session 1)
 - Struck the first surprise blow against Vessan at the oracle shrine (Session 2)
 - Trained Jora Caldrow in swordsmanship
-- Blood harvested by Veraine Luthaire during the TTT compound assault (Session 29)
+- Blood harvested by Verlaine Luthaire during the TTT compound assault (Session 29)
 - Received three blink dogs as a gift from Lord Crescendo of the Thornsong court (Session 26)
 
 ## Relationships
@@ -23,4 +23,4 @@ Azrael is a young Aasimar and one of Ishetar's defenders. His celestial nature m
 - Target of the Celestial Seed cult due to his Aasimar blood
 
 ## Character Arc
-Azrael's celestial heritage draws dangerous attention from the Riven Fist cult. His blood was harvested by Veraine Luthaire, and the infant Ellie Caldrow's similar nature makes both of them targets of the Convergence ritual.
+Azrael's celestial heritage draws dangerous attention from the Celestial Seed cult. His blood was harvested by Verlaine Luthaire, and the infant Ellie Caldrow's similar nature makes both of them targets of the Convergence ritual.

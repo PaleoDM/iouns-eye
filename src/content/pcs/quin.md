@@ -1,6 +1,6 @@
 ---
 name: Quin
-race: Unknown
+race: Human
 class: Wizard
 campaign: rifthaven-online
 tags:

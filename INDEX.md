@@ -124,7 +124,7 @@
 
 ## Locations (65)
 - `ahanabai` Ahanabai — city | Ekkorai | [ishetar-2]
-- `aroinae` Aroinae — city | [ishetar-2]
+- `aroiinae` Aroiinae — city | [ishetar-2]
 - `ashen-chapel` Ashen Chapel — building | [rifthaven-online]
 - `barat-indra` Barat-Indra — wilderness | Ekkorai | [head-hunters]
 - `bloomridge` Bloomridge — district | [rifthaven-online]
@@ -203,7 +203,7 @@
 - `silverweave-ventures` Silverweave Ventures — commercial | disbanded | [rifthaven-online]
 - `storm-giant-court` Storm Giant Court — political | active | [skt]
 - `aletheia-procedure` The Aletheia Procedure — secret | active | [rifthaven-online]
-- `aroan-empire` The Aroan Empire — political | active | [ishetar-og, head-hunters, ishetar-2]
+- `aroiin-empire` The Aroiin Empire — political | active | [ishetar-og, head-hunters, ishetar-2]
 - `brass-wing-crew` The Brass Wing Crew — commercial | active | [rifthaven-online]
 - `cassini-brothers` The Cassini Brothers — criminal | active | [rifthaven-online]
 - `the-curtain` The Curtain — criminal | active
@@ -248,30 +248,6 @@
 - `shattering-of-the-ordning` The Shattering of the Ordning — 1094 | skt | [skt]
 - `thorn-resurrection` Thorn's Resurrection — 1128 | rifthaven-online | [rifthaven-online]
 - `vegepygmy-integration` Vegepygmy Integration into Ishetar — 1136 | ishetar-2 | [ishetar-2]
-
-## Items (22)
-- `arbiters-shroud` Arbiter's Shroud — armor | legendary | [ishetar-2]
-- `belt-of-shi-ho` Belt of Shi-Ho — wondrous | rare | [rifthaven-online]
-- `bracers-of-the-drunken-fist` Bracers of the Drunken Fist — wondrous | uncommon | [ishetar-og]
-- `cap-of-mycelium` Cap of the Mycelium — wondrous | rare | [rifthaven-online]
-- `curtains-call` Curtain's Call — weapon | very-rare | [rifthaven-online]
-- `dawncatcher` Dawncatcher — wondrous | legendary | [ishetar-2]
-- `figurine-of-wondrous-power` Figurine of Wondrous Power — wondrous | rare | [ishetar-og]
-- `flail-of-levistus` Flail of Levistus — weapon | rare | [ishetar-og]
-- `glamour-studded-leather` Glamour Studded Leather — armor | rare | [ishetar-og]
-- `janus-blessing` Janus' Blessing — wondrous | rare | [ishetar-og]
-- `javelin-of-lightning` Javelin of Lightning — weapon | uncommon | [ishetar-og]
-- `lantern-of-the-restless` Lantern of the Restless — wondrous | uncommon | [ishetar-og]
-- `lore-axe` Lore-Axe — weapon | rare | [rifthaven-online]
-- `lulus-friendship-locket` Lulu's Friendship Locket — wondrous | rare | [rifthaven-online]
-- `pearl-of-power` Pearl of Power — wondrous | uncommon | [ishetar-og]
-- `rapier-of-warning` Rapier of Warning — weapon | uncommon | [rifthaven-online]
-- `ready-oar-not` Ready Oar Not — weapon | rare | [ishetar-og]
-- `robe-of-useful-items` Robe of Useful Items — wondrous | uncommon | [ishetar-og]
-- `sending-crystal` Sending Crystal — wondrous | uncommon | [rifthaven-online]
-- `tentacle-rod` Tentacle Rod — weapon | rare | [ishetar-og]
-- `calling-card-pallbearer` The Pallbearer's Calling Card — wondrous | rare | [rifthaven-online]
-- `veritys-edge-ishetar` Verity's Edge — weapon | legendary | [ishetar-2]
 
 ## Deities (46)
 - `altraloth` Altraloth — The Ancient One | yugoloth

@@ -1,10 +1,10 @@
 ---
-name: Cam
-race: Goliath
-class: Barbarian
+name: Cam Pembrook
+race: Half-Orc
+class: Fighter
 campaign: skt
-tags: [goliath, noble]
+tags: [noble]
 related: [lord-pembrook]
 ---
 
-Also known as Camulus or "Mac." Son of Lord Pembrook, a human nobleman. Estranged from his father.
+Cam is an Echo Knight Fighter whose Echo, Mac, fights alongside him.

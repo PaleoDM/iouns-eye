@@ -1,6 +1,6 @@
 ---
 name: Thorn
-race: Unknown
+race: Goliath
 class: Barbarian
 campaign: rifthaven-online
 tags:

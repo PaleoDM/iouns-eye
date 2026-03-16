@@ -1,6 +1,6 @@
 ---
 name: Tyrell
-race: Half-Elf
+race: Drow
 class: Warlock
 campaign: rifthaven-online
 tags:

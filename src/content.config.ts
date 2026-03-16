@@ -63,19 +63,6 @@ const events = defineCollection({
   }),
 });
 
-const items = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/items' }),
-  schema: z.object({
-    name: z.string(),
-    item_type: z.enum(['weapon', 'armor', 'wondrous', 'potion', 'scroll', 'artifact', 'tool', 'other']),
-    rarity: z.enum(['common', 'uncommon', 'rare', 'very-rare', 'legendary', 'artifact']).optional(),
-    attunement: z.boolean().default(false),
-    current_holder: z.string().optional(),
-    campaign: z.string().optional(),
-    tags: z.array(z.string()).default([]),
-    related: z.array(z.string()).default([]),
-  }),
-});
 
 const deities = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/deities' }),
@@ -191,7 +178,6 @@ export const collections = {
   locations,
   factions,
   events,
-  items,
   deities,
   lore,
   campaigns,

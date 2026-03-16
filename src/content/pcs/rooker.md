@@ -1,7 +1,7 @@
 ---
 name: Rooker
-race: Unknown
-class: Wizard
+race: Human
+class: Warlock/Sorcerer
 campaign: ishetar-2
 tags: [arcane, researcher]
 related: [ishetar, sombra, meris-caldrow]

@@ -3,7 +3,6 @@ name: Gwenevere
 race: Eladrin
 class: Sorcerer
 campaign: kalari
-player: Julian
 subclass: Wild Magic
 tags:
   - fey

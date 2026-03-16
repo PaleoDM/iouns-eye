@@ -1,6 +1,6 @@
 ---
 name: Oracle Shrine
-location_type: dungeon
+location_type: building
 region: Ekkorai
 continent: Wanun
 campaigns: [ishetar-2]

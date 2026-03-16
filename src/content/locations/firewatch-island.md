@@ -1,6 +1,6 @@
 ---
 name: Firewatch Island
-location_type: building
+location_type: city
 region: Ekkorai
 continent: Wanun
 campaigns: [ishetar-2]

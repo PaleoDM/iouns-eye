@@ -1,16 +1,10 @@
 ---
 name: Elmnack
-race: Construct
-class: Rogue
+race: Dwarf
+class: Ranger
 campaign: kalari
-player: Marc
-tags:
-  - soul-bearing
-  - construct
-related:
-  - arianna-wintar
-  - the-curtain
-  - project-anima
+tags: []
+related: []
 ---
 
-Elmnack is one of Arianna Wintar's soul-bearing constructs, created through Project Anima. He operates as a rogue and has connections to the Curtain mercenary group. Elmnack carries soul coins, tokens tied to the construct soul-binding process.
+Elmnack is a Dwarf Ranger who joined the party during the events of the Kalari campaign.

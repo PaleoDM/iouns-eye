@@ -1,6 +1,6 @@
 ---
 name: The Fall of Old Perile Falls
-year: 888
+year: 896
 location: old-perile-falls
 participants:
   - runva-doberdower
@@ -16,4 +16,4 @@ related:
 significance: background
 ---
 
-Approximately two hundred years before the campaign (~888 TA), a storm drake attacked Old Perile Falls. Senate Speaker Runva Doberdower led the evacuation of the city while Lord Byron Wintar sacrificed himself to keep the arch-gate open, powered by his holy symbol. The city collapsed into a sinkhole, becoming the underwater ruins the party later explores. In the aftermath, priests lost their divine magic as punishment for Project Anima's transgressions.
+Approximately two hundred years before the campaign (~896 TA), a storm drake attacked Old Perile Falls. Senate Speaker Runva Doberdower led the evacuation of the city while Lord Byron Wintar sacrificed himself to keep the arch-gate open, powered by his holy symbol. The city collapsed into a sinkhole, becoming the underwater ruins the party later explores. In the aftermath, priests lost their divine magic as punishment for Project Anima's transgressions.

@@ -5,8 +5,8 @@ region: Ekkorai
 continent: Wanun
 parent_location: ekkorai
 campaigns: [head-hunters, ishetar-2]
-tags: [frontier, camp]
+tags: [gold, mining]
 related: [munira]
 ---
 
-Emberspost is a utilitarian camp and settlement near the edge of the Fractured Expanse in the Ekkorai region of Wanun. It serves as the primary staging point for expeditions into the dangerous interior.
+Emberspost is a city in the Ekkorai region of Wanun, known for its rich gold mines.

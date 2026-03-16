@@ -1,9 +1,8 @@
 ---
 name: Aurelia
-race: Half-Elf
+race: High Elf
 class: Rogue
 campaign: ishetar-og
-player: Molly
 subclass: Assassin
 background: Soul Reaper
 location: laenora

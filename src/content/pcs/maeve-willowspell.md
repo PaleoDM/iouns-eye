@@ -1,7 +1,7 @@
 ---
 name: Maeve Willowspell
-race: Half-Elf
-class: Rogue
+race: Firbolg
+class: Bard
 campaign: skt
 tags: [author]
 related: [one-last-job]

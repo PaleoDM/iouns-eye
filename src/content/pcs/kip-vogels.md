@@ -3,7 +3,6 @@ name: Kip Vogels
 race: Gnome
 class: Druid
 campaign: kalari
-player: Sam
 tags:
   - animal-lover
   - sanctuary-keeper

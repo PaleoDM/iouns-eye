@@ -1,10 +1,9 @@
 ---
 name: Janus
-race: Warforged
-class: Fighter
+race: Triton
+class: Sorcerer
 campaign: ishetar-og
-tags:
-  - warforged
+tags: []
 related:
   - ishetar
   - janus-blessing
@@ -12,4 +11,4 @@ related:
 
 ## Background
 
-Janus is a Warforged Fighter who joined the party during the events of the Ishetar campaign. A blessing item bears their name.
+Janus is a Triton Sorcerer who joined the party during the events of the Ishetar campaign. A blessing item bears their name.

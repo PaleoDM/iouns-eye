@@ -1,7 +1,7 @@
 ---
 name: Emissary Rowena
 status: alive
-title: Emissary
+title: Governess
 race: Human
 location: ishetar
 campaigns:

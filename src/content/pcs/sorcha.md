@@ -1,9 +1,8 @@
 ---
 name: Sorcha
-race: Gnome
+race: Halfling
 class: Artificer
 campaign: kalari
-player: Molly
 subclass: Armorer
 tags:
   - technical

@@ -5,10 +5,9 @@ start_year: 1082
 continent: Wanun
 primary_location: ishetar
 tags: [colony, frontier, exploration]
-related: [ekkorai, aroan-empire]
+related: [ekkorai, aroiin-empire]
 party:
   - name: Aurelia
-    player: Molly
     race: High-Elf
     class: Rogue
     slug: aurelia
@@ -17,7 +16,7 @@ party:
     class: Fighter
     slug: kuldar
   - name: Mara
-    race: Human
+    race: Half-Elf
     class: Monk
     slug: mara
   - name: Tauvin
@@ -30,12 +29,12 @@ party:
     slug: griffelump
   - name: Janus
     race: Triton
-    class: Fighter
+    class: Sorcerer
     slug: janus
-  - name: Tiefling
-    race: Human
+  - name: Rai
+    race: Tiefling
     class: Ranger
     slug: rai
 ---
 
-The original Ishetar campaign follows a group of adventurers arriving at the fledgling colony of Ishetar, established five years prior by the Aroan Empire across the Turquoise Bay in the region of Ekkorai. The party discovers the colony besieged by sahuagin and goblins, uncovers a Deep Scion spy (Fisherman Dyrk) within the settlement, and is tasked by Emissary Rowena to map the region and establish relations with neighboring settlements.
+The original Ishetar campaign follows a group of adventurers arriving at the fledgling colony of Ishetar, established five years prior by the Aroiin Empire across the Turquoise Bay in the region of Ekkorai. The party discovers the colony besieged by sahuagin and goblins, uncovers a Deep Scion spy within the settlement, and is tasked by Emissary Rowena to map the region and establish relations with neighboring settlements.
