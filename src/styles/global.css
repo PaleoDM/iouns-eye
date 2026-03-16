@@ -135,7 +135,7 @@
 }
 
 /* Fix results dropdown escaping the fixed header */
-.pagefind-ui__results-container {
+.pagefind-ui__drawer {
   position: fixed !important;
   top: 64px;
   right: 0;
