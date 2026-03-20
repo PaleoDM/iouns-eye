@@ -4,7 +4,7 @@ faction_type: secret
 status: active
 campaigns: [rifthaven-online]
 tags: [justicar, truth, memory, investigation]
-related: [quins-death, defeat-of-ozythar]
+related: [quins-death, defeat-of-ozythar, art-doyle, divine-judge-josephine]
 ---
 
 A secretive system or organization connected to the Justicar order, the Aletheia Procedure governs how Justicars track and collect individuals marked by their blades. Leon's sword carries the names of his charges, and when a name is collected or the individual dies, the runes respond accordingly.

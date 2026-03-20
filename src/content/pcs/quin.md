@@ -12,6 +12,7 @@ related:
   - dr-solvane
   - the-pallbearer
   - sparkworks-district
+  - the-galleria
 ---
 
 ## Background
@@ -24,6 +25,7 @@ Quin is an elven wizard and diviner, also known as Galton Quincrux. He owed a de
 - His soul was not collected by the Aletheia Procedure — an impossibility that drives Leon's investigation
 - Soul located in the Pallbearer's personal Galleria in Potter's Field (Session 43)
 - Communed with Ty through Lulu in Odaire, granting a final natural 20 portent (Session 41)
+- Soul recovered from the Galleria during the party's heist (Session 44)
 
 ## Status
-Dead since Session 32. His soul is trapped as a portrait in the Pallbearer's collection. The party is planning a heist to recover it.
+Dead since Session 32. Soul recovered from the Pallbearer's Galleria by the party in Session 44.

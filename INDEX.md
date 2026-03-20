@@ -1,8 +1,8 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-03-15 -->
+<!-- Last updated: 2026-03-20 -->
 
-## NPCs (118)
+## NPCs (124)
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
 - `badger-goldenmantle` Badger Goldenmantle — alive
@@ -10,7 +10,7 @@
 - `boreal` Boreal — alive
 - `bran-caldrow` Bran Caldrow — alive | [ishetar-2]
 - `breccia` Breccia — imprisoned | Temple Acolyte
-- `brenna-tolvane` Brenna Tolvane — missing | Warden of the Turquoise Timber Trust | [ishetar-2]
+- `brenna-tolvane` Brenna Tolvane — missing | Timbermaster | [ishetar-2]
 - `brother-keegan` Brother Keegan — alive | Brother
 - `brother-tobias` Brother Tobias — alive | Minister of the Gatekeeper's Temple | [ishetar-2]
 - `byron-wintar` Byron Wintar — unknown
@@ -29,7 +29,9 @@
 - `dalrick-caldrow` Dalrick Caldrow — alive | [ishetar-2]
 - `dante` Dante — alive
 - `victor-kane` Director Victor Kane — alive | Director of Security, Serenity Auction House
+- `art-doyle` Divine Judge Art Doyle — unknown | High Justicar
 - `divine-judge-josephine` Divine Judge Josephine Maren — dead | High Justicar
+- `doragnes` Doragnes — alive | Major Domo of the Galleria
 - `dr-nastase` Dr. Nastase — dead
 - `dr-solvane` Dr. Solvane — alive | Memory Researcher
 - `dr-sprocket` Dr. Sprocket — alive | Artificer
@@ -38,7 +40,7 @@
 - `duchess-lyla` Duchess Lyla — alive | Duchess of Emberspost | [ishetar-2]
 - `einhar-coldforge` Einhar Coldforge — alive
 - `ellie-caldrow` Ellie Caldrow — alive | [ishetar-2]
-- `emissary-rowena` Emissary Rowena — alive | Emissary
+- `emissary-rowena` Emissary Rowena — alive | Governess
 - `ernesto-de-la-alma` Ernesto De la Alma — alive
 - `ethel` Ethel — alive
 - `fae-ethani` Fae-Ethani — alive
@@ -49,6 +51,7 @@
 - `fisherman-dyrk` Fisherman Dyrk — dead
 - `garabaga` GaraBaga — alive
 - `gertrude-earthenstone` Gertrude Earthenstone — alive | Proprietor of Dirty Gerty's | [ishetar-2, ishetar-og]
+- `gideon` Gideon — unknown
 - `governor-nighthill` Governor Nighthill — alive | Governor
 - `grave-dirt` Grave Dirt — dead
 - `guiseppe` Guiseppe — alive | The Toymaker
@@ -60,12 +63,13 @@
 - `jerusha` Jerusha — alive
 - `jora-caldrow` Jora Caldrow — alive | Armory Manager | [ishetar-2]
 - `keeper-vespa-ishetar` Keeper Vespa — alive | Lighthouse Keeper | [ishetar-2]
-- `kess-vauthi` Kess Vauthi — alive | Quartermaster | [ishetar-2]
+- `kess-vauthi` Kess Vauthi — alive | Captain | [ishetar-2]
 - `hekkathon` King Hekkathon — alive | King of the Storm Giants | [skt]
 - `kivan-caldrow` Kivan Caldrow — alive | [ishetar-2]
+- `little-shit` Little Shit — alive
 - `lord-harwin` Lord Harwin Brassfell — alive | Lord of Sparkworks
+- `lord-sergente` Lord Maximillian Sergente — dead | Plantation Lord
 - `lord-pembrook` Lord Pembrook — alive | [skt]
-- `lord-sergente` Lord Sergente — alive | Plantation Lord
 - `lulu` Lulu — alive | Celestial Patron
 - `luz-de-la-alma` Luz De la Alma — alive | Resistance Leader
 - `malaki` Malaki — alive | [ishetar-2]
@@ -89,6 +93,7 @@
 - `phoebe` Phoebe — alive | Ty's Sister
 - `pinto-gambino` Pinto Gambino — alive | Merchant | [ishetar-2]
 - `quetzi` Quetzi — alive | Oracle of the Divine Well | [ishetar-2]
+- `relic` Relic — alive | [kalari]
 - `roe` Roe — alive | Ty's Mother
 - `romero-de-la-alma` Romero De la Alma — alive
 - `rosie` Rosie — alive | Guardian of the Tree of Ambition
@@ -111,19 +116,20 @@
 - `th0l` Th0l — alive | [ishetar-2]
 - `thane-kayalithica` Thane Kayalithica — dead | Thane of the Stone Giants | [skt]
 - `great-self` The Great Self — alive | Fungal Hive Mind
+- `the-paintress` The Paintress — alive
 - `the-pallbearer` The Pallbearer — alive | Darklord of Potter's Field
 - `tota-de-la-alma` Tota De la Alma — alive | Matriarch
 - `vandro-morrix` Vandro Morrix — dead | Owner of the Gilded Ember
 - `vanir-harwich` Vanir Harwich — unknown
-- `veraine-luthaire` Veraine Luthaire — missing | Agent of the Riven Fist | [ishetar-2]
+- `verlaine-luthaire` Verlaine Luthaire — missing | Agent of the Celestial Seed | [ishetar-2]
 - `vespa` Vespa — dead
 - `vessan` Vessan — dead | [ishetar-2]
 - `vorak-bloodfang` Vorak Bloodfang — dead
 - `whisper` Whisper — alive
 - `zeke` Zeke — alive
 
-## Locations (65)
-- `ahanabai` Ahanabai — city | Ekkorai | [ishetar-2]
+## Locations (67)
+- `ahanabai` Ahanabai — region | [ishetar-2]
 - `aroiinae` Aroiinae — city | [ishetar-2]
 - `ashen-chapel` Ashen Chapel — building | [rifthaven-online]
 - `barat-indra` Barat-Indra — wilderness | Ekkorai | [head-hunters]
@@ -137,7 +143,7 @@
 - `emberspost` Emberspost — city | Ekkorai | [head-hunters, ishetar-2]
 - `emerald-crescent` Emerald Crescent — wilderness | Kalari
 - `farrowfield` Farrowfield — city | Cradle of Conflict | [skt]
-- `firewatch-island` Firewatch Island — building | Ekkorai | [ishetar-2]
+- `firewatch-island` Firewatch Island — city | Ekkorai | [ishetar-2]
 - `glamour-district` Glamour District — district | [rifthaven-online]
 - `glennox` Glennox — continent | [kalari, skt]
 - `grand-souk` Grand Souk — building | [rifthaven-irl, rifthaven-online]
@@ -158,10 +164,10 @@
 - `oglin` Oglin — city | [ishetar-2]
 - `old-founders-laboratory` Old Founder's Laboratory — dungeon | Ekkorai | [head-hunters]
 - `old-perile-falls` Old Perile Falls — dungeon | Kalari
-- `oracle-shrine` Oracle Shrine — dungeon | Ekkorai | [ishetar-2]
+- `oracle-shrine` Oracle Shrine — building | Ekkorai | [ishetar-2]
 - `orbos` Orbos — planar
 - `ozythars-lair` Ozythar's Lair — dungeon | [rifthaven-online]
-- `poets-point` Poet's Point — building | Kalari
+- `poets-point` Poet's Point — city | Kalari
 - `potters-field` Potter's Field — planar | [rifthaven-online]
 - `prusca` Prusca — city | [ishetar-2]
 - `rifthaven` Rifthaven — city | [rifthaven-irl, rifthaven-online]
@@ -173,12 +179,14 @@
 - `sparkworks-district` Sparkworks District — district | [rifthaven-online]
 - `sparkworks-tunnels` Sparkworks Tunnels — dungeon | [rifthaven-online]
 - `sporestone-mint` Sporestone Mint — building | [rifthaven-irl]
+- `the-actuarium` The Actuarium — planar | [rifthaven-online]
 - `amber-expanse` The Amber Expanse — wilderness | Cradle of Conflict | [skt]
 - `the-bastion-sparkworks` The Bastion — building | [rifthaven-online]
 - `brazier` The Brazier — district | [rifthaven-online]
 - `cradle-of-conflict` The Cradle of Conflict — region | [skt]
 - `the-crucible` The Crucible — region | [skt]
 - `fractured-expanse` The Fractured Expanse — wilderness | Ekkorai | [head-hunters]
+- `the-galleria` The Galleria — planar | [rifthaven-online]
 - `red-vale` The Red Vale — wilderness | Ekkorai | [ishetar-2]
 - `restful-lily` The Restful Lily — building | Ekkorai | [ishetar-2]
 - `tormellin` Tormellin — city | [ishetar-2]
@@ -189,14 +197,14 @@
 - `verdelorn-woods` Verdelorn Woods — wilderness | [rifthaven-irl]
 - `wanun` Wanun — continent | [ishetar-og, head-hunters, ishetar-2]
 
-## Factions (25)
+## Factions (24)
 - `aquatic-conclave` Aquatic Peoples Conclave — political | active | [ishetar-2]
 - `arsons-of-anarchy` Arsons of Anarchy — religious | active | [head-hunters]
 - `celestial-seed` Celestial Seed — secret | active | [ishetar-2]
 - `children-of-the-defiled-sun` Children of the Defiled Sun — religious | active | [head-hunters]
 - `earthen-loam` Earthen Loam — secret | active | [rifthaven-online]
 - `house-of-coinwrights` House of Coinwrights — commercial | active | [rifthaven-online]
-- `knights-of-the-eclipse` Knights of the Eclipse — religious | active | [rifthaven-irl, rifthaven-online]
+- `knights-of-the-eclipse` Knights of the Eclipse — religious | active | [ishetar-2, kalari]
 - `order-of-the-ju-shi` Order of the Ju-Shi — religious | active | [rifthaven-irl, rifthaven-online]
 - `peregrine-society` Peregrine Society — military | active | [skt]
 - `perile-falls-oligarchs` Perile Falls Oligarchs — political | active
@@ -211,7 +219,6 @@
 - `hushed-choir` The Hushed Choir — secret | historical | [rifthaven-online]
 - `ledgermen` The Ledgermen — military | historical | [rifthaven-online]
 - `restful-lily-faction` The Restful Lily — religious | active | [ishetar-2]
-- `the-syndicate` The Syndicate — criminal | active | [rifthaven-irl, rifthaven-online]
 - `thornsong` Thornsong Court — secret | active | [ishetar-2]
 - `turquoise-timber-trust` Turquoise Timber Trust — commercial | active | [ishetar-2]
 - `vegepygmy-people` Vegepygmy People — political | active | [ishetar-2]
@@ -241,13 +248,16 @@
 - `sahuagin-siege-of-ishetar` Sahuagin Siege of Ishetar — 1082 | ishetar-og | [ishetar-og]
 - `sallow-march-on-ishetar` Sallow's March on Ishetar — 1136 | ishetar-2 | [ishetar-2]
 - `firewatch-island-siege` Siege of Firewatch Island — 1136 | ishetar-2 | [ishetar-2]
-- `fall-of-old-perile-falls` The Fall of Old Perile Falls — 888
+- `fall-of-old-perile-falls` The Fall of Old Perile Falls — 896
 - `heartwood-blight` The Heartwood Blight — 1127 | rifthaven-irl | [rifthaven-irl]
 - `memory-heist` The Memory Heist — 1128 | rifthaven-online | [rifthaven-online]
 - `roc-run-race` The Roc Run — 1129 | rifthaven-online | [rifthaven-online]
 - `shattering-of-the-ordning` The Shattering of the Ordning — 1094 | skt | [skt]
 - `thorn-resurrection` Thorn's Resurrection — 1128 | rifthaven-online | [rifthaven-online]
 - `vegepygmy-integration` Vegepygmy Integration into Ishetar — 1136 | ishetar-2 | [ishetar-2]
+
+## Items (0)
+_No entries yet._
 
 ## Deities (46)
 - `altraloth` Altraloth — The Ancient One | yugoloth
@@ -313,44 +323,43 @@
 - `kalari` Ruins of Kalari — completed | 1088
 - `skt` SKT One Last Job — completed | 1094
 
-## PCs (40)
+## PCs (39)
 - `alister` Alister — Human | Fighter | head-hunters | [head-hunters]
-- `arden` Arden — Unknown | Bard | rifthaven-online | [rifthaven-online]
+- `arden` Arden — Sea Elf | Bard | rifthaven-online | [rifthaven-online]
+- `arlowe` Arlowe — Human | Artificer | skt | [skt]
 - `atwood` Atwood — Human | Wizard | rifthaven-irl | [rifthaven-irl]
-- `aurelia` Aurelia — Half-Elf | Rogue | ishetar-og | [ishetar-og]
-- `azrael` Azrael — Aasimar | Soul Knife Rogue | ishetar-2 | [ishetar-2]
-- `cam` Cam — Goliath | Barbarian | skt | [skt]
+- `aurelia` Aurelia — High Elf | Rogue | ishetar-og | [ishetar-og]
+- `azrael` Azrael — Aasimar | Rogue | ishetar-2 | [ishetar-2]
+- `cam` Cam Pembrook — Half-Orc | Fighter | skt | [skt]
 - `crow` Crow — Tabaxi | Rogue | rifthaven-irl | [rifthaven-irl]
-- `elmnack` Elmnack — Construct | Rogue | kalari | [kalari]
+- `elmnack` Elmnack — Dwarf | Ranger | kalari | [kalari]
 - `even` Even — Goliath | Druid | rifthaven-irl | [rifthaven-irl]
-- `freddie` Freddie — Aasimar | Cleric | rifthaven-online | [rifthaven-online]
-- `griffelump` Griffelump — Gnome | Wizard | ishetar-og | [ishetar-og]
+- `freddie` Freddie — Sea Elf | Cleric | rifthaven-online | [rifthaven-online]
+- `griffelump` Griffelump — Tabaxi | Wizard | ishetar-og | [ishetar-og]
 - `gwenevere` Gwenevere — Eladrin | Sorcerer | kalari | [kalari]
 - `izlara` Izlara — Human | Ranger | head-hunters | [head-hunters]
-- `janus` Janus — Warforged | Fighter | ishetar-og | [ishetar-og]
+- `janus` Janus — Triton | Sorcerer | ishetar-og | [ishetar-og]
 - `karina-rifthaven` Karina — Wood Elf | Cleric | rifthaven-irl | [rifthaven-irl]
 - `kip-vogels` Kip Vogels — Gnome | Druid | kalari | [kalari]
-- `kuari` Kuari — Half-Elf | Ranger | kalari | [kalari]
+- `kuari` Kuari — Tabaxi | Warlock | kalari | [kalari]
 - `kuldar` Kuldar — Dwarf | Fighter | ishetar-og | [ishetar-og]
-- `leon` Leon Empyrean — Unknown | Justicar | rifthaven-online | [rifthaven-online]
+- `leon` Leon Empyrean — Aasimar | Paladin | rifthaven-online | [rifthaven-online]
 - `lyra` Lyra — Wood Elf | Cleric | ishetar-2 | [ishetar-2]
-- `maeve-willowspell` Maeve Willowspell — Half-Elf | Rogue | skt | [skt]
-- `mara` Mara — Human | Monk | ishetar-og | [ishetar-og]
-- `nix` Nix — Firbolg | Ranger | skt | [skt]
-- `ollithian` Ollithian — Half-Orc | Bard | kalari | [kalari]
-- `patrick` Patrick — Human | Fighter | kalari | [kalari]
-- `quin` Quin — Unknown | Wizard | rifthaven-online | [rifthaven-online]
-- `rai` Rai — Human | Ranger | ishetar-og | [ishetar-og]
-- `relic` Relic — Construct | Fighter | kalari | [kalari]
-- `rhogar` Rhogar — Dragonborn | Paladin | skt | [skt]
-- `rooker` Rooker — Unknown | Wizard | ishetar-2 | [ishetar-2]
-- `sorcha` Sorcha — Gnome | Artificer | kalari | [kalari]
-- `tauvin` Tauvin — Half-Elf | Bard | ishetar-og | [ishetar-og]
-- `thorn` Thorn — Unknown | Barbarian | rifthaven-online | [rifthaven-online]
+- `maeve-willowspell` Maeve Willowspell — Firbolg | Bard | skt | [skt]
+- `major-tom` Major Tom Ocelot — Tabaxi | Rogue | skt | [skt]
+- `mara` Mara — Half-Elf | Monk | ishetar-og | [ishetar-og]
+- `ollithian` Ollithian — High Elf | Wizard | kalari | [kalari]
+- `patrick` Patrick — Human | Bard | kalari | [kalari]
+- `quin` Quin — Human | Wizard | rifthaven-online | [rifthaven-online]
+- `rai` Rai — Tiefling | Ranger | ishetar-og | [ishetar-og]
+- `rooker` Rooker — Human | Warlock/Sorcerer | ishetar-2 | [ishetar-2]
+- `sorcha` Sorcha — Halfling | Artificer | kalari | [kalari]
+- `tauvin` Tauvin — Firbolg | Cleric | ishetar-og | [ishetar-og]
+- `thorn` Thorn — Goliath | Barbarian | rifthaven-online | [rifthaven-online]
 - `thump` Thump — Halfling | Druid | ishetar-2 | [ishetar-2]
-- `tyrell` Tyrell — Half-Elf | Warlock | rifthaven-online | [rifthaven-online]
-- `veil` Veil — Unknown | Monk | rifthaven-online | [rifthaven-online]
-- `vicas` Vicas — Green Dragonborn | Cleric | ishetar-2 | [ishetar-2]
+- `tyrell` Tyrell — Drow | Warlock | rifthaven-online | [rifthaven-online]
+- `veil` Veil — Human | Monk | rifthaven-online | [rifthaven-online]
+- `vicas` Vicas — Green Dragonborn | Monk | ishetar-2 | [ishetar-2]
 - `vitus` Vitus — Human | Warlock | head-hunters | [head-hunters]
 - `zashien` Zashien — Genasi (Fire) | Sorcerer | head-hunters | [head-hunters]
 - `zavek` Zavek — Goliath | Cleric | skt | [skt]
