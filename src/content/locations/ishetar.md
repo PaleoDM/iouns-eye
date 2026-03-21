@@ -6,7 +6,7 @@ continent: Wanun
 parent_location: ekkorai
 campaigns: [ishetar-og, head-hunters, ishetar-2]
 tags: [colony, port-city, frontier]
-related: [ekkorai, aroiin-empire, emissary-rowena]
+related: [ekkorai, aroiin-empire, emissary-rowena, ishetar-2-session-30]
 ---
 
 ## Description

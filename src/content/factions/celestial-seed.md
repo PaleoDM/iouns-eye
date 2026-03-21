@@ -4,7 +4,7 @@ faction_type: secret
 campaigns: [ishetar-2]
 status: active
 tags: [cult, blood-magic, celestial-infernal]
-related: [verlaine-luthaire, ellie-caldrow, azrael, turquoise-timber-trust]
+related: [verlaine-luthaire, ellie-caldrow, azrael, turquoise-timber-trust, ishetar-2-session-30]
 ---
 
 ## Purpose & Goals

@@ -5,7 +5,7 @@ race: Tiefling
 campaigns: [ishetar-2]
 first_appearance: "Session 29"
 tags: [victim, rescued]
-related: [verlaine-luthaire, celestial-seed, ttt-compound]
+related: [verlaine-luthaire, celestial-seed, ttt-compound, ishetar-2-session-30]
 ---
 
 Former camp medic at the TTT compound. Found imprisoned in the cellar during the compound assault, having been drained of blood from her forearms regularly by Verlaine Luthaire as part of the Celestial Seed's blood harvesting operation. Freed and rescued by the party (Session 29).

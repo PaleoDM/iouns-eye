@@ -14,6 +14,7 @@ related:
   - ishetar
   - governor-nighthill
   - sahuagin-siege-of-ishetar
+  - ishetar-2-session-30
 ---
 
 ## Background

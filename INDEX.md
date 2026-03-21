@@ -1,6 +1,6 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-03-20 -->
+<!-- Last updated: 2026-03-21 -->
 
 ## NPCs (124)
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
@@ -63,7 +63,7 @@
 - `jerusha` Jerusha — alive
 - `jora-caldrow` Jora Caldrow — alive | Armory Manager | [ishetar-2]
 - `keeper-vespa-ishetar` Keeper Vespa — alive | Lighthouse Keeper | [ishetar-2]
-- `kess-vauthi` Kess Vauthi — alive | Captain | [ishetar-2]
+- `kess-vauthi` Kess Vauthi — alive | Acting Timbermaster | [ishetar-2]
 - `hekkathon` King Hekkathon — alive | King of the Storm Giants | [skt]
 - `kivan-caldrow` Kivan Caldrow — alive | [ishetar-2]
 - `little-shit` Little Shit — alive

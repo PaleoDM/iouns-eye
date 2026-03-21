@@ -7,7 +7,7 @@ session: 29
 location: ttt-compound
 participants: [azrael, vicas, lyra, rooker, thump, verlaine-luthaire, drev-harsk, brenna-tolvane]
 tags: [combat, infiltration, revelation]
-related: [turquoise-timber-trust, celestial-seed, verlaine-luthaire, drev-harsk, malaki, ttt-compound]
+related: [turquoise-timber-trust, celestial-seed, verlaine-luthaire, drev-harsk, malaki, ttt-compound, ishetar-2-session-30]
 significance: major
 ---
 

@@ -6,7 +6,7 @@ headquarters: ttt-compound
 campaigns: [ishetar-2]
 status: active
 tags: [logging, exploitative, imperial]
-related: [brenna-tolvane, sallow, drev-harsk, aroiin-empire, myreshade-forest, ekkorai]
+related: [brenna-tolvane, sallow, drev-harsk, aroiin-empire, myreshade-forest, ekkorai, ishetar-2-session-30]
 ---
 
 ## Purpose & Goals

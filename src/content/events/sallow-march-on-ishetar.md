@@ -7,7 +7,7 @@ session: 30
 location: ishetar
 participants: [sallow, drev-harsk, kess-vauthi, ellie-caldrow]
 tags: [military, kidnapping, ongoing]
-related: [sallow, ellie-caldrow, celestial-seed, turquoise-timber-trust, ishetar]
+related: [sallow, ellie-caldrow, celestial-seed, turquoise-timber-trust, ishetar, ishetar-2-session-30]
 significance: major
 ---
 
