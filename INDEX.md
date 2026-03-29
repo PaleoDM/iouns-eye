@@ -1,6 +1,6 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-03-21 -->
+<!-- Last updated: 2026-03-29 -->
 
 ## NPCs (124)
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
@@ -223,7 +223,7 @@
 - `turquoise-timber-trust` Turquoise Timber Trust — commercial | active | [ishetar-2]
 - `vegepygmy-people` Vegepygmy People — political | active | [ishetar-2]
 
-## Events (31)
+## Events (32)
 - `ttt-compound-assault` Assault on the TTT Compound — 1136 | ishetar-2 | [ishetar-2]
 - `defeat-of-drelduin` Defeat of Drelduin — 1088 | kalari | [kalari]
 - `defeat-of-iymrith` Defeat of Iymrith — 1094 | skt | [skt]
@@ -237,6 +237,7 @@
 - `odaire-escape` Escape from Odaire — 1129 | rifthaven-online | [rifthaven-online]
 - `founding-of-ishetar` Founding of Ishetar — 1077
 - `grand-souk-attack` Grand Souk Attack — 1127 | rifthaven-irl | [rifthaven-irl]
+- `leons-death` Leon's Death — 1129 | rifthaven-online | [rifthaven-online]
 - `sparkworks-liberation` Liberation of Sparkworks — 1128 | rifthaven-online | [rifthaven-online]
 - `salvation-district-liberation` Liberation of the Salvation District — 1129 | rifthaven-online | [rifthaven-online]
 - `quins-death` Quin's Death — 1129 | rifthaven-online | [rifthaven-online]
