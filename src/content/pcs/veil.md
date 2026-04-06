@@ -13,7 +13,7 @@ related:
 ---
 
 ## Background
-Veil is a monk of the Order of the Shi-Ho, sent on a mission by her mentor Stone-Whisper-Bloom of Sunder (Sir Sunder). She replaced one of the names on a list with her own to infiltrate the Sparkworks meeting.
+Veil is a monk of the Order of the Ju-Shi, sent on a mission by her mentor Stone-Whisper-Bloom of Sunder (Sir Sunder). She replaced one of the names on a list with her own to infiltrate the Sparkworks meeting.
 
 ## Key Moments
 - First to cross the underground chasm in the Sparkworks tunnels (Session 6)
