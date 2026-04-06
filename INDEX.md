@@ -2,10 +2,11 @@
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
 <!-- Last updated: 2026-04-06 -->
 
-## NPCs (125)
+## NPCs (132)
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
 - `badger-goldenmantle` Badger Goldenmantle — alive
+- `bessa` Bessa — dead | Headservant of Manor Harsk | [ishetar-2]
 - `biotite` Biotite — unknown | [skt]
 - `boreal` Boreal — alive
 - `bran-caldrow` Bran Caldrow — alive | [ishetar-2]
@@ -14,6 +15,7 @@
 - `brother-keegan` Brother Keegan — alive | Brother
 - `brother-tobias` Brother Tobias — alive | Minister of the Gatekeeper's Temple | [ishetar-2]
 - `byron-wintar` Byron Wintar — unknown
+- `callista-vohn` Callista Vohn — alive | Noblewoman of the Astral Peaks | [ishetar-2]
 - `captain-alba` Captain Alba Skylar — alive | Captain of the Shooting Star | [ishetar-2]
 - `captain-alistair` Captain Alistair — alive | Captain of the Dancing Dirge
 - `captain-lysa-vex` Captain Lysa Vex — alive | Captain of the Brass Wing
@@ -57,7 +59,9 @@
 - `guiseppe` Guiseppe — alive | The Toymaker
 - `haji` Haji — alive | Head of the House of Coinwrights
 - `harlan` Harlan — alive
+- `haven-harsk` Haven Harsk — alive | [ishetar-2]
 - `inotus-rex` Inotus Rex — alive | The Necromancer King
+- `isla-harsk` Isla Harsk — alive | Lady of Manor Harsk | [ishetar-2]
 - `iymrith` Iymrith — dead | [skt]
 - `jarl-storvald` Jarl Storvald — dead | Jarl of the Frost Giants | [skt]
 - `jerusha` Jerusha — alive
@@ -66,6 +70,7 @@
 - `kess-vauthi` Kess Vauthi — alive | Acting Timbermaster | [ishetar-2]
 - `hekkathon` King Hekkathon — alive | King of the Storm Giants | [skt]
 - `kivan-caldrow` Kivan Caldrow — alive | [ishetar-2]
+- `lisel-harsk` Lisel Harsk — alive | [ishetar-2]
 - `little-shit` Little Shit — alive
 - `lord-harwin` Lord Harwin Brassfell — alive | Lord of Sparkworks
 - `lord-sergente` Lord Maximillian Sergente — dead | Plantation Lord
@@ -93,6 +98,7 @@
 - `phoebe` Phoebe — alive | Ty's Sister
 - `pinto-gambino` Pinto Gambino — alive | Merchant | [ishetar-2]
 - `quetzi` Quetzi — alive | Oracle of the Divine Well | [ishetar-2]
+- `rekka-harsk` Rekka Harsk — alive | [ishetar-2]
 - `relic` Relic — alive | [kalari]
 - `roe` Roe — alive | Ty's Mother
 - `romero-de-la-alma` Romero De la Alma — alive
@@ -119,6 +125,7 @@
 - `the-paintress` The Paintress — alive
 - `the-pallbearer` The Pallbearer — alive | Darklord of Potter's Field
 - `tota-de-la-alma` Tota De la Alma — alive | Matriarch
+- `udo` Udo — alive | Stablemaster of Manor Harsk | [ishetar-2]
 - `vandro-morrix` Vandro Morrix — dead | Owner of the Gilded Ember
 - `vanir-harwich` Vanir Harwich — unknown
 - `verlaine-luthaire` Verlaine Luthaire — missing | Agent of the Celestial Seed | [ishetar-2]
@@ -129,10 +136,11 @@
 - `whisper` Whisper — alive
 - `zeke` Zeke — alive
 
-## Locations (68)
+## Locations (70)
 - `ahanabai` Ahanabai — region | [ishetar-2]
 - `aroiinae` Aroiinae — city | [ishetar-2]
 - `ashen-chapel` Ashen Chapel — building | [rifthaven-online]
+- `bank-of-zoink` Bank of Zoink — building | [ishetar-2]
 - `barat-indra` Barat-Indra — wilderness | Ekkorai | [head-hunters]
 - `bloomridge` Bloomridge — district | [rifthaven-online]
 - `boughshadow` Boughshadow — wilderness | [rifthaven-online]
@@ -151,13 +159,14 @@
 - `graves-of-revolution` Graves of the Revolution — building | [rifthaven-online]
 - `harwich` Harwich — city | Kalari
 - `hearthfire-commons` Hearthfire Commons — building | [rifthaven-online]
-- `high-haven-arcane-academy` High Haven Arcane Academy — rifthaven
+- `high-haven-arcane-academy` High Haven Arcane Academy — building | rifthaven
 - `house-of-respite` House of Respite — building | [rifthaven-online]
 - `hrimgard` Hrimgard — city | Cradle of Conflict | [skt]
 - `ishetar` Ishetar — city | Ekkorai | [ishetar-og, head-hunters, ishetar-2]
 - `kalari` Kalari — region | [kalari]
 - `khanae` Khanae — continent | [rifthaven-irl, rifthaven-online]
 - `lake-umbrathir` Lake Umbrathir — wilderness | [rifthaven-online]
+- `manor-harsk` Manor Harsk — building | Astral Peaks | [ishetar-2]
 - `myreshade-forest` Myreshade Forest — wilderness | Ekkorai | [ishetar-2]
 - `nanny-pupus-hut` Nanny Pu'Pu's Hut — building | [rifthaven-online]
 - `new-perile-falls` New Perile Falls — city | Kalari
@@ -225,7 +234,7 @@
 - `turquoise-timber-trust` Turquoise Timber Trust — commercial | active | [ishetar-2]
 - `vegepygmy-people` Vegepygmy People — political | active | [ishetar-2]
 
-## Events (33)
+## Events (34)
 - `ttt-compound-assault` Assault on the TTT Compound — 1136 | ishetar-2 | [ishetar-2]
 - `defeat-of-drelduin` Defeat of Drelduin — 1088 | kalari | [kalari]
 - `defeat-of-iymrith` Defeat of Iymrith — 1094 | skt | [skt]
@@ -237,6 +246,7 @@
 - `emberspost-assassination-plot` Emberspost Assassination Plot — 1136 | ishetar-2 | [ishetar-2]
 - `entry-to-potters-field` Entry to Potter's Field — 1129 | rifthaven-online | [rifthaven-online]
 - `odaire-escape` Escape from Odaire — 1129 | rifthaven-online | [rifthaven-online]
+- `extraction-of-harsk-family` Extraction of the Harsk Family — 1136 | ishetar-2 | [ishetar-2]
 - `founding-of-ishetar` Founding of Ishetar — 1077
 - `grand-souk-attack` Grand Souk Attack — 1127 | rifthaven-irl | [rifthaven-irl]
 - `leons-death` Leon's Death — 1129 | rifthaven-online | [rifthaven-online]
