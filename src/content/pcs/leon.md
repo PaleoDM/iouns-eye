@@ -7,7 +7,8 @@ tags:
   - justice
   - disillusioned
   - divine
-  - dead
+  - resurrected
+  - construct
 related:
   - rifthaven
   - quin
@@ -28,6 +29,8 @@ Leon is a Justicar — a divine agent of the Aletheia Procedure, the resurrectio
 - Increasingly disillusioned with the Aletheia system he was trained to serve
 - Killed by the Pallbearer's Power Word Kill contingency while moving in for a killing blow (Session 45)
 - Resurrection ritual failed (DC 3, rolled a 2). Spoke with Art Doyle in death but could not return.
+- Soul coalesced into a Pleb gemstone (Session 46). Could see, hear, and speak.
+- Rebuilt by Freddie and Ty into a construct-like form piloting his armor. One broken wing, slightly undead disposition. More machine than man.
 
 ## Character Arc
-Leon's journey is a crisis of faith — discovering the justice system he dedicated his life to is corrupt, compromised by the Pallbearer's soul trade. He died reaching for the Pallbearer's platinum bounty, a bitter irony for a paladin of justice. His player is exploring a revenant return to finish the mission against the Aletheia Procedure.
+Leon's journey is a crisis of faith — discovering the justice system he dedicated his life to is corrupt, compromised by the Pallbearer's soul trade. He died reaching for the Pallbearer's platinum bounty, a bitter irony for a paladin of justice. He came back wrong: a construct piloting his own armor, one wing broken. But he came back, and the mission continues.

@@ -1,8 +1,8 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-03-29 -->
+<!-- Last updated: 2026-04-06 -->
 
-## NPCs (124)
+## NPCs (125)
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
 - `badger-goldenmantle` Badger Goldenmantle — alive
@@ -51,7 +51,7 @@
 - `fisherman-dyrk` Fisherman Dyrk — dead
 - `garabaga` GaraBaga — alive
 - `gertrude-earthenstone` Gertrude Earthenstone — alive | Proprietor of Dirty Gerty's | [ishetar-2, ishetar-og]
-- `gideon` Gideon — unknown
+- `gideon` Gideon — unknown | Department Chair, School of Necromancy
 - `governor-nighthill` Governor Nighthill — alive | Governor
 - `grave-dirt` Grave Dirt — dead
 - `guiseppe` Guiseppe — alive | The Toymaker
@@ -124,11 +124,12 @@
 - `verlaine-luthaire` Verlaine Luthaire — missing | Agent of the Celestial Seed | [ishetar-2]
 - `vespa` Vespa — dead
 - `vessan` Vessan — dead | [ishetar-2]
+- `vine-ashen-bloom` Vine Ashen Bloom — alive | Divine Judge and Monk
 - `vorak-bloodfang` Vorak Bloodfang — dead
 - `whisper` Whisper — alive
 - `zeke` Zeke — alive
 
-## Locations (67)
+## Locations (68)
 - `ahanabai` Ahanabai — region | [ishetar-2]
 - `aroiinae` Aroiinae — city | [ishetar-2]
 - `ashen-chapel` Ashen Chapel — building | [rifthaven-online]
@@ -150,6 +151,7 @@
 - `graves-of-revolution` Graves of the Revolution — building | [rifthaven-online]
 - `harwich` Harwich — city | Kalari
 - `hearthfire-commons` Hearthfire Commons — building | [rifthaven-online]
+- `high-haven-arcane-academy` High Haven Arcane Academy — rifthaven
 - `house-of-respite` House of Respite — building | [rifthaven-online]
 - `hrimgard` Hrimgard — city | Cradle of Conflict | [skt]
 - `ishetar` Ishetar — city | Ekkorai | [ishetar-og, head-hunters, ishetar-2]
@@ -223,7 +225,7 @@
 - `turquoise-timber-trust` Turquoise Timber Trust — commercial | active | [ishetar-2]
 - `vegepygmy-people` Vegepygmy People — political | active | [ishetar-2]
 
-## Events (32)
+## Events (33)
 - `ttt-compound-assault` Assault on the TTT Compound — 1136 | ishetar-2 | [ishetar-2]
 - `defeat-of-drelduin` Defeat of Drelduin — 1088 | kalari | [kalari]
 - `defeat-of-iymrith` Defeat of Iymrith — 1094 | skt | [skt]
@@ -238,6 +240,7 @@
 - `founding-of-ishetar` Founding of Ishetar — 1077
 - `grand-souk-attack` Grand Souk Attack — 1127 | rifthaven-irl | [rifthaven-irl]
 - `leons-death` Leon's Death — 1129 | rifthaven-online | [rifthaven-online]
+- `leons-resurrection` Leon's Resurrection — 1129 | rifthaven-online | [rifthaven-online]
 - `sparkworks-liberation` Liberation of Sparkworks — 1128 | rifthaven-online | [rifthaven-online]
 - `salvation-district-liberation` Liberation of the Salvation District — 1129 | rifthaven-online | [rifthaven-online]
 - `quins-death` Quin's Death — 1129 | rifthaven-online | [rifthaven-online]

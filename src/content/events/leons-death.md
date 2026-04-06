@@ -18,4 +18,4 @@ The party burned through the Pallbearer's legendary resistances. Veil stunned an
 
 Ty performed a resurrection ritual on the deck of the Dancing Dirge. Freddie lowered the DC from 10 to 7. Thorn contributed, lowering it to 6. Veil presented Art Doyle's portrait, and Doyle spoke with Leon in death — the two debated whether anything was worth coming back for. The DC dropped to 3. Ty's player rolled the final check: a 2.
 
-Leon died one point short of returning. His player is exploring a revenant return to finish the mission against the Aletheia Procedure.
+Leon died one point short of returning. His soul coalesced into a Pleb gemstone in the diamond used for the ritual. In Session 46, Freddie and Ty rebuilt him into a construct-like form piloting his armor — one broken wing, slightly undead disposition. He came back, but not the same.
