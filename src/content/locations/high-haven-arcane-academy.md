@@ -1,6 +1,6 @@
 ---
 name: High Haven Arcane Academy
-type: building
+location_type: building
 region: rifthaven
 campaigns:
   - rifthaven-online
