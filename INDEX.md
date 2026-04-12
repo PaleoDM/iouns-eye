@@ -1,12 +1,13 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-04-06 -->
+<!-- Last updated: 2026-04-12 -->
 
-## NPCs (132)
+## NPCs (134)
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
 - `badger-goldenmantle` Badger Goldenmantle — alive
 - `bessa` Bessa — dead | Headservant of Manor Harsk | [ishetar-2]
+- `bilver-shadowgift` Bilver Shadowgift — dead | Former Researcher
 - `biotite` Biotite — unknown | [skt]
 - `boreal` Boreal — alive
 - `bran-caldrow` Bran Caldrow — alive | [ishetar-2]
@@ -53,7 +54,7 @@
 - `fisherman-dyrk` Fisherman Dyrk — dead
 - `garabaga` GaraBaga — alive
 - `gertrude-earthenstone` Gertrude Earthenstone — alive | Proprietor of Dirty Gerty's | [ishetar-2, ishetar-og]
-- `gideon` Gideon — unknown | Department Chair, School of Necromancy
+- `gideon` Gideon — alive | Department Chair, School of Necromancy
 - `governor-nighthill` Governor Nighthill — alive | Governor
 - `grave-dirt` Grave Dirt — dead
 - `guiseppe` Guiseppe — alive | The Toymaker
@@ -97,6 +98,7 @@
 - `papa-luhar-perile` Papa Luhar Perile — alive | Founder of New Perile Falls
 - `phoebe` Phoebe — alive | Ty's Sister
 - `pinto-gambino` Pinto Gambino — alive | Merchant | [ishetar-2]
+- `professor-serrano` Professor Serrano — alive | Emeritus Professor, School of Necromancy
 - `quetzi` Quetzi — alive | Oracle of the Divine Well | [ishetar-2]
 - `rekka-harsk` Rekka Harsk — alive | [ishetar-2]
 - `relic` Relic — alive | [kalari]

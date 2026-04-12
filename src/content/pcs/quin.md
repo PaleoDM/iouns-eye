@@ -27,5 +27,7 @@ Quin is an elven wizard and diviner, also known as Galton Quincrux. He owed a de
 - Communed with Ty through Lulu in Odaire, granting a final natural 20 portent (Session 41)
 - Soul recovered from the Galleria during the party's heist (Session 44)
 
+- Reintroduced to Gideon at High Haven; argued with the reconstituted Bilver Shadowgift about grant funding before Bilver attacked (Session 47)
+
 ## Status
 Dead since Session 32. Soul recovered from the Pallbearer's Galleria by the party in Session 44.

@@ -5,7 +5,7 @@ status: active
 headquarters: rifthaven
 campaigns: [rifthaven-online]
 tags: [memory-trade, soul-trade, gambling]
-related: [house-of-coinwrights, memory-heist]
+related: [house-of-coinwrights, memory-heist, professor-serrano]
 ---
 
 A powerful criminal organization in Rifthaven that operates gambling halls and trades in stolen memories and trapped souls. The Cassini Brothers hold leverage over those they do business with, using stolen memories as collateral to force compliance. Among Rifthaven's upper crust, control of trapped souls is a lucrative commodity.
