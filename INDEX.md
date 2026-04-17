@@ -1,8 +1,8 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-04-12 -->
+<!-- Last updated: 2026-04-17 -->
 
-## NPCs (134)
+## NPCs (136)
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
 - `badger-goldenmantle` Badger Goldenmantle — alive
@@ -41,6 +41,7 @@
 - `drelduin` Drelduin — dead
 - `drev-harsk` Drev Harsk — alive | Castellan | [ishetar-2]
 - `duchess-lyla` Duchess Lyla — alive | Duchess of Emberspost | [ishetar-2]
+- `duty` Duty — alive | Monk of the Ju-Shi
 - `einhar-coldforge` Einhar Coldforge — alive
 - `ellie-caldrow` Ellie Caldrow — alive | [ishetar-2]
 - `emissary-rowena` Emissary Rowena — alive | Governess
@@ -54,6 +55,7 @@
 - `fisherman-dyrk` Fisherman Dyrk — dead
 - `garabaga` GaraBaga — alive
 - `gertrude-earthenstone` Gertrude Earthenstone — alive | Proprietor of Dirty Gerty's | [ishetar-2, ishetar-og]
+- `ghost` Ghost — alive | Monk of the Ju-Shi
 - `gideon` Gideon — alive | Department Chair, School of Necromancy
 - `governor-nighthill` Governor Nighthill — alive | Governor
 - `grave-dirt` Grave Dirt — dead
@@ -133,7 +135,7 @@
 - `verlaine-luthaire` Verlaine Luthaire — missing | Agent of the Celestial Seed | [ishetar-2]
 - `vespa` Vespa — dead
 - `vessan` Vessan — dead | [ishetar-2]
-- `vine-ashen-bloom` Vine Ashen Bloom — alive | Divine Judge and Monk
+- `vine-ashen-bloom` Vine Ashen Bloom — imprisoned | Divine Judge and Monk
 - `vorak-bloodfang` Vorak Bloodfang — dead
 - `whisper` Whisper — alive
 - `zeke` Zeke — alive
@@ -223,7 +225,7 @@
 - `perile-falls-oligarchs` Perile Falls Oligarchs — political | active
 - `silverweave-ventures` Silverweave Ventures — commercial | disbanded | [rifthaven-online]
 - `storm-giant-court` Storm Giant Court — political | active | [skt]
-- `aletheia-procedure` The Aletheia Procedure — secret | active | [rifthaven-online]
+- `aletheia-procedure` The Aletheia Procedure — secret | frozen | [rifthaven-online]
 - `aroiin-empire` The Aroiin Empire — political | active | [ishetar-og, head-hunters, ishetar-2]
 - `brass-wing-crew` The Brass Wing Crew — commercial | active | [rifthaven-online]
 - `cassini-brothers` The Cassini Brothers — criminal | active | [rifthaven-online]
