@@ -6,7 +6,6 @@ session_date: "April 14th, 2026"
 author: PaleoDM
 recap_type: dm
 in_game_date: "25th of Corellon, 1129"
-level_milestone: 13
 arc_name: "Alethia Reckoning"
 vtt_campaign_id: "d5b1d1b5-305d-4c4c-929a-f6bfd282aa91"
 tags: []
