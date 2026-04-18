@@ -1,7 +1,7 @@
 ---
 name: The Aletheia Procedure
 faction_type: secret
-status: frozen
+status: active
 campaigns: [rifthaven-online]
 tags: [justicar, truth, memory, investigation]
 related: [quins-death, defeat-of-ozythar, art-doyle, divine-judge-josephine, high-haven-arcane-academy, order-of-the-ju-shi]
