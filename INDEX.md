@@ -1,8 +1,8 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-04-17 -->
+<!-- Last updated: 2026-04-19 -->
 
-## NPCs (136)
+## NPCs (138)
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
 - `badger-goldenmantle` Badger Goldenmantle — alive
@@ -133,12 +133,14 @@
 - `vandro-morrix` Vandro Morrix — dead | Owner of the Gilded Ember
 - `vanir-harwich` Vanir Harwich — unknown
 - `verlaine-luthaire` Verlaine Luthaire — missing | Agent of the Celestial Seed | [ishetar-2]
+- `vero` Vero — alive | Alchemist | [ishetar-2]
 - `vespa` Vespa — dead
 - `vessan` Vessan — dead | [ishetar-2]
 - `vine-ashen-bloom` Vine Ashen Bloom — imprisoned | Divine Judge and Monk
 - `vorak-bloodfang` Vorak Bloodfang — dead
 - `whisper` Whisper — alive
 - `zeke` Zeke — alive
+- `zoink` Zoink — alive | Banker | [ishetar-2]
 
 ## Locations (70)
 - `ahanabai` Ahanabai — region | [ishetar-2]
@@ -212,7 +214,7 @@
 - `verdelorn-woods` Verdelorn Woods — wilderness | [rifthaven-irl]
 - `wanun` Wanun — continent | [ishetar-og, head-hunters, ishetar-2]
 
-## Factions (24)
+## Factions (26)
 - `aquatic-conclave` Aquatic Peoples Conclave — political | active | [ishetar-2]
 - `arsons-of-anarchy` Arsons of Anarchy — religious | active | [head-hunters]
 - `celestial-seed` Celestial Seed — secret | active | [ishetar-2]
@@ -220,12 +222,14 @@
 - `earthen-loam` Earthen Loam — secret | active | [rifthaven-online]
 - `house-of-coinwrights` House of Coinwrights — commercial | active | [rifthaven-online]
 - `knights-of-the-eclipse` Knights of the Eclipse — religious | active | [ishetar-2, kalari]
+- `leviathan-hunters` Leviathan Hunters — commercial | active | [ishetar-2]
 - `order-of-the-ju-shi` Order of the Ju-Shi — religious | active | [rifthaven-irl, rifthaven-online]
 - `peregrine-society` Peregrine Society — military | active | [skt]
 - `perile-falls-oligarchs` Perile Falls Oligarchs — political | active
+- `pilgrims-beneath-the-diadems` Pilgrims Beneath the Diadems — religious | active | [ishetar-2]
 - `silverweave-ventures` Silverweave Ventures — commercial | disbanded | [rifthaven-online]
 - `storm-giant-court` Storm Giant Court — political | active | [skt]
-- `aletheia-procedure` The Aletheia Procedure — secret | frozen | [rifthaven-online]
+- `aletheia-procedure` The Aletheia Procedure — secret | active | [rifthaven-online]
 - `aroiin-empire` The Aroiin Empire — political | active | [ishetar-og, head-hunters, ishetar-2]
 - `brass-wing-crew` The Brass Wing Crew — commercial | active | [rifthaven-online]
 - `cassini-brothers` The Cassini Brothers — criminal | active | [rifthaven-online]
@@ -238,8 +242,9 @@
 - `turquoise-timber-trust` Turquoise Timber Trust — commercial | active | [ishetar-2]
 - `vegepygmy-people` Vegepygmy People — political | active | [ishetar-2]
 
-## Events (34)
+## Events (35)
 - `ttt-compound-assault` Assault on the TTT Compound — 1136 | ishetar-2 | [ishetar-2]
+- `battle-of-the-gates` Battle of the Gates — 1136 | ishetar-2 | [ishetar-2]
 - `defeat-of-drelduin` Defeat of Drelduin — 1088 | kalari | [kalari]
 - `defeat-of-iymrith` Defeat of Iymrith — 1094 | skt | [skt]
 - `defeat-of-ozythar` Defeat of Ozythar — 1129 | rifthaven-online | [rifthaven-online]
