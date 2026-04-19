@@ -5,9 +5,9 @@ year: 1136
 campaign: ishetar-2
 session: 30
 location: ishetar
-participants: [sallow, drev-harsk, kess-vauthi, ellie-caldrow]
+participants: [sallow, drev-harsk, kess-vauthi, ellie-caldrow, old-hrothgar, azrael, lyra, thump, rooker, vicas]
 tags: [military, kidnapping, ongoing]
-related: [sallow, ellie-caldrow, celestial-seed, turquoise-timber-trust, ishetar, ishetar-2-session-30]
+related: [sallow, ellie-caldrow, celestial-seed, turquoise-timber-trust, ishetar, battle-of-the-gates, ishetar-2-session-30, ishetar-2-session-32]
 significance: major
 ---
 
