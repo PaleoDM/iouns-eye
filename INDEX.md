@@ -1,8 +1,8 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-04-19 -->
+<!-- Last updated: 2026-05-02 -->
 
-## NPCs (138)
+## NPCs (139)
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
 - `badger-goldenmantle` Badger Goldenmantle — alive
@@ -80,6 +80,7 @@
 - `lord-pembrook` Lord Pembrook — alive | [skt]
 - `lulu` Lulu — alive | Celestial Patron
 - `luz-de-la-alma` Luz De la Alma — alive | Resistance Leader
+- `major-dunthar` Major Dunthar — dead | Enforcer
 - `malaki` Malaki — alive | [ishetar-2]
 - `malgorth` Malgorth — alive | The Soulflayer
 - `maligno` Maligno — alive | The Unfinished Boy
@@ -142,7 +143,7 @@
 - `zeke` Zeke — alive
 - `zoink` Zoink — alive | Banker | [ishetar-2]
 
-## Locations (70)
+## Locations (72)
 - `ahanabai` Ahanabai — region | [ishetar-2]
 - `aroiinae` Aroiinae — city | [ishetar-2]
 - `ashen-chapel` Ashen Chapel — building | [rifthaven-online]
@@ -152,6 +153,7 @@
 - `boughshadow` Boughshadow — wilderness | [rifthaven-online]
 - `boughshadow-caverns` Boughshadow Caverns — dungeon | [rifthaven-online]
 - `cloudpierce-spire` Cloudpierce Spire — building | [rifthaven-online]
+- `coin-counting-house` Coin Counting House — building | [rifthaven-online]
 - `deidan` Deidan — city | [ishetar-2]
 - `dirty-gertys` Dirty Gerty's — building | [ishetar-2, ishetar-og]
 - `ekkorai` Ekkorai — region | [ishetar-og, ishetar-2, head-hunters]
@@ -168,6 +170,7 @@
 - `high-haven-arcane-academy` High Haven Arcane Academy — building | rifthaven
 - `house-of-respite` House of Respite — building | [rifthaven-online]
 - `hrimgard` Hrimgard — city | Cradle of Conflict | [skt]
+- `hustlers-district` Hustler's District — district | [rifthaven-online]
 - `ishetar` Ishetar — city | Ekkorai | [ishetar-og, head-hunters, ishetar-2]
 - `kalari` Kalari — region | [kalari]
 - `khanae` Khanae — continent | [rifthaven-irl, rifthaven-online]

@@ -5,7 +5,7 @@ parent_location: sparkworks-district
 continent: Khanae
 campaigns: [rifthaven-online]
 tags: [underground, underdark, fungal]
-related: [sparkworks-district, great-self, ashen-chapel, the-bastion-sparkworks, graves-of-revolution, rifthaven]
+related: [sparkworks-district, great-self, ashen-chapel, the-bastion-sparkworks, graves-of-revolution, rifthaven, rifthaven-online-session-49]
 ---
 
 ## Description

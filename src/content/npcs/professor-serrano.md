@@ -13,6 +13,7 @@ related:
   - gideon
   - cassini-brothers
   - bilver-shadowgift
+  - rifthaven-online-session-49
 ---
 
 An old gnome and emeritus professor at the High Haven Arcane Academy. Pioneered a procedure called "ghoul extraction." Serrano introduced the party to Gideon in Session 47 and appeared helpful, but Veil spotted him watching them as they tried to leave. Turned out he was spying for the Cassini Brothers.
