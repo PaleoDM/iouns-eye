@@ -1,6 +1,6 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-05-02 -->
+<!-- Last updated: 2026-05-03 -->
 
 ## NPCs (139)
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
