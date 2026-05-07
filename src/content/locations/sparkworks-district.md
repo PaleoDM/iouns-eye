@@ -5,7 +5,7 @@ parent_location: rifthaven
 continent: Khanae
 campaigns: [rifthaven-online]
 tags: [underground, industrial, revolution]
-related: [rifthaven, ashen-chapel, house-of-respite, the-bastion-sparkworks, sparkworks-tunnels, hearthfire-commons, graves-of-revolution, sister-ellarra, lord-harwin, maribel-stoutwater, whisper, sartori]
+related: [rifthaven, ashen-chapel, house-of-respite, the-bastion-sparkworks, sparkworks-tunnels, hearthfire-commons, graves-of-revolution, sister-ellarra, lord-harwin, maribel-stoutwater, whisper, sartori, rifthaven-online-session-50]
 ---
 
 ## Description

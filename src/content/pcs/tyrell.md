@@ -13,6 +13,8 @@ related:
   - captain-alistair
   - roe
   - sparkworks-district
+  - lolth
+  - rifthaven-online-session-50
 ---
 
 ## Background
@@ -26,5 +28,8 @@ Tyrell — Ty — is a half-elf warlock who was struggling with "the rules of pi
 - Communed with dead Quin through Lulu in Odaire (Session 41)
 - Discovered Captain Alistair (ghost ship captain) is likely his biological father (Session 42)
 
+- Tried to make a polycule work with Sister Ellarra and Ghost in the Session 50 epilogue, only to discover the two were more interested in each other than in him
+- Discovered Lolth's curse on Captain Alistair has been falling on his mother Roe instead, who is aging unnaturally; the talisman that breaks the curse is Alistair's old adventuring tricorn (Session 50)
+
 ## Character Arc
-Ty's journey is one of identity — discovering he is a reincarnated elf, reconciling with his complex family (biological father Alistair, adoptive parents Roe and Cliff), and accepting who he chooses to be rather than who he was.
+Ty's journey is one of identity — discovering he is a reincarnated elf, reconciling with his complex family (biological father Alistair, adoptive parents Roe and Cliff), and accepting who he chooses to be rather than who he was. His next quest: recover Alistair's tricorn to break the Spider Queen's curse on his mother.

@@ -13,6 +13,8 @@ related:
   - the-pallbearer
   - sparkworks-district
   - the-galleria
+  - the-paintress
+  - rifthaven-online-session-50
 ---
 
 ## Background
@@ -30,4 +32,6 @@ Quin is an elven wizard and diviner, also known as Galton Quincrux. He owed a de
 - Reintroduced to Gideon at High Haven; argued with the reconstituted Bilver Shadowgift about grant funding before Bilver attacked (Session 47)
 
 ## Status
-Dead since Session 32. Soul recovered from the Pallbearer's Galleria by the party in Session 44.
+Dead since Session 32. Soul recovered from the Pallbearer's Galleria by the party in Session 44. Currently bound into a painting.
+
+After the events of Session 50, Quin became a local destination in Sparkworks. People from across Rifthaven pilgrimage to stand in front of the canvas and ask questions. He dispenses mathematical divinations for a fee, with the proceeds going to Sparkworks. The mastermind, running a side business from inside a frame.

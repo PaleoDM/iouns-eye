@@ -1,8 +1,8 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-05-03 -->
+<!-- Last updated: 2026-05-07 -->
 
-## NPCs (139)
+## NPCs (141)
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
 - `badger-goldenmantle` Badger Goldenmantle — alive
@@ -96,9 +96,11 @@
 - `nighthollow` Nighthollow — alive | Queen of Thorns
 - `officer-oswald` Officer Oswald — dead | Silverweave Ventures Commander
 - `old-hrothgar` Old Hrothgar Earthenstone — alive | Founding Member of Ishetar | [ishetar-2, ishetar-og]
+- `oleg-cassini` Oleg Cassini — dead | Co-Head of the Cassini Brothers
 - `orog-swift` Orog Swift — alive
 - `ozythar` Ozythar — dead | The Tyrant
 - `papa-luhar-perile` Papa Luhar Perile — alive | Founder of New Perile Falls
+- `perry-ellis-cassini` Perry Ellis Cassini — dead | Co-Head of the Cassini Brothers
 - `phoebe` Phoebe — alive | Ty's Sister
 - `pinto-gambino` Pinto Gambino — alive | Merchant | [ishetar-2]
 - `professor-serrano` Professor Serrano — alive | Emeritus Professor, School of Necromancy
@@ -235,7 +237,7 @@
 - `aletheia-procedure` The Aletheia Procedure — secret | active | [rifthaven-online]
 - `aroiin-empire` The Aroiin Empire — political | active | [ishetar-og, head-hunters, ishetar-2]
 - `brass-wing-crew` The Brass Wing Crew — commercial | active | [rifthaven-online]
-- `cassini-brothers` The Cassini Brothers — criminal | active | [rifthaven-online]
+- `cassini-brothers` The Cassini Brothers — criminal | defunct | [rifthaven-online]
 - `the-curtain` The Curtain — criminal | active
 - `discordant-fellowship` The Discordant Fellowship — criminal | active | [rifthaven-irl, rifthaven-online]
 - `hushed-choir` The Hushed Choir — secret | historical | [rifthaven-online]
@@ -245,9 +247,10 @@
 - `turquoise-timber-trust` Turquoise Timber Trust — commercial | active | [ishetar-2]
 - `vegepygmy-people` Vegepygmy People — political | active | [ishetar-2]
 
-## Events (35)
+## Events (36)
 - `ttt-compound-assault` Assault on the TTT Compound — 1136 | ishetar-2 | [ishetar-2]
 - `battle-of-the-gates` Battle of the Gates — 1136 | ishetar-2 | [ishetar-2]
+- `cassini-brothers-takedown` Cassini Brothers Takedown — 1129 | rifthaven-online | [rifthaven-online]
 - `defeat-of-drelduin` Defeat of Drelduin — 1088 | kalari | [kalari]
 - `defeat-of-iymrith` Defeat of Iymrith — 1094 | skt | [skt]
 - `defeat-of-ozythar` Defeat of Ozythar — 1129 | rifthaven-online | [rifthaven-online]

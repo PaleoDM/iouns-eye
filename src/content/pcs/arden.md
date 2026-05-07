@@ -12,6 +12,7 @@ related:
   - captain-lysa-vex
   - freddie
   - sparkworks-district
+  - rifthaven-online-session-50
 ---
 
 ## Background
@@ -27,3 +28,4 @@ Arden is a charismatic bard who served as crew on an airship, wearing shiny armo
 ## Relationships
 - Brother to Freddie (Wilfredo), an Aasimar cleric
 - Romance with Jerusha (Session 35+)
+- Made his peace with Freddie after the Session 50 finale, though a new rift opened almost immediately when his political campaign announced a minimum-wage platform that Freddie strongly opposes
