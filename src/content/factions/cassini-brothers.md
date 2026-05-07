@@ -1,7 +1,7 @@
 ---
 name: The Cassini Brothers
 faction_type: criminal
-status: defunct
+status: disbanded
 headquarters: rifthaven
 campaigns: [rifthaven-online]
 tags: [memory-trade, soul-trade, gambling]
