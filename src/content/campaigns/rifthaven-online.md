@@ -1,10 +1,11 @@
 ---
 name: "Rifthaven: Root of Rebellion"
-status: active
+status: completed
 start_year: 1128
+end_year: 1129
 continent: Khanae
 primary_location: rifthaven
-session_count: 43
+session_count: 50
 start_date_real: "2025-02-11"
 party:
   - name: Tyrell
@@ -39,4 +40,4 @@ tags: [urban, revolution, underdark, shadowfell, soul-trade, airship]
 related: [rifthaven-irl, rifthaven, khanae, house-of-coinwrights, hushed-choir]
 ---
 
-Rifthaven Online follows a group of strangers brought together by a mysterious tiefling named Dante in the impoverished Sparkworks District. What begins as a simple smuggling tunnel job spirals into a district-wide revolution, an airship race, a liberation campaign, a dungeon crawl against a beholder, and ultimately a journey through the Shadowfell's Domains of Dread to recover a companion's stolen soul. The campaign spans from 1128 to 1129 TA across 43 sessions, with the party growing from level 3 to level 11.
+Rifthaven: Root of Rebellion follows a group of strangers brought together by a mysterious tiefling named Dante in the impoverished Sparkworks District. What begins as a simple smuggling tunnel job spirals into a district-wide revolution, an airship race, a liberation campaign, a dungeon crawl against a beholder, a journey through the Shadowfell's Domains of Dread to recover a companion's stolen soul, and finally a takedown of the rakshasa Haji's three pillars of leverage in Rifthaven. The campaign concluded in Session 50 with the recovery of 111 trapped souls at the Rum Runner Aquifer. It spans from 1128 to 1129 TA across 50 sessions, with the party growing from level 3 to level 13.

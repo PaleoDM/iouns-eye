@@ -237,7 +237,7 @@
 - `aletheia-procedure` The Aletheia Procedure — secret | active | [rifthaven-online]
 - `aroiin-empire` The Aroiin Empire — political | active | [ishetar-og, head-hunters, ishetar-2]
 - `brass-wing-crew` The Brass Wing Crew — commercial | active | [rifthaven-online]
-- `cassini-brothers` The Cassini Brothers — criminal | defunct | [rifthaven-online]
+- `cassini-brothers` The Cassini Brothers — criminal | disbanded | [rifthaven-online]
 - `the-curtain` The Curtain — criminal | active
 - `discordant-fellowship` The Discordant Fellowship — criminal | active | [rifthaven-irl, rifthaven-online]
 - `hushed-choir` The Hushed Choir — secret | historical | [rifthaven-online]
@@ -348,7 +348,7 @@ _No entries yet._
 - `head-hunters` Head Hunters Return to Wanun — defunct | 1094
 - `ishetar-og` Ishetar OG — completed | 1082
 - `rifthaven-irl` Rifthaven IRL — defunct | 1127
-- `rifthaven-online` Rifthaven: Root of Rebellion — active | 1128
+- `rifthaven-online` Rifthaven: Root of Rebellion — completed | 1128
 - `kalari` Ruins of Kalari — completed | 1088
 - `skt` SKT One Last Job — completed | 1094
 
