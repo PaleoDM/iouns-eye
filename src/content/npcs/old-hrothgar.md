@@ -6,7 +6,7 @@ location: ishetar
 campaigns: [ishetar-2, ishetar-og]
 first_appearance: "Session 9"
 tags: [founder, military, veteran]
-related: [gertrude-earthenstone, ishetar, vicas, sallow, battle-of-the-gates, ishetar-2-session-32, ishetar-2-session-33]
+related: [gertrude-earthenstone, ishetar, vicas, sallow, battle-of-the-gates, defeat-of-sallow, ishetar-2-session-32, ishetar-2-session-33, ishetar-2-session-34]
 ---
 
 One of the original colonists who founded Ishetar. A retired adventurer who now serves as drillmaster at the barracks, training Ishetar's militia alongside Vicas. Friend of Gertrude Earthenstone.

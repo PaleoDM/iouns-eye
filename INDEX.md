@@ -1,8 +1,8 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-05-07 -->
+<!-- Last updated: 2026-05-15 -->
 
-## NPCs (141)
+## NPCs (142)
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
 - `badger-goldenmantle` Badger Goldenmantle — alive
@@ -111,12 +111,13 @@
 - `romero-de-la-alma` Romero De la Alma — alive
 - `rosie` Rosie — alive | Guardian of the Tree of Ambition
 - `runva-doberdower` Runva Doberdower — unknown
-- `sallow` Sallow — alive | Lieutenant of the TTT | [ishetar-2]
+- `sallow` Sallow — dead | Lieutenant of the TTT | [ishetar-2]
 - `sartori` Sartori — alive | Arcane Outfitter
 - `scourge` Scourge — alive | Plague of the Willows
 - `seraphina-duskwallow` Seraphina Duskwallow — alive
 - `seressa-vale` Seressa Vale — dead | Cult Leader
 - `shadow-of-a-fallen-star` Shadow of a Fallen Star — alive
+- `shallah` Shallah — dead | [ishetar-2]
 - `sir-sunder` Sir Sunder — alive | Stone-Whisper-Bloom of Sunder
 - `sister-ellarra` Sister Ellarra — alive | Cleric of the Ashen Chapel
 - `slarkrethel` Slarkrethel — dead | [skt]
@@ -247,13 +248,14 @@
 - `turquoise-timber-trust` Turquoise Timber Trust — commercial | active | [ishetar-2]
 - `vegepygmy-people` Vegepygmy People — political | active | [ishetar-2]
 
-## Events (36)
+## Events (37)
 - `ttt-compound-assault` Assault on the TTT Compound — 1136 | ishetar-2 | [ishetar-2]
 - `battle-of-the-gates` Battle of the Gates — 1136 | ishetar-2 | [ishetar-2]
 - `cassini-brothers-takedown` Cassini Brothers Takedown — 1129 | rifthaven-online | [rifthaven-online]
 - `defeat-of-drelduin` Defeat of Drelduin — 1088 | kalari | [kalari]
 - `defeat-of-iymrith` Defeat of Iymrith — 1094 | skt | [skt]
 - `defeat-of-ozythar` Defeat of Ozythar — 1129 | rifthaven-online | [rifthaven-online]
+- `defeat-of-sallow` Defeat of Sallow — 1136 | ishetar-2 | [ishetar-2]
 - `silverweave-defeat` Defeat of Silverweave Ventures — 1129 | rifthaven-online | [rifthaven-online]
 - `defeat-of-vespa` Defeat of Vespa — 1088 | kalari | [kalari]
 - `defeat-of-vessan` Defeat of Vessan — 1136 | ishetar-2 | [ishetar-2]
@@ -344,7 +346,7 @@ _No entries yet._
 - `the-third-age` The Third Age — history
 
 ## Campaigns (7)
-- `ishetar-2` Defenders of Ishetar — active | 1136
+- `ishetar-2` Defenders of Ishetar — completed | 1136
 - `head-hunters` Head Hunters Return to Wanun — defunct | 1094
 - `ishetar-og` Ishetar OG — completed | 1082
 - `rifthaven-irl` Rifthaven IRL — defunct | 1127

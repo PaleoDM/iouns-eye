@@ -4,7 +4,7 @@ race: Halfling
 class: Druid
 campaign: ishetar-2
 tags: [nature, primal]
-related: [ishetar, ambrosia, restful-lily, mickell-caldrow]
+related: [ishetar, ambrosia, restful-lily, mickell-caldrow, myreshade-forest, sallow, defeat-of-sallow, ishetar-2-session-34]
 ---
 
 ## Background
@@ -21,3 +21,6 @@ Thump is Ishetar's resident druid, a dutiful halfling who paints the autumn colo
 - Root-linked to Ambrosia at the Restful Lily
 - Teaches Mickell Caldrow elemental magic
 - Works with Shoot (vegepygmy garden assistant) in his bastion garden
+
+## Epilogue
+After Sallow's defeat (Session 34), Thump returned to the Myreshade. He found a secret place deep in the heart of the forest and planted the reclaimed seed. He did not take the Timbermaster's post but stood beside it, advising the new druids he gathered around him and helping them learn to listen to the wood the way he had. The Myreshade grew back, not the way it was, but better.

@@ -4,7 +4,7 @@ race: Human
 class: Warlock/Sorcerer
 campaign: ishetar-2
 tags: [arcane, researcher]
-related: [ishetar, sombra, meris-caldrow]
+related: [ishetar, sombra, meris-caldrow, red-vale, vegepygmy-people, defeat-of-sallow, ishetar-2-session-34]
 ---
 
 ## Background
@@ -21,3 +21,6 @@ Rooker is an old curmudgeon from Ishetar's mage academy. He had an eldritch para
 - Works with Sombra (tabaxi librarian and research partner)
 - Mentors Meris Caldrow as an apprentice in magical studies
 - Former connection to the Red Mantle Academy in Tormellin
+
+## Epilogue
+After Sallow's defeat (Session 34), Rooker hung up his adventuring hat and helped found an arcane school with Headmistress Sombra at its head and Meris Caldrow as one of its key archivists. A second campus was planned in the Red Vale to take in Vegepygmy children with the gift.

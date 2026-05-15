@@ -4,7 +4,7 @@ race: Aasimar
 class: Rogue
 campaign: ishetar-2
 tags: [celestial, melee]
-related: [ishetar, jora-caldrow, verlaine-luthaire, ellie-caldrow]
+related: [ishetar, jora-caldrow, verlaine-luthaire, ellie-caldrow, th0l, vicas, celestial-seed, defeat-of-sallow, ishetar-2-session-34]
 ---
 
 ## Background
@@ -24,3 +24,6 @@ Azrael is a young Aasimar and one of Ishetar's defenders. His celestial nature m
 
 ## Character Arc
 Azrael's celestial heritage draws dangerous attention from the Celestial Seed cult. His blood was harvested by Verlaine Luthaire, and the infant Ellie Caldrow's similar nature makes both of them targets of the Convergence ritual.
+
+## Epilogue
+After Sallow's defeat (Session 34), Azrael traveled with Th0l (and Vicas, for a time) gathering intelligence on the forces still moving against Ishetar. Together they set their sights on the Temple of the Celestial Seed itself, intent on bringing it down and rescuing anyone still trapped inside.
