@@ -1,8 +1,8 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-05-15 -->
+<!-- Last updated: 2026-05-27 -->
 
-## NPCs (142)
+## NPCs (143)
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
 - `badger-goldenmantle` Badger Goldenmantle — alive
@@ -107,6 +107,7 @@
 - `quetzi` Quetzi — alive | Oracle of the Divine Well | [ishetar-2]
 - `rekka-harsk` Rekka Harsk — alive | [ishetar-2]
 - `relic` Relic — alive | [kalari]
+- `rj` RJ (Ralo Junior) — alive
 - `roe` Roe — alive | Ty's Mother
 - `romero-de-la-alma` Romero De la Alma — alive
 - `rosie` Rosie — alive | Guardian of the Tree of Ambition
@@ -220,7 +221,7 @@
 - `verdelorn-woods` Verdelorn Woods — wilderness | [rifthaven-irl]
 - `wanun` Wanun — continent | [ishetar-og, head-hunters, ishetar-2]
 
-## Factions (26)
+## Factions (28)
 - `aquatic-conclave` Aquatic Peoples Conclave — political | active | [ishetar-2]
 - `arsons-of-anarchy` Arsons of Anarchy — religious | active | [head-hunters]
 - `celestial-seed` Celestial Seed — secret | active | [ishetar-2]
@@ -237,9 +238,11 @@
 - `storm-giant-court` Storm Giant Court — political | active | [skt]
 - `aletheia-procedure` The Aletheia Procedure — secret | active | [rifthaven-online]
 - `aroiin-empire` The Aroiin Empire — political | active | [ishetar-og, head-hunters, ishetar-2]
+- `ashen-barristers` The Ashen Barristers — secret | active | [rifthaven-2]
 - `brass-wing-crew` The Brass Wing Crew — commercial | active | [rifthaven-online]
 - `cassini-brothers` The Cassini Brothers — criminal | disbanded | [rifthaven-online]
 - `the-curtain` The Curtain — criminal | active
+- `da-pinci-syndicate` The da Pinci Crime Syndicate — criminal | active | [rifthaven-2]
 - `discordant-fellowship` The Discordant Fellowship — criminal | active | [rifthaven-irl, rifthaven-online]
 - `hushed-choir` The Hushed Choir — secret | historical | [rifthaven-online]
 - `ledgermen` The Ledgermen — military | historical | [rifthaven-online]
@@ -345,19 +348,21 @@ _No entries yet._
 - `celestial-braid` The Celestial Braid — cosmology
 - `the-third-age` The Third Age — history
 
-## Campaigns (7)
+## Campaigns (8)
 - `ishetar-2` Defenders of Ishetar — completed | 1136
 - `head-hunters` Head Hunters Return to Wanun — defunct | 1094
 - `ishetar-og` Ishetar OG — completed | 1082
 - `rifthaven-irl` Rifthaven IRL — defunct | 1127
+- `rifthaven-2` Rifthaven: Knaves and Knights — active | 1130
 - `rifthaven-online` Rifthaven: Root of Rebellion — completed | 1128
 - `kalari` Ruins of Kalari — completed | 1088
 - `skt` SKT One Last Job — completed | 1094
 
-## PCs (39)
+## PCs (44)
 - `alister` Alister — Human | Fighter | head-hunters | [head-hunters]
 - `arden` Arden — Sea Elf | Bard | rifthaven-online | [rifthaven-online]
 - `arlowe` Arlowe — Human | Artificer | skt | [skt]
+- `astrid` Astrid — Human | Druid | rifthaven-2 | [rifthaven-2]
 - `atwood` Atwood — Human | Wizard | rifthaven-irl | [rifthaven-irl]
 - `aurelia` Aurelia — High Elf | Rogue | ishetar-og | [ishetar-og]
 - `azrael` Azrael — Aasimar | Rogue | ishetar-2 | [ishetar-2]
@@ -366,6 +371,7 @@ _No entries yet._
 - `elmnack` Elmnack — Dwarf | Ranger | kalari | [kalari]
 - `even` Even — Goliath | Druid | rifthaven-irl | [rifthaven-irl]
 - `freddie` Freddie — Sea Elf | Cleric | rifthaven-online | [rifthaven-online]
+- `garran` Garran — Dwarf | Ranger | rifthaven-2 | [rifthaven-2]
 - `griffelump` Griffelump — Tabaxi | Wizard | ishetar-og | [ishetar-og]
 - `gwenevere` Gwenevere — Eladrin | Sorcerer | kalari | [kalari]
 - `izlara` Izlara — Human | Ranger | head-hunters | [head-hunters]
@@ -375,14 +381,17 @@ _No entries yet._
 - `kuari` Kuari — Tabaxi | Warlock | kalari | [kalari]
 - `kuldar` Kuldar — Dwarf | Fighter | ishetar-og | [ishetar-og]
 - `leon` Leon Empyrean — Aasimar | Paladin | rifthaven-online | [rifthaven-online]
+- `lucien` Lucien — Human | Sorcerer | rifthaven-2 | [rifthaven-2]
 - `lyra` Lyra — Wood Elf | Cleric | ishetar-2 | [ishetar-2]
 - `maeve-willowspell` Maeve Willowspell — Firbolg | Bard | skt | [skt]
 - `major-tom` Major Tom Ocelot — Tabaxi | Rogue | skt | [skt]
 - `mara` Mara — Half-Elf | Monk | ishetar-og | [ishetar-og]
+- `milo-lafite-margeaux` Milo Lafite-Margeaux — Human | Bard | rifthaven-2 | [rifthaven-2]
 - `ollithian` Ollithian — High Elf | Wizard | kalari | [kalari]
 - `patrick` Patrick — Human | Bard | kalari | [kalari]
 - `quin` Quin — Human | Wizard | rifthaven-online | [rifthaven-online]
 - `rai` Rai — Tiefling | Ranger | ishetar-og | [ishetar-og]
+- `ralo-battaglia` Ralo Battaglia — Halfling | Fighter | rifthaven-2 | [rifthaven-2]
 - `rooker` Rooker — Human | Warlock/Sorcerer | ishetar-2 | [ishetar-2]
 - `sorcha` Sorcha — Halfling | Artificer | kalari | [kalari]
 - `tauvin` Tauvin — Firbolg | Cleric | ishetar-og | [ishetar-og]

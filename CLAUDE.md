@@ -129,7 +129,7 @@ iouns-eye/
 `npc` | `location` | `faction` | `event` | `item` | `lore` | `deity` | `campaign` | `pc` | `chronicle`
 
 ### Campaign Identifiers
-`ishetar-og` | `head-hunters` | `kalari` | `skt` | `rifthaven-irl` | `ishetar-2` | `rifthaven-online`
+`ishetar-og` | `head-hunters` | `kalari` | `skt` | `rifthaven-irl` | `ishetar-2` | `rifthaven-online` | `rifthaven-2`
 
 ### NPC Status Values
 `alive` | `dead` | `unknown` | `missing` | `transformed` | `imprisoned`
