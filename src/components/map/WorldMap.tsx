@@ -25,7 +25,6 @@ const MAX_ZOOM_IN_VBW = 30; // smallest vb width (~3 hexes wide)
 
 export default function WorldMap(_props: WorldMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const svgWrapperRef = useRef<HTMLDivElement>(null);
   const svgRef = useRef<SVGSVGElement | null>(null);
 
   // Parse the world SVG's original viewBox once.
@@ -35,15 +34,15 @@ export default function WorldMap(_props: WorldMapProps) {
     return m[1].split(/\s+/).map(Number);
   }, []);
 
-  // Inject our LOD class once and memoize. Without this, every React
-  // re-render produces a new string reference, which causes
-  // dangerouslySetInnerHTML to REPLACE the SVG element — leaving our
-  // svgRef pointing at a detached node and breaking all subsequent
-  // viewBox updates.
-  const inlineSvg = useMemo(
-    () => worldSvgRaw.replace(/<svg\b([^>]*)>/, '<svg$1 class="iouns-world-svg">'),
-    [],
-  );
+  // Strip the outer <svg>...</svg> wrapper and keep only the interior
+  // (defs, ocean, layer groups). React owns the <svg> element below, so
+  // we get a reliable ref to it and viewBox updates can't get lost when
+  // the component re-renders.
+  const svgInner = useMemo(() => {
+    return worldSvgRaw
+      .replace(/^[\s\S]*?<svg\b[^>]*>/, '')
+      .replace(/<\/svg>\s*$/, '');
+  }, []);
 
   // Current viewBox state. We mutate the SVG element directly for performance
   // (no React re-render on every pan/zoom frame) and only update display state
@@ -63,13 +62,11 @@ export default function WorldMap(_props: WorldMapProps) {
     svg.dataset.zoom = tier;
   }, [originalViewBox]);
 
-  // After mount, grab a reference to the inlined <svg> and initialize.
+  // Initialize the viewBox after mount. svgRef is bound directly by React
+  // via the ref={} prop on the <svg> element below, so we don't need to
+  // querySelector it out of an injected wrapper.
   useEffect(() => {
-    const wrapper = svgWrapperRef.current;
-    if (!wrapper) return;
-    const svg = wrapper.querySelector('svg');
-    if (!(svg instanceof SVGSVGElement)) return;
-    svgRef.current = svg;
+    if (!svgRef.current) return;
     vbRef.current = originalViewBox.slice();
     applyViewBox();
   }, [applyViewBox, originalViewBox]);
@@ -288,10 +285,13 @@ export default function WorldMap(_props: WorldMapProps) {
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
       >
-        <div
-          ref={svgWrapperRef}
-          className="iouns-world-svg-wrapper h-full w-full [&_svg]:block [&_svg]:h-full [&_svg]:w-full [&_svg.iouns-world-svg]:cursor-inherit"
-          dangerouslySetInnerHTML={{ __html: inlineSvg }}
+        <svg
+          ref={svgRef}
+          xmlns="http://www.w3.org/2000/svg"
+          className="iouns-world-svg block h-full w-full"
+          /* viewBox is set imperatively via setAttribute in applyViewBox so
+             React doesn't fight us by reapplying a JSX-prop value. */
+          dangerouslySetInnerHTML={{ __html: svgInner }}
         />
       </div>
     </div>
