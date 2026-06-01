@@ -35,6 +35,16 @@ export default function WorldMap(_props: WorldMapProps) {
     return m[1].split(/\s+/).map(Number);
   }, []);
 
+  // Inject our LOD class once and memoize. Without this, every React
+  // re-render produces a new string reference, which causes
+  // dangerouslySetInnerHTML to REPLACE the SVG element — leaving our
+  // svgRef pointing at a detached node and breaking all subsequent
+  // viewBox updates.
+  const inlineSvg = useMemo(
+    () => worldSvgRaw.replace(/<svg\b([^>]*)>/, '<svg$1 class="iouns-world-svg">'),
+    [],
+  );
+
   // Current viewBox state. We mutate the SVG element directly for performance
   // (no React re-render on every pan/zoom frame) and only update display state
   // (zoom %, LOD tier) via React.
@@ -281,13 +291,7 @@ export default function WorldMap(_props: WorldMapProps) {
         <div
           ref={svgWrapperRef}
           className="iouns-world-svg-wrapper h-full w-full [&_svg]:block [&_svg]:h-full [&_svg]:w-full [&_svg.iouns-world-svg]:cursor-inherit"
-          dangerouslySetInnerHTML={{
-            // Add a class to the root <svg> so our scoped CSS can target it.
-            __html: worldSvgRaw.replace(
-              /<svg\b([^>]*)>/,
-              '<svg$1 class="iouns-world-svg">',
-            ),
-          }}
+          dangerouslySetInnerHTML={{ __html: inlineSvg }}
         />
       </div>
     </div>
