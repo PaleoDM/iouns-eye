@@ -7,7 +7,7 @@ campaign: rifthaven-2
 level: 3
 location: rifthaven
 tags: [fixer, white-collar, wild-magic, contractual, forger]
-related: [rifthaven, rifthaven-2, ashen-barristers]
+related: [rifthaven, rifthaven-2, ashen-barristers, sage, nonna-battaglia, house-sorvellan, brimstone-bath, rifthaven-2-session-01]
 ---
 
 ## Background

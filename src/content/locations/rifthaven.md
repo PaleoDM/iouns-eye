@@ -3,7 +3,7 @@ name: Rifthaven
 location_type: city
 continent: Khanae
 parent_location: khanae
-campaigns: [rifthaven-irl, rifthaven-online]
+campaigns: [rifthaven-irl, rifthaven-online, rifthaven-2]
 tags: [ancient-city, jungle]
 related: [khanae, sparkworks-district, salvation-district, boughshadow, bloomridge, glamour-district, silkspun, tradeheart, brazier]
 ---

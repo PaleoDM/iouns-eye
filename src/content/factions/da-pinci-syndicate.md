@@ -5,7 +5,7 @@ status: active
 headquarters: rifthaven
 campaigns: [rifthaven-2]
 tags: [crime-family, extortion, crustacean-themed, organized-crime]
-related: [rifthaven, rifthaven-2, ralo-battaglia, aletheia-procedure]
+related: [rifthaven, rifthaven-2, ralo-battaglia, aletheia-procedure, nonna-battaglia, sage, rifthaven-2-session-01]
 ---
 
 A Rifthaven crime family with a crustacean naming convention. The syndicate operates by **squeezing locals and businesses just the right amount** — never enough to provoke a serious response, just enough to keep the city's inertia working in their favor.

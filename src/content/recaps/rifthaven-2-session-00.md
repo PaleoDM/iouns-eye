@@ -32,7 +32,7 @@ Nearly five centuries old. Originally a wealthy human merchant turned vampire, w
 
 **Heartbreak:** Centuries ago, a famous opera singer turned him down despite his charm. She is elderly now but still an absolute queen, and he is still down bad for her.
 
-### Garran — Dwarf Hollow Warden Ranger
+### Garran — Human Hollow Warden Ranger
 
 Freelance mercenary. Reputation: gets the job done. Surly and silent, says nothing about his past. Treats business as business. Dexterous and acrobatic, smart, doesn't suffer fools, no aspiration to climb ranks.
 

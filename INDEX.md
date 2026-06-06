@@ -1,14 +1,15 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-05-27 -->
+<!-- Last updated: 2026-06-06 -->
 
-## NPCs (143)
+## NPCs (152)
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
 - `badger-goldenmantle` Badger Goldenmantle — alive
 - `bessa` Bessa — dead | Headservant of Manor Harsk | [ishetar-2]
 - `bilver-shadowgift` Bilver Shadowgift — dead | Former Researcher
 - `biotite` Biotite — unknown | [skt]
+- `bobilliath` Bobilliath — alive | \"Bobbi\"
 - `boreal` Boreal — alive
 - `bran-caldrow` Bran Caldrow — alive | [ishetar-2]
 - `breccia` Breccia — imprisoned | Temple Acolyte
@@ -24,9 +25,11 @@
 - `captain-shara` Captain Shara — alive | Captain
 - `carmen-de-la-alma` Carmen De la Alma — alive
 - `cecil-perile` Cecil Perile — alive | Mayor of New Perile Falls
+- `celeste` Celeste — alive
 - `celia-varynna` Celia Varynna — transformed
 - `chief-guuh` Chief Guuh — dead | Chief of the Hill Giants | [skt]
 - `cliff-tyrell` Cliff — alive | Ty's Father
+- `cobalt` Cobalt — alive
 - `karash` Constable Karash — alive | Constable of New Perile Falls
 - `cyrena` Cyrena — alive | Guardian of the Hot Springs | [ishetar-2]
 - `dalrick-caldrow` Dalrick Caldrow — alive | [ishetar-2]
@@ -70,9 +73,11 @@
 - `jerusha` Jerusha — alive
 - `jora-caldrow` Jora Caldrow — alive | Armory Manager | [ishetar-2]
 - `keeper-vespa-ishetar` Keeper Vespa — alive | Lighthouse Keeper | [ishetar-2]
+- `kelvaryn-sorvellan` Kelvaryn Sorvellan — alive | Patriarch of House Sorvellan
 - `kess-vauthi` Kess Vauthi — alive | Acting Timbermaster | [ishetar-2]
 - `hekkathon` King Hekkathon — alive | King of the Storm Giants | [skt]
 - `kivan-caldrow` Kivan Caldrow — alive | [ishetar-2]
+- `la-marginalia` La Marginalia — missing | The Tutor
 - `lisel-harsk` Lisel Harsk — alive | [ishetar-2]
 - `little-shit` Little Shit — alive
 - `lord-harwin` Lord Harwin Brassfell — alive | Lord of Sparkworks
@@ -94,6 +99,7 @@
 - `mynoa-browbuckle` Mynoa Browbuckle — alive
 - `nanny-pupu` Nanny Pu'Pu — alive | Guardian of Boughshadow
 - `nighthollow` Nighthollow — alive | Queen of Thorns
+- `nonna-battaglia` Nonna Battaglia — alive | Ralo's Mother
 - `officer-oswald` Officer Oswald — dead | Silverweave Ventures Commander
 - `old-hrothgar` Old Hrothgar Earthenstone — alive | Founding Member of Ishetar | [ishetar-2, ishetar-og]
 - `oleg-cassini` Oleg Cassini — dead | Co-Head of the Cassini Brothers
@@ -112,6 +118,7 @@
 - `romero-de-la-alma` Romero De la Alma — alive
 - `rosie` Rosie — alive | Guardian of the Tree of Ambition
 - `runva-doberdower` Runva Doberdower — unknown
+- `sage` Sage — alive
 - `sallow` Sallow — dead | Lieutenant of the TTT | [ishetar-2]
 - `sartori` Sartori — alive | Arcane Outfitter
 - `scourge` Scourge — alive | Plague of the Willows
@@ -133,10 +140,12 @@
 - `great-self` The Great Self — alive | Fungal Hive Mind
 - `the-paintress` The Paintress — alive
 - `the-pallbearer` The Pallbearer — alive | Darklord of Potter's Field
+- `thrall` Thrall — alive | Milo's Manservant
 - `tota-de-la-alma` Tota De la Alma — alive | Matriarch
 - `udo` Udo — alive | Stablemaster of Manor Harsk | [ishetar-2]
 - `vandro-morrix` Vandro Morrix — dead | Owner of the Gilded Ember
 - `vanir-harwich` Vanir Harwich — unknown
+- `vendris-sorvellan` Vendris Sorvellan — alive | Heir to House Sorvellan
 - `verlaine-luthaire` Verlaine Luthaire — missing | Agent of the Celestial Seed | [ishetar-2]
 - `vero` Vero — alive | Alchemist | [ishetar-2]
 - `vespa` Vespa — dead
@@ -147,7 +156,7 @@
 - `zeke` Zeke — alive
 - `zoink` Zoink — alive | Banker | [ishetar-2]
 
-## Locations (72)
+## Locations (75)
 - `ahanabai` Ahanabai — region | [ishetar-2]
 - `aroiinae` Aroiinae — city | [ishetar-2]
 - `ashen-chapel` Ashen Chapel — building | [rifthaven-online]
@@ -194,7 +203,7 @@
 - `poets-point` Poet's Point — city | Kalari
 - `potters-field` Potter's Field — planar | [rifthaven-online]
 - `prusca` Prusca — city | [ishetar-2]
-- `rifthaven` Rifthaven — city | [rifthaven-irl, rifthaven-online]
+- `rifthaven` Rifthaven — city | [rifthaven-irl, rifthaven-online, rifthaven-2]
 - `salvation-district` Salvation District — district | [rifthaven-online]
 - `serenity-auction-house` Serenity Auction House — building | [rifthaven-irl]
 - `sergente-plantation` Sergente Plantation — building | [rifthaven-online]
@@ -207,10 +216,13 @@
 - `amber-expanse` The Amber Expanse — wilderness | Cradle of Conflict | [skt]
 - `the-bastion-sparkworks` The Bastion — building | [rifthaven-online]
 - `brazier` The Brazier — district | [rifthaven-online]
+- `brimstone-bath` The Brimstone Bath — building
+- `college-of-divination` The College of Divination — building
 - `cradle-of-conflict` The Cradle of Conflict — region | [skt]
 - `the-crucible` The Crucible — region | [skt]
 - `fractured-expanse` The Fractured Expanse — wilderness | Ekkorai | [head-hunters]
 - `the-galleria` The Galleria — planar | [rifthaven-online]
+- `halworth-reading-rooms` The Halworth Reading Rooms — building
 - `red-vale` The Red Vale — wilderness | Ekkorai | [ishetar-2]
 - `restful-lily` The Restful Lily — building | Ekkorai | [ishetar-2]
 - `tormellin` Tormellin — city | [ishetar-2]
@@ -221,13 +233,14 @@
 - `verdelorn-woods` Verdelorn Woods — wilderness | [rifthaven-irl]
 - `wanun` Wanun — continent | [ishetar-og, head-hunters, ishetar-2]
 
-## Factions (28)
+## Factions (29)
 - `aquatic-conclave` Aquatic Peoples Conclave — political | active | [ishetar-2]
 - `arsons-of-anarchy` Arsons of Anarchy — religious | active | [head-hunters]
 - `celestial-seed` Celestial Seed — secret | active | [ishetar-2]
 - `children-of-the-defiled-sun` Children of the Defiled Sun — religious | active | [head-hunters]
 - `earthen-loam` Earthen Loam — secret | active | [rifthaven-online]
 - `house-of-coinwrights` House of Coinwrights — commercial | active | [rifthaven-online]
+- `house-sorvellan` House Sorvellan — political | active
 - `knights-of-the-eclipse` Knights of the Eclipse — religious | active | [ishetar-2, kalari]
 - `leviathan-hunters` Leviathan Hunters — commercial | active | [ishetar-2]
 - `order-of-the-ju-shi` Order of the Ju-Shi — religious | active | [rifthaven-irl, rifthaven-online]
@@ -371,7 +384,7 @@ _No entries yet._
 - `elmnack` Elmnack — Dwarf | Ranger | kalari | [kalari]
 - `even` Even — Goliath | Druid | rifthaven-irl | [rifthaven-irl]
 - `freddie` Freddie — Sea Elf | Cleric | rifthaven-online | [rifthaven-online]
-- `garran` Garran — Dwarf | Ranger | rifthaven-2 | [rifthaven-2]
+- `garran` Garran — Human | Ranger | rifthaven-2 | [rifthaven-2]
 - `griffelump` Griffelump — Tabaxi | Wizard | ishetar-og | [ishetar-og]
 - `gwenevere` Gwenevere — Eladrin | Sorcerer | kalari | [kalari]
 - `izlara` Izlara — Human | Ranger | head-hunters | [head-hunters]

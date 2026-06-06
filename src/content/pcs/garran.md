@@ -1,13 +1,13 @@
 ---
 name: Garran
-race: Dwarf
+race: Human
 class: Ranger
 subclass: Hollow Warden
 campaign: rifthaven-2
 level: 3
 location: rifthaven
 tags: [mercenary, freelance, professional, bounty]
-related: [rifthaven, rifthaven-2]
+related: [rifthaven, rifthaven-2, bobilliath, house-sorvellan, brimstone-bath, rifthaven-2-session-01]
 ---
 
 ## Background

@@ -13,7 +13,7 @@ party:
     class: Bard
     slug: milo-lafite-margeaux
   - name: Garran
-    race: Dwarf
+    race: Human
     class: Ranger
     slug: garran
   - name: Ralo Battaglia
