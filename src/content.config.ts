@@ -125,7 +125,7 @@ const recaps = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/recaps' }),
   schema: z.object({
     name: z.string(),
-    campaign: z.enum(['ishetar-2', 'rifthaven-online', 'rifthaven-2']),
+    campaign: z.enum(['ishetar-2', 'rifthaven-online', 'rifthaven-2', 'hatchlight']),
     session_number: z.number(),
     session_date: z.string(),
     author: z.string().default('PaleoDM'),

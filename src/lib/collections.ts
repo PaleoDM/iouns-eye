@@ -95,6 +95,7 @@ export const CAMPAIGN_LABELS: Record<string, string> = {
   'ishetar-2': 'Defenders of Ishetar',
   'rifthaven-online': 'Rifthaven: Root of Rebellion',
   'rifthaven-2': 'Rifthaven: Knaves and Knights',
+  'hatchlight': 'Hearth and Hatchlight',
 };
 
 export const DEFUNCT_CAMPAIGNS = new Set(['rifthaven-irl', 'head-hunters']);

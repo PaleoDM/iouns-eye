@@ -1,6 +1,6 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-06-06 -->
+<!-- Last updated: 2026-06-10 -->
 
 ## NPCs (152)
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
@@ -361,9 +361,10 @@ _No entries yet._
 - `celestial-braid` The Celestial Braid — cosmology
 - `the-third-age` The Third Age — history
 
-## Campaigns (8)
+## Campaigns (9)
 - `ishetar-2` Defenders of Ishetar — completed | 1136
 - `head-hunters` Head Hunters Return to Wanun — defunct | 1094
+- `hatchlight` Hearth and Hatchlight — active
 - `ishetar-og` Ishetar OG — completed | 1082
 - `rifthaven-irl` Rifthaven IRL — defunct | 1127
 - `rifthaven-2` Rifthaven: Knaves and Knights — active | 1130
@@ -371,7 +372,7 @@ _No entries yet._
 - `kalari` Ruins of Kalari — completed | 1088
 - `skt` SKT One Last Job — completed | 1094
 
-## PCs (44)
+## PCs (49)
 - `alister` Alister — Human | Fighter | head-hunters | [head-hunters]
 - `arden` Arden — Sea Elf | Bard | rifthaven-online | [rifthaven-online]
 - `arlowe` Arlowe — Human | Artificer | skt | [skt]
@@ -402,6 +403,11 @@ _No entries yet._
 - `milo-lafite-margeaux` Milo Lafite-Margeaux — Human | Bard | rifthaven-2 | [rifthaven-2]
 - `ollithian` Ollithian — High Elf | Wizard | kalari | [kalari]
 - `patrick` Patrick — Human | Bard | kalari | [kalari]
+- `pc-five` PC Five — Gnome | Druid | hatchlight | [hatchlight]
+- `pc-four` PC Four — Dwarf | Cleric | hatchlight | [hatchlight]
+- `pc-one` PC One — Human | Fighter | hatchlight | [hatchlight]
+- `pc-three` PC Three — Halfling | Rogue | hatchlight | [hatchlight]
+- `pc-two` PC Two — Elf | Wizard | hatchlight | [hatchlight]
 - `quin` Quin — Human | Wizard | rifthaven-online | [rifthaven-online]
 - `rai` Rai — Tiefling | Ranger | ishetar-og | [ishetar-og]
 - `ralo-battaglia` Ralo Battaglia — Halfling | Fighter | rifthaven-2 | [rifthaven-2]
