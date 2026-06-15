@@ -1,8 +1,8 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-06-10 -->
+<!-- Last updated: 2026-06-15 -->
 
-## NPCs (152)
+## NPCs (154)
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
 - `badger-goldenmantle` Badger Goldenmantle — alive
@@ -41,6 +41,7 @@
 - `dr-nastase` Dr. Nastase — dead
 - `dr-solvane` Dr. Solvane — alive | Memory Researcher
 - `dr-sprocket` Dr. Sprocket — alive | Artificer
+- `drago` Drago — alive | Warlord | [hatchlight]
 - `drelduin` Drelduin — dead
 - `drev-harsk` Drev Harsk — alive | Castellan | [ishetar-2]
 - `duchess-lyla` Duchess Lyla — alive | Duchess of Emberspost | [ishetar-2]
@@ -138,6 +139,7 @@
 - `th0l` Th0l — alive | [ishetar-2]
 - `thane-kayalithica` Thane Kayalithica — dead | Thane of the Stone Giants | [skt]
 - `great-self` The Great Self — alive | Fungal Hive Mind
+- `the-old-man` The Old Man — unknown | [hatchlight]
 - `the-paintress` The Paintress — alive
 - `the-pallbearer` The Pallbearer — alive | Darklord of Potter's Field
 - `thrall` Thrall — alive | Milo's Manservant
@@ -156,7 +158,7 @@
 - `zeke` Zeke — alive
 - `zoink` Zoink — alive | Banker | [ishetar-2]
 
-## Locations (75)
+## Locations (77)
 - `ahanabai` Ahanabai — region | [ishetar-2]
 - `aroiinae` Aroiinae — city | [ishetar-2]
 - `ashen-chapel` Ashen Chapel — building | [rifthaven-online]
@@ -215,11 +217,13 @@
 - `the-actuarium` The Actuarium — planar | [rifthaven-online]
 - `amber-expanse` The Amber Expanse — wilderness | Cradle of Conflict | [skt]
 - `the-bastion-sparkworks` The Bastion — building | [rifthaven-online]
+- `the-bones` The Bones — wilderness | [hatchlight]
 - `brazier` The Brazier — district | [rifthaven-online]
 - `brimstone-bath` The Brimstone Bath — building
 - `college-of-divination` The College of Divination — building
 - `cradle-of-conflict` The Cradle of Conflict — region | [skt]
 - `the-crucible` The Crucible — region | [skt]
+- `the-elemental-rift` The Elemental Rift — planar | [hatchlight]
 - `fractured-expanse` The Fractured Expanse — wilderness | Ekkorai | [head-hunters]
 - `the-galleria` The Galleria — planar | [rifthaven-online]
 - `halworth-reading-rooms` The Halworth Reading Rooms — building
@@ -372,7 +376,7 @@ _No entries yet._
 - `kalari` Ruins of Kalari — completed | 1088
 - `skt` SKT One Last Job — completed | 1094
 
-## PCs (49)
+## PCs (54)
 - `alister` Alister — Human | Fighter | head-hunters | [head-hunters]
 - `arden` Arden — Sea Elf | Bard | rifthaven-online | [rifthaven-online]
 - `arlowe` Arlowe — Human | Artificer | skt | [skt]
@@ -380,6 +384,8 @@ _No entries yet._
 - `atwood` Atwood — Human | Wizard | rifthaven-irl | [rifthaven-irl]
 - `aurelia` Aurelia — High Elf | Rogue | ishetar-og | [ishetar-og]
 - `azrael` Azrael — Aasimar | Rogue | ishetar-2 | [ishetar-2]
+- `beeg` Beeg — Goliath | Paladin | hatchlight | [hatchlight]
+- `bringha` Bringha — Human | Monk | hatchlight | [hatchlight]
 - `cam` Cam Pembrook — Half-Orc | Fighter | skt | [skt]
 - `crow` Crow — Tabaxi | Rogue | rifthaven-irl | [rifthaven-irl]
 - `elmnack` Elmnack — Dwarf | Ranger | kalari | [kalari]
@@ -388,6 +394,8 @@ _No entries yet._
 - `garran` Garran — Human | Ranger | rifthaven-2 | [rifthaven-2]
 - `griffelump` Griffelump — Tabaxi | Wizard | ishetar-og | [ishetar-og]
 - `gwenevere` Gwenevere — Eladrin | Sorcerer | kalari | [kalari]
+- `harsk` Harsk — Orc | Ranger | hatchlight | [hatchlight]
+- `indri` Indri — Khoravar | Artificer | hatchlight | [hatchlight]
 - `izlara` Izlara — Human | Ranger | head-hunters | [head-hunters]
 - `janus` Janus — Triton | Sorcerer | ishetar-og | [ishetar-og]
 - `karina-rifthaven` Karina — Wood Elf | Cleric | rifthaven-irl | [rifthaven-irl]
@@ -420,5 +428,6 @@ _No entries yet._
 - `veil` Veil — Human | Monk | rifthaven-online | [rifthaven-online]
 - `vicas` Vicas — Green Dragonborn | Monk | ishetar-2 | [ishetar-2]
 - `vitus` Vitus — Human | Warlock | head-hunters | [head-hunters]
+- `yu` Yu — Tiefling | Cleric | hatchlight | [hatchlight]
 - `zashien` Zashien — Genasi (Fire) | Sorcerer | head-hunters | [head-hunters]
 - `zavek` Zavek — Goliath | Cleric | skt | [skt]
