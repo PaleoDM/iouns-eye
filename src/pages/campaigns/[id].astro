@@ -4,6 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/ui/Breadcrumbs.astro';
 import StatusBadge from '../../components/ui/StatusBadge.astro';
 import { entryUrl, COLLECTIONS, type CollectionName } from '../../lib/collections';
+import WorldMap from '../../components/map/WorldMap';
 
 export async function getStaticPaths() {
   const entries = await getCollection('campaigns');
@@ -45,18 +46,16 @@ const partyWithPortraits = d.party.map((member) => ({
   initials: member.name.charAt(0).toUpperCase(),
 }));
 
-// Map continent to map image(s)
-const CONTINENT_MAPS: Record<string, Array<{ file: string; label: string }>> = {
-  'Wanun': [
-    { file: 'wanun.jpg', label: 'Wanun' },
-    { file: 'ekkorai.jpg', label: 'Ekkorai (Detail)' },
-  ],
-  'Khanae': [
-    { file: 'khanae.jpg', label: 'Khanae' },
-  ],
-  'Glennox': [],
+// Per-continent starting viewBox for the embedded interactive map.
+// Coords are in world-render coords (the same coord system used by the
+// SVG in src/data/world-map.svg, viewBox 0 0 2479 1573).
+const CONTINENT_VIEWBOXES: Record<string, [number, number, number, number]> = {
+  'Glennox':     [1230, 0, 1300, 760],
+  'Wanun':       [-20, 0, 1280, 760],
+  'Khanae':      [1050, 620, 400, 340],
+  'Paendrithir': [1600, 700, 900, 880],
 };
-const campaignMaps = d.continent ? (CONTINENT_MAPS[d.continent] ?? []) : [];
+const campaignMapFocus = d.continent ? CONTINENT_VIEWBOXES[d.continent] : undefined;
 
 // Breadcrumb
 const breadcrumbParent = d.status === 'completed'
@@ -238,23 +237,20 @@ for (const col of ENTITY_COLS) {
     </div>
   </section>
 
-  <!-- REGIONAL MAP -->
-  {campaignMaps.length > 0 && (
+  <!-- REGIONAL MAP — interactive WorldMap pre-zoomed on the campaign's continent -->
+  {campaignMapFocus && (
     <section class="mb-10">
       <h2 class="text-xl font-serif text-accent mb-4 pb-2 border-b border-border">Regional Map</h2>
-      <div class={`grid gap-4 ${campaignMaps.length > 1 ? 'grid-cols-1 lg:grid-cols-2' : 'grid-cols-1 max-w-2xl'}`}>
-        {campaignMaps.map((m) => (
-          <a href={`${baseUrl}map/`} class="block group">
-            <div class="overflow-hidden rounded-lg border border-border group-hover:border-accent/50 transition-colors">
-              <img
-                src={`${baseUrl}maps/${m.file}`}
-                alt={`Map of ${m.label}`}
-                class="w-full h-auto transition-transform duration-300 group-hover:scale-[1.02]"
-              />
-            </div>
-            <p class="text-xs text-text-secondary mt-1 group-hover:text-accent transition-colors">{m.label}</p>
-          </a>
-        ))}
+      <div class="max-w-2xl">
+        <WorldMap
+          client:visible
+          baseUrl={baseUrl}
+          initialViewBox={campaignMapFocus}
+          height="500px"
+        />
+        <p class="text-xs text-text-secondary mt-2">
+          {d.continent} — drag to pan, scroll to zoom. <a href={`${baseUrl}map/`} class="text-accent hover:underline">Open full map →</a>
+        </p>
       </div>
     </section>
   )}

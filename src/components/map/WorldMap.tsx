@@ -7,6 +7,13 @@ import worldSvgRaw from '../../data/world-map.svg?raw';
 interface WorldMapProps {
   // Kept for backwards-compatibility with the page that mounts this island.
   baseUrl: string;
+  // Optional starting viewBox in world coords. Defaults to the SVG's full
+  // viewBox (i.e., "see the whole world"). Used by campaign pages to
+  // open the map pre-zoomed on a specific continent.
+  initialViewBox?: [number, number, number, number];
+  // Container height. Defaults to "80vh" (full-page map view); embeds
+  // typically want something smaller like "400px".
+  height?: string;
 }
 
 // LOD thresholds (fraction of original viewBox width):
@@ -23,7 +30,7 @@ function tierFor(ratio: number): ZoomTier {
 const MIN_ZOOM_OUT = 5;   // how far you can zoom OUT (vb_w multiplier of orig)
 const MAX_ZOOM_IN_VBW = 30; // smallest vb width (~3 hexes wide)
 
-export default function WorldMap(_props: WorldMapProps) {
+export default function WorldMap({ initialViewBox, height = '80vh' }: WorldMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const svgRef = useRef<SVGSVGElement | null>(null);
 
@@ -44,10 +51,17 @@ export default function WorldMap(_props: WorldMapProps) {
       .replace(/<\/svg>\s*$/, '');
   }, []);
 
+  // Starting viewBox: explicit override (e.g., campaign-page focus) or full
+  // world. Used by Reset and on first mount.
+  const startViewBox = useMemo<number[]>(
+    () => (initialViewBox ? initialViewBox.slice() : originalViewBox.slice()),
+    [initialViewBox, originalViewBox],
+  );
+
   // Current viewBox state. We mutate the SVG element directly for performance
   // (no React re-render on every pan/zoom frame) and only update display state
   // (zoom %, LOD tier) via React.
-  const vbRef = useRef<number[]>(originalViewBox.slice());
+  const vbRef = useRef<number[]>(startViewBox.slice());
   const [zoomTier, setZoomTier] = useState<ZoomTier>(tierFor(1));
   const [zoomLabel, setZoomLabel] = useState('100%');
 
@@ -67,9 +81,9 @@ export default function WorldMap(_props: WorldMapProps) {
   // querySelector it out of an injected wrapper.
   useEffect(() => {
     if (!svgRef.current) return;
-    vbRef.current = originalViewBox.slice();
+    vbRef.current = startViewBox.slice();
     applyViewBox();
-  }, [applyViewBox, originalViewBox]);
+  }, [applyViewBox, startViewBox]);
 
   // ---- Coord helper: screen point → SVG world coord ----
   const screenToSvg = useCallback((sx: number, sy: number): [number, number] => {
@@ -217,9 +231,9 @@ export default function WorldMap(_props: WorldMapProps) {
   }, [applyViewBox, originalViewBox]);
 
   const reset = useCallback(() => {
-    vbRef.current = originalViewBox.slice();
+    vbRef.current = startViewBox.slice();
     applyViewBox();
-  }, [applyViewBox, originalViewBox]);
+  }, [applyViewBox, startViewBox]);
 
   // Keyboard: '0' to reset.
   useEffect(() => {
@@ -279,7 +293,7 @@ export default function WorldMap(_props: WorldMapProps) {
       <div
         ref={containerRef}
         className={`relative overflow-hidden rounded-lg border border-border bg-[#4a7fc1] ${cursorClass} select-none`}
-        style={{ height: '80vh' }}
+        style={{ height }}
         onMouseDown={onMouseDown}
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
