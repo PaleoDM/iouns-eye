@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import WorldMap from '../components/map/WorldMap';
+import { WORLD_PRESETS } from '../data/continent-viewboxes';
 
 const baseUrl = import.meta.env.BASE_URL;
 ---
@@ -9,12 +10,13 @@ const baseUrl = import.meta.env.BASE_URL;
   <div data-pagefind-ignore>
     <h1 class="text-3xl font-serif text-accent mb-2">World Map</h1>
     <p class="text-text-secondary mb-6 max-w-2xl">
-      Explore the continents of Astoria. Scroll to zoom, drag to pan.
+      Explore the continents of Astoria. Click a continent to snap there, scroll to zoom, drag to pan.
     </p>
 
     <WorldMap
       client:load
       baseUrl={baseUrl}
+      presets={WORLD_PRESETS}
     />
   </div>
 </BaseLayout>

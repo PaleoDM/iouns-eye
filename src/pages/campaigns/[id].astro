@@ -5,6 +5,7 @@ import Breadcrumbs from '../../components/ui/Breadcrumbs.astro';
 import StatusBadge from '../../components/ui/StatusBadge.astro';
 import { entryUrl, COLLECTIONS, type CollectionName } from '../../lib/collections';
 import WorldMap from '../../components/map/WorldMap';
+import { CONTINENT_VIEWBOXES } from '../../data/continent-viewboxes';
 
 export async function getStaticPaths() {
   const entries = await getCollection('campaigns');
@@ -46,15 +47,7 @@ const partyWithPortraits = d.party.map((member) => ({
   initials: member.name.charAt(0).toUpperCase(),
 }));
 
-// Per-continent starting viewBox for the embedded interactive map.
-// Coords are in world-render coords (the same coord system used by the
-// SVG in src/data/world-map.svg, viewBox 0 0 2479 1573).
-const CONTINENT_VIEWBOXES: Record<string, [number, number, number, number]> = {
-  'Glennox':     [1230, 0, 1300, 760],
-  'Wanun':       [-20, 0, 1280, 760],
-  'Khanae':      [1050, 620, 400, 340],
-  'Paendrithir': [1600, 700, 900, 880],
-};
+// Pre-zoomed viewBox for this campaign's continent (shared with /map page).
 const campaignMapFocus = d.continent ? CONTINENT_VIEWBOXES[d.continent] : undefined;
 
 // Breadcrumb

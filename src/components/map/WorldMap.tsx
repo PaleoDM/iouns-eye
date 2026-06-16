@@ -4,16 +4,27 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 // and lives in src/data/world-map.svg.
 import worldSvgRaw from '../../data/world-map.svg?raw';
 
+type ViewBox = [number, number, number, number];
+
+interface WorldMapPreset {
+  label: string;
+  viewBox: ViewBox;
+}
+
 interface WorldMapProps {
   // Kept for backwards-compatibility with the page that mounts this island.
   baseUrl: string;
   // Optional starting viewBox in world coords. Defaults to the SVG's full
   // viewBox (i.e., "see the whole world"). Used by campaign pages to
   // open the map pre-zoomed on a specific continent.
-  initialViewBox?: [number, number, number, number];
+  initialViewBox?: ViewBox;
   // Container height. Defaults to "80vh" (full-page map view); embeds
   // typically want something smaller like "400px".
   height?: string;
+  // Optional list of quick-jump presets. If provided, rendered as a row
+  // of buttons above the map; clicking one smoothly animates to that
+  // viewBox.
+  presets?: WorldMapPreset[];
 }
 
 // LOD thresholds (fraction of original viewBox width):
@@ -30,9 +41,14 @@ function tierFor(ratio: number): ZoomTier {
 const MIN_ZOOM_OUT = 5;   // how far you can zoom OUT (vb_w multiplier of orig)
 const MAX_ZOOM_IN_VBW = 30; // smallest vb width (~3 hexes wide)
 
-export default function WorldMap({ initialViewBox, height = '80vh' }: WorldMapProps) {
+export default function WorldMap({
+  initialViewBox,
+  height = '80vh',
+  presets,
+}: WorldMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const svgRef = useRef<SVGSVGElement | null>(null);
+  const animationRef = useRef<number | null>(null);
 
   // Parse the world SVG's original viewBox once.
   const originalViewBox = useMemo(() => {
@@ -235,6 +251,37 @@ export default function WorldMap({ initialViewBox, height = '80vh' }: WorldMapPr
     applyViewBox();
   }, [applyViewBox, startViewBox]);
 
+  // ---- Smooth viewBox animation for preset jumps ------------------
+  const animateTo = useCallback((target: ViewBox) => {
+    if (animationRef.current !== null) {
+      cancelAnimationFrame(animationRef.current);
+    }
+    const start = vbRef.current.slice();
+    const startTime = performance.now();
+    const duration = 350;
+    const tick = (now: number) => {
+      const t = Math.min(1, (now - startTime) / duration);
+      const eased = t * t * (3 - 2 * t); // smoothstep
+      for (let i = 0; i < 4; i++) {
+        vbRef.current[i] = start[i] + (target[i] - start[i]) * eased;
+      }
+      applyViewBox();
+      if (t < 1) {
+        animationRef.current = requestAnimationFrame(tick);
+      } else {
+        animationRef.current = null;
+      }
+    };
+    animationRef.current = requestAnimationFrame(tick);
+  }, [applyViewBox]);
+
+  // Cancel any in-flight animation on unmount.
+  useEffect(() => {
+    return () => {
+      if (animationRef.current !== null) cancelAnimationFrame(animationRef.current);
+    };
+  }, []);
+
   // Keyboard: '0' to reset.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -246,6 +293,21 @@ export default function WorldMap({ initialViewBox, height = '80vh' }: WorldMapPr
 
   return (
     <div>
+      {/* Quick-jump preset buttons (e.g., World / Wanun / Glennox / Khanae) */}
+      {presets && presets.length > 0 && (
+        <div className="mb-3 flex flex-wrap gap-2">
+          {presets.map((p) => (
+            <button
+              key={p.label}
+              onClick={() => animateTo(p.viewBox)}
+              className="rounded-lg border border-border bg-surface px-4 py-2 text-sm font-medium text-text-secondary transition-colors hover:bg-surface-hover hover:text-text-primary"
+            >
+              {p.label}
+            </button>
+          ))}
+        </div>
+      )}
+
       {/* Controls + status */}
       <div className="mb-3 flex items-center gap-3 text-sm text-text-secondary">
         <span className="text-xs text-text-muted uppercase tracking-wider">
