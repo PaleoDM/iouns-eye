@@ -23,33 +23,33 @@ This is the Second Age, a thousand years before the Astoria the table knows, dee
 
 ### Beeg — Goliath Paladin
 
-A paladin sworn not to a god but to the elements themselves. (Name and species are still tentative, but Beeg is the Goliath we built.)
+A paladin with conviction in the power of the elements themselves. He belongs to no church, order, or broader institution. Name and species are still tentative; Beeg is the Goliath we built at the table, and the name will almost certainly change.
 
-Beeg believes the Titans have grown so active in the war because they were *awakened*, roused by an imbalance of some kind. His tenets follow from that: sow the seeds of both creation and destruction, for both lead to splendor and grandness. Respect the elements. Fear their wrath. He arrived at all of this through his own lived experience, not through any church or order. He just frequently lies and says there *is* an order behind him, because people adopt ideals more readily when they think someone larger already has.
+Beeg believes the Titans have grown so active in the war because they were *awakened*, roused by an imbalance of some kind. His tenets follow from that: sow the seeds of creation amid the ashes of destruction. Lead with splendor and grace. Respect the elements, and fear their wrath. He arrived at all of this through his own lived experience. He just frequently lies and says there *is* an order behind him, because people adopt ideals more readily when they think someone larger already has.
 
 ### Harsk — Orc Ranger
 
-A sailor and a scout from an orc clan on the coast, a matrilineal society. His life there ended with an inciting incident: his wife cast him out. He was told to go. Staying would have been too awkward, so he left and became a wanderer.
+A sailor and a scout from a coastal orc clan. The orcs of Astoria are typically matrilineal, and Harsk found himself cast out of the clan by his now ex-wife. Home too awkward after that, he left and became a wanderer.
 
-He left behind more than an ex-wife. He has a daughter, likely a preteen or young teen, and he sends back what little money he can. He feels real guilt about not being in her life. He'll tell you the exile was harsh but not exactly *unfair*, and that he's largely made his peace with it. He is also clearly hiding parts of what actually happened. On the road he sometimes goes by **Polecat**, for how skinny and how quiet he is.
+He left behind more than an ex-wife. He has a daughter, likely a preteen or young teen, and he sends back what little money he can. He feels real guilt about not being in her life. He'll tell you the exile was harsh but not *exactly* unfair, and that he's largely made his peace with it. He is also clearly hiding parts of what actually happened. On the road he sometimes goes by **Polecat**, for how skinny and stealthy he can be.
 
 ### Yu — Tiefling Cleric of Raei, the Everlight
 
-A Wayfarer and an orphan, taken in by a "family" that is really the church. It's the kind of family that gathers up orphans and urchins, trains them, and sends them out to bring money back for the older siblings and the family above them.
+An urchin and an orphan, taken in by a "family" that is really the church of Raei, the Everlight. It's the kind of family that gathers up orphans and urchins, trains them, and sends them out to bring money back for the older siblings and the family above them.
 
-The important distinction: Yu's power is real, and his god is real. The Everlight answers him. His faith and his relationship to his god are genuine. The shadiness sits with the church as an institution, which manipulates its children and may not be living the Everlight's tenets as cleanly as it claims. Yu sends money home to his older brother. His quiet, particular talent is fixing children's toys, a skill worth a great deal among the poor orphans he grew up with.
+The important distinction: Yu's power is real, and his god is real. The Everlight answers him, and his faith is genuine. But the goddess herself has been absent for centuries now, and her institutions have perhaps strayed from her light. The shadiness sits with the church as an institution, which manipulates its children and may not be living the Everlight's tenets as cleanly as it claims. Yu sends money home to his older brother. His quiet, particular talent is fixing children's toys, a skill worth a great deal among the poor orphans he grew up with.
 
 ### Indri — Khoravar Artificer
 
-A small woman who grew up in a community built among ruins thick with residual magic. In places like that, people are often born with gifts. Indri's runs toward necromancy.
+A Khoravar woman who grew up in a community built among ruins thick with residual magic. In places like that, people are often born with supernatural gifts. Indri's runs toward necromancy.
 
 There's a practical reason that matters here. With so much residual magic in the air, corpses don't fully rot on their own, and a body left to itself can rise. So someone has to help the dead decompose, a genuine community service, and Indri is one of the people who does it. She learned the work from her father. Then her community was struck by a calamity, and her father is now bound to it full-time, running what amounts to endless triage. Indri is out wandering the ruins of old giant technology, hoping to find something that can solve the calamity and free her father from that duty. She has a real knack for salvaging from giant-made machines.
 
 ### Bringha — Human Monk
 
-An entertainer from a wealthy human family with a long history of bardic tradition. She got kicked out of ballet school for fighting. From there she fell in with a street gang, and then in with an orc shaman woman who became her master and her sensei.
+Bringha was born to a wealthy human family with a long history of bardic tradition. She got kicked out of ballet school for fighting. From there she fell in with a street gang, and then in with an orc shaman woman who became her master and her sensei.
 
-Bringha is spunky and happy and quick to tell you exactly how she thinks things ought to be done. A bit of a hothead. She carries a swinging fire censer, a gift from her fun uncle, that she handles like a dragon dance ribbon. She's young and a little immature, and she's been sent out into the world for the oldest reason there is: to grow up a little, see more than she's seen, and become more worldly.
+Bringha is spunky and happy and quick to tell you exactly how she thinks things ought to be done. A bit of a hothead. She carries a dragon dance ribbon, a gift from her fun uncle. She's young and a little immature, and she's been sent out into the world for the oldest reason there is: to grow up a little, see more than she's seen, and become more worldly.
 
 ## What We Established About the World
 
