@@ -10,7 +10,7 @@ related: [hatchlight, hatchlight-session-00, raei]
 
 ## Background
 
-A Wayfarer and an orphan, taken in by a "family" that is really the church of Raei, the Everlight. It's the kind of family that gathers up orphans and urchins, trains them, and sends them out to bring money back for the older siblings and the family above them.
+Yu is an urchin and an orphan, taken in by a "family" that is really the church of Raei, the Everlight. It's the kind of family that gathers up orphans and urchins, trains them, and sends them out to bring money back for the older siblings and the family above them. Although Yu clearly has a real connection with the Everlight, the goddess herself has been absent in recent centuries, and her institutions have perhaps strayed from her light. 
 
 ## Character Notes
 

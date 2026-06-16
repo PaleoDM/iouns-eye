@@ -10,15 +10,15 @@ related: [hatchlight, hatchlight-session-00]
 
 ## Background
 
-A paladin sworn not to a god but to the elements themselves. Name and species are still tentative; Beeg is the Goliath we built at the table.
+A paladin with conviction in the power of the elements themselves. Beeg does not belong to any church, order, or broader institution. Name and species are still tentative; Beeg is the Goliath we built at the table. Name will almost certainly change. 
 
 Beeg believes the Titans have grown so active in the Triumvirate War because they were *awakened*, roused by an imbalance of some kind.
 
 ## Tenets
 
-- Sow the seeds of both creation and destruction, for both lead to splendor and grandness.
-- Respect the elements.
-- Fear their wrath.
+- Sow the seeds of creation amid the ashes of destruction.
+- Lead with splendor and grace.
+- Respect the elements, and fear their wrath.
 
 He arrived at these through his own lived experience, not through any church or order.
 
