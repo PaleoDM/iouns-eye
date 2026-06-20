@@ -1,8 +1,8 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-06-15 -->
+<!-- Last updated: 2026-06-20 -->
 
-## NPCs (154)
+## NPCs (158)
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
 - `badger-goldenmantle` Badger Goldenmantle — alive
@@ -79,6 +79,7 @@
 - `hekkathon` King Hekkathon — alive | King of the Storm Giants | [skt]
 - `kivan-caldrow` Kivan Caldrow — alive | [ishetar-2]
 - `la-marginalia` La Marginalia — missing | The Tutor
+- `lady-hypatra` Lady Hypatra — dead | The Martyr
 - `lisel-harsk` Lisel Harsk — alive | [ishetar-2]
 - `little-shit` Little Shit — alive
 - `lord-harwin` Lord Harwin Brassfell — alive | Lord of Sparkworks
@@ -134,6 +135,7 @@
 - `sombra` Sombra — alive | Librarian | [ishetar-2]
 - `sprigg` Sprigg — alive | Elder | [ishetar-2]
 - `starshadow` Starshadow — alive
+- `sunflower` Sunflower — alive | Proprietor of the Halworth Reading Rooms
 - `sylvari` Sylvari — alive | Co-founder of the Restful Lily | [ishetar-2]
 - `talene-caldrow` Talene Caldrow — alive | [ishetar-2]
 - `th0l` Th0l — alive | [ishetar-2]
@@ -143,6 +145,7 @@
 - `the-paintress` The Paintress — alive
 - `the-pallbearer` The Pallbearer — alive | Darklord of Potter's Field
 - `thrall` Thrall — alive | Milo's Manservant
+- `tomis-tidwell` Tomis Tidwell — unknown
 - `tota-de-la-alma` Tota De la Alma — alive | Matriarch
 - `udo` Udo — alive | Stablemaster of Manor Harsk | [ishetar-2]
 - `vandro-morrix` Vandro Morrix — dead | Owner of the Gilded Ember
@@ -155,10 +158,11 @@
 - `vine-ashen-bloom` Vine Ashen Bloom — imprisoned | Divine Judge and Monk
 - `vorak-bloodfang` Vorak Bloodfang — dead
 - `whisper` Whisper — alive
+- `wrenna-tidwell` Wrenna Tidwell — alive
 - `zeke` Zeke — alive
 - `zoink` Zoink — alive | Banker | [ishetar-2]
 
-## Locations (77)
+## Locations (78)
 - `ahanabai` Ahanabai — region | [ishetar-2]
 - `aroiinae` Aroiinae — city | [ishetar-2]
 - `ashen-chapel` Ashen Chapel — building | [rifthaven-online]
@@ -180,6 +184,7 @@
 - `glennox` Glennox — continent | [kalari, skt]
 - `grand-souk` Grand Souk — building | [rifthaven-irl, rifthaven-online]
 - `graves-of-revolution` Graves of the Revolution — building | [rifthaven-online]
+- `gutterwick` Gutterwick — district
 - `harwich` Harwich — city | Kalari
 - `hearthfire-commons` Hearthfire Commons — building | [rifthaven-online]
 - `high-haven-arcane-academy` High Haven Arcane Academy — building | rifthaven
@@ -237,7 +242,7 @@
 - `verdelorn-woods` Verdelorn Woods — wilderness | [rifthaven-irl]
 - `wanun` Wanun — continent | [ishetar-og, head-hunters, ishetar-2]
 
-## Factions (29)
+## Factions (30)
 - `aquatic-conclave` Aquatic Peoples Conclave — political | active | [ishetar-2]
 - `arsons-of-anarchy` Arsons of Anarchy — religious | active | [head-hunters]
 - `celestial-seed` Celestial Seed — secret | active | [ishetar-2]
@@ -253,6 +258,7 @@
 - `pilgrims-beneath-the-diadems` Pilgrims Beneath the Diadems — religious | active | [ishetar-2]
 - `silverweave-ventures` Silverweave Ventures — commercial | disbanded | [rifthaven-online]
 - `storm-giant-court` Storm Giant Court — political | active | [skt]
+- `tabula-rasa` Tabula Rasa — secret | hidden
 - `aletheia-procedure` The Aletheia Procedure — secret | active | [rifthaven-online]
 - `aroiin-empire` The Aroiin Empire — political | active | [ishetar-og, head-hunters, ishetar-2]
 - `ashen-barristers` The Ashen Barristers — secret | active | [rifthaven-2]
