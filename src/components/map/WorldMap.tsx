@@ -47,8 +47,10 @@ export default function WorldMap({
   presets,
 }: WorldMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const wrapperRef = useRef<HTMLDivElement>(null);
   const svgRef = useRef<SVGSVGElement | null>(null);
   const animationRef = useRef<number | null>(null);
+  const [isFullscreen, setIsFullscreen] = useState(false);
 
   // Parse the world SVG's original viewBox once.
   const originalViewBox = useMemo(() => {
@@ -282,17 +284,54 @@ export default function WorldMap({
     };
   }, []);
 
-  // Keyboard: '0' to reset.
+  // ---- Fullscreen ------------------------------------------------
+  const toggleFullscreen = useCallback(() => {
+    const el = wrapperRef.current as
+      | (HTMLDivElement & { webkitRequestFullscreen?: () => Promise<void> })
+      | null;
+    const doc = document as Document & {
+      webkitFullscreenElement?: Element;
+      webkitExitFullscreen?: () => Promise<void>;
+    };
+    const fsEl = document.fullscreenElement || doc.webkitFullscreenElement;
+    if (!fsEl) {
+      if (!el) return;
+      (el.requestFullscreen?.() ?? el.webkitRequestFullscreen?.())?.catch(
+        () => {},
+      );
+    } else {
+      (document.exitFullscreen?.() ?? doc.webkitExitFullscreen?.())?.catch(
+        () => {},
+      );
+    }
+  }, []);
+
+  useEffect(() => {
+    const onChange = () => {
+      const doc = document as Document & { webkitFullscreenElement?: Element };
+      const fsEl = document.fullscreenElement || doc.webkitFullscreenElement;
+      setIsFullscreen(fsEl === wrapperRef.current);
+    };
+    document.addEventListener('fullscreenchange', onChange);
+    document.addEventListener('webkitfullscreenchange', onChange);
+    return () => {
+      document.removeEventListener('fullscreenchange', onChange);
+      document.removeEventListener('webkitfullscreenchange', onChange);
+    };
+  }, []);
+
+  // Keyboard: '0' to reset, 'f' to toggle fullscreen.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === '0') reset();
+      if (e.key === 'f' || e.key === 'F') toggleFullscreen();
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [reset]);
+  }, [reset, toggleFullscreen]);
 
   return (
-    <div>
+    <div ref={wrapperRef} className="iouns-map-root">
       {/* Quick-jump preset buttons (e.g., World / Wanun / Glennox / Khanae) */}
       {presets && presets.length > 0 && (
         <div className="mb-3 flex flex-wrap gap-2">
@@ -329,7 +368,12 @@ export default function WorldMap({
             onClick={reset}
             className="rounded border border-border bg-surface px-2 py-1 text-xs hover:bg-surface-hover"
           >Reset</button>
-          <span className="ml-1 text-xs text-text-muted">Scroll to zoom · drag to pan</span>
+          <button
+            onClick={toggleFullscreen}
+            className="rounded border border-border bg-surface px-2 py-1 text-xs hover:bg-surface-hover"
+            aria-label={isFullscreen ? 'Exit fullscreen' : 'Enter fullscreen'}
+          >{isFullscreen ? 'Exit fullscreen' : 'Fullscreen'}</button>
+          <span className="ml-1 text-xs text-text-muted">Scroll to zoom · drag to pan · double-click for fullscreen</span>
         </span>
       </div>
 
@@ -349,14 +393,33 @@ export default function WorldMap({
         .iouns-world-svg[data-zoom="medium"] .labels-tier-village {
           display: none;
         }
+
+        /* In fullscreen, fill the whole screen: give the wrapper the page
+           background + padding, and let the map viewer grow to fill the
+           space left after the controls. The viewer's inline height is
+           overridden with !important. */
+        .iouns-map-root:fullscreen,
+        .iouns-map-root:-webkit-full-screen {
+          display: flex;
+          flex-direction: column;
+          background: var(--color-bg, #0f0f1a);
+          padding: 1rem 1.25rem 1.25rem;
+          overflow: hidden;
+        }
+        .iouns-map-root:fullscreen .iouns-map-viewer,
+        .iouns-map-root:-webkit-full-screen .iouns-map-viewer {
+          flex: 1 1 auto;
+          height: auto !important;
+        }
       `}</style>
 
       {/* Map viewer */}
       <div
         ref={containerRef}
-        className={`relative overflow-hidden rounded-lg border border-border bg-[#4a7fc1] ${cursorClass} select-none`}
+        className={`iouns-map-viewer relative overflow-hidden rounded-lg border border-border bg-[#4a7fc1] ${cursorClass} select-none`}
         style={{ height }}
         onMouseDown={onMouseDown}
+        onDoubleClick={toggleFullscreen}
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
