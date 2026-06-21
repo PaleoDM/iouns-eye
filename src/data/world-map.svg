@@ -563,7 +563,6 @@
     <use href="#mountain" x="1303.193" y="672.797" width="8.0" height="8.0"/>
     <use href="#jungle" x="1288.193" y="681.457" width="8.0" height="8.0"/>
     <use href="#swamp" x="1198.193" y="646.816" width="8.0" height="8.0"/>
-    <use href="#mountain" x="1243.193" y="672.797" width="8.0" height="8.0"/>
     <use href="#jungle" x="1273.193" y="690.117" width="8.0" height="8.0"/>
     <use href="#mountain" x="1288.193" y="698.778" width="8.0" height="8.0"/>
     <use href="#swamp" x="1198.193" y="664.137" width="8.0" height="8.0"/>
@@ -571,10 +570,11 @@
     <use href="#mountain" x="1228.193" y="681.457" width="8.0" height="8.0"/>
     <use href="#mountain" x="1273.193" y="707.438" width="8.0" height="8.0"/>
     <use href="#mountain" x="1288.193" y="716.098" width="8.0" height="8.0"/>
+    <use href="#mountain" x="1228.193" y="698.778" width="8.0" height="8.0"/>
     <use href="#desert" x="1243.193" y="707.438" width="8.0" height="8.0"/>
     <use href="#mountain" x="1258.193" y="716.098" width="8.0" height="8.0"/>
     <use href="#jungle" x="1258.193" y="733.419" width="8.0" height="8.0"/>
-    <use href="#swamp" x="1303.193" y="759.399" width="8.0" height="8.0"/>
+    <use href="#swamp" x="1318.193" y="768.06" width="8.0" height="8.0"/>
     <use href="#swamp" x="1303.193" y="776.72" width="8.0" height="8.0"/>
     <use href="#jungle" x="1213.193" y="742.079" width="8.0" height="8.0"/>
     <use href="#swamp" x="1303.193" y="794.04" width="8.0" height="8.0"/>
@@ -601,19 +601,17 @@
     <use href="#mountain" x="2293.193" y="967.245" width="8.0" height="8.0"/>
     <use href="#mountain" x="2308.193" y="975.906" width="8.0" height="8.0"/>
     <use href="#jungle" x="2038.193" y="837.342" width="8.0" height="8.0"/>
-    <use href="#swamp" x="1993.193" y="828.681" width="8.0" height="8.0"/>
     <use href="#jungle" x="2068.193" y="871.983" width="8.0" height="8.0"/>
+    <use href="#jungle" x="2173.193" y="932.604" width="8.0" height="8.0"/>
     <use href="#desert" x="2218.193" y="958.585" width="8.0" height="8.0"/>
     <use href="#desert" x="2233.193" y="967.245" width="8.0" height="8.0"/>
     <use href="#desert" x="2248.193" y="975.906" width="8.0" height="8.0"/>
     <use href="#mountain" x="2338.193" y="1027.867" width="8.0" height="8.0"/>
-    <use href="#jungle" x="1858.193" y="768.06" width="8.0" height="8.0"/>
     <use href="#jungle" x="1918.193" y="802.701" width="8.0" height="8.0"/>
     <use href="#swamp" x="1993.193" y="846.002" width="8.0" height="8.0"/>
     <use href="#swamp" x="2008.193" y="854.662" width="8.0" height="8.0"/>
     <use href="#swamp" x="2023.193" y="863.322" width="8.0" height="8.0"/>
     <use href="#jungle" x="2068.193" y="889.303" width="8.0" height="8.0"/>
-    <use href="#jungle" x="2143.193" y="932.604" width="8.0" height="8.0"/>
     <use href="#jungle" x="2158.193" y="941.265" width="8.0" height="8.0"/>
     <use href="#desert" x="2188.193" y="958.585" width="8.0" height="8.0"/>
     <use href="#desert" x="2203.193" y="967.245" width="8.0" height="8.0"/>
@@ -629,7 +627,6 @@
     <use href="#jungle" x="1918.193" y="820.021" width="8.0" height="8.0"/>
     <use href="#swamp" x="2023.193" y="880.643" width="8.0" height="8.0"/>
     <use href="#jungle" x="2083.193" y="915.284" width="8.0" height="8.0"/>
-    <use href="#jungle" x="2128.193" y="941.265" width="8.0" height="8.0"/>
     <use href="#jungle" x="2143.193" y="949.925" width="8.0" height="8.0"/>
     <use href="#desert" x="2188.193" y="975.906" width="8.0" height="8.0"/>
     <use href="#desert" x="2203.193" y="984.566" width="8.0" height="8.0"/>
@@ -663,7 +660,6 @@
     <use href="#mountain" x="2338.193" y="1114.47" width="8.0" height="8.0"/>
     <use href="#mountain" x="1843.193" y="846.002" width="8.0" height="8.0"/>
     <use href="#mountain" x="1858.193" y="854.662" width="8.0" height="8.0"/>
-    <use href="#farmland" x="2113.193" y="1001.886" width="8.0" height="8.0"/>
     <use href="#jungle" x="2128.193" y="1010.547" width="8.0" height="8.0"/>
     <use href="#jungle" x="2143.193" y="1019.207" width="8.0" height="8.0"/>
     <use href="#jungle" x="2158.193" y="1027.867" width="8.0" height="8.0"/>
@@ -750,7 +746,6 @@
     <use href="#desert" x="1978.193" y="1218.393" width="8.0" height="8.0"/>
     <use href="#desert" x="1993.193" y="1227.053" width="8.0" height="8.0"/>
     <use href="#desert" x="2008.193" y="1235.713" width="8.0" height="8.0"/>
-    <use href="#swamp" x="1813.193" y="1140.451" width="8.0" height="8.0"/>
     <use href="#forest" x="1828.193" y="1149.111" width="8.0" height="8.0"/>
     <use href="#forest" x="1843.193" y="1157.771" width="8.0" height="8.0"/>
     <use href="#forest" x="1858.193" y="1166.431" width="8.0" height="8.0"/>
