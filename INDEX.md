@@ -1,6 +1,6 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-06-20 -->
+<!-- Last updated: 2026-06-21 -->
 
 ## NPCs (158)
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
@@ -390,7 +390,6 @@ _No entries yet._
 - `atwood` Atwood — Human | Wizard | rifthaven-irl | [rifthaven-irl]
 - `aurelia` Aurelia — High Elf | Rogue | ishetar-og | [ishetar-og]
 - `azrael` Azrael — Aasimar | Rogue | ishetar-2 | [ishetar-2]
-- `beeg` Beeg — Goliath | Paladin | hatchlight | [hatchlight]
 - `bringha` Bringha — Human | Monk | hatchlight | [hatchlight]
 - `cam` Cam Pembrook — Half-Orc | Fighter | skt | [skt]
 - `crow` Crow — Tabaxi | Rogue | rifthaven-irl | [rifthaven-irl]
@@ -408,6 +407,7 @@ _No entries yet._
 - `kip-vogels` Kip Vogels — Gnome | Druid | kalari | [kalari]
 - `kuari` Kuari — Tabaxi | Warlock | kalari | [kalari]
 - `kuldar` Kuldar — Dwarf | Fighter | ishetar-og | [ishetar-og]
+- `laeryn-vard` Laeryn Vard — Elf | Paladin | hatchlight | [hatchlight]
 - `leon` Leon Empyrean — Aasimar | Paladin | rifthaven-online | [rifthaven-online]
 - `lucien` Lucien — Human | Sorcerer | rifthaven-2 | [rifthaven-2]
 - `lyra` Lyra — Wood Elf | Cleric | ishetar-2 | [ishetar-2]

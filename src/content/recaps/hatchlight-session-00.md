@@ -8,7 +8,7 @@ recap_type: dm
 level_milestone: 1
 vtt_campaign_id: "9d067c5d-8664-4c79-9e94-34ede8a04eaa"
 tags: [session-zero, character-creation, worldbuilding]
-related: [hatchlight, beeg, harsk, yu, indri, bringha, the-bones, drago, the-old-man, the-elemental-rift]
+related: [hatchlight, laeryn-vard, harsk, yu, indri, bringha, the-bones, drago, the-old-man, the-elemental-rift]
 ---
 
 Session 0 was character creation and shared worldbuilding. No in-fiction events. We opened by reviewing the setting and tone, all of which is already captured in the Session 0 prep, so it's not rehashed here. The notes below are who we made and what we agreed the world looks like, so we walk into Session 1 already knowing our people and the roads they share.
@@ -21,11 +21,11 @@ This is the Second Age, a thousand years before the Astoria the table knows, dee
 
 ## The Party
 
-### Beeg — Goliath Paladin
+### Laeryn Vard — Elf Paladin
 
-A paladin with conviction in the power of the elements themselves. He belongs to no church, order, or broader institution. Name and species are still tentative; Beeg is the Goliath we built at the table, and the name will almost certainly change.
+A paladin with conviction in the power of the elements themselves. He belongs to no church, order, or broader institution.
 
-Beeg believes the Titans have grown so active in the war because they were *awakened*, roused by an imbalance of some kind. His tenets follow from that: sow the seeds of creation amid the ashes of destruction. Lead with splendor and grace. Respect the elements, and fear their wrath. He arrived at all of this through his own lived experience. He just frequently lies and says there *is* an order behind him, because people adopt ideals more readily when they think someone larger already has.
+Laeryn believes the Titans have grown so active in the war because they were *awakened*, roused by an imbalance of some kind. His tenets follow from that: sow the seeds of creation amid the ashes of destruction. Lead with splendor and grace. Respect the elements, and fear their wrath. He arrived at all of this through his own lived experience. He just frequently lies and says there *is* an order behind him, because people adopt ideals more readily when they think someone larger already has.
 
 ### Harsk — Orc Ranger
 

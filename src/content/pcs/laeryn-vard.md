@@ -1,18 +1,18 @@
 ---
-name: Beeg
-race: Goliath
+name: Laeryn Vard
+race: Elf
 class: Paladin
 campaign: hatchlight
 level: 1
-tags: [paladin, elemental, titans, tentative-name]
+tags: [paladin, elemental, titans]
 related: [hatchlight, hatchlight-session-00]
 ---
 
 ## Background
 
-A paladin with conviction in the power of the elements themselves. Beeg does not belong to any church, order, or broader institution. Name and species are still tentative; Beeg is the Goliath we built at the table. Name will almost certainly change. 
+A paladin with conviction in the power of the elements themselves. Laeryn does not belong to any church, order, or broader institution.
 
-Beeg believes the Titans have grown so active in the Triumvirate War because they were *awakened*, roused by an imbalance of some kind.
+Laeryn believes the Titans have grown so active in the Triumvirate War because they were *awakened*, roused by an imbalance of some kind.
 
 ## Tenets
 
