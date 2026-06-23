@@ -130,7 +130,7 @@ export default function AstorianCalendar({
 
   return (
     <div>
-      <div className="flex flex-col lg:flex-row gap-6 lg:items-start">
+      <div className="flex flex-col lg:flex-row gap-8 lg:items-center">
         <div className="lg:flex-1 lg:min-w-0">
           <div className="mx-auto" style={{ width: `min(${vh}vh, 100%)`, aspectRatio: '1 / 1' }}>
           <svg viewBox={`0 0 ${VIEWBOX} ${VIEWBOX}`} style={{ width: '100%', height: '100%', display: 'block' }} fontFamily="system-ui, sans-serif">

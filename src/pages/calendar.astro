@@ -25,11 +25,11 @@ const ages = AGE_ORDER.map((age) => ({
 }));
 ---
 
-<BaseLayout title="Calendar" description="The Astorian calendar — 14 months, 392 days, the Celestial Braid, and the Ages of Astoria">
+<BaseLayout title="Calendar" description="The Astorian calendar — 14 months, 392 days, the Celestial Braid, and the Ages of Astoria" wide>
   <div data-pagefind-ignore class="space-y-10">
-    <section>
+    <section class="max-w-3xl">
       <h1 class="text-2xl font-serif text-accent mb-2">The Astorian Calendar</h1>
-      <p class="text-text-secondary max-w-3xl text-sm leading-relaxed">
+      <p class="text-text-secondary text-sm leading-relaxed">
         Astoria measures time in 14 months of 28 days — 392 days per year. Each month is named for a
         deity of the Prime pantheon. Three moons — Warp, Weft, and Cross — form the Celestial Braid,
         driving the King and Fool Tides. Click any month to read its deity and holy day.
@@ -38,7 +38,7 @@ const ages = AGE_ORDER.map((age) => ({
 
     <AstorianCalendar client:load calendarData={calendarData} hemisphere="north" year={1136} ageLabel="Third Age" vh={94} />
 
-    <section>
+    <section class="max-w-3xl">
       <h2 class="text-xl font-serif text-accent mb-4 pb-2 border-b border-border">The Ages of Astoria</h2>
       <div class="space-y-6">
         {ages.map((a) => (
