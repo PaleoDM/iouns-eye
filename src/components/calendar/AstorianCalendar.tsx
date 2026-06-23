@@ -13,6 +13,8 @@ interface Props {
   year: number;
   /** Age label, e.g. "Third Age" — drives the curved epithets. */
   ageLabel?: string;
+  /** Wheel height as a % of viewport height (square; width follows). */
+  vh?: number;
 }
 
 const MOON_LIT = '#e8e8d8';
@@ -23,6 +25,7 @@ export default function AstorianCalendar({
   hemisphere = 'north',
   year,
   ageLabel = 'Third Age',
+  vh = 80,
 }: Props) {
   const [hovered, setHovered] = useState<number | null>(null);
   const [selected, setSelected] = useState<Month | null>(null);
@@ -128,8 +131,8 @@ export default function AstorianCalendar({
   return (
     <div>
       <div className="flex flex-col lg:flex-row gap-6 lg:items-start">
-        <div className="w-full lg:flex-1 max-w-[600px] mx-auto">
-          <svg viewBox={`0 0 ${VIEWBOX} ${VIEWBOX}`} className="w-full h-auto" fontFamily="system-ui, sans-serif">
+        <div className="mx-auto lg:mx-0 lg:shrink-0" style={{ width: `min(${vh}vh, 100%)`, aspectRatio: '1 / 1' }}>
+          <svg viewBox={`0 0 ${VIEWBOX} ${VIEWBOX}`} style={{ width: '100%', height: '100%', display: 'block' }} fontFamily="system-ui, sans-serif">
             <rect x={0} y={0} width={VIEWBOX} height={VIEWBOX} fill={PALETTE.ink} rx={12} />
             {seasonRing}
             {monthRing}
