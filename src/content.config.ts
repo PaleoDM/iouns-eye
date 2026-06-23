@@ -103,6 +103,7 @@ const campaigns = defineCollection({
     status: z.enum(['active', 'completed', 'defunct', 'hiatus']),
     start_year: z.number().optional(),
     end_year: z.number().optional(),
+    age: z.string().optional(),
     start_date_real: z.string().optional(),
     current_date: z.string().optional(),
     continent: z.string().optional(),

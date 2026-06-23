@@ -2,50 +2,66 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import AstorianCalendar from '../components/calendar/AstorianCalendar';
 import { getCollection } from 'astro:content';
-import { entryUrl } from '../lib/collections';
 import calendarData from '../data/calendar.json';
-import { parseAstoranDate } from '../components/calendar/calendar-utils';
-
-// Query all events and parse their dates
-const allEvents = await getCollection('events');
-
-const calendarEvents = allEvents.map((event) => {
-  let day: number | undefined;
-  let monthNumber: number | undefined;
-
-  if (event.data.date) {
-    const dateStr = typeof event.data.date === 'string' ? event.data.date : String(event.data.date);
-    const parsed = parseAstoranDate(dateStr);
-    if (parsed) {
-      day = parsed.day;
-      monthNumber = parsed.monthNumber;
-    }
-  }
-
-  return {
-    slug: event.id,
-    name: event.data.name,
-    day,
-    monthNumber,
-    year: event.data.year ?? 0,
-    significance: event.data.significance ?? 'minor',
-    url: entryUrl('events', event.id),
-  };
-}).filter((e) => e.year > 0);
-
-const defaultYear = 1136;
+import { AGE_EPITHETS } from '../components/calendar/calendar-utils';
 
 const baseUrl = import.meta.env.BASE_URL;
+
+const campaigns = await getCollection('campaigns');
+const AGE_ORDER = ['First Age', 'Second Age', 'Third Age'];
+const ages = AGE_ORDER.map((age) => ({
+  age,
+  epithets: AGE_EPITHETS[age] ?? [],
+  campaigns: campaigns
+    .filter((c) => (c.data.age ?? 'Third Age') === age)
+    .sort((a, b) => (a.data.start_year ?? 0) - (b.data.start_year ?? 0))
+    .map((c) => ({
+      name: c.data.name,
+      years: c.data.start_year
+        ? `${c.data.start_year}${c.data.end_year && c.data.end_year !== c.data.start_year ? `–${c.data.end_year}` : ''}`
+        : '',
+      url: `${baseUrl}campaigns/${c.id}/`,
+    })),
+}));
 ---
 
-<BaseLayout title="Calendar" description="The Astorian calendar — 14 months, 392 days, tracked by the Celestial Braid">
-  <div data-pagefind-ignore>
-    <AstorianCalendar
-      client:load
-      calendarData={calendarData}
-      events={calendarEvents}
-      defaultYear={defaultYear}
-      baseUrl={baseUrl}
-    />
+<BaseLayout title="Calendar" description="The Astorian calendar — 14 months, 392 days, the Celestial Braid, and the Ages of Astoria">
+  <div data-pagefind-ignore class="space-y-10">
+    <section>
+      <h1 class="text-2xl font-serif text-accent mb-2">The Astorian Calendar</h1>
+      <p class="text-text-secondary max-w-3xl text-sm leading-relaxed">
+        Astoria measures time in 14 months of 28 days — 392 days per year. Each month is named for a
+        deity of the Prime pantheon. Three moons — Warp, Weft, and Cross — form the Celestial Braid,
+        driving the King and Fool Tides. Click any month to read its deity and holy day.
+      </p>
+    </section>
+
+    <AstorianCalendar client:load calendarData={calendarData} hemisphere="north" year={1136} ageLabel="Third Age" />
+
+    <section>
+      <h2 class="text-xl font-serif text-accent mb-4 pb-2 border-b border-border">The Ages of Astoria</h2>
+      <div class="space-y-6">
+        {ages.map((a) => (
+          <div>
+            <h3 class="font-serif text-lg text-text-primary">{a.age}</h3>
+            {a.epithets.length > 0 && (
+              <p class="text-sm italic text-text-secondary">{a.epithets.join(' · ')}</p>
+            )}
+            {a.campaigns.length > 0 ? (
+              <ul class="mt-2 space-y-1">
+                {a.campaigns.map((c) => (
+                  <li class="text-sm">
+                    <span class="text-text-secondary tabular-nums mr-3">{c.years}</span>
+                    <a href={c.url} class="text-accent hover:underline">{c.name}</a>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p class="mt-1 text-sm text-text-secondary italic">No recorded campaigns.</p>
+            )}
+          </div>
+        ))}
+      </div>
+    </section>
   </div>
 </BaseLayout>

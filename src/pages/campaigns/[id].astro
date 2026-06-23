@@ -6,6 +6,9 @@ import StatusBadge from '../../components/ui/StatusBadge.astro';
 import { entryUrl, COLLECTIONS, type CollectionName } from '../../lib/collections';
 import WorldMap from '../../components/map/WorldMap';
 import { CONTINENT_VIEWBOXES } from '../../data/continent-viewboxes';
+import AstorianCalendar from '../../components/calendar/AstorianCalendar';
+import { hemisphereFor } from '../../components/calendar/calendar-utils';
+import calendarData from '../../data/calendar.json';
 
 export async function getStaticPaths() {
   const entries = await getCollection('campaigns');
@@ -121,7 +124,7 @@ for (const col of ENTITY_COLS) {
       {d.session_count && <span>{d.session_count} sessions</span>}
       {d.start_date_real && <span>Started {d.start_date_real}</span>}
       {d.start_year && (
-        <span>{d.start_year}{d.end_year ? `–${d.end_year}` : ''} TA</span>
+        <span>{d.start_year}{d.end_year ? `–${d.end_year}` : ''} {d.age === 'First Age' ? 'FA' : d.age === 'Second Age' ? 'SA' : 'TA'}</span>
       )}
       {d.continent && <span>{d.continent}</span>}
     </div>
@@ -247,6 +250,23 @@ for (const col of ENTITY_COLS) {
       </div>
     </section>
   )}
+
+  <!-- CALENDAR — the canonical wheel, specced to this campaign's hemisphere + date -->
+  <section class="mb-10">
+    <h2 class="text-xl font-serif text-accent mb-4 pb-2 border-b border-border">Calendar</h2>
+    <AstorianCalendar
+      client:visible
+      calendarData={calendarData}
+      hemisphere={hemisphereFor(d.continent)}
+      year={d.start_year ?? 0}
+      ageLabel={d.age ?? 'Third Age'}
+    />
+    {d.continent && (
+      <p class="text-xs text-text-secondary mt-2">
+        Seasons shown for {d.continent} ({hemisphereFor(d.continent) === 'south' ? 'austral' : 'northern'} hemisphere). <a href={`${baseUrl}calendar/`} class="text-accent hover:underline">Full calendar →</a>
+      </p>
+    )}
+  </section>
 
   <!-- CAMPAIGN GRIMOIRE (Tabbed) -->
   <section class="mb-10">

@@ -1,239 +1,243 @@
-import React, { useState, useCallback, useRef, useMemo } from 'react';
+import React, { useId, useMemo, useState } from 'react';
 import {
-  VIEWBOX, CX, CY, RINGS,
-  hitTestDay, hitTestMonth, getTideInfo, getMoonPhaseLabel, getDayOfWeekName,
+  VIEWBOX, CX, CY, R, PALETTE, AGE_EPITHETS,
+  polar, wedge, uprightRot, monthAngles, seasonBlocks, seasonOf, seasonColor,
+  type CalendarData, type Month,
 } from './calendar-utils';
-import { SeasonRing, MonthLabelRing, DayGridRing, MoonPhaseRing, CenterDisplay } from './CalendarRing';
-import type { CalendarData } from './CalendarRing';
-import { CalendarTooltip } from './CalendarTooltip';
-import { CalendarLegend } from './CalendarLegend';
-import { CalendarTimeline } from './CalendarTimeline';
 
-export interface CalendarEvent {
-  slug: string;
-  name: string;
-  day?: number;
-  monthNumber?: number;
-  year: number;
-  significance: string;
-  url: string;
-}
-
-interface AstorianCalendarProps {
+interface Props {
   calendarData: CalendarData;
-  events: CalendarEvent[];
-  defaultYear: number;
-  baseUrl: string;
+  /** 'north' (default) or 'south' (austral — flips seasons). */
+  hemisphere?: 'north' | 'south';
+  /** Year shown in the center. */
+  year: number;
+  /** Age label, e.g. "Third Age" — drives the curved epithets. */
+  ageLabel?: string;
 }
+
+const MOON_LIT = '#e8e8d8';
+const MOON_EDGE = '#8a8aa8';
 
 export default function AstorianCalendar({
   calendarData,
-  events,
-  defaultYear,
-}: AstorianCalendarProps) {
-  const [hoveredDay, setHoveredDay] = useState<{ monthNumber: number; day: number } | null>(null);
-  const [selectedDay, setSelectedDay] = useState<{ monthNumber: number; day: number } | null>(null);
-  const [tooltipPos, setTooltipPos] = useState({ x: 0, y: 0 });
-  const svgRef = useRef<SVGSVGElement>(null);
+  hemisphere = 'north',
+  year,
+  ageLabel = 'Third Age',
+}: Props) {
+  const [hovered, setHovered] = useState<number | null>(null);
+  const [selected, setSelected] = useState<Month | null>(null);
+  const uid = useId().replace(/:/g, '');
 
-  const months = calendarData.months;
+  const { months, seasons, tides } = calendarData;
+  const daysPerMonth = calendarData.days_per_month;
+  const wk = calendarData.days_per_week;
+  const rows = daysPerMonth / wk;
+  const degMonth = 360 / months.length;
+  const degDay = degMonth / wk;
+  const rowH = (R.dayOut - R.dayIn) / rows;
 
-  // Filter events for the canonical year
-  const yearEvents = useMemo(
-    () => events.filter((e) => e.year === defaultYear),
-    [events, defaultYear],
-  );
+  const blocks = useMemo(() => seasonBlocks(seasons, hemisphere), [seasons, hemisphere]);
+  const epithets = AGE_EPITHETS[ageLabel];
 
-  // Events for the selected day
-  const selectedDayEvents = useMemo(() => {
-    if (!selectedDay) return [];
-    return yearEvents.filter(
-      (e) => e.monthNumber === selectedDay.monthNumber && e.day === selectedDay.day,
+  // --- wheel pieces ---------------------------------------------------------
+  const seasonRing = blocks.map((b) => {
+    const a0 = (b.months[0] - 1) * degMonth;
+    const a1 = b.months[b.months.length - 1] * degMonth;
+    const mid = (a0 + a1) / 2;
+    const [lx, ly] = polar((R.seasonIn + R.seasonOut) / 2, mid);
+    return (
+      <g key={`s-${b.name}`}>
+        <path d={wedge(R.seasonIn, R.seasonOut, a0, a1)} fill={b.color} opacity={0.9} stroke={PALETTE.ink} strokeWidth={1} />
+        <text x={lx} y={ly} textAnchor="middle" dominantBaseline="central" fill="#10101a" fontSize={15} fontWeight={700} letterSpacing={2} fontFamily="Georgia, serif" transform={`rotate(${uprightRot(mid)} ${lx} ${ly})`}>
+          {b.name.toUpperCase()}
+        </text>
+      </g>
     );
-  }, [yearEvents, selectedDay]);
+  });
 
-  // Events for the selected month (no specific day)
-  const selectedMonthEvents = useMemo(() => {
-    if (!selectedDay) return [];
-    return yearEvents.filter(
-      (e) => e.monthNumber === selectedDay.monthNumber && !e.day,
+  const monthRing = months.map((m) => {
+    const [a0, a1] = monthAngles(m.number, degMonth);
+    const mid = (a0 + a1) / 2;
+    const color = seasonColor(seasons, seasonOf(m.season, hemisphere));
+    const [lx, ly] = polar((R.monthIn + R.monthOut) / 2, mid);
+    return (
+      <g key={`m-${m.number}`}>
+        <path d={wedge(R.monthIn, R.monthOut, a0, a1)} fill={color} opacity={0.18} stroke={PALETTE.grid} strokeWidth={0.5} />
+        <text x={lx} y={ly} textAnchor="middle" dominantBaseline="central" fill={PALETTE.text} fontSize={14} fontWeight={600} fontFamily="Georgia, serif" transform={`rotate(${uprightRot(mid)} ${lx} ${ly})`}>
+          {m.name}
+        </text>
+      </g>
     );
-  }, [yearEvents, selectedDay]);
+  });
 
-  // Convert mouse event to SVG coordinates
-  const toSvgCoords = useCallback((e: React.MouseEvent): { x: number; y: number } | null => {
-    const svg = svgRef.current;
-    if (!svg) return null;
-    const rect = svg.getBoundingClientRect();
-    const scaleX = VIEWBOX / rect.width;
-    const scaleY = VIEWBOX / rect.height;
-    return {
-      x: (e.clientX - rect.left) * scaleX,
-      y: (e.clientY - rect.top) * scaleY,
-    };
-  }, []);
+  const dayTints = months.map((m) => {
+    const [a0, a1] = monthAngles(m.number, degMonth);
+    const color = seasonColor(seasons, seasonOf(m.season, hemisphere));
+    return <path key={`t-${m.number}`} d={wedge(R.dayIn, R.dayOut, a0, a1)} fill={color} opacity={0.1} />;
+  });
 
-  const handleMouseMove = useCallback((e: React.MouseEvent) => {
-    const svgPt = toSvgCoords(e);
-    if (!svgPt) return;
-    const hit = hitTestDay(svgPt.x, svgPt.y);
-    setHoveredDay(hit);
-    setTooltipPos({ x: e.clientX, y: e.clientY });
-  }, [toSvgCoords]);
+  const weekRings = Array.from({ length: rows + 1 }, (_, k) => (
+    <circle key={`w-${k}`} cx={CX} cy={CY} r={R.dayIn + k * rowH} fill="none" stroke={PALETTE.grid} strokeWidth={0.4} />
+  ));
 
-  const handleMouseLeave = useCallback(() => {
-    setHoveredDay(null);
-  }, []);
+  const separators = Array.from({ length: months.length }, (_, i) => {
+    const a = i * degMonth;
+    const [xi, yi] = polar(R.dayIn, a);
+    const [xo, yo] = polar(R.dayOut, a);
+    return <line key={`sep-${i}`} x1={xi} y1={yi} x2={xo} y2={yo} stroke={PALETTE.grid} strokeWidth={0.8} />;
+  });
 
-  const handleClick = useCallback((e: React.MouseEvent) => {
-    const svgPt = toSvgCoords(e);
-    if (!svgPt) return;
-
-    const dayHit = hitTestDay(svgPt.x, svgPt.y);
-    if (dayHit) {
-      setSelectedDay((prev) =>
-        prev?.monthNumber === dayHit.monthNumber && prev?.day === dayHit.day ? null : dayHit,
+  const dayNumbers = months.flatMap((m) => {
+    const a0 = (m.number - 1) * degMonth;
+    const holy = m.holy_day.day;
+    return Array.from({ length: daysPerMonth }, (_, i) => {
+      const d = i + 1;
+      const row = Math.floor((d - 1) / wk); // 0 = innermost
+      const col = (d - 1) % wk;
+      const rMid = R.dayIn + (row + 0.5) * rowH;
+      const aMid = a0 + (col + 0.5) * degDay;
+      const [x, y] = polar(rMid, aMid);
+      const isHoly = d === holy;
+      return (
+        <text key={`d-${m.number}-${d}`} x={x} y={y} textAnchor="middle" dominantBaseline="central"
+          fill={isHoly ? PALETTE.holy : PALETTE.textDim}
+          fontSize={isHoly ? 10 : 9.5} fontWeight={isHoly ? 700 : 400}>
+          {d}
+        </text>
       );
-      return;
-    }
+    });
+  });
 
-    // Click on month label → select first day of that month
-    const monthHit = hitTestMonth(svgPt.x, svgPt.y);
-    if (monthHit) {
-      setSelectedDay((prev) =>
-        prev?.monthNumber === monthHit && prev?.day === 1 ? null : { monthNumber: monthHit, day: 1 },
-      );
-    }
-  }, [toSvgCoords]);
+  // hover highlight + transparent click targets
+  const monthHits = months.map((m) => {
+    const [a0, a1] = monthAngles(m.number, degMonth);
+    return (
+      <path key={`hit-${m.number}`} d={wedge(R.center, R.seasonOut, a0, a1)}
+        fill={hovered === m.number ? 'rgba(255,255,255,0.06)' : 'transparent'}
+        style={{ cursor: 'pointer' }}
+        onMouseEnter={() => setHovered(m.number)}
+        onMouseLeave={() => setHovered((h) => (h === m.number ? null : h))}
+        onClick={() => setSelected(m)} />
+    );
+  });
 
-  const selectedMonth = selectedDay
-    ? months.find((m) => m.number === selectedDay.monthNumber)
-    : null;
+  const ar = R.center - 27;
+  const topPath = `M ${CX - ar} ${CY} A ${ar} ${ar} 0 0 1 ${CX + ar} ${CY}`;
+  const botPath = `M ${CX - ar} ${CY} A ${ar} ${ar} 0 0 0 ${CX + ar} ${CY}`;
 
   return (
-    <div className="flex flex-col gap-6">
-      {/* World history timeline — above the calendar */}
-      <CalendarTimeline />
+    <div>
+      <div className="flex flex-col lg:flex-row gap-6 lg:items-start">
+        <div className="w-full lg:flex-1 max-w-[760px] mx-auto">
+          <svg viewBox={`0 0 ${VIEWBOX} ${VIEWBOX}`} className="w-full h-auto" fontFamily="system-ui, sans-serif">
+            <rect x={0} y={0} width={VIEWBOX} height={VIEWBOX} fill={PALETTE.ink} rx={12} />
+            {seasonRing}
+            {monthRing}
+            {dayTints}
+            {weekRings}
+            <circle cx={CX} cy={CY} r={R.dayIn} fill="none" stroke={PALETTE.grid} strokeWidth={0.4} />
+            <circle cx={CX} cy={CY} r={R.dayOut} fill="none" stroke={PALETTE.grid} strokeWidth={0.4} />
+            {separators}
+            {dayNumbers}
 
-      {/* Calendar header */}
-      <div>
-        <h2 className="text-2xl font-serif text-accent mb-2">The Astorian Calendar</h2>
-        <p className="text-text-secondary mb-4 max-w-3xl text-sm leading-relaxed">
-          Astoria measures time in 14 months of 28 days each — 392 days per year. Each month is named
-          for a deity of the Prime pantheon. Three moons — Warp, Weft, and Cross — form the Celestial
-          Braid, driving the King Tides and Fool Tides that shape coastal life.
-        </p>
-      </div>
-
-      {/* SVG Calendar — full width */}
-      <div className="mx-auto w-full" style={{ maxWidth: 1000 }}>
-        <svg
-          ref={svgRef}
-          viewBox={`0 0 ${VIEWBOX} ${VIEWBOX}`}
-          className="w-full h-auto"
-          onMouseMove={handleMouseMove}
-          onMouseLeave={handleMouseLeave}
-          onClick={handleClick}
-          style={{ cursor: hoveredDay ? 'pointer' : 'default' }}
-        >
-          {/* Background */}
-          <circle cx={CX} cy={CY} r={RINGS.seasonOuter + 2} fill="#0f0f1a" />
-
-          {/* Rings from outside in */}
-          <SeasonRing />
-          <MonthLabelRing months={months} />
-          <DayGridRing months={months} selectedDay={selectedDay} hoveredDay={hoveredDay} />
-          <MoonPhaseRing />
-          <CenterDisplay year={defaultYear} />
-        </svg>
-      </div>
-
-      {/* Tooltip */}
-      {hoveredDay && (
-        <CalendarTooltip
-          monthNumber={hoveredDay.monthNumber}
-          day={hoveredDay.day}
-          months={months}
-          x={tooltipPos.x}
-          y={tooltipPos.y}
-        />
-      )}
-
-      {/* Selected day details */}
-      {selectedDay && selectedMonth && (
-        <div className="rounded-lg border border-border bg-surface p-4 max-w-2xl">
-          <h3 className="font-serif text-lg text-text-primary">
-            {selectedDay.day} {selectedMonth.name}, {defaultYear} TA
-          </h3>
-          <p className="text-sm text-text-secondary">{getDayOfWeekName(selectedDay.day)}</p>
-
-          <div className="mt-2 space-y-1 text-sm text-text-secondary">
-            <p>{getMoonPhaseLabel(selectedDay.day)}</p>
-            {getTideInfo(selectedDay.day).type && (
-              <p className={getTideInfo(selectedDay.day).type === 'king' ? 'text-summer' : 'text-winter'}>
-                {getTideInfo(selectedDay.day).description}
-              </p>
+            {/* center */}
+            <circle cx={CX} cy={CY} r={R.center} fill={PALETTE.panel} stroke={PALETTE.grid} strokeWidth={1} />
+            {epithets && (
+              <>
+                <defs>
+                  <path id={`${uid}-top`} d={topPath} />
+                  <path id={`${uid}-bot`} d={botPath} />
+                </defs>
+                <text fill={PALETTE.textDim} fontSize={13} fontStyle="italic" fontFamily="Georgia, serif">
+                  <textPath href={`#${uid}-top`} startOffset="50%" textAnchor="middle" dy={17}>{epithets[0]}</textPath>
+                </text>
+                <text fill={PALETTE.textDim} fontSize={13} fontStyle="italic" fontFamily="Georgia, serif">
+                  <textPath href={`#${uid}-bot`} startOffset="50%" textAnchor="middle" dy={-8}>{epithets[1]}</textPath>
+                </text>
+              </>
             )}
+            <text x={CX} y={CY - 7} textAnchor="middle" dominantBaseline="central" fill={PALETTE.text} fontSize={34} fontWeight={700} fontFamily="Georgia, serif">{year}</text>
+            <text x={CX} y={CY + 20} textAnchor="middle" dominantBaseline="central" fill={PALETTE.textDim} fontSize={11} letterSpacing={2}>{ageLabel.toUpperCase()}</text>
+
+            {monthHits}
+          </svg>
+        </div>
+
+        {/* Key */}
+        <aside className="w-full lg:w-72 shrink-0 rounded-xl border border-border bg-surface p-5 text-sm">
+          <KeySection title="Seasons">
+            {blocks.map((b) => (
+              <Row key={b.name}>
+                <span className="inline-block h-4 w-4 rounded-sm" style={{ background: b.color }} />
+                {b.name}
+              </Row>
+            ))}
+          </KeySection>
+          <KeySection title="Holy Days">
+            <Row>
+              <span className="inline-flex h-4 w-4 items-center justify-center font-bold" style={{ color: PALETTE.holy, fontSize: 13 }}>14</span>
+              Deity holy day
+            </Row>
+          </KeySection>
+          <KeySection title="Moons">
+            <Row><Moon kind="full" /> Full Moon (21st)</Row>
+            <Row><Moon kind="new" /> New Moon (7th)</Row>
+          </KeySection>
+          <KeySection title="Tides">
+            <div className="mb-2">
+              <div className="font-semibold text-text-primary">King Tides (19th–23rd)</div>
+              <p className="text-text-secondary text-xs leading-relaxed mt-0.5">Strongest tides that peak with the full moon.</p>
+            </div>
+            <div>
+              <div className="font-semibold text-text-primary">Fool Tides (5th–9th)</div>
+              <p className="text-text-secondary text-xs leading-relaxed mt-0.5">Weakest tides that lull during the new moon.</p>
+            </div>
+          </KeySection>
+          <p className="text-xs italic text-text-secondary mt-1">
+            Hemisphere: {hemisphere === 'north' ? 'Northern (temperate)' : 'Austral (southern)'}
+          </p>
+        </aside>
+      </div>
+
+      {/* Month detail modal */}
+      {selected && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4" onClick={() => setSelected(null)}>
+          <div className="relative w-full max-w-md rounded-2xl border border-border bg-surface p-7 shadow-2xl" onClick={(e) => e.stopPropagation()}>
+            <button className="absolute right-3 top-2 text-xl text-text-secondary hover:text-text-primary" onClick={() => setSelected(null)} aria-label="Close">×</button>
+            <h2 className="font-serif text-2xl text-text-primary">{selected.name}</h2>
+            {selected.deity_title && (
+              <div className="mb-4 text-sm italic text-text-secondary">
+                {selected.deity_title.charAt(0).toUpperCase() + selected.deity_title.slice(1)}
+              </div>
+            )}
+            <div className="mb-3 text-sm font-semibold" style={{ color: PALETTE.holy }}>
+              {selected.holy_day.name} · Day {selected.holy_day.day}
+            </div>
+            <p className="text-sm leading-relaxed text-text-secondary">{selected.lore ?? selected.holy_day.description}</p>
           </div>
-
-          {/* Holy day info */}
-          {selectedMonth.holy_day.day === selectedDay.day && (
-            <div className="mt-3 rounded border border-border bg-surface-hover p-3">
-              <p className="font-serif text-sm font-semibold text-accent">
-                {selectedMonth.holy_day.name}
-              </p>
-              <p className="mt-1 text-xs text-text-secondary leading-relaxed">
-                {selectedMonth.holy_day.description}
-              </p>
-            </div>
-          )}
-
-          {/* Events on this day */}
-          {selectedDayEvents.length > 0 && (
-            <div className="mt-3">
-              <p className="text-xs font-semibold uppercase tracking-wider text-text-secondary mb-2">
-                Events on this day
-              </p>
-              {selectedDayEvents.map((ev) => (
-                <a
-                  key={ev.slug}
-                  href={ev.url}
-                  className="block rounded border border-border bg-surface-hover p-2 mb-1 text-sm text-accent hover:text-accent-hover hover:border-accent/50 transition-colors"
-                >
-                  {ev.name}
-                </a>
-              ))}
-            </div>
-          )}
-
-          {/* Events this month (no specific day) */}
-          {selectedMonthEvents.length > 0 && (
-            <div className="mt-3">
-              <p className="text-xs font-semibold uppercase tracking-wider text-text-secondary mb-2">
-                Also in {selectedMonth.name}
-              </p>
-              {selectedMonthEvents.map((ev) => (
-                <a
-                  key={ev.slug}
-                  href={ev.url}
-                  className="block rounded border border-border bg-surface-hover p-2 mb-1 text-sm text-accent hover:text-accent-hover hover:border-accent/50 transition-colors"
-                >
-                  {ev.name}
-                </a>
-              ))}
-            </div>
-          )}
-
-          {/* No events */}
-          {selectedDayEvents.length === 0 && selectedMonthEvents.length === 0 && (
-            <p className="mt-3 text-xs text-text-secondary italic">No events recorded for this date.</p>
-          )}
         </div>
       )}
-
-      {/* Legend — horizontal */}
-      <CalendarLegend />
-
     </div>
+  );
+}
+
+function KeySection({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <div className="mb-5 last:mb-2">
+      <h3 className="mb-2 font-serif text-xs font-bold uppercase tracking-widest text-text-primary">{title}</h3>
+      {children}
+    </div>
+  );
+}
+
+function Row({ children }: { children: React.ReactNode }) {
+  return <div className="my-1.5 flex items-center gap-3 text-text-secondary">{children}</div>;
+}
+
+function Moon({ kind }: { kind: 'full' | 'new' }) {
+  return (
+    <svg width={16} height={16} viewBox="0 0 16 16" className="shrink-0">
+      <circle cx={8} cy={8} r={6.5} fill={kind === 'full' ? MOON_LIT : 'none'} stroke={MOON_EDGE} strokeWidth={kind === 'full' ? 0.5 : 1.3} />
+    </svg>
   );
 }

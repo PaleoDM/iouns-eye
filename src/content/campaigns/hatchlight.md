@@ -2,6 +2,8 @@
 name: "Hearth and Hatchlight"
 status: active
 continent: Paendrithir
+start_year: 2184
+age: Second Age
 start_date_real: "2026-06-13"
 session_count: 0
 party:
