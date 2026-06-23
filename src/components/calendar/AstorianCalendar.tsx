@@ -131,7 +131,8 @@ export default function AstorianCalendar({
   return (
     <div>
       <div className="flex flex-col lg:flex-row gap-6 lg:items-start">
-        <div className="mx-auto lg:mx-0 lg:shrink-0" style={{ width: `min(${vh}vh, 100%)`, aspectRatio: '1 / 1' }}>
+        <div className="lg:flex-1 lg:min-w-0">
+          <div className="mx-auto" style={{ width: `min(${vh}vh, 100%)`, aspectRatio: '1 / 1' }}>
           <svg viewBox={`0 0 ${VIEWBOX} ${VIEWBOX}`} style={{ width: '100%', height: '100%', display: 'block' }} fontFamily="system-ui, sans-serif">
             <rect x={0} y={0} width={VIEWBOX} height={VIEWBOX} fill={PALETTE.ink} rx={12} />
             {seasonRing}
@@ -164,6 +165,7 @@ export default function AstorianCalendar({
 
             {monthHits}
           </svg>
+          </div>
         </div>
 
         {/* Key */}
