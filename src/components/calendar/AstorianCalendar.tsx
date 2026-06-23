@@ -128,7 +128,7 @@ export default function AstorianCalendar({
   return (
     <div>
       <div className="flex flex-col lg:flex-row gap-6 lg:items-start">
-        <div className="w-full lg:flex-1 max-w-[760px] mx-auto">
+        <div className="w-full lg:flex-1 max-w-[600px] mx-auto">
           <svg viewBox={`0 0 ${VIEWBOX} ${VIEWBOX}`} className="w-full h-auto" fontFamily="system-ui, sans-serif">
             <rect x={0} y={0} width={VIEWBOX} height={VIEWBOX} fill={PALETTE.ink} rx={12} />
             {seasonRing}
