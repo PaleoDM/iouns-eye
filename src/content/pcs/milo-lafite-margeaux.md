@@ -7,7 +7,7 @@ campaign: rifthaven-2
 level: 3
 location: rifthaven
 tags: [ex-vampire, vanity, depression, charm, merchant]
-related: [rifthaven, rifthaven-2, thrall, house-sorvellan, brimstone-bath, rifthaven-2-session-01]
+related: [rifthaven, rifthaven-2, thrall, house-sorvellan, brimstone-bath, la-marginalia, tabula-rasa, rifthaven-2-session-01, rifthaven-2-session-03]
 ---
 
 ## Background

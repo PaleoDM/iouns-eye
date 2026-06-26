@@ -8,7 +8,7 @@ level: 3
 location: rifthaven
 faction: da-pinci-syndicate
 tags: [criminal, goon, family-man, da-pinci]
-related: [rifthaven, rifthaven-2, da-pinci-syndicate, rj, nonna-battaglia, cobalt, house-sorvellan, brimstone-bath, rifthaven-2-session-01]
+related: [rifthaven, rifthaven-2, da-pinci-syndicate, rj, nonna-battaglia, cobalt, house-sorvellan, brimstone-bath, rifthaven-2-session-01, rifthaven-2-session-03]
 ---
 
 ## Background

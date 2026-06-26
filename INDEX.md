@@ -1,6 +1,6 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-06-21 -->
+<!-- Last updated: 2026-06-26 -->
 
 ## NPCs (158)
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
@@ -78,7 +78,7 @@
 - `kess-vauthi` Kess Vauthi — alive | Acting Timbermaster | [ishetar-2]
 - `hekkathon` King Hekkathon — alive | King of the Storm Giants | [skt]
 - `kivan-caldrow` Kivan Caldrow — alive | [ishetar-2]
-- `la-marginalia` La Marginalia — missing | The Tutor
+- `la-marginalia` La Marginalia — alive | The Tutor
 - `lady-hypatra` Lady Hypatra — dead | The Martyr
 - `lisel-harsk` Lisel Harsk — alive | [ishetar-2]
 - `little-shit` Little Shit — alive
@@ -162,7 +162,7 @@
 - `zeke` Zeke — alive
 - `zoink` Zoink — alive | Banker | [ishetar-2]
 
-## Locations (78)
+## Locations (79)
 - `ahanabai` Ahanabai — region | [ishetar-2]
 - `aroiinae` Aroiinae — city | [ishetar-2]
 - `ashen-chapel` Ashen Chapel — building | [rifthaven-online]
@@ -220,6 +220,7 @@
 - `sparkworks-tunnels` Sparkworks Tunnels — dungeon | [rifthaven-online]
 - `sporestone-mint` Sporestone Mint — building | [rifthaven-irl]
 - `the-actuarium` The Actuarium — planar | [rifthaven-online]
+- `the-almshouse` The Almshouse — building | rifthaven
 - `amber-expanse` The Amber Expanse — wilderness | Cradle of Conflict | [skt]
 - `the-bastion-sparkworks` The Bastion — building | [rifthaven-online]
 - `the-bones` The Bones — wilderness | [hatchlight]
@@ -364,17 +365,18 @@ _No entries yet._
 - `zehir` Zehir — The Cloaked Serpent | corrupted
 - `zuggtmoy` Zuggtmoy — Lady of Fungi | demon_prince
 
-## Lore (5)
+## Lore (6)
 - `king-tides-and-fool-tides` King Tides and Fool Tides — geography
 - `magic-system` Magic System of Astoria — magic
 - `astorian-calendar` The Astorian Calendar — culture
 - `celestial-braid` The Celestial Braid — cosmology
+- `mimeofoil` The Mimeofoil — magic
 - `the-third-age` The Third Age — history
 
 ## Campaigns (9)
 - `ishetar-2` Defenders of Ishetar — completed | 1136
 - `head-hunters` Head Hunters Return to Wanun — defunct | 1094
-- `hatchlight` Hearth and Hatchlight — active
+- `hatchlight` Hearth and Hatchlight — active | 2184
 - `ishetar-og` Ishetar OG — completed | 1082
 - `rifthaven-irl` Rifthaven IRL — defunct | 1127
 - `rifthaven-2` Rifthaven: Knaves and Knights — active | 1130
