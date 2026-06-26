@@ -6,7 +6,6 @@ session_date: "June 2nd, 2026"
 author: PaleoDM
 recap_type: dm
 in_game_date: "22nd of Ioun, 1130"
-level_milestone: 3
 arc_name: "The Manifesto"
 vtt_campaign_id: "559871a1-573f-4367-9a16-5a3117a19840"
 tags: [session-one, the-manifesto, heist]
