@@ -5,7 +5,7 @@ class: Cleric
 campaign: hatchlight
 level: 1
 tags: [cleric, raei, everlight, orphan, wayfarer]
-related: [hatchlight, hatchlight-session-00, raei]
+related: [hatchlight, hatchlight-session-00, hatchlight-session-01, raei, dolgaer]
 ---
 
 ## Background

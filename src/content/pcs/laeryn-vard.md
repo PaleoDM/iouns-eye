@@ -5,7 +5,7 @@ class: Paladin
 campaign: hatchlight
 level: 1
 tags: [paladin, elemental, titans]
-related: [hatchlight, hatchlight-session-00]
+related: [hatchlight, hatchlight-session-00, hatchlight-session-01]
 ---
 
 ## Background

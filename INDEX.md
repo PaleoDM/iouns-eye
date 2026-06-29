@@ -1,8 +1,8 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-06-26 -->
+<!-- Last updated: 2026-06-29 -->
 
-## NPCs (158)
+## NPCs (162)
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
 - `badger-goldenmantle` Badger Goldenmantle — alive
@@ -47,6 +47,7 @@
 - `duchess-lyla` Duchess Lyla — alive | Duchess of Emberspost | [ishetar-2]
 - `duty` Duty — alive | Monk of the Ju-Shi
 - `einhar-coldforge` Einhar Coldforge — alive
+- `eirlys` Eirlys — missing | The Witch of Glancoed | [hatchlight]
 - `ellie-caldrow` Ellie Caldrow — alive | [ishetar-2]
 - `emissary-rowena` Emissary Rowena — alive | Governess
 - `ernesto-de-la-alma` Ernesto De la Alma — alive
@@ -64,6 +65,7 @@
 - `governor-nighthill` Governor Nighthill — alive | Governor
 - `grave-dirt` Grave Dirt — dead
 - `guiseppe` Guiseppe — alive | The Toymaker
+- `gwenllian` Gwenllian — alive | Headwoman of Glancoed | [hatchlight]
 - `haji` Haji — alive | Head of the House of Coinwrights
 - `harlan` Harlan — alive
 - `haven-harsk` Haven Harsk — alive | [ishetar-2]
@@ -91,6 +93,7 @@
 - `malaki` Malaki — alive | [ishetar-2]
 - `malgorth` Malgorth — alive | The Soulflayer
 - `maligno` Maligno — alive | The Unfinished Boy
+- `mamgu-nerys` Mamgu Nerys — alive | Hearth-keeper of Glancoed | [hatchlight]
 - `maribel-stoutwater` Maribel Stoutwater — alive | Innkeeper
 - `mayo` Mayo — alive
 - `meris-caldrow` Meris Caldrow — alive | [ishetar-2]
@@ -140,6 +143,7 @@
 - `talene-caldrow` Talene Caldrow — alive | [ishetar-2]
 - `th0l` Th0l — alive | [ishetar-2]
 - `thane-kayalithica` Thane Kayalithica — dead | Thane of the Stone Giants | [skt]
+- `the-afanc` The Afanc — alive | Spirit of the Glancoed Spring | [hatchlight]
 - `great-self` The Great Self — alive | Fungal Hive Mind
 - `the-old-man` The Old Man — unknown | [hatchlight]
 - `the-paintress` The Paintress — alive
@@ -162,7 +166,7 @@
 - `zeke` Zeke — alive
 - `zoink` Zoink — alive | Banker | [ishetar-2]
 
-## Locations (79)
+## Locations (82)
 - `ahanabai` Ahanabai — region | [ishetar-2]
 - `aroiinae` Aroiinae — city | [ishetar-2]
 - `ashen-chapel` Ashen Chapel — building | [rifthaven-online]
@@ -175,12 +179,14 @@
 - `coin-counting-house` Coin Counting House — building | [rifthaven-online]
 - `deidan` Deidan — city | [ishetar-2]
 - `dirty-gertys` Dirty Gerty's — building | [ishetar-2, ishetar-og]
+- `dolgaer` Dolgaer — city | [hatchlight]
 - `ekkorai` Ekkorai — region | [ishetar-og, ishetar-2, head-hunters]
 - `emberspost` Emberspost — city | Ekkorai | [head-hunters, ishetar-2]
 - `emerald-crescent` Emerald Crescent — wilderness | Kalari
 - `farrowfield` Farrowfield — city | Cradle of Conflict | [skt]
 - `firewatch-island` Firewatch Island — city | Ekkorai | [ishetar-2]
 - `glamour-district` Glamour District — district | [rifthaven-online]
+- `glancoed` Glancoed — city | Cyrnaith | [hatchlight]
 - `glennox` Glennox — continent | [kalari, skt]
 - `grand-souk` Grand Souk — building | [rifthaven-irl, rifthaven-online]
 - `graves-of-revolution` Graves of the Revolution — building | [rifthaven-online]
@@ -232,6 +238,7 @@
 - `the-elemental-rift` The Elemental Rift — planar | [hatchlight]
 - `fractured-expanse` The Fractured Expanse — wilderness | Ekkorai | [head-hunters]
 - `the-galleria` The Galleria — planar | [rifthaven-online]
+- `the-gloaming` The Gloaming — wilderness | Cyrnaith | [hatchlight]
 - `halworth-reading-rooms` The Halworth Reading Rooms — building
 - `red-vale` The Red Vale — wilderness | Ekkorai | [ishetar-2]
 - `restful-lily` The Restful Lily — building | Ekkorai | [ishetar-2]

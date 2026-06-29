@@ -5,7 +5,7 @@ class: Ranger
 campaign: hatchlight
 level: 1
 tags: [ranger, sailor, scout, exile, polecat]
-related: [hatchlight, hatchlight-session-00]
+related: [hatchlight, hatchlight-session-00, hatchlight-session-01]
 ---
 
 ## Background

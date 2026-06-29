@@ -5,7 +5,7 @@ class: Artificer
 campaign: hatchlight
 level: 1
 tags: [artificer, necromancy, salvager, giant-tech]
-related: [hatchlight, hatchlight-session-00]
+related: [hatchlight, hatchlight-session-00, hatchlight-session-01]
 ---
 
 ## Background

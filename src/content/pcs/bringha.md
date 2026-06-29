@@ -5,7 +5,7 @@ class: Monk
 campaign: hatchlight
 level: 1
 tags: [monk, entertainer, fire-censer, hothead]
-related: [hatchlight, hatchlight-session-00]
+related: [hatchlight, hatchlight-session-00, hatchlight-session-01]
 ---
 
 ## Background
