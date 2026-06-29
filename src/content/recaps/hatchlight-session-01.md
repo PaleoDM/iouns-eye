@@ -6,7 +6,6 @@ session_date: "June 27th, 2025"
 author: PaleoDM
 recap_type: dm
 in_game_date: "27th of Ioun, 2184 SA"
-level_milestone: 1
 arc_name: "Death at Sunset"
 vtt_campaign_id: "9d067c5d-8664-4c79-9e94-34ede8a04eaa"
 tags: [campaign-opener, glancoed, the-gloaming]
