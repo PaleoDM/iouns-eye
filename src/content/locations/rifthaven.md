@@ -5,7 +5,7 @@ continent: Khanae
 parent_location: khanae
 campaigns: [rifthaven-irl, rifthaven-online, rifthaven-2]
 tags: [ancient-city, jungle]
-related: [khanae, sparkworks-district, salvation-district, boughshadow, bloomridge, glamour-district, silkspun, tradeheart, brazier]
+related: [khanae, sparkworks-district, salvation-district, boughshadow, bloomridge, glamour-district, silkspun, tradeheart, brazier, folio-row, inkwell, gutterwick]
 ---
 
 ## Description

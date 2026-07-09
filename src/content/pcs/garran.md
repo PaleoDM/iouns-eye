@@ -4,10 +4,10 @@ race: Human
 class: Ranger
 subclass: Hollow Warden
 campaign: rifthaven-2
-level: 3
+level: 4
 location: rifthaven
 tags: [mercenary, freelance, professional, bounty]
-related: [rifthaven, rifthaven-2, bobilliath, house-sorvellan, brimstone-bath, rifthaven-2-session-01, rifthaven-2-session-03]
+related: [rifthaven, rifthaven-2, bobilliath, house-sorvellan, brimstone-bath, the-goldsoul, zedediah, inkwell, rifthaven-2-session-01, rifthaven-2-session-03, rifthaven-2-session-04]
 ---
 
 ## Background

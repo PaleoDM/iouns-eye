@@ -1,8 +1,8 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-06-29 -->
+<!-- Last updated: 2026-07-09 -->
 
-## NPCs (162)
+## NPCs (163)
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
 - `badger-goldenmantle` Badger Goldenmantle — alive
@@ -163,10 +163,11 @@
 - `vorak-bloodfang` Vorak Bloodfang — dead
 - `whisper` Whisper — alive
 - `wrenna-tidwell` Wrenna Tidwell — alive
+- `zedediah` Zedediah — alive | Keeper of the GoldSoul Drophouse
 - `zeke` Zeke — alive
 - `zoink` Zoink — alive | Banker | [ishetar-2]
 
-## Locations (82)
+## Locations (85)
 - `ahanabai` Ahanabai — region | [ishetar-2]
 - `aroiinae` Aroiinae — city | [ishetar-2]
 - `ashen-chapel` Ashen Chapel — building | [rifthaven-online]
@@ -185,6 +186,7 @@
 - `emerald-crescent` Emerald Crescent — wilderness | Kalari
 - `farrowfield` Farrowfield — city | Cradle of Conflict | [skt]
 - `firewatch-island` Firewatch Island — city | Ekkorai | [ishetar-2]
+- `folio-row` Folio Row — district | rifthaven
 - `glamour-district` Glamour District — district | [rifthaven-online]
 - `glancoed` Glancoed — city | Cyrnaith | [hatchlight]
 - `glennox` Glennox — continent | [kalari, skt]
@@ -197,6 +199,7 @@
 - `house-of-respite` House of Respite — building | [rifthaven-online]
 - `hrimgard` Hrimgard — city | Cradle of Conflict | [skt]
 - `hustlers-district` Hustler's District — district | [rifthaven-online]
+- `inkwell` Inkwell — district | rifthaven
 - `ishetar` Ishetar — city | Ekkorai | [ishetar-og, head-hunters, ishetar-2]
 - `kalari` Kalari — region | [kalari]
 - `khanae` Khanae — continent | [rifthaven-irl, rifthaven-online]
@@ -239,6 +242,7 @@
 - `fractured-expanse` The Fractured Expanse — wilderness | Ekkorai | [head-hunters]
 - `the-galleria` The Galleria — planar | [rifthaven-online]
 - `the-gloaming` The Gloaming — wilderness | Cyrnaith | [hatchlight]
+- `the-goldsoul` The GoldSoul — building | rifthaven
 - `halworth-reading-rooms` The Halworth Reading Rooms — building
 - `red-vale` The Red Vale — wilderness | Ekkorai | [ishetar-2]
 - `restful-lily` The Restful Lily — building | Ekkorai | [ishetar-2]

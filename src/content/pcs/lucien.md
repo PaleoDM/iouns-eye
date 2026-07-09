@@ -4,10 +4,10 @@ race: Human
 class: Sorcerer
 subclass: Wild Magic
 campaign: rifthaven-2
-level: 3
+level: 4
 location: rifthaven
 tags: [fixer, white-collar, wild-magic, contractual, forger]
-related: [rifthaven, rifthaven-2, ashen-barristers, sage, nonna-battaglia, house-sorvellan, brimstone-bath, mimeofoil, tabula-rasa, rifthaven-2-session-01, rifthaven-2-session-03]
+related: [rifthaven, rifthaven-2, ashen-barristers, sage, nonna-battaglia, house-sorvellan, brimstone-bath, mimeofoil, tabula-rasa, inkwell, rifthaven-2-session-01, rifthaven-2-session-03, rifthaven-2-session-04]
 ---
 
 ## Background

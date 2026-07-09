@@ -4,11 +4,11 @@ race: Halfling
 class: Fighter
 subclass: Battle Master
 campaign: rifthaven-2
-level: 3
+level: 4
 location: rifthaven
 faction: da-pinci-syndicate
 tags: [criminal, goon, family-man, da-pinci]
-related: [rifthaven, rifthaven-2, da-pinci-syndicate, rj, nonna-battaglia, cobalt, house-sorvellan, brimstone-bath, rifthaven-2-session-01, rifthaven-2-session-03]
+related: [rifthaven, rifthaven-2, da-pinci-syndicate, rj, nonna-battaglia, cobalt, house-sorvellan, brimstone-bath, the-goldsoul, zedediah, inkwell, rifthaven-2-session-01, rifthaven-2-session-03, rifthaven-2-session-04]
 ---
 
 ## Background
