@@ -7,7 +7,7 @@ headquarters: rifthaven
 campaigns:
   - rifthaven-2
 tags: [noble-house, old-money, council-seat, the-manifesto]
-related: [kelvaryn-sorvellan, vendris-sorvellan, la-marginalia, gutterwick, the-almshouse, mimeofoil, inkwell, rifthaven, rifthaven-2, rifthaven-2-session-01, rifthaven-2-session-02, rifthaven-2-session-03, rifthaven-2-session-04]
+related: [kelvaryn-sorvellan, vendris-sorvellan, la-marginalia, gutterwick, the-almshouse, mimeofoil, inkwell, rifthaven, rifthaven-2, rifthaven-2-session-01, rifthaven-2-session-02, rifthaven-2-session-03, rifthaven-2-session-04, rifthaven-2-session-05, lady-sorvellan]
 ---
 
 An old-money noble house of Rifthaven, silver dragonborn, carrying the rot of generations of unchecked entitlement. Led by the patriarch **Kelvaryn Sorvellan**, with his son and heir **Vendris** set to step into the family's hereditary council seat.

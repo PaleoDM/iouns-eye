@@ -6,7 +6,7 @@ headquarters: rifthaven
 campaigns:
   - rifthaven-2
 tags: [the-manifesto, forgery, rift-device, mimeofoil, antagonist]
-related: [la-marginalia, halworth-reading-rooms, sunflower, tomis-tidwell, house-sorvellan, mimeofoil, the-almshouse, folio-row, rifthaven, rifthaven-2, rifthaven-2-session-02, rifthaven-2-session-03, rifthaven-2-session-04]
+related: [la-marginalia, halworth-reading-rooms, sunflower, tomis-tidwell, house-sorvellan, mimeofoil, the-almshouse, folio-row, silver-serpent, quill-bill, rifthaven, rifthaven-2, rifthaven-2-session-02, rifthaven-2-session-03, rifthaven-2-session-04, rifthaven-2-session-05]
 ---
 
 A shadow forgery cabal hunting the same prize as the crew. They wield a Rift device that does not merely forge a hand but scrapes and rewrites the written record itself — reading memory straight out of books and leaving the pages wrong. Their calling card is a wax seal bearing no sigil at all.
@@ -22,3 +22,7 @@ Their device has a name now: the **Mimeofoil**. To make it forge any hand at all
 ## Knaves and Knights, Session 4
 
 Tabula lost the race. The crew reached the **Folio Row** press to find a lone Tabula agent already leaning on the printer, trying to bully his way to the plate. **Garran** and **Astrid** put the fear in him and **Milo** finished the job. He broke and ran, warning of reinforcements close behind. The crew conned the printer, took the broadsheets and the linocut, and were gone before those reinforcements arrived. The manifesto slipped Tabula's grasp, but the **Mimeofoil** is still out there, still hungry for one real sealed hand.
+
+## Knaves and Knights, Session 5
+
+A new piece of their history surfaced in the crew's **Inkwell** shophouse. **Quill Bill** and his corked brother, a pair of ink spirits now serving the house, were once held by the Tabula Rasa before the **Silver Serpent** rescued them. Whatever Tabula wanted with bottled ink spirits, it fits a pattern for an outfit whose whole business is ink and the unwriting of it.

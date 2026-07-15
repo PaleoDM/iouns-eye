@@ -9,7 +9,7 @@ campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 1"
 tags: [noble, heir, council-seat, the-manifesto, honeypot]
-related: [house-sorvellan, kelvaryn-sorvellan, la-marginalia, mimeofoil, tabula-rasa, inkwell, rifthaven-2, rifthaven-2-session-01, rifthaven-2-session-03, rifthaven-2-session-04]
+related: [house-sorvellan, kelvaryn-sorvellan, la-marginalia, mimeofoil, tabula-rasa, inkwell, rifthaven-2, rifthaven-2-session-01, rifthaven-2-session-03, rifthaven-2-session-04, rifthaven-2-session-05, lady-sorvellan]
 ---
 
 The adult son and heir of **House Sorvellan**, silver dragonborn, recently of age and set to step into the family's hereditary council seat. As a younger man he wrote a set of documents — politically a bad look — that were taken by **La Marginalia**, a woman who had been close to him when she served as his private tutor.

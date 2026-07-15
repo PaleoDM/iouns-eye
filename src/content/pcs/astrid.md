@@ -7,7 +7,7 @@ campaign: rifthaven-2
 level: 4
 location: rifthaven
 tags: [druid, demolitions, cryptid, conspiracy, messengers, wild-shape]
-related: [rifthaven, rifthaven-2, celeste, college-of-divination, house-sorvellan, brimstone-bath, la-marginalia, mimeofoil, tabula-rasa, inkwell, rifthaven-2-session-01, rifthaven-2-session-03, rifthaven-2-session-04]
+related: [rifthaven, rifthaven-2, celeste, college-of-divination, house-sorvellan, brimstone-bath, la-marginalia, mimeofoil, tabula-rasa, inkwell, rifthaven-2-session-01, rifthaven-2-session-03, rifthaven-2-session-04, rifthaven-2-session-05, silver-serpent, quill-bill]
 ---
 
 ## Background

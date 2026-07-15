@@ -1,8 +1,8 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-07-09 -->
+<!-- Last updated: 2026-07-15 -->
 
-## NPCs (163)
+## NPCs (167)
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
 - `badger-goldenmantle` Badger Goldenmantle — alive
@@ -82,6 +82,7 @@
 - `kivan-caldrow` Kivan Caldrow — alive | [ishetar-2]
 - `la-marginalia` La Marginalia — alive | The Tutor
 - `lady-hypatra` Lady Hypatra — dead | The Martyr
+- `lady-sorvellan` Lady Sorvellan — dead | Late Lady of House Sorvellan
 - `lisel-harsk` Lisel Harsk — alive | [ishetar-2]
 - `little-shit` Little Shit — alive
 - `lord-harwin` Lord Harwin Brassfell — alive | Lord of Sparkworks
@@ -108,6 +109,7 @@
 - `officer-oswald` Officer Oswald — dead | Silverweave Ventures Commander
 - `old-hrothgar` Old Hrothgar Earthenstone — alive | Founding Member of Ishetar | [ishetar-2, ishetar-og]
 - `oleg-cassini` Oleg Cassini — dead | Co-Head of the Cassini Brothers
+- `olivier` Olivier — alive | Inkwell Neighbor
 - `orog-swift` Orog Swift — alive
 - `ozythar` Ozythar — dead | The Tyrant
 - `papa-luhar-perile` Papa Luhar Perile — alive | Founder of New Perile Falls
@@ -116,6 +118,7 @@
 - `pinto-gambino` Pinto Gambino — alive | Merchant | [ishetar-2]
 - `professor-serrano` Professor Serrano — alive | Emeritus Professor, School of Necromancy
 - `quetzi` Quetzi — alive | Oracle of the Divine Well | [ishetar-2]
+- `quill-bill` Quill Bill — alive | Ink Spirit of Hope
 - `rekka-harsk` Rekka Harsk — alive | [ishetar-2]
 - `relic` Relic — alive | [kalari]
 - `rj` RJ (Ralo Junior) — alive
@@ -148,6 +151,7 @@
 - `the-old-man` The Old Man — unknown | [hatchlight]
 - `the-paintress` The Paintress — alive
 - `the-pallbearer` The Pallbearer — alive | Darklord of Potter's Field
+- `silver-serpent` The Silver Serpent — unknown | Vigilante Thief of Rifthaven
 - `thrall` Thrall — alive | Milo's Manservant
 - `tomis-tidwell` Tomis Tidwell — unknown
 - `tota-de-la-alma` Tota De la Alma — alive | Matriarch
