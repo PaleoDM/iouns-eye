@@ -6,7 +6,7 @@ session_date: "July 7th, 2026"
 author: PaleoDM
 recap_type: dm
 in_game_date: "23rd of Ioun, 1130"
-arc_name: "The Manifesto"
+arc_name: "The Manifesto Job"
 vtt_campaign_id: "559871a1-573f-4367-9a16-5a3117a19840"
 tags: [session-four, the-manifesto, tabula-rasa, folio-row, inkwell, house-sorvellan]
 related: [rifthaven-2, milo-lafite-margeaux, garran, ralo-battaglia, lucien, astrid, tabula-rasa, house-sorvellan, vendris-sorvellan, la-marginalia, mimeofoil, folio-row, inkwell, the-goldsoul, zedediah, rifthaven]

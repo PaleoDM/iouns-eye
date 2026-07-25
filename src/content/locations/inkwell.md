@@ -14,7 +14,7 @@ A bohemian quarter of **Rifthaven**, and now home to the crew's first real prope
 
 ## Knaves and Knights, Session 4
 
-The crew took the Inkwell deed to close out **The Manifesto**, with Vendris still owing a further hundred gold on top of it. We leave them some days later walking up on the shophouse for the first time.
+The crew took the Inkwell deed to close out **The Manifesto Job**, with Vendris still owing a further hundred gold on top of it. We leave them some days later walking up on the shophouse for the first time.
 
 ## Knaves and Knights, Session 5
 

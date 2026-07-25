@@ -6,7 +6,7 @@ session_date: "June 16th, 2026"
 author: PaleoDM
 recap_type: dm
 in_game_date: "22nd of Ioun, 1130"
-arc_name: "The Manifesto"
+arc_name: "The Manifesto Job"
 vtt_campaign_id: "559871a1-573f-4367-9a16-5a3117a19840"
 tags: [session-two, the-manifesto, ghost-cabal, gutterwick]
 related: [rifthaven-2, milo-lafite-margeaux, garran, ralo-battaglia, lucien, astrid, halworth-reading-rooms, sunflower, la-marginalia, lady-hypatra, gutterwick, wrenna-tidwell, tomis-tidwell, house-sorvellan, tabula-rasa, rifthaven]

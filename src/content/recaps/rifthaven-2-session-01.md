@@ -6,7 +6,7 @@ session_date: "June 2nd, 2026"
 author: PaleoDM
 recap_type: dm
 in_game_date: "22nd of Ioun, 1130"
-arc_name: "The Manifesto"
+arc_name: "The Manifesto Job"
 vtt_campaign_id: "559871a1-573f-4367-9a16-5a3117a19840"
 tags: [session-one, the-manifesto, heist]
 related: [rifthaven-2, milo-lafite-margeaux, garran, ralo-battaglia, lucien, astrid, kelvaryn-sorvellan, vendris-sorvellan, la-marginalia, house-sorvellan, cobalt, bobilliath, celeste, thrall, sage, nonna-battaglia, brimstone-bath, halworth-reading-rooms, college-of-divination, da-pinci-syndicate, rifthaven]
