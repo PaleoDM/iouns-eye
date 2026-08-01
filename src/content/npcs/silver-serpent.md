@@ -7,7 +7,7 @@ campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 5"
 tags: [vigilante, criminal, serpents-den, inkwell, scores]
-related: [inkwell, quill-bill, tabula-rasa, house-sorvellan, lady-sorvellan, milo-lafite-margeaux, garran, ralo-battaglia, lucien, astrid, rifthaven, rifthaven-2, rifthaven-2-session-05]
+related: [inkwell, quill-bill, tabula-rasa, house-sorvellan, lady-sorvellan, house-ondorel, the-orlovs, sylvara, milo-lafite-margeaux, garran, ralo-battaglia, lucien, astrid, rifthaven, rifthaven-2, rifthaven-2-session-05, rifthaven-2-session-06]
 ---
 
 A known vigilante criminal who made a career of hitting noble families. Never seen in the flesh, but the crew now lives in their old den.
@@ -17,3 +17,7 @@ A known vigilante criminal who made a career of hitting noble families. Never se
 The crew's new shophouse in **Inkwell** turned out to be the Serpent's safe house. Behind an arcane-locked secret door on the third floor (password: Ironsmith) they found the den fully stocked: dungeoneer's and explorer's packs, disguise kits, forged papers, 150 gold, and a little black book holding at least half a dozen scores against noble families, planned out and never executed. The crew kept the book.
 
 The Serpent also left the house its staff. **Quill Bill** and his corked brother, a pair of ink spirits, were rescued from the **Tabula Rasa** by the Silver Serpent and have served the house ever since. The house defenses, a set of animated mannequins, and a baby gelatinous cube in the walls round out the household. Where the Serpent is now, and whether they are done with the place, is an open question.
+
+## Knaves and Knights, Session 6
+
+The crew took their first score out of the black book, the one against **House Ondorel**. The Serpent's plan turned out to be more complete than it looked. Buried in the entry, in moon runes that took **Ralo** some digging to find, was a buyer already sourced: **the Orlovs**, a rival noble family who hate the Ondorels enough to pay for the instrument just to flaunt it in their faces. The Serpent had the fencing handled before the job was ever run.

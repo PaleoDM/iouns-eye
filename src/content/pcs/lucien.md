@@ -7,7 +7,7 @@ campaign: rifthaven-2
 level: 4
 location: rifthaven
 tags: [fixer, white-collar, wild-magic, contractual, forger]
-related: [rifthaven, rifthaven-2, ashen-barristers, sage, nonna-battaglia, house-sorvellan, brimstone-bath, mimeofoil, tabula-rasa, inkwell, rifthaven-2-session-01, rifthaven-2-session-03, rifthaven-2-session-04, rifthaven-2-session-05, silver-serpent, quill-bill]
+related: [rifthaven, rifthaven-2, ashen-barristers, sage, nonna-battaglia, house-sorvellan, brimstone-bath, mimeofoil, tabula-rasa, inkwell, rifthaven-2-session-01, rifthaven-2-session-03, rifthaven-2-session-04, rifthaven-2-session-05, silver-serpent, quill-bill, rifthaven-2-session-06, alon-bardoof, frederick-quarterstaff, sylvara, the-orlovs]
 ---
 
 ## Background

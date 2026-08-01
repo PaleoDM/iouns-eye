@@ -1,8 +1,9 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-07-15 -->
+<!-- Last updated: 2026-08-01 -->
 
-## NPCs (167)
+## NPCs (173)
+- `alon-bardoof` Alon Bardoof — alive | First Chair, Glamour District Symphony Orchestra
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
 - `badger-goldenmantle` Badger Goldenmantle — alive
@@ -58,6 +59,7 @@
 - `feldunost` Feld\xFBnost — unknown
 - `fen-galloway` Fen Galloway — alive | Lieutenant of the TTT | [ishetar-2]
 - `fisherman-dyrk` Fisherman Dyrk — dead
+- `frederick-quarterstaff` Frederick Quarterstaff — alive | Conductor, Glamour District Symphony Orchestra
 - `garabaga` GaraBaga — alive
 - `gertrude-earthenstone` Gertrude Earthenstone — alive | Proprietor of Dirty Gerty's | [ishetar-2, ishetar-og]
 - `ghost` Ghost — alive | Monk of the Ju-Shi
@@ -85,6 +87,7 @@
 - `lady-sorvellan` Lady Sorvellan — dead | Late Lady of House Sorvellan
 - `lisel-harsk` Lisel Harsk — alive | [ishetar-2]
 - `little-shit` Little Shit — alive
+- `lonnie-da-pinci` Lonnie "Lobster" da Pinci — dead | da Pinci Boss
 - `lord-harwin` Lord Harwin Brassfell — alive | Lord of Sparkworks
 - `lord-sergente` Lord Maximillian Sergente — dead | Plantation Lord
 - `lord-pembrook` Lord Pembrook — alive | [skt]
@@ -111,6 +114,7 @@
 - `oleg-cassini` Oleg Cassini — dead | Co-Head of the Cassini Brothers
 - `olivier` Olivier — alive | Inkwell Neighbor
 - `orog-swift` Orog Swift — alive
+- `ottavia-brann` Ottavia Brann — alive | Head of Security
 - `ozythar` Ozythar — dead | The Tyrant
 - `papa-luhar-perile` Papa Luhar Perile — alive | Founder of New Perile Falls
 - `perry-ellis-cassini` Perry Ellis Cassini — dead | Co-Head of the Cassini Brothers
@@ -121,6 +125,7 @@
 - `quill-bill` Quill Bill — alive | Ink Spirit of Hope
 - `rekka-harsk` Rekka Harsk — alive | [ishetar-2]
 - `relic` Relic — alive | [kalari]
+- `renzo-corvi` Renzo "Basta" Corvi — alive | Rival Scoundrel
 - `rj` RJ (Ralo Junior) — alive
 - `roe` Roe — alive | Ty's Mother
 - `romero-de-la-alma` Romero De la Alma — alive
@@ -142,6 +147,7 @@
 - `sprigg` Sprigg — alive | Elder | [ishetar-2]
 - `starshadow` Starshadow — alive
 - `sunflower` Sunflower — alive | Proprietor of the Halworth Reading Rooms
+- `sylvara` Sylvara — alive | Luthier
 - `sylvari` Sylvari — alive | Co-founder of the Restful Lily | [ishetar-2]
 - `talene-caldrow` Talene Caldrow — alive | [ishetar-2]
 - `th0l` Th0l — alive | [ishetar-2]
@@ -191,7 +197,7 @@
 - `farrowfield` Farrowfield — city | Cradle of Conflict | [skt]
 - `firewatch-island` Firewatch Island — city | Ekkorai | [ishetar-2]
 - `folio-row` Folio Row — district | rifthaven
-- `glamour-district` Glamour District — district | [rifthaven-online]
+- `glamour-district` Glamour District — district | [rifthaven-online, rifthaven-2]
 - `glancoed` Glancoed — city | Cyrnaith | [hatchlight]
 - `glennox` Glennox — continent | [kalari, skt]
 - `grand-souk` Grand Souk — building | [rifthaven-irl, rifthaven-online]
@@ -258,13 +264,14 @@
 - `verdelorn-woods` Verdelorn Woods — wilderness | [rifthaven-irl]
 - `wanun` Wanun — continent | [ishetar-og, head-hunters, ishetar-2]
 
-## Factions (30)
+## Factions (32)
 - `aquatic-conclave` Aquatic Peoples Conclave — political | active | [ishetar-2]
 - `arsons-of-anarchy` Arsons of Anarchy — religious | active | [head-hunters]
 - `celestial-seed` Celestial Seed — secret | active | [ishetar-2]
 - `children-of-the-defiled-sun` Children of the Defiled Sun — religious | active | [head-hunters]
 - `earthen-loam` Earthen Loam — secret | active | [rifthaven-online]
 - `house-of-coinwrights` House of Coinwrights — commercial | active | [rifthaven-online]
+- `house-ondorel` House Ondorel — political | active
 - `house-sorvellan` House Sorvellan — political | active
 - `knights-of-the-eclipse` Knights of the Eclipse — religious | active | [ishetar-2, kalari]
 - `leviathan-hunters` Leviathan Hunters — commercial | active | [ishetar-2]
@@ -285,6 +292,7 @@
 - `discordant-fellowship` The Discordant Fellowship — criminal | active | [rifthaven-irl, rifthaven-online]
 - `hushed-choir` The Hushed Choir — secret | historical | [rifthaven-online]
 - `ledgermen` The Ledgermen — military | historical | [rifthaven-online]
+- `the-orlovs` The Orlovs — political | active
 - `restful-lily-faction` The Restful Lily — religious | active | [ishetar-2]
 - `thornsong` Thornsong Court — secret | active | [ishetar-2]
 - `turquoise-timber-trust` Turquoise Timber Trust — commercial | active | [ishetar-2]
