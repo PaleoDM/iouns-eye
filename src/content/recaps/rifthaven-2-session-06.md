@@ -8,15 +8,15 @@ recap_type: dm
 in_game_date: "4th of Pelor, 1130"
 arc_name: "The Songbird Job"
 vtt_campaign_id: "559871a1-573f-4367-9a16-5a3117a19840"
-tags: [session-six, the-songbird, silver-serpent, inkwell, glamour-district, house-ondorel]
-related: [rifthaven-2, milo-lafite-margeaux, garran, ralo-battaglia, lucien, astrid, olivier, quill-bill, silver-serpent, inkwell, glamour-district, da-pinci-syndicate, rifthaven]
+tags: [session-six, the-songbird, silver-serpent, inkwell, glamour-district, house-ondorel, evenbough]
+related: [rifthaven-2, milo-lafite-margeaux, garran, ralo-battaglia, lucien, astrid, olivier, quill-bill, silver-serpent, inkwell, glamour-district, da-pinci-syndicate, evenbough, house-ondorel, the-orlovs, sylvara, frederick-quarterstaff, alon-bardoof, renzo-corvi, ottavia-brann, lonnie-da-pinci, rifthaven]
 ---
 
 We opened with Olivier arriving at the new house with the aether crystal. He seemed especially interested in Astrid's parrots; asking if they were the mysterious "Passenger Parrots" and inquiring if they were truly extinct. "Apparently not" Astrid chided, seemingly uninterested. The exposition landed, though. The city is abuzz with news that the *Meridian Queen* is returning to Rifthaven. She'll be in port a fortnight before departing on another circuit of Astoria.
 
 As Olivier departed, Quill Bill came in with a little rhyme and suggested they check out the little black book, reminding them all of a job they had seen that mentioned the *Meridian Queen*. 
 
-Our scoundrels parted through a lot of the Serpent's hubbub quickly and distilled it down to the core of it. To pull this off, they'd need a decoy. They went back and forth on where one comes from. Sylvara, who they do not know but appears to be a neighbor here in Inkwell, or someone out of Milo's past. They settled on the fact that Milo's contact, if they exist, probably could not make it magical, and they were worried about Milo needing to show face and be known to someone. So they decided to go check out Sylvara anyway.
+Our scoundrels parted through a lot of the Serpent's hubbub quickly and distilled it down to the core of it. The score is the Evenbough, House Ondorel's lute, and it sails with the family when the *Meridian Queen* leaves. To pull this off, they'd need a decoy. They went back and forth on where one comes from. Sylvara, who they do not know but appears to be a neighbor here in Inkwell, or someone out of Milo's past. They settled on the fact that Milo's contact, if they exist, probably could not make it magical, and they were worried about Milo needing to show face and be known to someone. So they decided to go check out Sylvara anyway.
 
 Lucien noted he found this particular job a little debasing and was not thrilled about the prospect of selling it. Who is going to buy an instrument with a reputation like this? Then Ralo did some investigating and found moon runes in the black book. The Serpent had already sourced a buyer. The Orlovs, a rival noble family with a deep hatred for the Ondorels, who would almost certainly pay for the instrument just to flaunt it in the Ondorels' faces. The Serpent had already taken care of fencing it down the line.
 

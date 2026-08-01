@@ -7,7 +7,7 @@ campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 5"
 tags: [vigilante, criminal, serpents-den, inkwell, scores]
-related: [inkwell, quill-bill, tabula-rasa, house-sorvellan, lady-sorvellan, house-ondorel, the-orlovs, sylvara, milo-lafite-margeaux, garran, ralo-battaglia, lucien, astrid, rifthaven, rifthaven-2, rifthaven-2-session-05, rifthaven-2-session-06]
+related: [inkwell, quill-bill, tabula-rasa, house-sorvellan, lady-sorvellan, house-ondorel, the-orlovs, sylvara, milo-lafite-margeaux, garran, ralo-battaglia, lucien, astrid, rifthaven, rifthaven-2, rifthaven-2-session-05, rifthaven-2-session-06, evenbough]
 ---
 
 A known vigilante criminal who made a career of hitting noble families. Never seen in the flesh, but the crew now lives in their old den.

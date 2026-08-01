@@ -7,7 +7,7 @@ campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 6"
 tags: [luthier, craftsman, inkwell, the-songbird, mark]
-related: [inkwell, glamour-district, frederick-quarterstaff, alon-bardoof, house-ondorel, milo-lafite-margeaux, lucien, ralo-battaglia, silver-serpent, rifthaven, rifthaven-2, rifthaven-2-session-06]
+related: [inkwell, glamour-district, frederick-quarterstaff, alon-bardoof, house-ondorel, milo-lafite-margeaux, lucien, ralo-battaglia, silver-serpent, rifthaven, rifthaven-2, rifthaven-2-session-06, evenbough]
 ---
 
 A luthier the crew does not know, but who appears to be a neighbor in **Inkwell**. When the crew worked out that the Songbird job needs a magical decoy, she was the only craftsman they could name who might build one.

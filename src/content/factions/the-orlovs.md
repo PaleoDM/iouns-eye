@@ -6,7 +6,7 @@ headquarters: rifthaven
 campaigns:
   - rifthaven-2
 tags: [noble-house, the-songbird, buyer, feud]
-related: [house-ondorel, silver-serpent, ralo-battaglia, rifthaven, rifthaven-2, rifthaven-2-session-06]
+related: [house-ondorel, silver-serpent, ralo-battaglia, rifthaven, rifthaven-2, rifthaven-2-session-06, evenbough]
 ---
 
 A rival noble family with a deep hatred for **House Ondorel**.

@@ -7,7 +7,7 @@ campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 6"
 tags: [security, professional, the-songbird, gala]
-related: [garran, milo-lafite-margeaux, house-ondorel, glamour-district, rifthaven, rifthaven-2, rifthaven-2-session-06]
+related: [garran, milo-lafite-margeaux, house-ondorel, glamour-district, rifthaven, rifthaven-2, rifthaven-2-session-06, evenbough]
 ---
 
 Head of security at the gala where the **Ondorel** instrument was displayed. Hard to impress and harder to fool.

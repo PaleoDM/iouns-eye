@@ -5,7 +5,7 @@ parent_location: rifthaven
 continent: Khanae
 campaigns: [rifthaven-online, rifthaven-2]
 tags: [entertainment, nightlife, the-songbird]
-related: [rifthaven, serenity-auction-house, vandro-morrix, frederick-quarterstaff, alon-bardoof, sylvara, ottavia-brann, house-ondorel, rifthaven-2, rifthaven-2-session-06]
+related: [rifthaven, serenity-auction-house, vandro-morrix, frederick-quarterstaff, alon-bardoof, sylvara, ottavia-brann, house-ondorel, rifthaven-2, rifthaven-2-session-06, evenbough]
 ---
 
 ## Description

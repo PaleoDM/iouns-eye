@@ -388,11 +388,12 @@ _No entries yet._
 - `zehir` Zehir — The Cloaked Serpent | corrupted
 - `zuggtmoy` Zuggtmoy — Lady of Fungi | demon_prince
 
-## Lore (6)
+## Lore (7)
 - `king-tides-and-fool-tides` King Tides and Fool Tides — geography
 - `magic-system` Magic System of Astoria — magic
 - `astorian-calendar` The Astorian Calendar — culture
 - `celestial-braid` The Celestial Braid — cosmology
+- `evenbough` The Evenbough — magic
 - `mimeofoil` The Mimeofoil — magic
 - `the-third-age` The Third Age — history
 
