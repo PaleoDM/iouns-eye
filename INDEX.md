@@ -1,8 +1,8 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-08-01 -->
+<!-- Last updated: 2026-08-05 -->
 
-## NPCs (173)
+## NPCs (175)
 - `alon-bardoof` Alon Bardoof — alive | First Chair, Glamour District Symphony Orchestra
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
@@ -35,6 +35,7 @@
 - `cyrena` Cyrena — alive | Guardian of the Hot Springs | [ishetar-2]
 - `dalrick-caldrow` Dalrick Caldrow — alive | [ishetar-2]
 - `dante` Dante — alive
+- `death-at-sunset` Death at Sunset — dead | The Green Wyrm of the Gloaming | [hatchlight]
 - `victor-kane` Director Victor Kane — alive | Director of Security, Serenity Auction House
 - `art-doyle` Divine Judge Art Doyle — unknown | High Justicar
 - `divine-judge-josephine` Divine Judge Josephine Maren — dead | High Justicar
@@ -126,6 +127,7 @@
 - `rekka-harsk` Rekka Harsk — alive | [ishetar-2]
 - `relic` Relic — alive | [kalari]
 - `renzo-corvi` Renzo "Basta" Corvi — alive | Rival Scoundrel
+- `rhydderch` Rhydderch — missing | The Trapper of the Gloaming | [hatchlight]
 - `rj` RJ (Ralo Junior) — alive
 - `roe` Roe — alive | Ty's Mother
 - `romero-de-la-alma` Romero De la Alma — alive

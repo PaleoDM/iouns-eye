@@ -3,9 +3,9 @@ name: Indri
 race: Khoravar
 class: Artificer
 campaign: hatchlight
-level: 1
-tags: [artificer, necromancy, salvager, giant-tech]
-related: [hatchlight, hatchlight-session-00, hatchlight-session-01]
+level: 2
+tags: [artificer, necromancy, salvager, giant-tech, cursed]
+related: [hatchlight, hatchlight-session-00, hatchlight-session-01, hatchlight-session-02]
 ---
 
 ## Background
@@ -17,3 +17,9 @@ There's a practical reason that matters: with so much residual magic in the air,
 ## Open Threads
 
 Her community was struck by a calamity, and her father is now bound to it full-time, running what amounts to endless triage. Indri is out wandering the ruins of old giant technology, hoping to find something that can solve the calamity and free her father from that duty. She has a real knack for salvaging from giant-made machines.
+
+## The Alder's Memory
+
+At the great alder in the Gloaming, Indri accepted a memory offered in thanks for the party's healing. She was warned it might be dangerous, because it was the memory of a tree across centuries and not the memory of a person. She took it anyway, and it showed her the fall of Death at Sunset and the true source of the sickening.
+
+It came with a price. Indri is cursed with a yearning to know more, and she has a hard time doing the practical thing whenever there is something left to learn.

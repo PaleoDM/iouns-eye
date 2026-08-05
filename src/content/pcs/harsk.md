@@ -3,9 +3,9 @@ name: Harsk
 race: Orc
 class: Ranger
 campaign: hatchlight
-level: 1
+level: 2
 tags: [ranger, sailor, scout, exile, polecat]
-related: [hatchlight, hatchlight-session-00, hatchlight-session-01]
+related: [hatchlight, hatchlight-session-00, hatchlight-session-01, hatchlight-session-02]
 ---
 
 ## Background

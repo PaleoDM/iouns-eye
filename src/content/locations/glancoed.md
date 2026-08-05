@@ -5,7 +5,7 @@ region: Cyrnaith
 continent: Cyrnaith
 campaigns: [hatchlight]
 tags: [village, midwinter, sea-of-wolves, the-gloaming]
-related: [hatchlight, the-gloaming, mamgu-nerys, gwenllian, eirlys, the-afanc, hatchlight-session-01]
+related: [hatchlight, the-gloaming, mamgu-nerys, gwenllian, eirlys, the-afanc, rhydderch, hatchlight-session-01, hatchlight-session-02]
 ---
 
 A small forest village on the Sea of Wolves coast of Cyrnaith, set against the dark wood called the Gloaming. Turf-and-timber huts around a village green, a frozen spring-well, and a hearth-kitchen at the heart of it. The village has no guard and no heroes, only folk.

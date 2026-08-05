@@ -1,8 +1,8 @@
 ---
-name: "Hearth and Hatchlight Session 1 — June 27th, 2025"
+name: "Hearth and Hatchlight Session 1 — June 27th, 2026"
 campaign: hatchlight
 session_number: 1
-session_date: "June 27th, 2025"
+session_date: "June 27th, 2026"
 author: PaleoDM
 recap_type: dm
 in_game_date: "27th of Ioun, 2184 SA"

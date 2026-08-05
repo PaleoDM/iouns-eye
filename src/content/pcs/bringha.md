@@ -3,9 +3,9 @@ name: Bringha
 race: Human
 class: Monk
 campaign: hatchlight
-level: 1
+level: 2
 tags: [monk, entertainer, fire-censer, hothead]
-related: [hatchlight, hatchlight-session-00, hatchlight-session-01]
+related: [hatchlight, hatchlight-session-00, hatchlight-session-01, hatchlight-session-02]
 ---
 
 ## Background

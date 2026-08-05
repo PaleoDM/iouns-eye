@@ -3,9 +3,9 @@ name: Yu
 race: Tiefling
 class: Cleric
 campaign: hatchlight
-level: 1
+level: 2
 tags: [cleric, raei, everlight, orphan, wayfarer]
-related: [hatchlight, hatchlight-session-00, hatchlight-session-01, raei, dolgaer]
+related: [hatchlight, hatchlight-session-00, hatchlight-session-01, hatchlight-session-02, raei, dolgaer]
 ---
 
 ## Background

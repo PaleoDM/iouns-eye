@@ -3,9 +3,9 @@ name: Laeryn Vard
 race: Elf
 class: Paladin
 campaign: hatchlight
-level: 1
+level: 2
 tags: [paladin, elemental, titans]
-related: [hatchlight, hatchlight-session-00, hatchlight-session-01]
+related: [hatchlight, hatchlight-session-00, hatchlight-session-01, hatchlight-session-02]
 ---
 
 ## Background
