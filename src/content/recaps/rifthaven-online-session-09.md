@@ -1,8 +1,8 @@
 ---
-name: "Rifthaven Session 9 — April 22dn, 2025"
+name: "Rifthaven Session 9 — April 22nd, 2025"
 campaign: rifthaven-online
 session_number: 9
-session_date: "April 22dn, 2025"
+session_date: "April 22nd, 2025"
 author: PaleoDM
 recap_type: dm
 in_game_date: "22nd of Raei, 1128"

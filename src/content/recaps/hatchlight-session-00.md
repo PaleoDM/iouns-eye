@@ -1,8 +1,8 @@
 ---
-name: "Hearth and Hatchlight Session 0 — 2026-06-13"
+name: "Hearth and Hatchlight Session 0 — June 13th, 2026"
 campaign: hatchlight
 session_number: 0
-session_date: "2026-06-13"
+session_date: "June 13th, 2026"
 author: PaleoDM
 recap_type: dm
 level_milestone: 1
