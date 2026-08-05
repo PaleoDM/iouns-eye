@@ -211,11 +211,13 @@ for (const col of ENTITY_COLS) {
               <details class="group bg-surface border border-border rounded-lg overflow-hidden">
                 <summary class="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-surface-hover transition-colors [&::-webkit-details-marker]:hidden list-none">
                   <span class="text-accent font-serif font-semibold shrink-0 w-8">#{data.session_number}</span>
-                  <span class="text-text-primary font-medium truncate flex-1">{data.name}</span>
+                  <span class="text-text-primary font-medium truncate flex-1">Session {data.session_number} — {data.session_date}</span>
                   {data.arc_name && (
                     <span class="text-xs px-2 py-0.5 rounded-full bg-accent/10 text-accent hidden sm:inline shrink-0">{data.arc_name}</span>
                   )}
-                  <span class="text-text-secondary text-xs shrink-0 hidden md:inline">{data.in_game_date ?? data.session_date}</span>
+                  {data.in_game_date && (
+                    <span class="text-text-secondary text-xs shrink-0 hidden md:inline">{data.in_game_date}</span>
+                  )}
                   <svg class="w-4 h-4 text-text-secondary shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                   </svg>
