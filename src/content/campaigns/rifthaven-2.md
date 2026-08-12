@@ -29,7 +29,7 @@ party:
     class: Druid
     slug: astrid
 tags: [urban, crime, scoundrels, heist, knaves]
-related: [rifthaven, rifthaven-online, sparkworks-district, da-pinci-syndicate, ashen-barristers]
+related: [rifthaven, rifthaven-online, sparkworks-district, da-pinci-syndicate, ashen-barristers, rifthaven-2-session-07]
 ---
 
 Rifthaven: Knaves and Knights picks up roughly one year after the events of Rifthaven: Root of Rebellion. The campaign opens on 22 Ioun 1130 TA, in the King Tides window of high summer.

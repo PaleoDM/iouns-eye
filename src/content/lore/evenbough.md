@@ -4,7 +4,7 @@ lore_type: magic
 campaigns:
   - rifthaven-2
 tags: [instrument, lute, magic-item, the-songbird, house-ondorel, mark]
-related: [house-ondorel, the-orlovs, silver-serpent, sylvara, ottavia-brann, milo-lafite-margeaux, garran, ralo-battaglia, lucien, astrid, rifthaven, rifthaven-2, rifthaven-2-session-06]
+related: [house-ondorel, the-orlovs, silver-serpent, sylvara, ottavia-brann, milo-lafite-margeaux, garran, ralo-battaglia, lucien, astrid, rifthaven, rifthaven-2, rifthaven-2-session-06, rifthaven-2-session-07, meridian-queen]
 ---
 
 **House Ondorel**'s lute, and a famous enough instrument that **Lucien** flagged it as nearly impossible to fence on reputation alone. It is the mark of the arc **The Songbird Job**.

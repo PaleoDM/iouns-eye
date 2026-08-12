@@ -8,7 +8,7 @@ level: 4
 location: rifthaven
 faction: da-pinci-syndicate
 tags: [criminal, goon, family-man, da-pinci]
-related: [rifthaven, rifthaven-2, da-pinci-syndicate, rj, nonna-battaglia, cobalt, house-sorvellan, brimstone-bath, the-goldsoul, zedediah, inkwell, rifthaven-2-session-01, rifthaven-2-session-03, rifthaven-2-session-04, rifthaven-2-session-05, silver-serpent, quill-bill, rifthaven-2-session-06, renzo-corvi, lonnie-da-pinci, sylvara, the-orlovs, evenbough]
+related: [rifthaven, rifthaven-2, da-pinci-syndicate, rj, nonna-battaglia, cobalt, house-sorvellan, brimstone-bath, the-goldsoul, zedediah, inkwell, rifthaven-2-session-01, rifthaven-2-session-03, rifthaven-2-session-04, rifthaven-2-session-05, silver-serpent, quill-bill, rifthaven-2-session-06, renzo-corvi, lonnie-da-pinci, sylvara, the-orlovs, evenbough, rifthaven-2-session-07, stella-corvi, donna-bella, gatitos, lamplighter-market]
 ---
 
 ## Background
@@ -19,7 +19,7 @@ Quick to give people nicknames they hate. Jovial. Happy with his mid-level statu
 
 ## Family
 
-Has a son, **RJ** (Ralo Junior). In a trial separation from RJ's mother, and it is going badly. His entire family resents him for not climbing the ladder, and everyone is after a bigger piece of his pie. He resents them right back.
+Has a son, **RJ** (Ralo Junior). In a trial separation from RJ's mother, **Donna Bella "DB"**, and it is going badly. By Ralo's account she walked out because he would not buy a boat. His entire family resents him for not climbing the ladder, and everyone is after a bigger piece of his pie. He resents them right back.
 
 His safe house is his elderly mother's place. She gives him constant grief, but it is the only refuge he has now that he is separated from RJ's mother.
 

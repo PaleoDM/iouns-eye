@@ -8,7 +8,7 @@ campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 1 (referenced)"
 tags: [the-manifesto, code-name, tutor, revolutionary, tabula-rasa]
-related: [vendris-sorvellan, kelvaryn-sorvellan, house-sorvellan, halworth-reading-rooms, wrenna-tidwell, tomis-tidwell, lady-hypatra, gutterwick, the-almshouse, tabula-rasa, mimeofoil, rifthaven-2, rifthaven-2-session-01, rifthaven-2-session-02, rifthaven-2-session-03]
+related: [vendris-sorvellan, kelvaryn-sorvellan, house-sorvellan, halworth-reading-rooms, wrenna-tidwell, tomis-tidwell, lady-hypatra, gutterwick, the-almshouse, tabula-rasa, mimeofoil, rifthaven-2, rifthaven-2-session-01, rifthaven-2-session-02, rifthaven-2-session-03, rifthaven-2-session-07]
 ---
 
 A woman known only by the code name **La Marginalia**. No real name was offered behind it. She had been close to **Vendris Sorvellan** when she served as his private tutor, and at some point took the compromising documents now at the center of the crew's first job. To her sister and her friends she is known as "Maggie."

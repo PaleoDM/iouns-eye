@@ -1,8 +1,8 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-08-05 -->
+<!-- Last updated: 2026-08-12 -->
 
-## NPCs (175)
+## NPCs (178)
 - `alon-bardoof` Alon Bardoof — alive | First Chair, Glamour District Symphony Orchestra
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
@@ -39,6 +39,7 @@
 - `victor-kane` Director Victor Kane — alive | Director of Security, Serenity Auction House
 - `art-doyle` Divine Judge Art Doyle — unknown | High Justicar
 - `divine-judge-josephine` Divine Judge Josephine Maren — dead | High Justicar
+- `donna-bella` Donna Bella "DB — alive | Ralo's Separated Wife
 - `doragnes` Doragnes — alive | Major Domo of the Galleria
 - `dr-nastase` Dr. Nastase — dead
 - `dr-solvane` Dr. Solvane — alive | Memory Researcher
@@ -121,6 +122,7 @@
 - `perry-ellis-cassini` Perry Ellis Cassini — dead | Co-Head of the Cassini Brothers
 - `phoebe` Phoebe — alive | Ty's Sister
 - `pinto-gambino` Pinto Gambino — alive | Merchant | [ishetar-2]
+- `pocket` Pocket — alive | Astrid's Familiar
 - `professor-serrano` Professor Serrano — alive | Emeritus Professor, School of Necromancy
 - `quetzi` Quetzi — alive | Oracle of the Divine Well | [ishetar-2]
 - `quill-bill` Quill Bill — alive | Ink Spirit of Hope
@@ -148,6 +150,7 @@
 - `sombra` Sombra — alive | Librarian | [ishetar-2]
 - `sprigg` Sprigg — alive | Elder | [ishetar-2]
 - `starshadow` Starshadow — alive
+- `stella-corvi` Stella Corvi — alive | Gatito Blood
 - `sunflower` Sunflower — alive | Proprietor of the Halworth Reading Rooms
 - `sylvara` Sylvara — alive | Luthier
 - `sylvari` Sylvari — alive | Co-founder of the Restful Lily | [ishetar-2]
@@ -179,7 +182,7 @@
 - `zeke` Zeke — alive
 - `zoink` Zoink — alive | Banker | [ishetar-2]
 
-## Locations (85)
+## Locations (87)
 - `ahanabai` Ahanabai — region | [ishetar-2]
 - `aroiinae` Aroiinae — city | [ishetar-2]
 - `ashen-chapel` Ashen Chapel — building | [rifthaven-online]
@@ -256,6 +259,8 @@
 - `the-gloaming` The Gloaming — wilderness | Cyrnaith | [hatchlight]
 - `the-goldsoul` The GoldSoul — building | rifthaven
 - `halworth-reading-rooms` The Halworth Reading Rooms — building
+- `lamplighter-market` The Lamplighter Market — market | rifthaven
+- `meridian-queen` The Meridian Queen — ship | rifthaven
 - `red-vale` The Red Vale — wilderness | Ekkorai | [ishetar-2]
 - `restful-lily` The Restful Lily — building | Ekkorai | [ishetar-2]
 - `tormellin` Tormellin — city | [ishetar-2]
@@ -266,7 +271,7 @@
 - `verdelorn-woods` Verdelorn Woods — wilderness | [rifthaven-irl]
 - `wanun` Wanun — continent | [ishetar-og, head-hunters, ishetar-2]
 
-## Factions (32)
+## Factions (33)
 - `aquatic-conclave` Aquatic Peoples Conclave — political | active | [ishetar-2]
 - `arsons-of-anarchy` Arsons of Anarchy — religious | active | [head-hunters]
 - `celestial-seed` Celestial Seed — secret | active | [ishetar-2]
@@ -292,6 +297,7 @@
 - `the-curtain` The Curtain — criminal | active
 - `da-pinci-syndicate` The da Pinci Crime Syndicate — criminal | active | [rifthaven-2]
 - `discordant-fellowship` The Discordant Fellowship — criminal | active | [rifthaven-irl, rifthaven-online]
+- `gatitos` The Gatitos — criminal | active | [rifthaven-2]
 - `hushed-choir` The Hushed Choir — secret | historical | [rifthaven-online]
 - `ledgermen` The Ledgermen — military | historical | [rifthaven-online]
 - `the-orlovs` The Orlovs — political | active

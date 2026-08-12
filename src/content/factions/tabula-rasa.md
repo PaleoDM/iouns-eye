@@ -6,7 +6,7 @@ headquarters: rifthaven
 campaigns:
   - rifthaven-2
 tags: [the-manifesto, forgery, rift-device, mimeofoil, antagonist]
-related: [la-marginalia, halworth-reading-rooms, sunflower, tomis-tidwell, house-sorvellan, mimeofoil, the-almshouse, folio-row, silver-serpent, quill-bill, rifthaven, rifthaven-2, rifthaven-2-session-02, rifthaven-2-session-03, rifthaven-2-session-04, rifthaven-2-session-05]
+related: [la-marginalia, halworth-reading-rooms, sunflower, tomis-tidwell, house-sorvellan, mimeofoil, the-almshouse, folio-row, silver-serpent, quill-bill, rifthaven, rifthaven-2, rifthaven-2-session-02, rifthaven-2-session-03, rifthaven-2-session-04, rifthaven-2-session-05, rifthaven-2-session-07]
 ---
 
 A shadow forgery cabal hunting the same prize as the crew. They wield a Rift device that does not merely forge a hand but scrapes and rewrites the written record itself — reading memory straight out of books and leaving the pages wrong. Their calling card is a wax seal bearing no sigil at all.

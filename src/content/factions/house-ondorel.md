@@ -6,7 +6,7 @@ headquarters: rifthaven
 campaigns:
   - rifthaven-2
 tags: [noble-house, the-songbird, mark]
-related: [the-orlovs, silver-serpent, sylvara, ottavia-brann, frederick-quarterstaff, glamour-district, rifthaven, rifthaven-2, rifthaven-2-session-06, evenbough]
+related: [the-orlovs, silver-serpent, sylvara, ottavia-brann, frederick-quarterstaff, glamour-district, rifthaven, rifthaven-2, rifthaven-2-session-06, evenbough, rifthaven-2-session-07, renzo-corvi, meridian-queen]
 ---
 
 A noble house of Rifthaven, and the mark of the arc **The Songbird Job**. The house owns a magical lute that the **Silver Serpent** had planned to steal and never got around to, and which the crew has now taken up as their first score out of the Serpent's black book.
