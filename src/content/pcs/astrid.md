@@ -7,7 +7,7 @@ campaign: rifthaven-2
 level: 4
 location: rifthaven
 tags: [druid, demolitions, cryptid, conspiracy, messengers, wild-shape]
-related: [rifthaven, rifthaven-2, celeste, college-of-divination, house-sorvellan, brimstone-bath, la-marginalia, mimeofoil, tabula-rasa, inkwell, rifthaven-2-session-01, rifthaven-2-session-03, rifthaven-2-session-04, rifthaven-2-session-05, silver-serpent, quill-bill, rifthaven-2-session-06, olivier, renzo-corvi, house-ondorel, evenbough, rifthaven-2-session-07, stella-corvi, pocket, gatitos, lamplighter-market]
+related: [rifthaven, rifthaven-2, celeste, college-of-divination, house-sorvellan, brimstone-bath, la-marginalia, mimeofoil, tabula-rasa, inkwell, rifthaven-2-session-01, rifthaven-2-session-03, rifthaven-2-session-04, rifthaven-2-session-05, silver-serpent, quill-bill, rifthaven-2-session-06, olivier, renzo-corvi, house-ondorel, evenbough, rifthaven-2-session-07, stella-corvi, pocket, gatitos, lamplighter-market, rifthaven-2-session-08, hedda-marchbank, lord-ondorel, witherwind, coronet-gate]
 ---
 
 ## Background

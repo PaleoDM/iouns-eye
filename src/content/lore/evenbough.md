@@ -4,7 +4,7 @@ lore_type: magic
 campaigns:
   - rifthaven-2
 tags: [instrument, lute, magic-item, the-songbird, house-ondorel, mark]
-related: [house-ondorel, the-orlovs, silver-serpent, sylvara, ottavia-brann, milo-lafite-margeaux, garran, ralo-battaglia, lucien, astrid, rifthaven, rifthaven-2, rifthaven-2-session-06, rifthaven-2-session-07, meridian-queen]
+related: [house-ondorel, the-orlovs, silver-serpent, sylvara, ottavia-brann, milo-lafite-margeaux, garran, ralo-battaglia, lucien, astrid, rifthaven, rifthaven-2, rifthaven-2-session-06, rifthaven-2-session-07, meridian-queen, rifthaven-2-session-08, lord-ondorel, hedda-marchbank, witherwind, coronet-gate]
 ---
 
 **House Ondorel**'s lute, and a famous enough instrument that **Lucien** flagged it as nearly impossible to fence on reputation alone. It is the mark of the arc **The Songbird Job**.
@@ -25,3 +25,11 @@ The Serpent's list ran: **Sylvara** to build the decoy by any means necessary, a
 The house put the Evenbough on display at a gala on the 6th of Pelor. The crew infiltrated the event to collect the eight pieces of information Sylvara needs to build a convincing copy: the type of wood, the sound it makes, the maker's mark, the school of magic, the wear pattern, any inscription, the feeling it gives when you touch it, and the case itself.
 
 They got all eight. Sylvara's front-row seat covered three or four on its own, a manufactured portrait put the instrument physically in her hands, and **Garran** closed out the last of it by posing as house security sweeping for bugs and casting Detect Magic on it.
+
+## Knaves and Knights, Session 8
+
+**Sylvara** finished the copy on the 19th of Pelor and the crew collected it in a mahogany case.
+
+The real one came out of the manor that night under ward, in one of three identical cases on three separate routes. The crew's skiff carried it, though nobody aboard knew that until **Lord Ondorel** cast the ritual at **Witherwind** at dawn and pronounced it real. The instrument carries memories of the hands that hold it, which is how he authenticates it, and which is a problem for anything the crew swaps in.
+
+It is now in the security vault in the *Meridian Queen*'s hold, signed off by its owner, hours before she sails.

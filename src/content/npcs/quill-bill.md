@@ -8,7 +8,7 @@ campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 5"
 tags: [ink-spirit, house-spirit, rhymes, serpents-den]
-related: [silver-serpent, tabula-rasa, inkwell, lucien, milo-lafite-margeaux, garran, ralo-battaglia, astrid, olivier, house-ondorel, rifthaven, rifthaven-2, rifthaven-2-session-05, rifthaven-2-session-06]
+related: [silver-serpent, tabula-rasa, inkwell, lucien, milo-lafite-margeaux, garran, ralo-battaglia, astrid, olivier, house-ondorel, rifthaven, rifthaven-2, rifthaven-2-session-05, rifthaven-2-session-06, rifthaven-2-session-08, thrall]
 ---
 
 A small ink spirit who speaks only in rhyming couplets, released when **Lucien** uncorked an inky blue vial on the mantle of the crew's **Inkwell** shophouse. It refused to give its true name, since names have power, so Lucien dubbed it Quill Bill.
@@ -18,3 +18,7 @@ Quill Bill is an Ink Spirit of Hope. His brother, still corked in a vial of thic
 ## Knaves and Knights, Session 6
 
 As **Olivier** departed, Quill Bill came in with a little rhyme and suggested the crew check out the little black book, reminding them of a job in it that mentioned the *Meridian Queen*. That nudge is what started **The Songbird Job**.
+
+## Knaves and Knights, Session 8
+
+**Thrall** was lent to **Astrid** for a morning and given the household's transcribing to do. Quill Bill, who considers that work his sacred duty, was crestfallen, and spent the morning trying to mimic the old manservant's calligraphy.

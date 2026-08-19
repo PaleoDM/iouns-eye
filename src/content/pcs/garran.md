@@ -7,7 +7,7 @@ campaign: rifthaven-2
 level: 4
 location: rifthaven
 tags: [mercenary, freelance, professional, bounty]
-related: [rifthaven, rifthaven-2, bobilliath, house-sorvellan, brimstone-bath, the-goldsoul, zedediah, inkwell, rifthaven-2-session-01, rifthaven-2-session-03, rifthaven-2-session-04, rifthaven-2-session-05, silver-serpent, quill-bill, rifthaven-2-session-06, ottavia-brann, renzo-corvi, house-ondorel, evenbough, rifthaven-2-session-07, stella-corvi, gatitos, lamplighter-market]
+related: [rifthaven, rifthaven-2, bobilliath, house-sorvellan, brimstone-bath, the-goldsoul, zedediah, inkwell, rifthaven-2-session-01, rifthaven-2-session-03, rifthaven-2-session-04, rifthaven-2-session-05, silver-serpent, quill-bill, rifthaven-2-session-06, ottavia-brann, renzo-corvi, house-ondorel, evenbough, rifthaven-2-session-07, stella-corvi, gatitos, lamplighter-market, rifthaven-2-session-08, hedda-marchbank, lord-ondorel, witherwind, coronet-gate]
 ---
 
 ## Background

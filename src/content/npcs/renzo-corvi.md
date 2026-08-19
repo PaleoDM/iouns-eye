@@ -7,7 +7,7 @@ campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 6"
 tags: [criminal, rival-crew, the-songbird, killer]
-related: [lonnie-da-pinci, da-pinci-syndicate, ralo-battaglia, garran, astrid, house-ondorel, rifthaven, rifthaven-2, rifthaven-2-session-06, rifthaven-2-session-07, stella-corvi, gatitos, lamplighter-market, ottavia-brann]
+related: [lonnie-da-pinci, da-pinci-syndicate, ralo-battaglia, garran, astrid, house-ondorel, rifthaven, rifthaven-2, rifthaven-2-session-06, rifthaven-2-session-07, stella-corvi, gatitos, lamplighter-market, ottavia-brann, rifthaven-2-session-08, lord-ondorel]
 ---
 
 A rival scoundrel working Rifthaven, and the man who killed **Lonnie "Lobster" da Pinci**.

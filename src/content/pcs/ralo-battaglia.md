@@ -8,7 +8,7 @@ level: 4
 location: rifthaven
 faction: da-pinci-syndicate
 tags: [criminal, goon, family-man, da-pinci]
-related: [rifthaven, rifthaven-2, da-pinci-syndicate, rj, nonna-battaglia, cobalt, house-sorvellan, brimstone-bath, the-goldsoul, zedediah, inkwell, rifthaven-2-session-01, rifthaven-2-session-03, rifthaven-2-session-04, rifthaven-2-session-05, silver-serpent, quill-bill, rifthaven-2-session-06, renzo-corvi, lonnie-da-pinci, sylvara, the-orlovs, evenbough, rifthaven-2-session-07, stella-corvi, donna-bella, gatitos, lamplighter-market]
+related: [rifthaven, rifthaven-2, da-pinci-syndicate, rj, nonna-battaglia, cobalt, house-sorvellan, brimstone-bath, the-goldsoul, zedediah, inkwell, rifthaven-2-session-01, rifthaven-2-session-03, rifthaven-2-session-04, rifthaven-2-session-05, silver-serpent, quill-bill, rifthaven-2-session-06, renzo-corvi, lonnie-da-pinci, sylvara, the-orlovs, evenbough, rifthaven-2-session-07, stella-corvi, donna-bella, gatitos, lamplighter-market, rifthaven-2-session-08, hedda-marchbank, lord-ondorel, witherwind, coronet-gate]
 ---
 
 ## Background

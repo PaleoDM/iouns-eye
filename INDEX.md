@@ -1,8 +1,8 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-08-12 -->
+<!-- Last updated: 2026-08-19 -->
 
-## NPCs (178)
+## NPCs (180)
 - `alon-bardoof` Alon Bardoof — alive | First Chair, Glamour District Symphony Orchestra
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
@@ -73,6 +73,7 @@
 - `haji` Haji — alive | Head of the House of Coinwrights
 - `harlan` Harlan — alive
 - `haven-harsk` Haven Harsk — alive | [ishetar-2]
+- `hedda-marchbank` Hedda Marchbank — alive | Contracted Master Abjurer
 - `inotus-rex` Inotus Rex — alive | The Necromancer King
 - `isla-harsk` Isla Harsk — alive | Lady of Manor Harsk | [ishetar-2]
 - `iymrith` Iymrith — dead | [skt]
@@ -92,6 +93,7 @@
 - `lonnie-da-pinci` Lonnie "Lobster" da Pinci — dead | da Pinci Boss
 - `lord-harwin` Lord Harwin Brassfell — alive | Lord of Sparkworks
 - `lord-sergente` Lord Maximillian Sergente — dead | Plantation Lord
+- `lord-ondorel` Lord Ondorel — alive | Patriarch of House Ondorel
 - `lord-pembrook` Lord Pembrook — alive | [skt]
 - `lulu` Lulu — alive | Celestial Patron
 - `luz-de-la-alma` Luz De la Alma — alive | Resistance Leader
@@ -182,7 +184,7 @@
 - `zeke` Zeke — alive
 - `zoink` Zoink — alive | Banker | [ishetar-2]
 
-## Locations (87)
+## Locations (89)
 - `ahanabai` Ahanabai — region | [ishetar-2]
 - `aroiinae` Aroiinae — city | [ishetar-2]
 - `ashen-chapel` Ashen Chapel — building | [rifthaven-online]
@@ -251,6 +253,7 @@
 - `brazier` The Brazier — district | [rifthaven-online]
 - `brimstone-bath` The Brimstone Bath — building
 - `college-of-divination` The College of Divination — building
+- `coronet-gate` The Coronet Gate — building | rifthaven
 - `cradle-of-conflict` The Cradle of Conflict — region | [skt]
 - `the-crucible` The Crucible — region | [skt]
 - `the-elemental-rift` The Elemental Rift — planar | [hatchlight]
@@ -259,8 +262,8 @@
 - `the-gloaming` The Gloaming — wilderness | Cyrnaith | [hatchlight]
 - `the-goldsoul` The GoldSoul — building | rifthaven
 - `halworth-reading-rooms` The Halworth Reading Rooms — building
-- `lamplighter-market` The Lamplighter Market — market | rifthaven
-- `meridian-queen` The Meridian Queen — ship | rifthaven
+- `lamplighter-market` The Lamplighter Market — district | rifthaven
+- `meridian-queen` The Meridian Queen — building | rifthaven
 - `red-vale` The Red Vale — wilderness | Ekkorai | [ishetar-2]
 - `restful-lily` The Restful Lily — building | Ekkorai | [ishetar-2]
 - `tormellin` Tormellin — city | [ishetar-2]
@@ -270,6 +273,7 @@
 - `tyrzareth` Tyr'Zareth — city | [rifthaven-online]
 - `verdelorn-woods` Verdelorn Woods — wilderness | [rifthaven-irl]
 - `wanun` Wanun — continent | [ishetar-og, head-hunters, ishetar-2]
+- `witherwind` Witherwind — district | rifthaven
 
 ## Factions (33)
 - `aquatic-conclave` Aquatic Peoples Conclave — political | active | [ishetar-2]

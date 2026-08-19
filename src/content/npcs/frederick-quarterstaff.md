@@ -7,7 +7,7 @@ campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 6"
 tags: [conductor, musician, glamour-district, the-songbird, impersonated]
-related: [glamour-district, alon-bardoof, sylvara, milo-lafite-margeaux, house-ondorel, rifthaven, rifthaven-2, rifthaven-2-session-06, rifthaven-2-session-07]
+related: [glamour-district, alon-bardoof, sylvara, milo-lafite-margeaux, house-ondorel, rifthaven, rifthaven-2, rifthaven-2-session-06, rifthaven-2-session-07, rifthaven-2-session-08, ralo-battaglia, lucien]
 ---
 
 A famous conductor of the **Glamour District** Symphony Orchestra.
@@ -27,3 +27,13 @@ He has confided in **Ottavia Brann** that he was the victim of something that ni
 The crew talked about whether he needed handling and decided he did not. **Lucien** argued the correct play is to do nothing at all. A man cannot publicly claim he did not conduct a performance the whole city is still raving about, and Quarterstaff has not tried. The broadsheets keep running his quotes praising his own work, and he keeps giving them.
 
 They left him alone.
+
+## Knaves and Knights, Session 8
+
+He finally met himself. He had been answering **Sylvara**'s letters all fortnight and turned up at her shop the same morning **Milo** came to collect the copy wearing his face.
+
+**Ralo** kicked over a trash can in the back garden to draw Sylvara out, and Milo walked in the front. Quarterstaff crossed the room faster than a man his age should, put Milo against the wall, and asked whether this was the one who had been there that night. Told he was looking at his own best self, he asked to be cut in for a fraction of whatever it was.
+
+**Lucien** ended it with a subtle, heightened suggestion. Quarterstaff is self-obsessed enough to have advantage on saves against being charmed and he failed it by one anyway. He kissed himself, blamed the drink, confessed that he stays up all night because he dreams of the nightlife and hopes one day to be initiated among the kindred, and went home to bed at ten in the morning.
+
+He still has no idea anything was taken from him. He thinks he had a vision of himself.

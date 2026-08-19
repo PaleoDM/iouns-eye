@@ -5,7 +5,7 @@ region: rifthaven
 campaigns:
   - rifthaven-2
 tags: [the-songbird, ship, house-ondorel]
-related: [house-ondorel, evenbough, ottavia-brann, rifthaven, rifthaven-2, rifthaven-2-session-06, rifthaven-2-session-07]
+related: [house-ondorel, evenbough, ottavia-brann, rifthaven, rifthaven-2, rifthaven-2-session-06, rifthaven-2-session-07, rifthaven-2-session-08, witherwind, lord-ondorel, hedda-marchbank]
 ---
 
 ## Description
@@ -17,3 +17,7 @@ A ship that runs circuits of Astoria. She returned to **Rifthaven** in Pelor of 
 ## Knaves and Knights
 
 The whole of the Songbird job runs on her schedule. The instrument gets loaded on the 20th, and **Ottavia Brann** is running the security detail for the loading. Everything the crew does between now and then is in service of being in position when that happens.
+
+## Knaves and Knights, Session 8
+
+She lay at dock in **Witherwind** at dawn on the 20th with her sails still furled. The **Evenbough** came aboard down the cargo gangplank and into the vault in her hold, with the passengers and the champagne going up the other one. She sails in a matter of hours.

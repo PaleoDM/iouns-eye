@@ -7,7 +7,7 @@ campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 6"
 tags: [musician, first-chair, glamour-district, the-songbird, impersonated]
-related: [glamour-district, frederick-quarterstaff, sylvara, lucien, rifthaven, rifthaven-2, rifthaven-2-session-06]
+related: [glamour-district, frederick-quarterstaff, sylvara, lucien, rifthaven, rifthaven-2, rifthaven-2-session-06, rifthaven-2-session-08]
 ---
 
 First chair of the **Glamour District** Symphony Orchestra, under **Frederick Quarterstaff**.
