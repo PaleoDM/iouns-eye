@@ -5,7 +5,7 @@ class: Cleric
 campaign: hatchlight
 level: 2
 tags: [cleric, raei, everlight, orphan, wayfarer]
-related: [hatchlight, hatchlight-session-00, hatchlight-session-01, hatchlight-session-02, raei, dolgaer]
+related: [hatchlight, hatchlight-session-00, hatchlight-session-01, hatchlight-session-02, raei, dolgaer, marilissa, harsk, hatchlight-session-03]
 ---
 
 ## Background
@@ -17,3 +17,9 @@ Yu is an urchin and an orphan, taken in by a "family" that is really the church 
 The important distinction: Yu's power is real, and his god is real. The Everlight answers him, and his faith is genuine. The shadiness sits with the church as an institution, which manipulates its children and may not be living the Everlight's tenets as cleanly as it claims.
 
 Yu sends money home to his older brother. His quiet, particular talent is fixing children's toys, a skill worth a great deal among the poor orphans he grew up with.
+
+## The Spy
+
+The small snake had been ahead of the party since the alder. In the lair in Session 3, Yu spotted it before it spotted them and killed it where it sat, a corridor away from telling Marilissa and everything under her exactly who had come. Nothing below them knew they were coming after that.
+
+In the fight that followed he brought Harsk back up after the venom put him down.

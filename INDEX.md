@@ -1,8 +1,8 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-08-19 -->
+<!-- Last updated: 2026-08-24 -->
 
-## NPCs (180)
+## NPCs (182)
 - `alon-bardoof` Alon Bardoof — alive | First Chair, Glamour District Symphony Orchestra
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
@@ -50,7 +50,7 @@
 - `duchess-lyla` Duchess Lyla — alive | Duchess of Emberspost | [ishetar-2]
 - `duty` Duty — alive | Monk of the Ju-Shi
 - `einhar-coldforge` Einhar Coldforge — alive
-- `eirlys` Eirlys — missing | The Witch of Glancoed | [hatchlight]
+- `eirlys` Eirlys — alive | The Witch of Glancoed | [hatchlight]
 - `ellie-caldrow` Ellie Caldrow — alive | [ishetar-2]
 - `emissary-rowena` Emissary Rowena — alive | Governess
 - `ernesto-de-la-alma` Ernesto De la Alma — alive
@@ -103,6 +103,7 @@
 - `maligno` Maligno — alive | The Unfinished Boy
 - `mamgu-nerys` Mamgu Nerys — alive | Hearth-keeper of Glancoed | [hatchlight]
 - `maribel-stoutwater` Maribel Stoutwater — alive | Innkeeper
+- `marilissa` Marilissa — dead | The Called | [hatchlight]
 - `mayo` Mayo — alive
 - `meris-caldrow` Meris Caldrow — alive | [ishetar-2]
 - `mickell-caldrow` Mickell Caldrow — alive | [ishetar-2]
@@ -131,7 +132,7 @@
 - `rekka-harsk` Rekka Harsk — alive | [ishetar-2]
 - `relic` Relic — alive | [kalari]
 - `renzo-corvi` Renzo "Basta" Corvi — alive | Rival Scoundrel
-- `rhydderch` Rhydderch — missing | The Trapper of the Gloaming | [hatchlight]
+- `rhydderch` Rhydderch — dead | The Trapper of the Gloaming | [hatchlight]
 - `rj` RJ (Ralo Junior) — alive
 - `roe` Roe — alive | Ty's Mother
 - `romero-de-la-alma` Romero De la Alma — alive
@@ -154,6 +155,7 @@
 - `starshadow` Starshadow — alive
 - `stella-corvi` Stella Corvi — alive | Gatito Blood
 - `sunflower` Sunflower — alive | Proprietor of the Halworth Reading Rooms
+- `sunset-is-nigh` Sunset-Is-Nigh — alive | The Hatchling of the Gloaming | [hatchlight]
 - `sylvara` Sylvara — alive | Luthier
 - `sylvari` Sylvari — alive | Co-founder of the Restful Lily | [ishetar-2]
 - `talene-caldrow` Talene Caldrow — alive | [ishetar-2]

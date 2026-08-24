@@ -4,8 +4,8 @@ race: Khoravar
 class: Artificer
 campaign: hatchlight
 level: 2
-tags: [artificer, necromancy, salvager, giant-tech, cursed]
-related: [hatchlight, hatchlight-session-00, hatchlight-session-01, hatchlight-session-02]
+tags: [artificer, necromancy, salvager, giant-tech, cursed, the-wreck]
+related: [hatchlight, hatchlight-session-00, hatchlight-session-01, hatchlight-session-02, death-at-sunset, sunset-is-nigh, hatchlight-session-03]
 ---
 
 ## Background
@@ -23,3 +23,11 @@ Her community was struck by a calamity, and her father is now bound to it full-t
 At the great alder in the Gloaming, Indri accepted a memory offered in thanks for the party's healing. She was warned it might be dangerous, because it was the memory of a tree across centuries and not the memory of a person. She took it anyway, and it showed her the fall of Death at Sunset and the true source of the sickening.
 
 It came with a price. Indri is cursed with a yearning to know more, and she has a hard time doing the practical thing whenever there is something left to learn.
+
+## The Black Box
+
+The curse does not let Indri leave things alone. In Session 3 she stayed up in the wreck to read the machine while the rest of the party roped down into the lair. Small and light on her feet, she darted around the precariously stacked fire giant remains and came away with a potion of healing a pilot had kept within reach, and the ship's black box.
+
+The box was garnet once, ground down to a coarse sand of disintegrated crystal, and it still held the crew's last minutes. Indri watched them. Death at Sunset broke off the fight to protect a clutch of eggs. The giants brought her down over her own lair and never finished her. And the killing shot was never fired: an **Ancient Fire Giant Harpoon of Dragonslaying** is still aboard, cocked, charged, and aimed straight down into the wound.
+
+Indri knows how to fire it. She does not know how to do much of anything else with it.

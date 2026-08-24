@@ -5,7 +5,7 @@ class: Paladin
 campaign: hatchlight
 level: 2
 tags: [paladin, elemental, titans]
-related: [hatchlight, hatchlight-session-00, hatchlight-session-01, hatchlight-session-02]
+related: [hatchlight, hatchlight-session-00, hatchlight-session-01, hatchlight-session-02, eirlys, marilissa, hatchlight-session-03]
 ---
 
 ## Background
@@ -25,3 +25,11 @@ He arrived at these through his own lived experience, not through any church or 
 ## Character Notes
 
 He frequently lies and claims there *is* an order behind him, because people adopt ideals more readily when they think someone larger already has.
+
+## The Rope and the Message
+
+Two things in Session 3 turned on Laeryn. Getting five people down a rope through a dead giant's cockpit is not a small problem, and he coordinated it as much by leadership as by hand, putting everyone down safe and in order.
+
+Then he reached Eirlys with a message spell, the first contact anyone had had with her since she went into the Gloaming. What came back gave the party a clock and a way in: she would keep Marilissa talking for as long as she could hold her.
+
+He landed the killing blow on Marilissa.

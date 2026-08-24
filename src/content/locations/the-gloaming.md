@@ -5,8 +5,8 @@ region: Cyrnaith
 continent: Cyrnaith
 parent_location: glancoed
 campaigns: [hatchlight]
-tags: [forest, cursed, the-sickening, giant-machine, mysterious-lights]
-related: [hatchlight, glancoed, eirlys, rhydderch, death-at-sunset, hatchlight-session-01, hatchlight-session-02]
+tags: [forest, cursed, the-sickening, giant-machine, mysterious-lights, the-wreck]
+related: [hatchlight, glancoed, eirlys, rhydderch, death-at-sunset, hatchlight-session-01, hatchlight-session-02, marilissa, sunset-is-nigh, harsk, hatchlight-session-03]
 ---
 
 The dark, ancient forest at the edge of Glancoed, named in the common tongue for where the light dies. Villagers have long spotted strange cold lights flickering deep among its trees, and the wood is thick with ambient magic that bleeds off the wreck of an old giant-wrought machine somewhere in its heart.
@@ -24,3 +24,11 @@ Upstream stands the great alder: split open down its length and pouring red pois
 ## The Source of the Sickening
 
 The alder gave Indri a memory that answered the question the village has never been able to. A few hours north of the alder, through the untamed part of the wood where no path goes, lies the carcass of **Death at Sunset**, a green dragon brought down centuries ago by five giant-wrought flying longboats. The scattered wreckage in the wood is what remains of the four that shattered against her. Her venom, in that quantity, left where it fell, has been seeping outward ever since. The sickening has one source, and it is her body.
+
+## The Crash Clearing
+
+Reached in Session 3, a few hours north of the alder through country that has not had a path in it for centuries. The going is bad enough that the party bushwhacked uphill, nearly walked onto an owlbear den, and lost the better part of two hours falling back around it.
+
+The clearing holds the fifth longship, prow-down in frozen earth, and the furrow where Death at Sunset dragged herself under. The ship is built at giant scale throughout. Its cockpit still holds both pilots, skeletonized and stacked precariously, and the hull past them is torn wide open into the lair below.
+
+**Gwernen's spring, at the alder, is the last clean water anywhere north of it.**
