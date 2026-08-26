@@ -1,8 +1,8 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-08-24 -->
+<!-- Last updated: 2026-08-26 -->
 
-## NPCs (182)
+## NPCs (184)
 - `alon-bardoof` Alon Bardoof — alive | First Chair, Glamour District Symphony Orchestra
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
@@ -39,6 +39,7 @@
 - `victor-kane` Director Victor Kane — alive | Director of Security, Serenity Auction House
 - `art-doyle` Divine Judge Art Doyle — unknown | High Justicar
 - `divine-judge-josephine` Divine Judge Josephine Maren — dead | High Justicar
+- `dolphus-garner` Dolphus Garner — alive | Farrowfield Grain Magnate
 - `donna-bella` Donna Bella "DB — alive | Ralo's Separated Wife
 - `doragnes` Doragnes — alive | Major Domo of the Galleria
 - `dr-nastase` Dr. Nastase — dead
@@ -182,6 +183,7 @@
 - `vorak-bloodfang` Vorak Bloodfang — dead
 - `whisper` Whisper — alive
 - `wrenna-tidwell` Wrenna Tidwell — alive
+- `ysvaine-ondorel` Ysvaine Ondorel — alive | Eldest Daughter of House Ondorel
 - `zedediah` Zedediah — alive | Keeper of the GoldSoul Drophouse
 - `zeke` Zeke — alive
 - `zoink` Zoink — alive | Banker | [ishetar-2]
@@ -277,7 +279,7 @@
 - `wanun` Wanun — continent | [ishetar-og, head-hunters, ishetar-2]
 - `witherwind` Witherwind — district | rifthaven
 
-## Factions (33)
+## Factions (34)
 - `aquatic-conclave` Aquatic Peoples Conclave — political | active | [ishetar-2]
 - `arsons-of-anarchy` Arsons of Anarchy — religious | active | [head-hunters]
 - `celestial-seed` Celestial Seed — secret | active | [ishetar-2]
@@ -308,6 +310,7 @@
 - `ledgermen` The Ledgermen — military | historical | [rifthaven-online]
 - `the-orlovs` The Orlovs — political | active
 - `restful-lily-faction` The Restful Lily — religious | active | [ishetar-2]
+- `third-act` The Third Act — secret | active | [rifthaven-2]
 - `thornsong` Thornsong Court — secret | active | [ishetar-2]
 - `turquoise-timber-trust` Turquoise Timber Trust — commercial | active | [ishetar-2]
 - `vegepygmy-people` Vegepygmy People — political | active | [ishetar-2]

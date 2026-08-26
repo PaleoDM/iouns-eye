@@ -8,7 +8,7 @@ campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 7"
 tags: [crime-family, gatito, tabaxi, glamour, fixer, the-songbird]
-related: [gatitos, renzo-corvi, lonnie-da-pinci, da-pinci-syndicate, ralo-battaglia, lucien, astrid, donna-bella, lamplighter-market, la-marginalia, tabula-rasa, rifthaven, rifthaven-2, rifthaven-2-session-07]
+related: [gatitos, renzo-corvi, lonnie-da-pinci, da-pinci-syndicate, ralo-battaglia, lucien, astrid, donna-bella, lamplighter-market, la-marginalia, tabula-rasa, rifthaven, rifthaven-2, rifthaven-2-session-07, rifthaven-2-session-09]
 ---
 
 Wife of **Renzo "Basta" Corvi**, and **Gatito** by blood. Born Stella Gatito, third daughter of a second aunt. Not important, by her own account, but important enough that the lifestyle comes with obligations to the family.
@@ -38,3 +38,13 @@ Ralo hung back, and in the hallway she was a different woman. She told him how t
 She needs the truce fast, and she said why. There is a new player in town, and she assumed the crew had heard about **La Marginalia** and the **Tabula Rasa**.
 
 Then she asked after **RJ**, who she calls Batty Junior, and told Ralo she would tell **DB** he was still thinking about her.
+
+## Knaves and Knights, Session 9
+
+Late on the 20th she was waiting in **Ralo**'s new rooms, sitting in front of his mirror with her back to him, wearing nothing but the pearls that give her a human face.
+
+Ralo had promised to come back with something she could use to save herself from the **Gatitos**, and a fortnight went by. So the family sent her with a message. One of his crew went into her mind, one of them took her pearls, and twice now Ralo has let a truce die. They are starting to wonder whether the **da Pincis** talk peace out of one side of their mouth while the other hand undercuts it.
+
+Then the hairpin. Poisoned, and in his neck before he could move. She crossed the room, put her claws to his cheek, and told him he should really go see **DB** before it was too late. The Gatitos sent the message. The regards were DB's own.
+
+Then she unclasped the pearls, and the seam holding her together came apart, and what fell was a pile of rags. Whatever was in that room, the woman herself was not.

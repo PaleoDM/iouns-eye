@@ -5,7 +5,7 @@ status: active
 headquarters: rifthaven
 campaigns: [rifthaven-2]
 tags: [crime-family, feline-themed, organized-crime, rivals]
-related: [rifthaven, rifthaven-2, da-pinci-syndicate, renzo-corvi, stella-corvi, lonnie-da-pinci, ralo-battaglia, lamplighter-market, rifthaven-2-session-06, rifthaven-2-session-07]
+related: [rifthaven, rifthaven-2, da-pinci-syndicate, renzo-corvi, stella-corvi, lonnie-da-pinci, ralo-battaglia, lamplighter-market, rifthaven-2-session-06, rifthaven-2-session-07, rifthaven-2-session-09]
 ---
 
 A Rifthaven crime family and the chief rivals of the **da Pinci Crime Syndicate**. Cat people, against the da Pincis' crustaceans. They run a good deal of the rift-side district around the **Lamplighter Market**, including the fish market itself.
@@ -29,3 +29,9 @@ A da Pinci was there when it happened, and the Gatitos will learn that.
 - **Stella Corvi** — Gatito blood, third daughter of a second aunt; ran Lonnie for the family
 - **Renzo "Basta" Corvi** — married in, never fully accepted; in House Ondorel custody
 - **The Corvi Five** — Renzo's own crew, four of them dead at the Lamplighter Market
+
+## Knaves and Knights, Session 9
+
+They sent **Stella** to **Ralo** with a message, or sent something wearing her.
+
+They are unhappy. One of his crew went into her mind and one of them took her pearls, and by their count Ralo has now let two chances at a truce die. They are beginning to wonder whether the **da Pincis** are self-sabotaging on purpose.

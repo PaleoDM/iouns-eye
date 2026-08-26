@@ -6,7 +6,7 @@ headquarters: rifthaven
 campaigns:
   - rifthaven-2
 tags: [noble-house, the-songbird, mark]
-related: [the-orlovs, silver-serpent, sylvara, ottavia-brann, frederick-quarterstaff, glamour-district, rifthaven, rifthaven-2, rifthaven-2-session-06, evenbough, rifthaven-2-session-07, renzo-corvi, meridian-queen, rifthaven-2-session-08, lord-ondorel, hedda-marchbank, witherwind, coronet-gate]
+related: [the-orlovs, silver-serpent, sylvara, ottavia-brann, frederick-quarterstaff, glamour-district, rifthaven, rifthaven-2, rifthaven-2-session-06, evenbough, rifthaven-2-session-07, renzo-corvi, meridian-queen, rifthaven-2-session-08, lord-ondorel, hedda-marchbank, witherwind, coronet-gate, rifthaven-2-session-09]
 ---
 
 A noble house of Rifthaven, and the mark of the arc **The Songbird Job**. The house owns a magical lute that the **Silver Serpent** had planned to steal and never got around to, and which the crew has now taken up as their first score out of the Serpent's black book.
@@ -24,3 +24,11 @@ The house has enemies. **The Orlovs** hate the Ondorels enough that the Silver S
 The house moved the Evenbough out of the manor on the night of the 19th of Pelor, under **Ottavia Brann**, in three skiffs on three routes with three identical warded cases. All three were attacked. The house had also contracted **Hedda Marchbank** to hold the wards, and she was not told which case was real either.
 
 **Lord Ondorel** met the last skiff at **Witherwind** at dawn, authenticated the instrument himself, and had it placed in the vault in the *Meridian Queen*'s hold. Then he invited the hired guards to the brunch before the sailing as his personal guests.
+
+## Knaves and Knights, Session 9
+
+The house is liquidating out of **Rifthaven** for a years-long tour, and everything it could carry went into the *Meridian Queen*'s hold.
+
+**Lord Ondorel** made the crew guests of honor at the wedding brunch and told the room to hire them. **Ysvaine** spent the same brunch quietly establishing that their boss does not exist. **Ottavia Brann**, hired for the transport and not the voyage, was out of work by noon.
+
+The house sailed with **Sylvara**'s copy and does not know it.

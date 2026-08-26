@@ -4,7 +4,7 @@ lore_type: magic
 campaigns:
   - rifthaven-2
 tags: [instrument, lute, magic-item, the-songbird, house-ondorel, mark]
-related: [house-ondorel, the-orlovs, silver-serpent, sylvara, ottavia-brann, milo-lafite-margeaux, garran, ralo-battaglia, lucien, astrid, rifthaven, rifthaven-2, rifthaven-2-session-06, rifthaven-2-session-07, meridian-queen, rifthaven-2-session-08, lord-ondorel, hedda-marchbank, witherwind, coronet-gate]
+related: [house-ondorel, the-orlovs, silver-serpent, sylvara, ottavia-brann, milo-lafite-margeaux, garran, ralo-battaglia, lucien, astrid, rifthaven, rifthaven-2, rifthaven-2-session-06, rifthaven-2-session-07, meridian-queen, rifthaven-2-session-08, lord-ondorel, hedda-marchbank, witherwind, coronet-gate, rifthaven-2-session-09]
 ---
 
 **House Ondorel**'s lute, and a famous enough instrument that **Lucien** flagged it as nearly impossible to fence on reputation alone. It is the mark of the arc **The Songbird Job**.
@@ -33,3 +33,13 @@ They got all eight. Sylvara's front-row seat covered three or four on its own, a
 The real one came out of the manor that night under ward, in one of three identical cases on three separate routes. The crew's skiff carried it, though nobody aboard knew that until **Lord Ondorel** cast the ritual at **Witherwind** at dawn and pronounced it real. The instrument carries memories of the hands that hold it, which is how he authenticates it, and which is a problem for anything the crew swaps in.
 
 It is now in the security vault in the *Meridian Queen*'s hold, signed off by its owner, hours before she sails.
+
+## Knaves and Knights, Session 9
+
+Taken.
+
+**Astrid** and **Lucien** struck the wards in the order the **Corvi** parchment gave them, two of them on opposite sides of the case, and it opened on the real instrument. **Ralo** handed the forgery across under an opportunity attack and Astrid made the swap.
+
+The memory that came off it went to Astrid, and it was **Sylvara**'s.
+
+What sails to Farrowfield in the *Meridian Queen*'s vault is the copy. The real Evenbough walked down the gangplank with the crew.

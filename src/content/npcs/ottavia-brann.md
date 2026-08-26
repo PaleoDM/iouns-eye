@@ -7,7 +7,7 @@ campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 6"
 tags: [security, professional, the-songbird, gala]
-related: [garran, milo-lafite-margeaux, house-ondorel, glamour-district, rifthaven, rifthaven-2, rifthaven-2-session-06, evenbough, rifthaven-2-session-07, renzo-corvi, gatitos, rifthaven-2-session-08, hedda-marchbank, lord-ondorel, meridian-queen, witherwind, coronet-gate]
+related: [garran, milo-lafite-margeaux, house-ondorel, glamour-district, rifthaven, rifthaven-2, rifthaven-2-session-06, evenbough, rifthaven-2-session-07, renzo-corvi, gatitos, rifthaven-2-session-08, hedda-marchbank, lord-ondorel, meridian-queen, witherwind, coronet-gate, rifthaven-2-session-09]
 ---
 
 Head of security at the gala where the **Ondorel** instrument was displayed. Hard to impress and harder to fool.
@@ -37,3 +37,11 @@ She ran the transport on the evening of the 19th and hired the crew for it. Thre
 All three convoys were hit. The crew's took griffin riders over the rift, and the other two came into **Witherwind** scorched.
 
 At the hangar **Lord Ondorel** authenticated the instrument and sent her down into the hold to place it in the ship's vault herself.
+
+## Knaves and Knights, Session 9
+
+She was crouched over the downed assassin when **Garran** reached her. She turned the woman's wrist over to show him the tattoo, a numeral three with each stroke made out of a stake, named it as some kind of monster hunting guild, and decided it was better kept between them than used to give away who the target had been.
+
+Then she asked whether he was hiring. She was contracted for the transport and not the voyage, so she was out of work at noon and does not sail with the **Ondorels**. Garran turned her down. She shook his hand and told him his crew was, unfortunately for her, a well-oiled machine.
+
+She still knows him only as **Barran**.

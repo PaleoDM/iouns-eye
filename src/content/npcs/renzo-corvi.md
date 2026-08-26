@@ -7,7 +7,7 @@ campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 6"
 tags: [criminal, rival-crew, the-songbird, killer]
-related: [lonnie-da-pinci, da-pinci-syndicate, ralo-battaglia, garran, astrid, house-ondorel, rifthaven, rifthaven-2, rifthaven-2-session-06, rifthaven-2-session-07, stella-corvi, gatitos, lamplighter-market, ottavia-brann, rifthaven-2-session-08, lord-ondorel]
+related: [lonnie-da-pinci, da-pinci-syndicate, ralo-battaglia, garran, astrid, house-ondorel, rifthaven, rifthaven-2, rifthaven-2-session-06, rifthaven-2-session-07, stella-corvi, gatitos, lamplighter-market, ottavia-brann, rifthaven-2-session-08, lord-ondorel, rifthaven-2-session-09]
 ---
 
 A rival scoundrel working Rifthaven, and the man who killed **Lonnie "Lobster" da Pinci**.
@@ -33,3 +33,7 @@ The crew found him at the **Lamplighter Market** with the **Corvi Five**, arguin
 The crew had him surrounded and every right to finish it. They took him alive instead, for the bonus and for the goodwill.
 
 **He is in House Ondorel's hands, and he can tell them he never wore Quarterstaff's face.**
+
+## Knaves and Knights, Session 9
+
+The parchment his crew was carrying paid for the whole job. One of his cousins knew a man in the **Abjurers Guild**, and what the Corvis had worked out was how the guild's standard wards come down: not a password, an order. It opened the case in the *Meridian Queen*'s vault, and it put the wards back up afterward.

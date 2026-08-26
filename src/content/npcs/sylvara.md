@@ -7,7 +7,7 @@ campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 6"
 tags: [luthier, craftsman, inkwell, the-songbird, mark]
-related: [inkwell, glamour-district, frederick-quarterstaff, alon-bardoof, house-ondorel, milo-lafite-margeaux, lucien, ralo-battaglia, silver-serpent, rifthaven, rifthaven-2, rifthaven-2-session-06, evenbough, rifthaven-2-session-07, rifthaven-2-session-08, lord-ondorel, meridian-queen]
+related: [inkwell, glamour-district, frederick-quarterstaff, alon-bardoof, house-ondorel, milo-lafite-margeaux, lucien, ralo-battaglia, silver-serpent, rifthaven, rifthaven-2, rifthaven-2-session-06, evenbough, rifthaven-2-session-07, rifthaven-2-session-08, lord-ondorel, meridian-queen, rifthaven-2-session-09]
 ---
 
 A luthier the crew does not know, but who appears to be a neighbor in **Inkwell**. When the crew worked out that the Songbird job needs a magical decoy, she was the only craftsman they could name who might build one.
@@ -37,3 +37,9 @@ The copy was finished on the morning of the 19th, and it is as good as she promi
 Milo paid her 25 gold out of his own purse, which is the only money she has seen for the work.
 
 There is one loose end she does not know she left. When **Lord Ondorel** authenticated the real Evenbough at the hangar, the last memory on the instrument was hers, from the portrait at the gala, and it read as distress. He put it down to the first chair being nervous.
+
+## Knaves and Knights, Session 9
+
+When **Astrid** lifted the **Evenbough** to make the swap, the instrument gave up the last hands that held it, and they were Sylvara's, flush with everything she had been feeling in a room with **Frederick Quarterstaff**. Astrid choked it down and kept her feet.
+
+Sylvara still does not know what her copy was for.

@@ -6,7 +6,7 @@ continent: Glennox
 parent_location: cradle-of-conflict
 campaigns: [skt]
 tags: [settlement]
-related: []
+related: [rifthaven-2-session-09]
 ---
 
 A settlement in the northern Cradle of Conflict region of Glennox.
