@@ -7,7 +7,7 @@ location: the-gloaming
 campaigns: [hatchlight]
 first_appearance: hatchlight-session-01
 tags: [glancoed, witch, herbwife, missing, taken, the-gloaming, rescued, death-at-sunset]
-related: [hatchlight, glancoed, the-gloaming, gwenllian, the-afanc, rhydderch, hatchlight-session-01, hatchlight-session-02, marilissa, sunset-is-nigh, death-at-sunset, laeryn-vard, hatchlight-session-03]
+related: [hatchlight, glancoed, the-gloaming, gwenllian, the-afanc, rhydderch, hatchlight-session-01, hatchlight-session-02, marilissa, sunset-is-nigh, death-at-sunset, laeryn-vard, hatchlight-session-03, tsira, dr-riddenour, coven-of-whispers, hatchlight-session-04]
 ---
 
 The beloved village witch of Glancoed, a gentle herbwife of kindness and poultices. Also the keeper of the village's small rites: she left the offerings at the spring-shrine and sang the morning water-song.
@@ -25,3 +25,11 @@ Eirlys was found alive in Session 3, manacled to a wall in a chamber inside Deat
 Laeryn reached her first, with a message spell, before anyone laid eyes on her. It was the first contact anyone had had with her since she walked into the Gloaming. She was awake and sharp enough to know exactly what to do with it: keep her captor talking, and she would hold Marilissa's attention for as long as she could. That bought the party their way in.
 
 She had spent five days at Marilissa's bench doing slow work and giving wrong answers on purpose, which is the only reason she was still alive to be found. What those five days taught her is the reason the party knows anything at all about **Sunset-Is-Nigh**, the wyrmling below, and about the venom he wants: something that gets through resistance and immunity, a weapon against the things his own blood cannot touch.
+
+## Hearth and Hatchlight, Session 4
+
+The town's witch does not run. Starved, dehydrated, and out of everything, she refused to climb the rope to safety while the dragon was hunted, and she spent her last spell slot putting poison resistance on Bringha before it started. Her one attempt at hiding behind a stalactite fooled nobody.
+
+Bringha finally delivered the parcel from her sensei Tsira: ankheg milk Eirlys had requested, with a message folded in that she slipped into her sleeve and kept for herself. She read it aloud that night at the fire. It was Dr. Riddenour's reply about the cold lights, carried by the Coven of Whispers. Eirlys calls herself a sister of the coven, not a member.
+
+When the harpoon fired and the lights flooded the lair, she was marked like everyone else, and she is oddly calm about it. She once treated a man whose blighted arm had gone black-veined, so she knows what the other outcome looks like. She ended the night measuring a drop of ankheg milk into her wine and sleeping like a stone.

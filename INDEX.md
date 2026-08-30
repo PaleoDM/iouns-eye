@@ -1,8 +1,8 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-08-26 -->
+<!-- Last updated: 2026-08-30 -->
 
-## NPCs (184)
+## NPCs (187)
 - `alon-bardoof` Alon Bardoof — alive | First Chair, Glamour District Symphony Orchestra
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
@@ -43,6 +43,7 @@
 - `donna-bella` Donna Bella "DB — alive | Ralo's Separated Wife
 - `doragnes` Doragnes — alive | Major Domo of the Galleria
 - `dr-nastase` Dr. Nastase — dead
+- `dr-riddenour` Dr. Riddenour — alive | Researcher of the Lights | [hatchlight]
 - `dr-solvane` Dr. Solvane — alive | Memory Researcher
 - `dr-sprocket` Dr. Sprocket — alive | Artificer
 - `drago` Drago — alive | Warlord | [hatchlight]
@@ -150,13 +151,14 @@
 - `sir-sunder` Sir Sunder — alive | Stone-Whisper-Bloom of Sunder
 - `sister-ellarra` Sister Ellarra — alive | Cleric of the Ashen Chapel
 - `slarkrethel` Slarkrethel — dead | [skt]
+- `slate` Slate — alive | The Ghost of the Ship | [hatchlight]
 - `solara` Solara — alive | Co-founder of the Restful Lily | [ishetar-2]
 - `sombra` Sombra — alive | Librarian | [ishetar-2]
 - `sprigg` Sprigg — alive | Elder | [ishetar-2]
 - `starshadow` Starshadow — alive
 - `stella-corvi` Stella Corvi — alive | Gatito Blood
 - `sunflower` Sunflower — alive | Proprietor of the Halworth Reading Rooms
-- `sunset-is-nigh` Sunset-Is-Nigh — alive | The Hatchling of the Gloaming | [hatchlight]
+- `sunset-is-nigh` Sunset-Is-Nigh — dead | The Hatchling of the Gloaming | [hatchlight]
 - `sylvara` Sylvara — alive | Luthier
 - `sylvari` Sylvari — alive | Co-founder of the Restful Lily | [ishetar-2]
 - `talene-caldrow` Talene Caldrow — alive | [ishetar-2]
@@ -171,6 +173,7 @@
 - `thrall` Thrall — alive | Milo's Manservant
 - `tomis-tidwell` Tomis Tidwell — unknown
 - `tota-de-la-alma` Tota De la Alma — alive | Matriarch
+- `tsira` Tsira — alive | Bringha's Sensei | [hatchlight]
 - `udo` Udo — alive | Stablemaster of Manor Harsk | [ishetar-2]
 - `vandro-morrix` Vandro Morrix — dead | Owner of the Gilded Ember
 - `vanir-harwich` Vanir Harwich — unknown
@@ -279,7 +282,7 @@
 - `wanun` Wanun — continent | [ishetar-og, head-hunters, ishetar-2]
 - `witherwind` Witherwind — district | rifthaven
 
-## Factions (34)
+## Factions (35)
 - `aquatic-conclave` Aquatic Peoples Conclave — political | active | [ishetar-2]
 - `arsons-of-anarchy` Arsons of Anarchy — religious | active | [head-hunters]
 - `celestial-seed` Celestial Seed — secret | active | [ishetar-2]
@@ -302,6 +305,7 @@
 - `ashen-barristers` The Ashen Barristers — secret | active | [rifthaven-2]
 - `brass-wing-crew` The Brass Wing Crew — commercial | active | [rifthaven-online]
 - `cassini-brothers` The Cassini Brothers — criminal | disbanded | [rifthaven-online]
+- `coven-of-whispers` The Coven of Whispers — secret | active | [hatchlight]
 - `the-curtain` The Curtain — criminal | active
 - `da-pinci-syndicate` The da Pinci Crime Syndicate — criminal | active | [rifthaven-2]
 - `discordant-fellowship` The Discordant Fellowship — criminal | active | [rifthaven-irl, rifthaven-online]
@@ -450,7 +454,7 @@ _No entries yet._
 - `kip-vogels` Kip Vogels — Gnome | Druid | kalari | [kalari]
 - `kuari` Kuari — Tabaxi | Warlock | kalari | [kalari]
 - `kuldar` Kuldar — Dwarf | Fighter | ishetar-og | [ishetar-og]
-- `laeryn-vard` Laeryn Vard — Elf | Paladin | hatchlight | [hatchlight]
+- `laeryn-vard` Laeryn Vard — Changeling | Paladin | hatchlight | [hatchlight]
 - `leon` Leon Empyrean — Aasimar | Paladin | rifthaven-online | [rifthaven-online]
 - `lucien` Lucien — Human | Sorcerer | rifthaven-2 | [rifthaven-2]
 - `lyra` Lyra — Wood Elf | Cleric | ishetar-2 | [ishetar-2]

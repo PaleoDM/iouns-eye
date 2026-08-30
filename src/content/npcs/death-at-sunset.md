@@ -7,7 +7,7 @@ location: the-gloaming
 campaigns: [hatchlight]
 first_appearance: hatchlight-session-02
 tags: [dragon, green-dragon, the-gloaming, the-sickening, second-age, clutch, the-wreck]
-related: [hatchlight, the-gloaming, glancoed, indri, hatchlight-session-02, sunset-is-nigh, marilissa, eirlys, hatchlight-session-03]
+related: [hatchlight, the-gloaming, glancoed, indri, hatchlight-session-02, sunset-is-nigh, marilissa, eirlys, hatchlight-session-03, slate, hatchlight-session-04]
 ---
 
 A great green dragon who once held the wood now called the Gloaming, and the reason that wood is dying.
@@ -25,3 +25,9 @@ It corrected the story the alder told. She did not break off that fight because 
 One of them survived her. **Sunset-Is-Nigh** is weeks old and living somewhere below.
 
 The crew's killing shot was never fired. An **Ancient Fire Giant Harpoon of Dragonslaying** is still cradled aboard the wreck, still cocked, still charged, and still aimed straight down into the wound. Indri knows how to fire it and not much else about it.
+
+## Hearth and Hatchlight, Session 4
+
+The killing shot finally fired, two hundred and twelve years late, and it killed her son. Sunset-Is-Nigh died pinned under the harpoon, and then the fifth longship itself tore loose and came down on top of him. The hull that killed the mother now buries the child.
+
+Her carcass is still down there, and it is still the source. The sickening did not die with her line.
