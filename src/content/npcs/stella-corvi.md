@@ -8,7 +8,7 @@ campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 7"
 tags: [crime-family, gatito, tabaxi, glamour, fixer, the-songbird]
-related: [gatitos, renzo-corvi, lonnie-da-pinci, da-pinci-syndicate, ralo-battaglia, lucien, astrid, donna-bella, lamplighter-market, la-marginalia, tabula-rasa, rifthaven, rifthaven-2, rifthaven-2-session-07, rifthaven-2-session-09]
+related: [gatitos, renzo-corvi, lonnie-da-pinci, da-pinci-syndicate, ralo-battaglia, lucien, astrid, donna-bella, lamplighter-market, la-marginalia, tabula-rasa, rifthaven, rifthaven-2, rifthaven-2-session-07, rifthaven-2-session-09, rifthaven-2-session-10]
 ---
 
 Wife of **Renzo "Basta" Corvi**, and **Gatito** by blood. Born Stella Gatito, third daughter of a second aunt. Not important, by her own account, but important enough that the lifestyle comes with obligations to the family.

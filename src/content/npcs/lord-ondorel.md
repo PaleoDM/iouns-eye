@@ -7,7 +7,7 @@ campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 8"
 tags: [noble, house-ondorel, the-songbird, mark]
-related: [house-ondorel, evenbough, ottavia-brann, hedda-marchbank, meridian-queen, witherwind, sylvara, garran, rifthaven, rifthaven-2, rifthaven-2-session-08, rifthaven-2-session-09]
+related: [house-ondorel, evenbough, ottavia-brann, hedda-marchbank, meridian-queen, witherwind, sylvara, garran, rifthaven, rifthaven-2, rifthaven-2-session-08, rifthaven-2-session-09, rifthaven-2-session-10]
 ---
 
 The head of **House Ondorel**, and the owner of the **Evenbough**. He does not take anyone's word about his own instrument. He authenticates it himself.

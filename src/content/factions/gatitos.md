@@ -5,7 +5,7 @@ status: active
 headquarters: rifthaven
 campaigns: [rifthaven-2]
 tags: [crime-family, feline-themed, organized-crime, rivals]
-related: [rifthaven, rifthaven-2, da-pinci-syndicate, renzo-corvi, stella-corvi, lonnie-da-pinci, ralo-battaglia, lamplighter-market, rifthaven-2-session-06, rifthaven-2-session-07, rifthaven-2-session-09]
+related: [rifthaven, rifthaven-2, da-pinci-syndicate, renzo-corvi, stella-corvi, lonnie-da-pinci, ralo-battaglia, lamplighter-market, rifthaven-2-session-06, rifthaven-2-session-07, rifthaven-2-session-09, rifthaven-2-session-10]
 ---
 
 A Rifthaven crime family and the chief rivals of the **da Pinci Crime Syndicate**. Cat people, against the da Pincis' crustaceans. They run a good deal of the rift-side district around the **Lamplighter Market**, including the fish market itself.

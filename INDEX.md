@@ -1,8 +1,8 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-08-30 -->
+<!-- Last updated: 2026-09-11 -->
 
-## NPCs (187)
+## NPCs (188)
 - `alon-bardoof` Alon Bardoof — alive | First Chair, Glamour District Symphony Orchestra
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
@@ -29,6 +29,7 @@
 - `celeste` Celeste — alive
 - `celia-varynna` Celia Varynna — transformed
 - `chief-guuh` Chief Guuh — dead | Chief of the Hill Giants | [skt]
+- `churro` Churro — alive | Whistle-Whisker
 - `cliff-tyrell` Cliff — alive | Ty's Father
 - `cobalt` Cobalt — alive
 - `karash` Constable Karash — alive | Constable of New Perile Falls
@@ -191,7 +192,7 @@
 - `zeke` Zeke — alive
 - `zoink` Zoink — alive | Banker | [ishetar-2]
 
-## Locations (89)
+## Locations (90)
 - `ahanabai` Ahanabai — region | [ishetar-2]
 - `aroiinae` Aroiinae — city | [ishetar-2]
 - `ashen-chapel` Ashen Chapel — building | [rifthaven-online]
@@ -224,6 +225,7 @@
 - `hrimgard` Hrimgard — city | Cradle of Conflict | [skt]
 - `hustlers-district` Hustler's District — district | [rifthaven-online]
 - `inkwell` Inkwell — district | rifthaven
+- `ironclad-district` Ironclad District — district | [rifthaven-2]
 - `ishetar` Ishetar — city | Ekkorai | [ishetar-og, head-hunters, ishetar-2]
 - `kalari` Kalari — region | [kalari]
 - `khanae` Khanae — continent | [rifthaven-irl, rifthaven-online]
