@@ -1,6 +1,6 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-09-11 -->
+<!-- Last updated: 2026-09-24 -->
 
 ## NPCs (188)
 - `alon-bardoof` Alon Bardoof — alive | First Chair, Glamour District Symphony Orchestra

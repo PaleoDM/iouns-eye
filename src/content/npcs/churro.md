@@ -16,3 +16,7 @@ related: [zedediah, ironclad-district, garran, ralo-battaglia, rifthaven-2, rift
 ## Knaves and Knights, Session 10
 
 Rode along with **Zedediah** down into the **Ironclad District** to sniff out the real whiskey kegs from the decoys his family laid out to fool looters. Spent most of the trip perched and distracted, tugging at Zed's ear whenever something down in the tunnels caught its attention.
+
+## Knaves and Knights, Session 11
+
+Worked the Malthammer cellar one keg at a time in the middle of a fight with ankhegs and umber hulks. The keg by the door was whiskey. The next three were oil. Four of ten turned out real.

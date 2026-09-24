@@ -7,7 +7,7 @@ campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 7"
 tags: [familiar, owl, animal-companion]
-related: [astrid, rifthaven, rifthaven-2, rifthaven-2-session-07, rifthaven-2-session-08, coronet-gate, hedda-marchbank, rifthaven-2-session-09]
+related: [astrid, rifthaven, rifthaven-2, rifthaven-2-session-07, rifthaven-2-session-08, coronet-gate, hedda-marchbank, rifthaven-2-session-09, rifthaven-2-session-11]
 ---
 
 **Astrid**'s familiar. A night owl.

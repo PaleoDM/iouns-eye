@@ -6,8 +6,8 @@ location: the-goldsoul
 campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 4"
-tags: [the-manifesto, fence, contraband, drophouse, ironclad-district]
-related: [the-goldsoul, garran, ralo-battaglia, glittergold, rifthaven-2, rifthaven-2-session-04, churro, ironclad-district, milo-lafite-margeaux, lucien, astrid, rifthaven-2-session-10]
+tags: [the-manifesto, fence, contraband, drophouse, ironclad-district, malthammer]
+related: [the-goldsoul, garran, ralo-battaglia, glittergold, rifthaven-2, rifthaven-2-session-04, churro, ironclad-district, milo-lafite-margeaux, lucien, astrid, rifthaven-2-session-10, rifthaven-2-session-11]
 ---
 
 The man who watches contraband at **The GoldSoul**, the drophouse buried under a temple of Glittergold. Takes a customary five gold to hold goods, no questions asked. **Garran** knows him.
@@ -21,3 +21,7 @@ Held the crew's stolen broadsheets and the manifesto's linocut plate. Beyond his
 Ralo never made good on that drink, so Zedediah called in the favor a different way. A tremor had cracked open the tunnels near his family's ancestral home, sealed off in the **Ironclad District** for two centuries, and with it a stash of his family's whiskey. He brought the crew down to fetch it, along with his whistle-whisker, **Churro**, to sniff the real kegs from the decoys, and his father offered church miracles as payment on his behalf.
 
 His idea of piloting was flying the church's barely-functional, definitely-stolen air skiff straight off the edge of the rift into freefall. He survived it, survived the customs inspection that followed thanks to **Lucien**'s nerve, and got to watch **Ralo** forge Moradin's shrine offering: a flattering, gender-bent portrait of himself that left Zedediah near tears.
+
+## Knaves and Knights, Session 11
+
+Led the crew through the **Ironclad District** on his father's directions, from the central washing well to the family house of the Malthammers, its crest a whiskey barrel over two crossed hammers. He had fifteen thousand stories about things that live in wells and none of them helped. He had warned everyone he'd be useless in a fight, and he spent the fights dodging. Four of the ten kegs in the family cellar were real. The first is his.
