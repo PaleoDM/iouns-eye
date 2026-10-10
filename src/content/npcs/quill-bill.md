@@ -8,7 +8,7 @@ campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 5"
 tags: [ink-spirit, house-spirit, rhymes, serpents-den]
-related: [silver-serpent, tabula-rasa, inkwell, lucien, milo-lafite-margeaux, garran, ralo-battaglia, astrid, olivier, house-ondorel, rifthaven, rifthaven-2, rifthaven-2-session-05, rifthaven-2-session-06, rifthaven-2-session-08, thrall]
+related: [silver-serpent, tabula-rasa, inkwell, lucien, milo-lafite-margeaux, garran, ralo-battaglia, astrid, olivier, house-ondorel, rifthaven, rifthaven-2, rifthaven-2-session-05, rifthaven-2-session-06, rifthaven-2-session-08, thrall, rifthaven-2-session-12, widow-cranes]
 ---
 
 A small ink spirit who speaks only in rhyming couplets, released when **Lucien** uncorked an inky blue vial on the mantle of the crew's **Inkwell** shophouse. It refused to give its true name, since names have power, so Lucien dubbed it Quill Bill.
@@ -22,3 +22,7 @@ As **Olivier** departed, Quill Bill came in with a little rhyme and suggested th
 ## Knaves and Knights, Session 8
 
 **Thrall** was lent to **Astrid** for a morning and given the household's transcribing to do. Quill Bill, who considers that work his sacred duty, was crestfallen, and spent the morning trying to mimic the old manservant's calligraphy.
+
+## Knaves and Knights, Session 12
+
+Wrote down and translated the old Goliath song **Olivier** sang by ear, giving the crew the widow cranes' life cycle and the legend of the Widowmaker.

@@ -5,7 +5,7 @@ region: rifthaven
 campaigns:
   - rifthaven-2
 tags: [the-manifesto, bohemian, crew-property, bastion, serpents-den]
-related: [house-sorvellan, vendris-sorvellan, lady-sorvellan, folio-row, silver-serpent, quill-bill, olivier, sylvara, milo-lafite-margeaux, garran, ralo-battaglia, lucien, astrid, rifthaven, rifthaven-2, rifthaven-2-session-04, rifthaven-2-session-05, rifthaven-2-session-06]
+related: [house-sorvellan, vendris-sorvellan, lady-sorvellan, folio-row, silver-serpent, quill-bill, olivier, sylvara, milo-lafite-margeaux, garran, ralo-battaglia, lucien, astrid, rifthaven, rifthaven-2, rifthaven-2-session-04, rifthaven-2-session-05, rifthaven-2-session-06, rifthaven-2-session-12]
 ---
 
 ## Description

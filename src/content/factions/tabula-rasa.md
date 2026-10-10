@@ -6,7 +6,7 @@ headquarters: rifthaven
 campaigns:
   - rifthaven-2
 tags: [the-manifesto, forgery, rift-device, mimeofoil, antagonist]
-related: [la-marginalia, halworth-reading-rooms, sunflower, tomis-tidwell, house-sorvellan, mimeofoil, the-almshouse, folio-row, silver-serpent, quill-bill, rifthaven, rifthaven-2, rifthaven-2-session-02, rifthaven-2-session-03, rifthaven-2-session-04, rifthaven-2-session-05, rifthaven-2-session-07]
+related: [la-marginalia, halworth-reading-rooms, sunflower, tomis-tidwell, house-sorvellan, mimeofoil, the-almshouse, folio-row, silver-serpent, quill-bill, rifthaven, rifthaven-2, rifthaven-2-session-02, rifthaven-2-session-03, rifthaven-2-session-04, rifthaven-2-session-05, rifthaven-2-session-07, rifthaven-2-session-12, widow-cranes, irisour-family]
 ---
 
 A shadow forgery cabal hunting the same prize as the crew. They wield a Rift device that does not merely forge a hand but scrapes and rewrites the written record itself — reading memory straight out of books and leaving the pages wrong. Their calling card is a wax seal bearing no sigil at all.
@@ -26,3 +26,7 @@ Tabula lost the race. The crew reached the **Folio Row** press to find a lone Ta
 ## Knaves and Knights, Session 5
 
 A new piece of their history surfaced in the crew's **Inkwell** shophouse. **Quill Bill** and his corked brother, a pair of ink spirits now serving the house, were once held by the Tabula Rasa before the **Silver Serpent** rescued them. Whatever Tabula wanted with bottled ink spirits, it fits a pattern for an outfit whose whole business is ink and the unwriting of it.
+
+## Knaves and Knights, Session 12
+
+Possibly back. The widow cranes told **Astrid** about strangers who came to the cliffs with glass bottles of something they called ink, in reds and blues and purples, and took the hens' tears in them. Those strangers have come back since to steal chicks. Astrid is fairly sure it is Tabula Rasa. Nobody has confirmed it.

@@ -9,7 +9,7 @@ holy_day_date: "21st"
 holy_day_description: Song, dance, drink, pranks, tricks, and masquerades; young lovers seek her blessing.
 symbol_file: moonweaver.png
 tags: [prime-deity]
-related: [corellon, glittergold, obitris]
+related: [corellon, glittergold, obitris, rifthaven-2-session-12]
 ---
 
 ## Description

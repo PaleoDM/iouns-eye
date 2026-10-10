@@ -1,8 +1,8 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-09-24 -->
+<!-- Last updated: 2026-10-10 -->
 
-## NPCs (188)
+## NPCs (192)
 - `alon-bardoof` Alon Bardoof — alive | First Chair, Glamour District Symphony Orchestra
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
@@ -83,6 +83,7 @@
 - `jarl-storvald` Jarl Storvald — dead | Jarl of the Frost Giants | [skt]
 - `jerusha` Jerusha — alive
 - `jora-caldrow` Jora Caldrow — alive | Armory Manager | [ishetar-2]
+- `kalish` Kalish — missing | Olivier's Crystal Man
 - `keeper-vespa-ishetar` Keeper Vespa — alive | Lighthouse Keeper | [ishetar-2]
 - `kelvaryn-sorvellan` Kelvaryn Sorvellan — alive | Patriarch of House Sorvellan
 - `kess-vauthi` Kess Vauthi — alive | Acting Timbermaster | [ishetar-2]
@@ -122,11 +123,13 @@
 - `oleg-cassini` Oleg Cassini — dead | Co-Head of the Cassini Brothers
 - `olivier` Olivier — alive | Inkwell Neighbor
 - `orog-swift` Orog Swift — alive
+- `oskra-deepwell` Oskra Deepwell — alive | Harvest Foreman
 - `ottavia-brann` Ottavia Brann — alive | Head of Security
 - `ozythar` Ozythar — dead | The Tyrant
 - `papa-luhar-perile` Papa Luhar Perile — alive | Founder of New Perile Falls
 - `perry-ellis-cassini` Perry Ellis Cassini — dead | Co-Head of the Cassini Brothers
 - `phoebe` Phoebe — alive | Ty's Sister
+- `pim-rattlecord` Pim Rattlecord — alive | Crane Harvester
 - `pinto-gambino` Pinto Gambino — alive | Merchant | [ishetar-2]
 - `pocket` Pocket — alive | Astrid's Familiar
 - `professor-serrano` Professor Serrano — alive | Emeritus Professor, School of Necromancy
@@ -145,6 +148,7 @@
 - `sallow` Sallow — dead | Lieutenant of the TTT | [ishetar-2]
 - `sartori` Sartori — alive | Arcane Outfitter
 - `scourge` Scourge — alive | Plague of the Willows
+- `sefa-ondu` Sefa Ondu — alive | Crane Harvester
 - `seraphina-duskwallow` Seraphina Duskwallow — alive
 - `seressa-vale` Seressa Vale — dead | Cult Leader
 - `shadow-of-a-fallen-star` Shadow of a Fallen Star — alive
@@ -192,7 +196,7 @@
 - `zeke` Zeke — alive
 - `zoink` Zoink — alive | Banker | [ishetar-2]
 
-## Locations (90)
+## Locations (91)
 - `ahanabai` Ahanabai — region | [ishetar-2]
 - `aroiinae` Aroiinae — city | [ishetar-2]
 - `ashen-chapel` Ashen Chapel — building | [rifthaven-online]
@@ -282,9 +286,10 @@
 - `tyrzareth` Tyr'Zareth — city | [rifthaven-online]
 - `verdelorn-woods` Verdelorn Woods — wilderness | [rifthaven-irl]
 - `wanun` Wanun — continent | [ishetar-og, head-hunters, ishetar-2]
+- `widow-crane-rookery` Widow Crane Rookery — building
 - `witherwind` Witherwind — district | rifthaven
 
-## Factions (35)
+## Factions (36)
 - `aquatic-conclave` Aquatic Peoples Conclave — political | active | [ishetar-2]
 - `arsons-of-anarchy` Arsons of Anarchy — religious | active | [head-hunters]
 - `celestial-seed` Celestial Seed — secret | active | [ishetar-2]
@@ -293,6 +298,7 @@
 - `house-of-coinwrights` House of Coinwrights — commercial | active | [rifthaven-online]
 - `house-ondorel` House Ondorel — political | active
 - `house-sorvellan` House Sorvellan — political | active
+- `irisour-family` Irisour Family — political | active
 - `knights-of-the-eclipse` Knights of the Eclipse — religious | active | [ishetar-2, kalari]
 - `leviathan-hunters` Leviathan Hunters — commercial | active | [ishetar-2]
 - `order-of-the-ju-shi` Order of the Ju-Shi — religious | active | [rifthaven-irl, rifthaven-online]
@@ -411,7 +417,7 @@ _No entries yet._
 - `zehir` Zehir — The Cloaked Serpent | corrupted
 - `zuggtmoy` Zuggtmoy — Lady of Fungi | demon_prince
 
-## Lore (7)
+## Lore (9)
 - `king-tides-and-fool-tides` King Tides and Fool Tides — geography
 - `magic-system` Magic System of Astoria — magic
 - `astorian-calendar` The Astorian Calendar — culture
@@ -419,6 +425,8 @@ _No entries yet._
 - `evenbough` The Evenbough — magic
 - `mimeofoil` The Mimeofoil — magic
 - `the-third-age` The Third Age — history
+- `the-widow` The Widow — cosmology
+- `widow-cranes` Widow Cranes — magic
 
 ## Campaigns (9)
 - `ishetar-2` Defenders of Ishetar — completed | 1136
