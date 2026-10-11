@@ -5,10 +5,10 @@ continent: Paendrithir
 start_year: 2184
 age: Second Age
 start_date_real: "2026-06-13"
-session_count: 3
+session_count: 5
 party:
   - name: Laeryn Vard
-    race: Elf
+    race: Changeling
     class: Paladin
     slug: laeryn-vard
   - name: Harsk

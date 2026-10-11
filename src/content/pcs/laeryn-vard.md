@@ -3,9 +3,9 @@ name: Laeryn Vard
 race: Changeling
 class: Paladin
 campaign: hatchlight
-level: 2
+level: 3
 tags: [paladin, elemental, titans, changeling]
-related: [hatchlight, hatchlight-session-00, hatchlight-session-01, hatchlight-session-02, eirlys, marilissa, hatchlight-session-03, the-afanc, slate, hatchlight-session-04]
+related: [hatchlight, hatchlight-session-00, hatchlight-session-01, hatchlight-session-02, eirlys, marilissa, hatchlight-session-03, the-afanc, slate, hatchlight-session-04, culdir, fill-flourforge, edith-applegarth, hatchlight-session-05]
 ---
 
 ## Background
@@ -45,3 +45,9 @@ The party is keeping the secret for the village's sake. Bringha welcomed not-Lae
 ## The Bait and the Blast
 
 Killing Sunset-Is-Nigh took a target, and Laeryn made himself one. He spent the whole shit-talking preamble drifting into the harpoon's target square, missed with a javelin to hold the dragon's attention, and stood his ground while it charged. The splash from the shot hit him for exactly enough to kill him outright. The Afanc's boon flared on its own and bought him the hit point between unconscious and dead.
+
+## Culdir
+
+On the road Rasa wore a new face most days, with a glow under the skin, and kept to Laeryn's face around strangers. In Culdir an apple seller told him Fill had come to town a ruffian until an adventurer put him in his place. Fill said one of the adventurers at the festival had saved his life, and Edith credits "that Laeryn" with setting him straight.
+
+At Edith's fire Rasa told her to run when Bringha dropped. He brought his maul down on the big fire spirit, and the earth rumbled and snuffed it out before his smite could take. Afterward he used his brand to see what kept Edith's fire lit, and her cane flickered into a candy cane.

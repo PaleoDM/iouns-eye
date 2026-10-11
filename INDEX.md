@@ -1,8 +1,8 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-10-10 -->
+<!-- Last updated: 2026-10-11 -->
 
-## NPCs (192)
+## NPCs (198)
 - `alon-bardoof` Alon Bardoof — alive | First Chair, Glamour District Symphony Orchestra
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
@@ -29,6 +29,7 @@
 - `celeste` Celeste — alive
 - `celia-varynna` Celia Varynna — transformed
 - `chief-guuh` Chief Guuh — dead | Chief of the Hill Giants | [skt]
+- `chippy` Chippy — alive | Fill's Apprentice | [hatchlight]
 - `churro` Churro — alive | Whistle-Whisker
 - `cliff-tyrell` Cliff — alive | Ty's Father
 - `cobalt` Cobalt — alive
@@ -52,6 +53,7 @@
 - `drev-harsk` Drev Harsk — alive | Castellan | [ishetar-2]
 - `duchess-lyla` Duchess Lyla — alive | Duchess of Emberspost | [ishetar-2]
 - `duty` Duty — alive | Monk of the Ju-Shi
+- `edith-applegarth` Edith Applegarth — alive | Culdir's Sweet-Maker | [hatchlight]
 - `einhar-coldforge` Einhar Coldforge — alive
 - `eirlys` Eirlys — alive | The Witch of Glancoed | [hatchlight]
 - `ellie-caldrow` Ellie Caldrow — alive | [ishetar-2]
@@ -63,6 +65,7 @@
 - `father-templeton` Father Templeton — alive
 - `feldunost` Feld\xFBnost — unknown
 - `fen-galloway` Fen Galloway — alive | Lieutenant of the TTT | [ishetar-2]
+- `fill-flourforge` Fill Flourforge — alive | Baker of Culdir | [hatchlight]
 - `fisherman-dyrk` Fisherman Dyrk — dead
 - `frederick-quarterstaff` Frederick Quarterstaff — alive | Conductor, Glamour District Symphony Orchestra
 - `garabaga` GaraBaga — alive
@@ -113,6 +116,7 @@
 - `mickell-caldrow` Mickell Caldrow — alive | [ishetar-2]
 - `mimi-mistletoe` Mimi Mistletoe — alive
 - `miss-tibbets` Miss Tibbets — alive
+- `morosko` Morosko — unknown | Elemental Titan of Cold | [hatchlight]
 - `munira` Munira — alive
 - `mynoa-browbuckle` Mynoa Browbuckle — alive
 - `nanny-pupu` Nanny Pu'Pu — alive | Guardian of Boughshadow
@@ -127,6 +131,7 @@
 - `ottavia-brann` Ottavia Brann — alive | Head of Security
 - `ozythar` Ozythar — dead | The Tyrant
 - `papa-luhar-perile` Papa Luhar Perile — alive | Founder of New Perile Falls
+- `peetra-sylver` Peetra Sylver — alive | The Witness | [hatchlight]
 - `perry-ellis-cassini` Perry Ellis Cassini — dead | Co-Head of the Cassini Brothers
 - `phoebe` Phoebe — alive | Ty's Sister
 - `pim-rattlecord` Pim Rattlecord — alive | Crane Harvester
@@ -189,6 +194,7 @@
 - `vessan` Vessan — dead | [ishetar-2]
 - `vine-ashen-bloom` Vine Ashen Bloom — imprisoned | Divine Judge and Monk
 - `vorak-bloodfang` Vorak Bloodfang — dead
+- `voshgaroth` Voshgaroth — unknown | Elemental Titan of Storm and Wind | [hatchlight]
 - `whisper` Whisper — alive
 - `wrenna-tidwell` Wrenna Tidwell — alive
 - `ysvaine-ondorel` Ysvaine Ondorel — alive | Eldest Daughter of House Ondorel
@@ -196,7 +202,7 @@
 - `zeke` Zeke — alive
 - `zoink` Zoink — alive | Banker | [ishetar-2]
 
-## Locations (91)
+## Locations (92)
 - `ahanabai` Ahanabai — region | [ishetar-2]
 - `aroiinae` Aroiinae — city | [ishetar-2]
 - `ashen-chapel` Ashen Chapel — building | [rifthaven-online]
@@ -207,6 +213,7 @@
 - `boughshadow-caverns` Boughshadow Caverns — dungeon | [rifthaven-online]
 - `cloudpierce-spire` Cloudpierce Spire — building | [rifthaven-online]
 - `coin-counting-house` Coin Counting House — building | [rifthaven-online]
+- `culdir` Culdir — city | Cyrnaith | [hatchlight]
 - `deidan` Deidan — city | [ishetar-2]
 - `dirty-gertys` Dirty Gerty's — building | [ishetar-2, ishetar-og]
 - `dolgaer` Dolgaer — city | [hatchlight]

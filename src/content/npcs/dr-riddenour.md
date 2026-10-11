@@ -5,7 +5,7 @@ title: Researcher of the Lights
 campaigns: [hatchlight]
 first_appearance: hatchlight-session-04
 tags: [researcher, aberblaidd, hatchlight-light, coven-of-whispers]
-related: [hatchlight, eirlys, coven-of-whispers, hatchlight-session-04]
+related: [hatchlight, eirlys, coven-of-whispers, hatchlight-session-04, hatchlight-session-05]
 ---
 
 A researcher with an estate south of Aberblaidd, known so far only through a letter. Eirlys calls her a wonderful person and a brilliant researcher, and had written to her about the one cold light she had seen above the Gloaming.

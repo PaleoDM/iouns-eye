@@ -3,9 +3,9 @@ name: Indri
 race: Khoravar
 class: Artificer
 campaign: hatchlight
-level: 2
+level: 3
 tags: [artificer, necromancy, salvager, giant-tech, cursed, the-wreck]
-related: [hatchlight, hatchlight-session-00, hatchlight-session-01, hatchlight-session-02, death-at-sunset, sunset-is-nigh, hatchlight-session-03]
+related: [hatchlight, hatchlight-session-00, hatchlight-session-01, hatchlight-session-02, death-at-sunset, sunset-is-nigh, hatchlight-session-03, slate, culdir, chippy, morosko, hatchlight-session-05]
 ---
 
 ## Background
@@ -31,3 +31,11 @@ The curse does not let Indri leave things alone. In Session 3 she stayed up in t
 The box was garnet once, ground down to a coarse sand of disintegrated crystal, and it still held the crew's last minutes. Indri watched them. Death at Sunset broke off the fight to protect a clutch of eggs. The giants brought her down over her own lair and never finished her. And the killing shot was never fired: an **Ancient Fire Giant Harpoon of Dragonslaying** is still aboard, cocked, charged, and aimed straight down into the wound.
 
 Indri knows how to fire it. She does not know how to do much of anything else with it.
+
+## Slate's New Body
+
+Indri built Slate a new body out of painted bones, incorporating giant technology and what was left of the crystal sliver. He runs on personality and not much memory, and he talks to her inside her head. She renews the magic on him each day. She grew up calling the cold titan Morosko.
+
+## Culdir
+
+In Culdir, Fill's apprentice Chippy tried to buy Slate and decided Indri was a spy. Indri made an arch-nemesis in about five minutes. At Edith's fire she rubbed up some static and sent it into Bringha, bringing her back up and arcing lightning through everything around her. Afterward she painted her eyelids and cast detect magic. Everyone who ate Edith's tarts carried a fading trace of enchantment, and Edith's cane was magic.

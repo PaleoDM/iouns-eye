@@ -3,9 +3,9 @@ name: Yu
 race: Tiefling
 class: Cleric
 campaign: hatchlight
-level: 2
+level: 3
 tags: [cleric, raei, everlight, orphan, wayfarer]
-related: [hatchlight, hatchlight-session-00, hatchlight-session-01, hatchlight-session-02, raei, dolgaer, marilissa, harsk, hatchlight-session-03]
+related: [hatchlight, hatchlight-session-00, hatchlight-session-01, hatchlight-session-02, raei, dolgaer, marilissa, harsk, hatchlight-session-03, culdir, peetra-sylver, edith-applegarth, hatchlight-session-05]
 ---
 
 ## Background
@@ -23,3 +23,7 @@ Yu sends money home to his older brother. His quiet, particular talent is fixing
 The small snake had been ahead of the party since the alder. In the lair in Session 3, Yu spotted it before it spotted them and killed it where it sat, a corridor away from telling Marilissa and everything under her exactly who had come. Nothing below them knew they were coming after that.
 
 In the fight that followed he brought Harsk back up after the venom put him down.
+
+## Culdir
+
+Yu got a hat in the mail and cut holes in it for his horns, not neatly. He has grown up a little. At Edith's fire his guiding bolt popped the last magmin. Afterward he read that Edith truly did not know who set it, and that she was playing it down to protect Fill. He was also the one who finally noticed Peetra Sylver drinking under a tree, and paid him five silver for what he saw.
