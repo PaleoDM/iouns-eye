@@ -16040,6 +16040,7 @@
       <circle cx="1514.286" cy="286.467" r="1.0"/>
       <circle cx="1282.761" cy="662.366" r="1.0"/>
       <circle cx="1953.37" cy="1070.65" r="1.0"/>
+      <circle cx="1937.18" cy="1094.35" r="1.0"/>
       <circle cx="1987.15" cy="1066.76" r="1.0"/>
     </g>
   </g>
@@ -16143,6 +16144,7 @@
     <text x="1514.286" y="291.652" font-size="3.5" text-anchor="middle"><tspan x="1514.286" dy="0">Harshnag</tspan><tspan x="1514.286" dy="4.025">Homestead</tspan></text>
     <text x="1282.761" y="667.551" font-size="3.5" text-anchor="middle"><tspan x="1282.761" dy="0">Severance</tspan><tspan x="1282.761" dy="4.025">Harbour</tspan></text>
     <text x="1953.37" y="1075.835" font-size="3.5" text-anchor="middle">Glancoed</text>
+    <text x="1937.18" y="1099.535" font-size="3.5" text-anchor="middle">Culdir</text>
     <text x="1987.15" y="1071.945" font-size="3.5" text-anchor="middle">Drwsmynydd</text>
     </g>
     <g class="labels-tier-city">
