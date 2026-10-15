@@ -1,8 +1,8 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-10-11 -->
+<!-- Last updated: 2026-10-15 -->
 
-## NPCs (198)
+## NPCs (199)
 - `alon-bardoof` Alon Bardoof — alive | First Chair, Glamour District Symphony Orchestra
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
@@ -86,7 +86,7 @@
 - `jarl-storvald` Jarl Storvald — dead | Jarl of the Frost Giants | [skt]
 - `jerusha` Jerusha — alive
 - `jora-caldrow` Jora Caldrow — alive | Armory Manager | [ishetar-2]
-- `kalish` Kalish — missing | Olivier's Crystal Man
+- `kalish` Kalish — alive | Olivier's Crystal Man
 - `keeper-vespa-ishetar` Keeper Vespa — alive | Lighthouse Keeper | [ishetar-2]
 - `kelvaryn-sorvellan` Kelvaryn Sorvellan — alive | Patriarch of House Sorvellan
 - `kess-vauthi` Kess Vauthi — alive | Acting Timbermaster | [ishetar-2]
@@ -97,6 +97,7 @@
 - `lady-sorvellan` Lady Sorvellan — dead | Late Lady of House Sorvellan
 - `lisel-harsk` Lisel Harsk — alive | [ishetar-2]
 - `little-shit` Little Shit — alive
+- `livid` Livid — transformed | The Widowmaker
 - `lonnie-da-pinci` Lonnie "Lobster" da Pinci — dead | da Pinci Boss
 - `lord-harwin` Lord Harwin Brassfell — alive | Lord of Sparkworks
 - `lord-sergente` Lord Maximillian Sergente — dead | Plantation Lord
@@ -296,11 +297,12 @@
 - `widow-crane-rookery` Widow Crane Rookery — building
 - `witherwind` Witherwind — district | rifthaven
 
-## Factions (36)
+## Factions (37)
 - `aquatic-conclave` Aquatic Peoples Conclave — political | active | [ishetar-2]
 - `arsons-of-anarchy` Arsons of Anarchy — religious | active | [head-hunters]
 - `celestial-seed` Celestial Seed — secret | active | [ishetar-2]
 - `children-of-the-defiled-sun` Children of the Defiled Sun — religious | active | [head-hunters]
+- `circle-of-the-broken-tusk` Circle of the Broken Tusk — religious | active
 - `earthen-loam` Earthen Loam — secret | active | [rifthaven-online]
 - `house-of-coinwrights` House of Coinwrights — commercial | active | [rifthaven-online]
 - `house-ondorel` House Ondorel — political | active
@@ -424,7 +426,7 @@ _No entries yet._
 - `zehir` Zehir — The Cloaked Serpent | corrupted
 - `zuggtmoy` Zuggtmoy — Lady of Fungi | demon_prince
 
-## Lore (9)
+## Lore (10)
 - `king-tides-and-fool-tides` King Tides and Fool Tides — geography
 - `magic-system` Magic System of Astoria — magic
 - `astorian-calendar` The Astorian Calendar — culture
@@ -434,6 +436,7 @@ _No entries yet._
 - `the-third-age` The Third Age — history
 - `the-widow` The Widow — cosmology
 - `widow-cranes` Widow Cranes — magic
+- `widows-bane` Widow's Bane — magic
 
 ## Campaigns (9)
 - `ishetar-2` Defenders of Ishetar — completed | 1136
