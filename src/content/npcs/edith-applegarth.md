@@ -7,7 +7,7 @@ location: culdir
 campaigns: [hatchlight]
 first_appearance: hatchlight-session-05
 tags: [culdir, baker, pie-contest]
-related: [hatchlight, culdir, fill-flourforge, chippy, peetra-sylver, harsk, yu, indri, laeryn-vard, bringha, hatchlight-session-05]
+related: [hatchlight, culdir, fill-flourforge, chippy, peetra-sylver, harsk, yu, indri, laeryn-vard, bringha, hatchlight-session-05, asger, briochebane, hatchlight-session-06]
 ---
 
 A sweet little halfling woman, gracious about everything, and Culdir's beloved sweet-maker. Half the town calls her the best pastry baker in the whole damn world. She has won the pie contest fifty-five years running.
@@ -25,3 +25,9 @@ What the party learned about her:
 - Everyone who ate her tarts carried a faint trace of enchantment.
 - Her cane is magic. Under its illusion, it is a candy cane.
 - A faintly magic portrait over her mantel shows a mother, a father and five-year-old twins. One of the twins is Edith.
+
+## Hearth and Hatchlight, Session 6
+
+Edith hired the party at five gold apiece to find out who had shut her inside. Pressed about her missing oven, she said maybe she had a little magic of her own, and winked. It was a minor charm, and Indri shook it off. Nobody can tell whether Edith knows she does it. The twins in her portrait are Edith and her brother, **Asger**. She says the only magic in it is decades of love.
+
+For a woman someone had tried to burn alive, she went back to sweeping up awfully fast. Briochebane is about the size of a house cat and could not have barricaded her door, and Edith was inside when it happened. Fill had always heard that her brother died in one of the last wars.

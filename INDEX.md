@@ -1,11 +1,12 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-10-15 -->
+<!-- Last updated: 2026-10-18 -->
 
-## NPCs (199)
+## NPCs (201)
 - `alon-bardoof` Alon Bardoof — alive | First Chair, Glamour District Symphony Orchestra
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
+- `asger` Asger — unknown | Edith's Twin | [hatchlight]
 - `badger-goldenmantle` Badger Goldenmantle — alive
 - `bessa` Bessa — dead | Headservant of Manor Harsk | [ishetar-2]
 - `bilver-shadowgift` Bilver Shadowgift — dead | Former Researcher
@@ -15,6 +16,7 @@
 - `bran-caldrow` Bran Caldrow — alive | [ishetar-2]
 - `breccia` Breccia — imprisoned | Temple Acolyte
 - `brenna-tolvane` Brenna Tolvane — missing | Timbermaster | [ishetar-2]
+- `briochebane` Briochebane — missing | Fill's Ward | [hatchlight]
 - `brother-keegan` Brother Keegan — alive | Brother
 - `brother-tobias` Brother Tobias — alive | Minister of the Gatekeeper's Temple | [ishetar-2]
 - `byron-wintar` Byron Wintar — unknown

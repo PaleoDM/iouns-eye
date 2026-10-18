@@ -5,7 +5,7 @@ class: Monk
 campaign: hatchlight
 level: 3
 tags: [monk, entertainer, fire-censer, hothead, focus-points]
-related: [hatchlight, hatchlight-session-00, hatchlight-session-01, hatchlight-session-02, hatchlight-session-03, culdir, edith-applegarth, chippy, hatchlight-session-05]
+related: [hatchlight, hatchlight-session-00, hatchlight-session-01, hatchlight-session-02, hatchlight-session-03, culdir, edith-applegarth, chippy, hatchlight-session-05, fill-flourforge, hatchlight-session-06]
 ---
 
 ## Background
@@ -29,3 +29,7 @@ She was dropped to zero in the first round, then rolled a natural twenty on her 
 Bringha came out of the Gloaming less clumsy, and she pays attention to the wind now. Turquoise lines run up her forearm. In Culdir she caught the lizard fryer's face going blank at the idea of Fill winning, and she stuck to the meat pie after that. Indri asked her to tie Chippy's shoelaces together, and she did.
 
 At Edith's fire she got there first, chilled her fists, and sprayed cold water across one corner of the house until it stopped burning. The big fire spirit put her on the ground. Indri's lightning brought her back up, and she punched it back out into a magmin, which exploded all over her. Afterward she recognized Edith as one of the twins in the portrait over the mantel.
+
+## Fill's Farm
+
+Bringha caught Chippy picking Fill's lock and asked whether anyone had ever taught her to knock. Chippy lives there. Bringha kicked in the door to the good oven and gave Chippy a job: read Fill's journals, password strudel. At the tree line a magmin told her that anything made of fire that makes piss jokes is one of them, and she punched it out. Her verdict on Chippy: a real spitfire, that one.

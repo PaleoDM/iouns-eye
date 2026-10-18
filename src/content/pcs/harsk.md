@@ -5,7 +5,7 @@ class: Ranger
 campaign: hatchlight
 level: 3
 tags: [ranger, sailor, scout, exile, polecat]
-related: [hatchlight, hatchlight-session-00, hatchlight-session-01, hatchlight-session-02, rhydderch, hatchlight-session-03, culdir, edith-applegarth, voshgaroth, hatchlight-session-05]
+related: [hatchlight, hatchlight-session-00, hatchlight-session-01, hatchlight-session-02, rhydderch, hatchlight-session-03, culdir, edith-applegarth, voshgaroth, hatchlight-session-05, fill-flourforge, hatchlight-session-06]
 ---
 
 ## Background
@@ -31,3 +31,7 @@ At the breach he recognized the trapper whose fire he had shared once on the roa
 Since the Gloaming, Harsk is in a better mood. The cold does not bother him anymore, and some nights he forgets anyone else needs a fire. His people call the storm titan Voshgaroth, the one who goes at the vanguard.
 
 At Edith's fire a salamander told him a child of cold did not belong there, and he laughed at it. Edith threw herself into his arms afterward and told him he was so brave. He read her fear: not dying in a fire, but losing the pie contest next year.
+
+## The Tree Line
+
+Harsk rolled a natural 20 tracking from Fill's farm and found a shortcut along an old stone wall to the tree line. His Orcish warning shot came up a natural 1 and convinced Fill he was surrounded. He made up for it with an arrow through a bugbear's eye and another natural 20 that one-shot a magmin, along with a lot of piss jokes.

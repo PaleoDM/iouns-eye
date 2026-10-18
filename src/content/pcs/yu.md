@@ -5,7 +5,7 @@ class: Cleric
 campaign: hatchlight
 level: 3
 tags: [cleric, raei, everlight, orphan, wayfarer]
-related: [hatchlight, hatchlight-session-00, hatchlight-session-01, hatchlight-session-02, raei, dolgaer, marilissa, harsk, hatchlight-session-03, culdir, peetra-sylver, edith-applegarth, hatchlight-session-05]
+related: [hatchlight, hatchlight-session-00, hatchlight-session-01, hatchlight-session-02, raei, dolgaer, marilissa, harsk, hatchlight-session-03, culdir, peetra-sylver, edith-applegarth, hatchlight-session-05, fill-flourforge, hatchlight-session-06]
 ---
 
 ## Background
@@ -27,3 +27,7 @@ In the fight that followed he brought Harsk back up after the venom put him down
 ## Culdir
 
 Yu got a hat in the mail and cut holes in it for his horns, not neatly. He has grown up a little. At Edith's fire his guiding bolt popped the last magmin. Afterward he read that Edith truly did not know who set it, and that she was playing it down to protect Fill. He was also the one who finally noticed Peetra Sylver drinking under a tree, and paid him five silver for what he saw.
+
+## The Tree Line
+
+Yu wanted to spare-the-dying Peetra's hangover. At the tree line he blessed the front line, ducked into a cart, and caught the big armored bugbear with a guiding bolt.

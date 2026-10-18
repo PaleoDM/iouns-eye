@@ -5,7 +5,7 @@ class: Artificer
 campaign: hatchlight
 level: 3
 tags: [artificer, necromancy, salvager, giant-tech, cursed, the-wreck]
-related: [hatchlight, hatchlight-session-00, hatchlight-session-01, hatchlight-session-02, death-at-sunset, sunset-is-nigh, hatchlight-session-03, slate, culdir, chippy, morosko, hatchlight-session-05]
+related: [hatchlight, hatchlight-session-00, hatchlight-session-01, hatchlight-session-02, death-at-sunset, sunset-is-nigh, hatchlight-session-03, slate, culdir, chippy, morosko, hatchlight-session-05, fill-flourforge, briochebane, asger, hatchlight-session-06]
 ---
 
 ## Background
@@ -39,3 +39,7 @@ Indri built Slate a new body out of painted bones, incorporating giant technolog
 ## Culdir
 
 In Culdir, Fill's apprentice Chippy tried to buy Slate and decided Indri was a spy. Indri made an arch-nemesis in about five minutes. At Edith's fire she rubbed up some static and sent it into Bringha, bringing her back up and arcing lightning through everything around her. Afterward she painted her eyelids and cast detect magic. Everyone who ate Edith's tarts carried a fading trace of enchantment, and Edith's cane was magic.
+
+## The Good Oven
+
+Indri shook off Edith's little charm and could not tell whether Edith even knew she had cast it. Behind the bricks of Fill's good oven she found a hidden alcove and a freshly shed gold dragon scale, still warm. At the tree line she walked out into the open mid-fight and asked Fill why he owned a dragon. He told her he did not own him. He was a friend. That was good enough for her.

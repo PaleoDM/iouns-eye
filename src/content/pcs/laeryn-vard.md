@@ -5,7 +5,7 @@ class: Paladin
 campaign: hatchlight
 level: 3
 tags: [paladin, elemental, titans, changeling]
-related: [hatchlight, hatchlight-session-00, hatchlight-session-01, hatchlight-session-02, eirlys, marilissa, hatchlight-session-03, the-afanc, slate, hatchlight-session-04, culdir, fill-flourforge, edith-applegarth, hatchlight-session-05]
+related: [hatchlight, hatchlight-session-00, hatchlight-session-01, hatchlight-session-02, eirlys, marilissa, hatchlight-session-03, the-afanc, slate, hatchlight-session-04, culdir, fill-flourforge, edith-applegarth, hatchlight-session-05, briochebane, chippy, hatchlight-session-06]
 ---
 
 ## Background
@@ -51,3 +51,7 @@ Killing Sunset-Is-Nigh took a target, and Laeryn made himself one. He spent the 
 On the road Rasa wore a new face most days, with a glow under the skin, and kept to Laeryn's face around strangers. In Culdir an apple seller told him Fill had come to town a ruffian until an adventurer put him in his place. Fill said one of the adventurers at the festival had saved his life, and Edith credits "that Laeryn" with setting him straight.
 
 At Edith's fire Rasa told her to run when Bringha dropped. He brought his maul down on the big fire spirit, and the earth rumbled and snuffed it out before his smite could take. Afterward he used his brand to see what kept Edith's fire lit, and her cane flickered into a candy cane.
+
+## Fill
+
+Rasa's javelin went through a bugbear with a smite behind it, and the earth came up through its legs and held it. Fill followed the javelin back to its thrower and knew Laeryn. Rasa knocked one bugbear out alive and did not spare the armored one: the earth broke its grip on Fill, his maul broke its neck, and the earth held the body up afterward. Fill says he owes Laeryn again. Rasa made him promise to answer for Briochebane's actions.
