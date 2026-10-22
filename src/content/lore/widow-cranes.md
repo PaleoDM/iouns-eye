@@ -4,7 +4,7 @@ lore_type: magic
 campaigns:
   - rifthaven-2
 tags: [creatures, rift-cliffs, striking-runes, the-widow-wing-job]
-related: [the-widow, widow-crane-rookery, oskra-deepwell, irisour-family, tabula-rasa, astrid, milo-lafite-margeaux, pocket, rifthaven, rifthaven-2, rifthaven-2-session-12, rifthaven-2-session-13, livid, widows-bane, circle-of-the-broken-tusk]
+related: [the-widow, widow-crane-rookery, oskra-deepwell, irisour-family, tabula-rasa, astrid, milo-lafite-margeaux, pocket, rifthaven, rifthaven-2, rifthaven-2-session-12, rifthaven-2-session-13, livid, widows-bane, circle-of-the-broken-tusk, rifthaven-2-session-14]
 ---
 
 Cranes that nest on the Rift cliffs above Rifthaven. They stand as tall as a person and are the color of a gargoyle, with swollen red glands on either side of the beak. The "tears" come from those glands, and they go into every striking rune in the city.
@@ -24,3 +24,7 @@ The hens report chicks gone missing with no feathers and no blood, and widows no
 ## Knaves and Knights, Session 13
 
 The Widowmaker is real, and it is a widow. A hen who is not allowed to mourn changes, the way a werewolf changes, into something the flock no longer calls kin. The crew found one, **Livid**, chained in a poachers' den with her glands cut and drained. What comes out of a Widowmaker is not tears but **Widow's Bane**, and the **Circle of the Broken Tusk** makes these monsters on purpose to harvest it.
+
+## Knaves and Knights, Session 14
+
+The **Circle of the Broken Tusk** keeps widow cranes in six pens on a ledge of its camp, three of them hens with chicks. One male is near the end of his tears, and the druids were arguing over putting him down early to start another transformation.

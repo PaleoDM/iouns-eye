@@ -7,7 +7,7 @@ campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 5"
 tags: [neighbor, inkwell, aether-waves, cryptids]
-related: [inkwell, astrid, quill-bill, house-ondorel, rifthaven, rifthaven-2, rifthaven-2-session-05, rifthaven-2-session-06, rifthaven-2-session-12, kalish, oskra-deepwell, widow-cranes, widow-crane-rookery, the-widow, rifthaven-2-session-13, livid, circle-of-the-broken-tusk]
+related: [inkwell, astrid, quill-bill, house-ondorel, rifthaven, rifthaven-2, rifthaven-2-session-05, rifthaven-2-session-06, rifthaven-2-session-12, kalish, oskra-deepwell, widow-cranes, widow-crane-rookery, the-widow, rifthaven-2-session-13, livid, circle-of-the-broken-tusk, rifthaven-2-session-14]
 ---
 
 A neighbor in the **Inkwell** district. Olivier knocked on the crew's door at the very end of Session 5 carrying a crystal the size of a ball, come to introduce the new owners to something the locals call the Aether-waves, the way Inkwell's denizens stay current on the news.
@@ -29,3 +29,7 @@ He could not pay. He came to the crew because the neighborhood calls them a myst
 ## Knaves and Knights, Session 13
 
 Warned the crew that the creature in the den was probably muzzled for a reason, then got **Kalish** out of his cage. The job was technically done, but he came along anyway, to heal and not to kill. He asked for his crystal back to film the poachers, and **Astrid** refused to leave any record. He pitched it as investigative journalism instead, the **Circle of the Broken Tusk** tied to the **Irisour Family**, with masks for uniforms. Then he agreed to hang back sixty feet.
+
+## Knaves and Knights, Session 14
+
+Rode into the poachers' camp in a chest with **Kalish**, then climbed out to help **Astrid** heal the crew. He coached **Lucien** on a goat-bleat illusion as the resident bird expert, and it lured the camp's owlbears down.
