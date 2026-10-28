@@ -6,7 +6,7 @@ headquarters: rifthaven
 campaigns:
   - rifthaven-2
 tags: [noble-house, widow-cranes, the-widow-wing-job]
-related: [oskra-deepwell, widow-crane-rookery, widow-cranes, tabula-rasa, rifthaven, rifthaven-2, rifthaven-2-session-12, rifthaven-2-session-13, circle-of-the-broken-tusk]
+related: [oskra-deepwell, widow-crane-rookery, widow-cranes, tabula-rasa, rifthaven, rifthaven-2, rifthaven-2-session-12, rifthaven-2-session-13, circle-of-the-broken-tusk, rifthaven-2-session-15, mother-lycricia, lucien]
 ---
 
 A noble family of Rifthaven and one of the biggest buyers of widow crane tears at the **Widow Crane Rookery**.
@@ -18,3 +18,7 @@ A month before the session, a young Irisour son paid **Oskra Deepwell** a sack o
 ## Knaves and Knights, Session 13
 
 **Olivier** wants to break a story tying the **Circle of the Broken Tusk** to the Irisours. Nothing at the den proved it either way.
+
+## Knaves and Knights, Session 15
+
+Irisour halflings held the **Circle of the Broken Tusk**'s inner sanctum alongside **Tabula Rasa** agents, around a widow crane hen chained for a ritual. By **Lucien**'s read, they and the Tabula had just double-crossed **Mother Lycricia**. The crew killed every defender in the pit.

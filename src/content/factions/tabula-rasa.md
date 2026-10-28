@@ -6,7 +6,7 @@ headquarters: rifthaven
 campaigns:
   - rifthaven-2
 tags: [the-manifesto, forgery, rift-device, mimeofoil, antagonist]
-related: [la-marginalia, halworth-reading-rooms, sunflower, tomis-tidwell, house-sorvellan, mimeofoil, the-almshouse, folio-row, silver-serpent, quill-bill, rifthaven, rifthaven-2, rifthaven-2-session-02, rifthaven-2-session-03, rifthaven-2-session-04, rifthaven-2-session-05, rifthaven-2-session-07, rifthaven-2-session-12, widow-cranes, irisour-family]
+related: [la-marginalia, halworth-reading-rooms, sunflower, tomis-tidwell, house-sorvellan, mimeofoil, the-almshouse, folio-row, silver-serpent, quill-bill, rifthaven, rifthaven-2, rifthaven-2-session-02, rifthaven-2-session-03, rifthaven-2-session-04, rifthaven-2-session-05, rifthaven-2-session-07, rifthaven-2-session-12, widow-cranes, irisour-family, rifthaven-2-session-15, mother-lycricia, circle-of-the-broken-tusk, lucien]
 ---
 
 A shadow forgery cabal hunting the same prize as the crew. They wield a Rift device that does not merely forge a hand but scrapes and rewrites the written record itself — reading memory straight out of books and leaving the pages wrong. Their calling card is a wax seal bearing no sigil at all.
@@ -30,3 +30,7 @@ A new piece of their history surfaced in the crew's **Inkwell** shophouse. **Qui
 ## Knaves and Knights, Session 12
 
 Possibly back. The widow cranes told **Astrid** about strangers who came to the cliffs with glass bottles of something they called ink, in reds and blues and purples, and took the hens' tears in them. Those strangers have come back since to steal chicks. Astrid is fairly sure it is Tabula Rasa. Nobody has confirmed it.
+
+## Knaves and Knights, Session 15
+
+Tabula agents and **Irisour Family** halflings held the inner sanctum of the **Circle of the Broken Tusk**'s camp. They were working a ritual on a chained widow crane hen to turn her. **Mother Lycricia** had partnered with both, and by **Lucien**'s read they had just double-crossed her. The crew killed every defender in the pit. The hen held out and is still herself.

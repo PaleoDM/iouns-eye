@@ -7,7 +7,7 @@ campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 7"
 tags: [familiar, nightjar, animal-companion]
-related: [astrid, rifthaven, rifthaven-2, rifthaven-2-session-07, rifthaven-2-session-08, coronet-gate, hedda-marchbank, rifthaven-2-session-09, rifthaven-2-session-11, rifthaven-2-session-12, widow-cranes, rifthaven-2-session-13, livid, rifthaven-2-session-14, circle-of-the-broken-tusk]
+related: [astrid, rifthaven, rifthaven-2, rifthaven-2-session-07, rifthaven-2-session-08, coronet-gate, hedda-marchbank, rifthaven-2-session-09, rifthaven-2-session-11, rifthaven-2-session-12, widow-cranes, rifthaven-2-session-13, livid, rifthaven-2-session-14, circle-of-the-broken-tusk, rifthaven-2-session-15, mother-lycricia]
 ---
 
 **Astrid**'s familiar. A nightjar.
@@ -22,7 +22,7 @@ Took a smaller shape than usual for the convoy job, small enough to sit in a poc
 
 ## Knaves and Knights, Session 9
 
-Pointed at **Hedda Marchbank**, who is terrified of birds, and got her off the crew's back in the corridor outside the security vault. No spell, no roll worth the name. Just an owl, aimed.
+Pointed at **Hedda Marchbank**, who is terrified of birds, and got her off the crew's back in the corridor outside the security vault. No spell, no roll worth the name. Just a nightjar, aimed.
 
 ## Knaves and Knights, Session 12
 
@@ -35,3 +35,7 @@ Kept **Livid** company while **Astrid**'s speak with animals came up, assuring h
 ## Knaves and Knights, Session 14
 
 Scouted the **Circle of the Broken Tusk**'s pens for **Astrid**, who watched through his eyes. A druid's hawk came out of the sky at him, and Astrid called him home.
+
+## Knaves and Knights, Session 15
+
+Scouted the tunnels inside the cliff for **Astrid**, up a chute to the pens and down the fork to the distillery. Perched under the distillery floor, he heard two factions of the **Circle of the Broken Tusk** arguing over **Mother Lycricia**, and the cheep of a chick.

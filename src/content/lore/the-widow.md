@@ -4,7 +4,7 @@ lore_type: cosmology
 campaigns:
   - rifthaven-2
 tags: [constellation, stars, the-widow-wing-job]
-related: [widow-cranes, astrid, rifthaven, rifthaven-2, rifthaven-2-session-12, rifthaven-2-session-13, livid]
+related: [widow-cranes, astrid, rifthaven, rifthaven-2, rifthaven-2-session-12, rifthaven-2-session-13, livid, rifthaven-2-session-15]
 ---
 
 A constellation shaped like a crane with a long beak. The widow cranes migrate by it, always following the beak. Rifthaven sits on the equator, so over the city the Widow does not travel, it just spins in place, and the cranes migrate in great circles.
@@ -16,3 +16,7 @@ A constellation shaped like a crane with a long beak. The widow cranes migrate b
 ## Knaves and Knights, Session 13
 
 **Astrid** cast the Widow across a cavern ceiling with her starry form, bright and whole, the way it looked before it dimmed. It calmed **Livid** enough to talk.
+
+## Knaves and Knights, Session 15
+
+Every crane in two quarries answered **Astrid**'s crane call and took to the sky. The star at the tip of the beak shone a little brighter.

@@ -7,7 +7,7 @@ campaign: rifthaven-2
 level: 4
 location: rifthaven
 tags: [fixer, white-collar, wild-magic, contractual, forger]
-related: [rifthaven, rifthaven-2, ashen-barristers, sage, nonna-battaglia, house-sorvellan, brimstone-bath, mimeofoil, tabula-rasa, inkwell, rifthaven-2-session-01, rifthaven-2-session-03, rifthaven-2-session-04, rifthaven-2-session-05, silver-serpent, quill-bill, rifthaven-2-session-06, alon-bardoof, frederick-quarterstaff, sylvara, the-orlovs, evenbough, rifthaven-2-session-07, stella-corvi, gatitos, lamplighter-market, renzo-corvi, rifthaven-2-session-08, hedda-marchbank, lord-ondorel, witherwind, coronet-gate, rifthaven-2-session-10, rifthaven-2-session-11, rifthaven-2-session-12, rifthaven-2-session-13, livid, circle-of-the-broken-tusk, kalish, olivier, rifthaven-2-session-14]
+related: [rifthaven, rifthaven-2, ashen-barristers, sage, nonna-battaglia, house-sorvellan, brimstone-bath, mimeofoil, tabula-rasa, inkwell, rifthaven-2-session-01, rifthaven-2-session-03, rifthaven-2-session-04, rifthaven-2-session-05, silver-serpent, quill-bill, rifthaven-2-session-06, alon-bardoof, frederick-quarterstaff, sylvara, the-orlovs, evenbough, rifthaven-2-session-07, stella-corvi, gatitos, lamplighter-market, renzo-corvi, rifthaven-2-session-08, hedda-marchbank, lord-ondorel, witherwind, coronet-gate, rifthaven-2-session-10, rifthaven-2-session-11, rifthaven-2-session-12, rifthaven-2-session-13, livid, circle-of-the-broken-tusk, kalish, olivier, rifthaven-2-session-14, rifthaven-2-session-15, mother-lycricia]
 ---
 
 ## Background

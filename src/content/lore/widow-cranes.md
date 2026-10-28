@@ -4,7 +4,7 @@ lore_type: magic
 campaigns:
   - rifthaven-2
 tags: [creatures, rift-cliffs, striking-runes, the-widow-wing-job]
-related: [the-widow, widow-crane-rookery, oskra-deepwell, irisour-family, tabula-rasa, astrid, milo-lafite-margeaux, pocket, rifthaven, rifthaven-2, rifthaven-2-session-12, rifthaven-2-session-13, livid, widows-bane, circle-of-the-broken-tusk, rifthaven-2-session-14]
+related: [the-widow, widow-crane-rookery, oskra-deepwell, irisour-family, tabula-rasa, astrid, milo-lafite-margeaux, pocket, rifthaven, rifthaven-2, rifthaven-2-session-12, rifthaven-2-session-13, livid, widows-bane, circle-of-the-broken-tusk, rifthaven-2-session-14, rifthaven-2-session-15, mother-lycricia]
 ---
 
 Cranes that nest on the Rift cliffs above Rifthaven. They stand as tall as a person and are the color of a gargoyle, with swollen red glands on either side of the beak. The "tears" come from those glands, and they go into every striking rune in the city.
@@ -28,3 +28,7 @@ The Widowmaker is real, and it is a widow. A hen who is not allowed to mourn cha
 ## Knaves and Knights, Session 14
 
 The **Circle of the Broken Tusk** keeps widow cranes in six pens on a ledge of its camp, three of them hens with chicks. One male is near the end of his tears, and the druids were arguing over putting him down early to start another transformation.
+
+## Knaves and Knights, Session 15
+
+In the pens, three hens were chained in vests that hold their wings shut, and a dying male fed his three chicks the last of his tears. The fifth pen was empty, its hen taken ahead of time so she would not be there when her mate died. A hen was found chained in the **Circle of the Broken Tusk**'s inner sanctum, where **Tabula Rasa** agents were working a ritual to turn her. She fought it off three times and is still herself. When **Astrid** gave the crane call, every crane in two quarries answered and took to the sky.

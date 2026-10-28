@@ -1,8 +1,8 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-10-22 -->
+<!-- Last updated: 2026-10-28 -->
 
-## NPCs (201)
+## NPCs (202)
 - `alon-bardoof` Alon Bardoof — alive | First Chair, Glamour District Symphony Orchestra
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
@@ -120,6 +120,7 @@
 - `mimi-mistletoe` Mimi Mistletoe — alive
 - `miss-tibbets` Miss Tibbets — alive
 - `morosko` Morosko — unknown | Elemental Titan of Cold | [hatchlight]
+- `mother-lycricia` Mother Lycricia — alive | Matron of the Circle of the Broken Tusk
 - `munira` Munira — alive
 - `mynoa-browbuckle` Mynoa Browbuckle — alive
 - `nanny-pupu` Nanny Pu'Pu — alive | Guardian of Boughshadow

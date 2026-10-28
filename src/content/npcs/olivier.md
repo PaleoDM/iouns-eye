@@ -7,7 +7,7 @@ campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 5"
 tags: [neighbor, inkwell, aether-waves, cryptids]
-related: [inkwell, astrid, quill-bill, house-ondorel, rifthaven, rifthaven-2, rifthaven-2-session-05, rifthaven-2-session-06, rifthaven-2-session-12, kalish, oskra-deepwell, widow-cranes, widow-crane-rookery, the-widow, rifthaven-2-session-13, livid, circle-of-the-broken-tusk, rifthaven-2-session-14]
+related: [inkwell, astrid, quill-bill, house-ondorel, rifthaven, rifthaven-2, rifthaven-2-session-05, rifthaven-2-session-06, rifthaven-2-session-12, kalish, oskra-deepwell, widow-cranes, widow-crane-rookery, the-widow, rifthaven-2-session-13, livid, circle-of-the-broken-tusk, rifthaven-2-session-14, rifthaven-2-session-15, ralo-battaglia, milo-lafite-margeaux]
 ---
 
 A neighbor in the **Inkwell** district. Olivier knocked on the crew's door at the very end of Session 5 carrying a crystal the size of a ball, come to introduce the new owners to something the locals call the Aether-waves, the way Inkwell's denizens stay current on the news.
@@ -33,3 +33,7 @@ Warned the crew that the creature in the den was probably muzzled for a reason, 
 ## Knaves and Knights, Session 14
 
 Rode into the poachers' camp in a chest with **Kalish**, then climbed out to help **Astrid** heal the crew. He coached **Lucien** on a goat-bleat illusion as the resident bird expert, and it lured the camp's owlbears down.
+
+## Knaves and Knights, Session 15
+
+Spent his last two cure wounds on **Ralo** and **Milo** after the owlbears. Then he went with **Kalish** and **Livid** to the distillery after Livid's chicks.
