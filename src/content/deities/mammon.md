@@ -12,6 +12,12 @@ related:
   - asmodeus
   - pelferion
   - dispater
+  - rifthaven-2-session-16
+  - jelfi
+  - olo
+  - ralo-battaglia
+  - gemheart
+  - rifthaven-2
 tags:
   - devil-lord
 ---
@@ -27,3 +33,7 @@ Minauros, the third layer — a swamp of ooze and filth where treasures sink int
 ## Relationships
 
 His domain of greed overlaps with the corrupted deity Pelferion's province of wealth and oppression.
+
+## Knaves and Knights, Session 16
+
+**Jelfi** called on him by name in the **Gemheart** Guild Hall when **Milo** stripped her magic away, and two devils came to her side. The scimitar of shadow she fought with was his gift. **Ralo** picked it up afterward.

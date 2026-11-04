@@ -1,8 +1,8 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-10-28 -->
+<!-- Last updated: 2026-11-04 -->
 
-## NPCs (202)
+## NPCs (209)
 - `alon-bardoof` Alon Bardoof — alive | First Chair, Glamour District Symphony Orchestra
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
@@ -17,6 +17,7 @@
 - `breccia` Breccia — imprisoned | Temple Acolyte
 - `brenna-tolvane` Brenna Tolvane — missing | Timbermaster | [ishetar-2]
 - `briochebane` Briochebane — missing | Fill's Ward | [hatchlight]
+- `briska` Briska — alive | Candidate for Head of the Farriers Guild
 - `brother-keegan` Brother Keegan — alive | Brother
 - `brother-tobias` Brother Tobias — alive | Minister of the Gatekeeper's Temple | [ishetar-2]
 - `byron-wintar` Byron Wintar — unknown
@@ -62,6 +63,7 @@
 - `emissary-rowena` Emissary Rowena — alive | Governess
 - `ernesto-de-la-alma` Ernesto De la Alma — alive
 - `ethel` Ethel — alive
+- `facette` Facette — alive | Journeyman Gem Cutter
 - `fae-ethani` Fae-Ethani — alive
 - `father-assam` Father Assam — imprisoned | Former Spiritual Advisor to the Duchess | [ishetar-2]
 - `father-templeton` Father Templeton — alive
@@ -86,11 +88,13 @@
 - `isla-harsk` Isla Harsk — alive | Lady of Manor Harsk | [ishetar-2]
 - `iymrith` Iymrith — dead | [skt]
 - `jarl-storvald` Jarl Storvald — dead | Jarl of the Frost Giants | [skt]
+- `jelfi` Jelfi — dead | Gem Cutter and Guild Candidate
 - `jerusha` Jerusha — alive
 - `jora-caldrow` Jora Caldrow — alive | Armory Manager | [ishetar-2]
 - `kalish` Kalish — alive | Olivier's Crystal Man
 - `keeper-vespa-ishetar` Keeper Vespa — alive | Lighthouse Keeper | [ishetar-2]
 - `kelvaryn-sorvellan` Kelvaryn Sorvellan — alive | Patriarch of House Sorvellan
+- `kendrin` Kendrin — alive | Master Gem Cutter
 - `kess-vauthi` Kess Vauthi — alive | Acting Timbermaster | [ishetar-2]
 - `hekkathon` King Hekkathon — alive | King of the Storm Giants | [skt]
 - `kivan-caldrow` Kivan Caldrow — alive | [ishetar-2]
@@ -105,6 +109,7 @@
 - `lord-sergente` Lord Maximillian Sergente — dead | Plantation Lord
 - `lord-ondorel` Lord Ondorel — alive | Patriarch of House Ondorel
 - `lord-pembrook` Lord Pembrook — alive | [skt]
+- `lucious-wolf` Lucious Wolf — unknown | Divorce Attorney
 - `lulu` Lulu — alive | Celestial Patron
 - `luz-de-la-alma` Luz De la Alma — alive | Resistance Leader
 - `major-dunthar` Major Dunthar — dead | Enforcer
@@ -130,6 +135,7 @@
 - `old-hrothgar` Old Hrothgar Earthenstone — alive | Founding Member of Ishetar | [ishetar-2, ishetar-og]
 - `oleg-cassini` Oleg Cassini — dead | Co-Head of the Cassini Brothers
 - `olivier` Olivier — alive | Inkwell Neighbor
+- `olo` Olo — dead | Head of the Bankers Guild
 - `orog-swift` Orog Swift — alive
 - `oskra-deepwell` Oskra Deepwell — alive | Harvest Foreman
 - `ottavia-brann` Ottavia Brann — alive | Head of Security
@@ -168,6 +174,7 @@
 - `slate` Slate — alive | The Ghost of the Ship | [hatchlight]
 - `solara` Solara — alive | Co-founder of the Restful Lily | [ishetar-2]
 - `sombra` Sombra — alive | Librarian | [ishetar-2]
+- `soraya` Soraya — alive | Head of the Basket Weavers Guild
 - `sprigg` Sprigg — alive | Elder | [ishetar-2]
 - `starshadow` Starshadow — alive
 - `stella-corvi` Stella Corvi — alive | Gatito Blood
@@ -227,6 +234,7 @@
 - `farrowfield` Farrowfield — city | Cradle of Conflict | [skt]
 - `firewatch-island` Firewatch Island — city | Ekkorai | [ishetar-2]
 - `folio-row` Folio Row — district | rifthaven
+- `gemheart` Gemheart District — district | [rifthaven-online, rifthaven-2]
 - `glamour-district` Glamour District — district | [rifthaven-online, rifthaven-2]
 - `glancoed` Glancoed — city | Cyrnaith | [hatchlight]
 - `glennox` Glennox — continent | [kalari, skt]
@@ -291,7 +299,6 @@
 - `red-vale` The Red Vale — wilderness | Ekkorai | [ishetar-2]
 - `restful-lily` The Restful Lily — building | Ekkorai | [ishetar-2]
 - `tormellin` Tormellin — city | [ishetar-2]
-- `tradeheart` Tradeheart District — district | [rifthaven-online]
 - `tree-of-ambition` Tree of Ambition — wilderness | [rifthaven-online]
 - `ttt-compound` Turquoise Timber Trust Compound — building | Ekkorai | [ishetar-2]
 - `tyrzareth` Tyr'Zareth — city | [rifthaven-online]

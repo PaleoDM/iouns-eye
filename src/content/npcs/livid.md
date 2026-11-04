@@ -8,7 +8,7 @@ campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 13"
 tags: [widowmaker, widow-cranes, cryptids, the-widow-wing-job]
-related: [widow-cranes, the-widow, widows-bane, circle-of-the-broken-tusk, astrid, milo-lafite-margeaux, lucien, pocket, olivier, kalish, rifthaven-2, rifthaven-2-session-13, rifthaven-2-session-14, rifthaven-2-session-15]
+related: [widow-cranes, the-widow, widows-bane, circle-of-the-broken-tusk, astrid, milo-lafite-margeaux, lucien, pocket, olivier, kalish, rifthaven-2, rifthaven-2-session-13, rifthaven-2-session-14, rifthaven-2-session-15, rifthaven-2-session-16, oskra-deepwell]
 ---
 
 The Widowmaker of the old Goliath song, and once a widow crane. She was not allowed to mourn, and it changed her the way a werewolf is changed. She is about the size of a young dragon, with slate-gray hide, obsidian plates down her back, and the long beak and crest of a pterodactyl. Her glands have burst into garnet crystals. The other cranes do not call her kin. They call her a monster.
@@ -26,3 +26,7 @@ When five poachers came back on their skiff, **Lucien** called her out with the 
 ## Knaves and Knights, Session 15
 
 When **Astrid** gave her best crane call, Livid answered, and so did every crane in two quarries. She went with **Olivier** and **Kalish** to the distillery, where her chicks are kept. Nobody knows yet how that went.
+
+## Knaves and Knights, Session 16
+
+Back with her chicks. Her distraction at the distillery let **Kalish** get his crystal back. She cried onto **Astrid**'s boots, and the boots grew wings.

@@ -5,7 +5,7 @@ continent: Khanae
 parent_location: khanae
 campaigns: [rifthaven-irl, rifthaven-online, rifthaven-2]
 tags: [ancient-city, jungle]
-related: [khanae, sparkworks-district, salvation-district, boughshadow, bloomridge, glamour-district, silkspun, tradeheart, brazier, folio-row, inkwell, gutterwick, rifthaven-2-session-07, gatitos, lamplighter-market, rifthaven-2-session-08, coronet-gate, witherwind, ironclad-district, rifthaven-2-session-10]
+related: [khanae, sparkworks-district, salvation-district, boughshadow, bloomridge, glamour-district, silkspun, gemheart, brazier, folio-row, inkwell, gutterwick, rifthaven-2-session-07, gatitos, lamplighter-market, rifthaven-2-session-08, coronet-gate, witherwind, ironclad-district, rifthaven-2-session-10, rifthaven-2-session-16]
 ---
 
 ## Description
@@ -23,5 +23,5 @@ Rifthaven is an ancient city on the continent of Khanae, dating to the dawn of c
 - **Silkspun** — Tabaxi community, contains Nightmarket
 - **Sporestone** — Old milling district, home to the Mint
 - **Psycoral** — Residential, contains abandoned tenements
-- **Tradeheart** — Commercial hub, home to Grand Souk
+- **Gemheart** — One of the oldest districts, home to the artisan guilds and the Grand Souk
 - **Ironclad District** — Sealed dwarven ruins deep in the rift, only recently cracked back open

@@ -5,7 +5,7 @@ parent_location: rifthaven
 campaigns:
   - rifthaven-2
 tags: [widow-cranes, the-widow-wing-job, rift-cliffs]
-related: [oskra-deepwell, pim-rattlecord, sefa-ondu, widow-cranes, irisour-family, olivier, inkwell, rifthaven, rifthaven-2, rifthaven-2-session-12]
+related: [oskra-deepwell, pim-rattlecord, sefa-ondu, widow-cranes, irisour-family, olivier, inkwell, rifthaven, rifthaven-2, rifthaven-2-session-12, rifthaven-2-session-16]
 ---
 
 The licensed harvest station for widow crane tears, a hangar bolted into the Rift cliffs high above the **Inkwell** and dangling over the drop. Winches lower harvesters down the cliff face to the nesting plateaus. Run by **Oskra Deepwell**.

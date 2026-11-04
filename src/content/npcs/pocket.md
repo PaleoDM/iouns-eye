@@ -7,7 +7,7 @@ campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 7"
 tags: [familiar, nightjar, animal-companion]
-related: [astrid, rifthaven, rifthaven-2, rifthaven-2-session-07, rifthaven-2-session-08, coronet-gate, hedda-marchbank, rifthaven-2-session-09, rifthaven-2-session-11, rifthaven-2-session-12, widow-cranes, rifthaven-2-session-13, livid, rifthaven-2-session-14, circle-of-the-broken-tusk, rifthaven-2-session-15, mother-lycricia]
+related: [astrid, rifthaven, rifthaven-2, rifthaven-2-session-07, rifthaven-2-session-08, coronet-gate, hedda-marchbank, rifthaven-2-session-09, rifthaven-2-session-11, rifthaven-2-session-12, widow-cranes, rifthaven-2-session-13, livid, rifthaven-2-session-14, circle-of-the-broken-tusk, rifthaven-2-session-15, mother-lycricia, rifthaven-2-session-16, milo-lafite-margeaux, jelfi, gemheart]
 ---
 
 **Astrid**'s familiar. A nightjar.
@@ -39,3 +39,7 @@ Scouted the **Circle of the Broken Tusk**'s pens for **Astrid**, who watched thr
 ## Knaves and Knights, Session 15
 
 Scouted the tunnels inside the cliff for **Astrid**, up a chute to the pens and down the fork to the distillery. Perched under the distillery floor, he heard two factions of the **Circle of the Broken Tusk** arguing over **Mother Lycricia**, and the cheep of a chick.
+
+## Knaves and Knights, Session 16
+
+In the fight at the **Gemheart** Guild Hall, he flew in and healed **Milo** after **Jelfi** put him down.

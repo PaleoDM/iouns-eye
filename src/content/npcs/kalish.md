@@ -7,7 +7,7 @@ campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 12"
 tags: [aether-waves, the-widow-wing-job]
-related: [olivier, widow-cranes, widow-crane-rookery, rifthaven-2, rifthaven-2-session-12, rifthaven-2-session-13, livid, circle-of-the-broken-tusk, rifthaven-2-session-14, astrid, rifthaven-2-session-15]
+related: [olivier, widow-cranes, widow-crane-rookery, rifthaven-2, rifthaven-2-session-12, rifthaven-2-session-13, livid, circle-of-the-broken-tusk, rifthaven-2-session-14, astrid, rifthaven-2-session-15, rifthaven-2-session-16, oskra-deepwell, kendrin, gemheart]
 ---
 
 **Olivier**'s crystal man, the one who records the footage for his late-night nature show on the Aether-waves.
@@ -27,3 +27,7 @@ With some food and water in him, he told the crew what he saw while caged. The *
 ## Knaves and Knights, Session 15
 
 When the druids took him, he planted a crystal on one of them, and it has been listening ever since. He wanted it back, and went with **Olivier** and **Livid** to the distillery to get it. Nobody knows yet how that went.
+
+## Knaves and Knights, Session 16
+
+**Livid**'s distraction at the distillery let him get his crystal back off the cultist. It records only sound, and it caught everything the druids, the **Irisour Family** and **Tabula Rasa** said to each other. The fight jostled it, though, and corrupted the recording. **Astrid** asked whether he had tried turning it off and on again. He had. The runes are damaged, and it needs a master gem cutter.
