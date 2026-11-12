@@ -5,7 +5,7 @@ region: rifthaven
 campaigns:
   - rifthaven-2
 tags: [the-manifesto, bohemian, crew-property, bastion, serpents-den]
-related: [house-sorvellan, vendris-sorvellan, lady-sorvellan, folio-row, silver-serpent, quill-bill, olivier, sylvara, milo-lafite-margeaux, garran, ralo-battaglia, lucien, astrid, rifthaven, rifthaven-2, rifthaven-2-session-04, rifthaven-2-session-05, rifthaven-2-session-06, rifthaven-2-session-12]
+related: [house-sorvellan, vendris-sorvellan, lady-sorvellan, folio-row, silver-serpent, quill-bill, olivier, sylvara, milo-lafite-margeaux, garran, ralo-battaglia, lucien, astrid, rifthaven, rifthaven-2, rifthaven-2-session-04, rifthaven-2-session-05, rifthaven-2-session-06, rifthaven-2-session-12, rifthaven-2-session-17, pellam-quire]
 ---
 
 ## Description
@@ -23,3 +23,7 @@ The crew moved into the shophouse, a five-story building the locksmiths knew as 
 ## Knaves and Knights, Session 6
 
 Olivier made good on the introduction, and the aether crystal is now a fixture of the house. The district turned up one more useful name: **Sylvara**, a luthier the crew does not know but who appears to be a neighbor here, and the only craftsman they could think of who might build a magical decoy of the **Ondorel** instrument.
+
+## Knaves and Knights, Session 17
+
+**Pellam Quire** came calling at the shophouse with the One Ring Job. **Astrid** chased him out of the house as a black bear.

@@ -5,7 +5,7 @@ parent_location: rifthaven
 continent: Khanae
 campaigns: [rifthaven-online, rifthaven-2]
 tags: [commercial, market, artisans, guilds]
-related: [rifthaven, grand-souk, facette, kendrin, jelfi, olo, soraya, briska, rifthaven-2, rifthaven-2-session-16]
+related: [rifthaven, grand-souk, facette, kendrin, jelfi, olo, soraya, briska, rifthaven-2, rifthaven-2-session-16, rifthaven-2-session-17]
 ---
 
 ## Description

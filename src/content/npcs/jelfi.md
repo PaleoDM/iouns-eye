@@ -8,7 +8,7 @@ campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 16"
 tags: [gem-cutter, gemheart, devil-bargain, antagonist, hell-comes-a-glittering]
-related: [mammon, kendrin, facette, olo, soraya, milo-lafite-margeaux, lucien, ralo-battaglia, astrid, garran, gemheart, rifthaven, rifthaven-2, rifthaven-2-session-16]
+related: [mammon, kendrin, facette, olo, soraya, milo-lafite-margeaux, lucien, ralo-battaglia, astrid, garran, gemheart, rifthaven, rifthaven-2, rifthaven-2-session-16, rifthaven-2-session-17]
 ---
 
 A gnome gem cutter, not much older than **Facette**, who ran against **Kendrin** in the guild election. She got far too good, far too fast, without the proper training.

@@ -18,6 +18,7 @@ related:
   - ralo-battaglia
   - gemheart
   - rifthaven-2
+  - rifthaven-2-session-17
 tags:
   - devil-lord
 ---
@@ -37,3 +38,7 @@ His domain of greed overlaps with the corrupted deity Pelferion's province of we
 ## Knaves and Knights, Session 16
 
 **Jelfi** called on him by name in the **Gemheart** Guild Hall when **Milo** stripped her magic away, and two devils came to her side. The scimitar of shadow she fought with was his gift. **Ralo** picked it up afterward.
+
+## Knaves and Knights, Session 17
+
+**Ralo**'s scimitar from **Jelfi** is called the Ace of Blades. When Ralo misses with it, he can go double or nothing. If he loses that too, the house gets a favor to call in later, and it can call it in on any of the crew.

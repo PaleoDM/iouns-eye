@@ -1,13 +1,14 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-11-04 -->
+<!-- Last updated: 2026-11-12 -->
 
-## NPCs (209)
+## NPCs (214)
 - `alon-bardoof` Alon Bardoof — alive | First Chair, Glamour District Symphony Orchestra
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
 - `asger` Asger — unknown | Edith's Twin | [hatchlight]
 - `badger-goldenmantle` Badger Goldenmantle — alive
+- `bertie-gristle` Bertie Gristle — alive | Stablemaster
 - `bessa` Bessa — dead | Headservant of Manor Harsk | [ishetar-2]
 - `bilver-shadowgift` Bilver Shadowgift — dead | Former Researcher
 - `biotite` Biotite — unknown | [skt]
@@ -38,6 +39,7 @@
 - `cobalt` Cobalt — alive
 - `karash` Constable Karash — alive | Constable of New Perile Falls
 - `cyrena` Cyrena — alive | Guardian of the Hot Springs | [ishetar-2]
+- `dahlia` Dahlia — alive | Mortmain's Neighbor
 - `dalrick-caldrow` Dalrick Caldrow — alive | [ishetar-2]
 - `dante` Dante — alive
 - `death-at-sunset` Death at Sunset — dead | The Green Wyrm of the Gloaming | [hatchlight]
@@ -142,6 +144,7 @@
 - `ozythar` Ozythar — dead | The Tyrant
 - `papa-luhar-perile` Papa Luhar Perile — alive | Founder of New Perile Falls
 - `peetra-sylver` Peetra Sylver — alive | The Witness | [hatchlight]
+- `pellam-quire` Pellam Quire — alive | Agent of Mr. H
 - `perry-ellis-cassini` Perry Ellis Cassini — dead | Co-Head of the Cassini Brothers
 - `phoebe` Phoebe — alive | Ty's Sister
 - `pim-rattlecord` Pim Rattlecord — alive | Crane Harvester
@@ -166,6 +169,7 @@
 - `sefa-ondu` Sefa Ondu — alive | Crane Harvester
 - `seraphina-duskwallow` Seraphina Duskwallow — alive
 - `seressa-vale` Seressa Vale — dead | Cult Leader
+- `severin-mortmain` Severin Mortmain — alive | Senior Coinwright
 - `shadow-of-a-fallen-star` Shadow of a Fallen Star — alive
 - `shallah` Shallah — dead | [ishetar-2]
 - `sir-sunder` Sir Sunder — alive | Stone-Whisper-Bloom of Sunder
@@ -195,6 +199,7 @@
 - `tomis-tidwell` Tomis Tidwell — unknown
 - `tota-de-la-alma` Tota De la Alma — alive | Matriarch
 - `tsira` Tsira — alive | Bringha's Sensei | [hatchlight]
+- `tusk` Tusk — alive | Mortmain's Special Pet
 - `udo` Udo — alive | Stablemaster of Manor Harsk | [ishetar-2]
 - `vandro-morrix` Vandro Morrix — dead | Owner of the Gilded Ember
 - `vanir-harwich` Vanir Harwich — unknown
@@ -314,13 +319,13 @@
 - `children-of-the-defiled-sun` Children of the Defiled Sun — religious | active | [head-hunters]
 - `circle-of-the-broken-tusk` Circle of the Broken Tusk — religious | active
 - `earthen-loam` Earthen Loam — secret | active | [rifthaven-online]
-- `house-of-coinwrights` House of Coinwrights — commercial | active | [rifthaven-online]
+- `house-of-coinwrights` House of Coinwrights — commercial | active | [rifthaven-online, rifthaven-2]
 - `house-ondorel` House Ondorel — political | active
 - `house-sorvellan` House Sorvellan — political | active
 - `irisour-family` Irisour Family — political | active
 - `knights-of-the-eclipse` Knights of the Eclipse — religious | active | [ishetar-2, kalari]
 - `leviathan-hunters` Leviathan Hunters — commercial | active | [ishetar-2]
-- `order-of-the-ju-shi` Order of the Ju-Shi — religious | active | [rifthaven-irl, rifthaven-online]
+- `order-of-the-ju-shi` Order of the Ju-Shi — religious | active | [rifthaven-irl, rifthaven-online, rifthaven-2]
 - `peregrine-society` Peregrine Society — military | active | [skt]
 - `perile-falls-oligarchs` Perile Falls Oligarchs — political | active
 - `pilgrims-beneath-the-diadems` Pilgrims Beneath the Diadems — religious | active | [ishetar-2]
