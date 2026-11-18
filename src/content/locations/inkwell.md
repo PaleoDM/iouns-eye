@@ -5,7 +5,7 @@ region: rifthaven
 campaigns:
   - rifthaven-2
 tags: [the-manifesto, bohemian, crew-property, bastion, serpents-den]
-related: [house-sorvellan, vendris-sorvellan, lady-sorvellan, folio-row, silver-serpent, quill-bill, olivier, sylvara, milo-lafite-margeaux, garran, ralo-battaglia, lucien, astrid, rifthaven, rifthaven-2, rifthaven-2-session-04, rifthaven-2-session-05, rifthaven-2-session-06, rifthaven-2-session-12, rifthaven-2-session-17, pellam-quire]
+related: [house-sorvellan, vendris-sorvellan, lady-sorvellan, folio-row, silver-serpent, quill-bill, olivier, sylvara, milo-lafite-margeaux, garran, ralo-battaglia, lucien, astrid, rifthaven, rifthaven-2, rifthaven-2-session-04, rifthaven-2-session-05, rifthaven-2-session-06, rifthaven-2-session-12, rifthaven-2-session-17, pellam-quire, rifthaven-2-session-18, stardust]
 ---
 
 ## Description
@@ -27,3 +27,7 @@ Olivier made good on the introduction, and the aether crystal is now a fixture o
 ## Knaves and Knights, Session 17
 
 **Pellam Quire** came calling at the shophouse with the One Ring Job. **Astrid** chased him out of the house as a black bear.
+
+## Knaves and Knights, Session 18
+
+**Stardust** flew the crew's cart home from Mortmain's estate and set it down in front of the shop.

@@ -5,7 +5,7 @@ status: active
 headquarters: rifthaven
 campaigns: [rifthaven-online, rifthaven-2]
 tags: [banking, corruption, upper-districts]
-related: [hushed-choir, ledgermen, cassini-brothers, sparkworks-liberation, salvation-district-liberation, cassini-brothers-takedown, rifthaven-online-session-50, rifthaven-2, rifthaven-2-session-17, severin-mortmain, pellam-quire, order-of-the-ju-shi]
+related: [hushed-choir, ledgermen, cassini-brothers, sparkworks-liberation, salvation-district-liberation, cassini-brothers-takedown, rifthaven-online-session-50, rifthaven-2, rifthaven-2-session-17, severin-mortmain, pellam-quire, order-of-the-ju-shi, rifthaven-2-session-18]
 ---
 
 One of the premier money-lending and banking institutions in Rifthaven, the House of Coinwrights wields enormous political and economic power across the city. Their influence extends into the lower districts through intermediaries, funding operations like the Hushed Choir cult in Sparkworks and backing Lord Sergente's plantation operations in the Salvation District.
@@ -17,3 +17,7 @@ After Session 50, Veil began building the case implicating the House in Haji's o
 ## Knaves and Knights, Session 17
 
 The **Order of the Ju-Shi** is investigating the House, and every Coinwright is being tailed. A benefactor called Mr. H hired the crew through **Pellam Quire** to frame **Severin Mortmain**, a senior Coinwright, before the Order reports on the 10th of Moradin. A House seal only counts if the signet ring itself pressed it.
+
+## Knaves and Knights, Session 18
+
+The crew swapped **Severin Mortmain**'s signet ring for Mr. H's replica. A House seal only counts if the ring itself pressed it.

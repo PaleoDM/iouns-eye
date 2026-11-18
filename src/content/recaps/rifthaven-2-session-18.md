@@ -1,0 +1,43 @@
+---
+name: "Rifthaven: Knaves and Knights Session 18 — November 17th, 2026"
+campaign: rifthaven-2
+session_number: 18
+session_date: "November 17th, 2026"
+author: PaleoDM
+recap_type: dm
+in_game_date: "3rd of Moradin, 1130"
+arc_name: "The One Ring Job"
+vtt_campaign_id: "559871a1-573f-4367-9a16-5a3117a19840"
+tags: [session-eighteen, the-one-ring-job, house-of-coinwrights, order-of-the-ju-shi, heist, signet-ring]
+related: [rifthaven-2, milo-lafite-margeaux, garran, ralo-battaglia, lucien, astrid, pocket, severin-mortmain, bertie-gristle, dahlia, tusk, aggie, stardust, house-of-coinwrights, order-of-the-ju-shi, inkwell, rifthaven]
+---
+
+We opened that same evening at Mortmain's estate, with dinner on its way. Garran cast Alter Self and became Sal Goodman, with slicked-back hair and an extremely expensive suit. Sal told the guests he was a business associate of their host, and moved very special goods. Dahlia was there on the arm of Aggie, a minor dwarven baron. She had heard the most dreadful rumors about old Sev, all false, of course. Sal had always found him reliable. She asked whether he was in relocation services, and he said you could describe it that way. Her father's cousin was in relocation. Now there had been a shady figure at Mortmain's party.
+
+The Ju-Shi monk was still working the party as a server. She asked Milo how a crew got booked so last minute, and whether they were guild. Milo missed it entirely. He had tasted every bottle hours ago, he explained, and he would never use a spit bucket. She called him kiddo, kissed his cheek and slid away. She had learned they were working under the table.
+
+Then Mortmain flagged Milo down for a refill. He was curious about the silent charcutier's craft. Ralo had moved on to summer sausage. Mortmain and a few close friends practice a carving art, and they would love a demonstration two days hence. Milo asked what they carved. "Wax, my boy, wax." Milo said that was not dissimilar to flesh. Mortmain looked at him like that was an odd thing for a sommelier to say. Milo explained he was more of a purveyor of the liquid arts, and filled the glass to the brim. He had been a whelp when that wine was bottled. Mortmain may be older still. He said flesh was a crude word. Lard might make a fine canvas for the charcutier.
+
+After dinner the crew met back at the waste management cart. Ralo could finally talk, and spent hours telling Astrid animal facts, most of them wrong. According to Ralo, ostriches give live birth. The plan was to drug Tusk and swap the ring tonight. The fake ring would fail only on a legal decree, and Mortmain can't issue one under house arrest.
+
+Earlier, Astrid had changed into a party guest and ritual cast Detect Magic on a stroll through the house. With drunk guests staying the night, nothing that could hurt one was switched on. Bertie locked every door and window, but he set his alarm on the front door only. The chimney had no wards and no lock on the flue. Astrid doesn't spend much time as a bird, but she spends a lot of time with birds. Every bird and squirrel was giving that chimney a wide berth.
+
+Around three in the morning, Pocket cut the morsel loose. Astrid gave it time to work. Then she went down the chimney as a spider monkey, with a rock strapped to her forehead and Light cast on it. Tusk's breath hit her with the soot, and every exhale blew black dust around the hearth. Its eyes were open, but it was out cold. She crept past, unbolted a front window behind the shrubs, and let the crew in. Ralo asked whether they were sure that was Astrid.
+
+Tusk was asleep on its left side, on top of the hinged door in its chest plate. Nobody was rolling over something that size. Astrid found the chimney smooth inside, and too wide for monkey arms to climb. She went out the window and up the wall, and dropped a rope down the flue for later. She had heard voices by the burned stables, and went to eavesdrop.
+
+Bertie was shining a hooded lantern on the stables, and the slender figure beside him was Mortmain. Mortmain thought the fire too suspicious to be an accident. Bertie agreed, but nothing there had to do with the investigation. Mortmain called it a shame. "Some of my best work is down there." In the morning, Bertie would make the fire look worse and bring down a beam or two over their entrance. Mortmain could teleport into his own lair if he had to, though his magic was limited these days. Bertie asked about the usual wards against the fey. Mortmain had not liked that surly fellow implying they did business together. They would switch to fiends this time.
+
+Back in the parlor, Lucien used Subtle Spell to light the hearth with a silent Fire Bolt. He hoped Tusk would roll toward the warmth. Then he moved to cast Suggestion, and Garran wondered whether a hog could even understand it. Before he got it off, something stabbed into his mind like a horrible brain freeze. A voice in his head asked whether he thought it would be that easy. They were here to play a game.
+
+The voice wanted Lucien to do his friends as much harm as he could. Milo knew a charm when he saw one, and handed Lucien a glass of wine. The bouquet was stunning, with mineral undertones, and Lucien would rather listen to a generous friend than be incited to reckless violence. Besides, it cost more than Sal's suit. Whatever was awake inside the sleeping hog had lost. Then Ralo turned around and found a wax hound behind him, drooling candle wax.
+
+Milo hit the nearest hound with a fiery Chromatic Orb, and it caught like a candle. Astrid came down the rope through Lucien's fire and got singed. She leaned on her Animal Friendship and told Tusk to roll over. The thing in its head fought her for it, but the hog liked her better. It rolled over, and the hatch was clear. Each hound wore a metal collar and a tiny candle snuffer for a hat, and Astrid lit up two of them with Faerie Fire. The thing in the hog turned Ralo on whoever had been rude to him. That was Milo, who never shared the wine. Lucien's Fire Bolt lit a glowing hound up like a Christmas tree. Ralo shook it off and half apologized.
+
+Ralo went for the ring. His hands slipped, and his halfling luck gave him another go. Somewhere across Rifthaven, hundreds of feet underground, a stuffy old painting of a stuffy old professor winked. Ralo stopped picking and pushed out the hinge pin instead, and the door flopped open. He swapped the signet ring for the fake, and his boots carried him fifteen feet back. The thing in the hog made it belch at him, hard enough to hurt and leave him sick. Ralo went back anyway to put the pin in. He dropped it, and needed his reading glasses to find it. He had left them at home, and found them in his pocket.
+
+Garran hit his marked hound so hard it was as hurt as the burning ones. The thing in Tusk lashed out at Ralo with the sleeping body, and it should have dropped him. Lucien bent luck, and it missed. Garran finished his hound. Astrid's Guiding Bolt went clean through the last one, and the light caught something invisible on the back of Tusk's head. It was a leech, latched on like a lamprey on a shark. It let go and skittered at Garran on weird little cat legs, but it couldn't get into his head.
+
+Lucien hit the leech with a Chromatic Orb and nearly finished it. Then his magic surged. Reality split open, and a unicorn stepped through. Its mane ran from blue to lilac, and its eyes blazed white. It stepped around Garran and crushed the leech under its hooves, which never touched the ground. It greeted Lucien in Celestial as Caretaker, and asked whether this was a clandestine operation. It was. It shook its mane, and a mile of silence fell over them, though they could still hear each other in their heads. It asked where they would rather be, and Lucien said their bolt hole. They blinked and were back in the cart, with the horses shrunk to toys in Astrid's palm. The cart flew home and set down in front of the shop in Inkwell.
+
+The unicorn was glad it could come in their time of need. It warned them about the foul creatures their host deals with, and told them to take great care in his cellars. Twice in that battle, it reminded them, victory had come from the power of friendship. Ralo offered it an apple. It needed no food but enjoyed it anyway, and called him a man of the people. Milo went to shake its hoof, and wings folded him into the softest hug he had ever felt. It introduced itself as Stardust, the voice of compassion, and then it was gone. It was Astrid's first unicorn, and she wept. Ralo had the real ring. Only some wax dogs had died, and the hog was no worse for wear. We leave our scoundrels there, with six days until the Order reports.

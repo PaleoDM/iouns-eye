@@ -7,7 +7,7 @@ campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 7"
 tags: [familiar, nightjar, animal-companion]
-related: [astrid, rifthaven, rifthaven-2, rifthaven-2-session-07, rifthaven-2-session-08, coronet-gate, hedda-marchbank, rifthaven-2-session-09, rifthaven-2-session-11, rifthaven-2-session-12, widow-cranes, rifthaven-2-session-13, livid, rifthaven-2-session-14, circle-of-the-broken-tusk, rifthaven-2-session-15, mother-lycricia, rifthaven-2-session-16, milo-lafite-margeaux, jelfi, gemheart, rifthaven-2-session-17, severin-mortmain, tusk]
+related: [astrid, rifthaven, rifthaven-2, rifthaven-2-session-07, rifthaven-2-session-08, coronet-gate, hedda-marchbank, rifthaven-2-session-09, rifthaven-2-session-11, rifthaven-2-session-12, widow-cranes, rifthaven-2-session-13, livid, rifthaven-2-session-14, circle-of-the-broken-tusk, rifthaven-2-session-15, mother-lycricia, rifthaven-2-session-16, milo-lafite-margeaux, jelfi, gemheart, rifthaven-2-session-17, severin-mortmain, tusk, rifthaven-2-session-18]
 ---
 
 **Astrid**'s familiar. A nightjar.
@@ -47,3 +47,7 @@ In the fight at the **Gemheart** Guild Hall, he flew in and healed **Milo** afte
 ## Knaves and Knights, Session 17
 
 **Astrid** hung a sleeping draught inside **Severin Mortmain**'s chimney on a leather thong, for Pocket to cut loose whenever the crew needs it.
+
+## Knaves and Knights, Session 18
+
+Around three in the morning, Pocket cut the draught loose in **Severin Mortmain**'s chimney, and **Tusk** slept through the heist.

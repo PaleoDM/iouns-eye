@@ -1,8 +1,9 @@
 # Ioun's Eye — Codex Index
 <!-- Auto-generated. Do not edit manually. Run `npm run index` to regenerate. -->
-<!-- Last updated: 2026-11-12 -->
+<!-- Last updated: 2026-11-18 -->
 
-## NPCs (214)
+## NPCs (216)
+- `aggie` Aggie — alive | Minor Dwarven Baron
 - `alon-bardoof` Alon Bardoof — alive | First Chair, Glamour District Symphony Orchestra
 - `ambrosia` Ambrosia — alive | Guardian of the Restful Lily | [ishetar-2]
 - `arianna-wintar` Arianna Margaster Wintar — imprisoned | High Magister of Kalari
@@ -180,6 +181,7 @@
 - `sombra` Sombra — alive | Librarian | [ishetar-2]
 - `soraya` Soraya — alive | Head of the Basket Weavers Guild
 - `sprigg` Sprigg — alive | Elder | [ishetar-2]
+- `stardust` Stardust — alive | The Voice of Compassion
 - `starshadow` Starshadow — alive
 - `stella-corvi` Stella Corvi — alive | Gatito Blood
 - `sunflower` Sunflower — alive | Proprietor of the Halworth Reading Rooms

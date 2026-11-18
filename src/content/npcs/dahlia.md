@@ -7,7 +7,7 @@ campaigns:
   - rifthaven-2
 first_appearance: "Knaves and Knights, Session 17"
 tags: [the-one-ring-job]
-related: [severin-mortmain, milo-lafite-margeaux, rifthaven, rifthaven-2, rifthaven-2-session-17]
+related: [severin-mortmain, milo-lafite-margeaux, rifthaven, rifthaven-2, rifthaven-2-session-17, rifthaven-2-session-18, aggie, garran]
 ---
 
 A middle-aged neighbor and friend of **Severin Mortmain**.
@@ -15,3 +15,7 @@ A middle-aged neighbor and friend of **Severin Mortmain**.
 ## Knaves and Knights, Session 17
 
 At Mortmain's afternoon party she slid her arm into his and asked **Milo** for less bite in the wine. They were keeping things light, she said, and nobody wanted Severin in one of his moods. He told her it was dark stuff.
+
+## Knaves and Knights, Session 18
+
+At Mortmain's evening party she came on the arm of **Aggie**, a minor dwarven baron. She had heard the most dreadful rumors about old Sev, all false, of course, and she wanted the gossip from Sal Goodman, the business associate **Garran** was playing. Her father's cousin was in relocation.
